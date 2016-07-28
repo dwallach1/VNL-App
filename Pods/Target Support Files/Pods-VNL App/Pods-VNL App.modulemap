@@ -1,0 +1,6 @@
+framework module Pods_VNL_App {
+  umbrella header "Pods-VNL App-umbrella.h"
+
+  export *
+  module * { export * }
+}
