@@ -13,10 +13,18 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    override init() {
+        FIRApp.configure()
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        FIRApp.configure()
+        
+//        let loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        let landingVC = LandingViewController(nibName: "LandingViewController", bundle: nil)
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.rootViewController = landingVC
+        self.window?.makeKeyAndVisible()
         return true
     }
 

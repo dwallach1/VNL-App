@@ -7,5 +7,7 @@ target 'VNL App' do
 
   # Pods for VNL App
   pod 'Firebase'
-
+  pod 'Firebase/Database'
+  pod 'TextFieldEffects'
+  pod 'MaterialKit', '~> 0.4'
 end

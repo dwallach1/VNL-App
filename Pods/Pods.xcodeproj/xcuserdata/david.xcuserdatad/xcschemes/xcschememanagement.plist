@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MaterialKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-VNL App.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TextFieldEffects.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -12,7 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3D21BFB4AA97BA10FF98F75AE31ACE3E</key>
+		<key>69B82A1FB7169822FBD3CE15F8D5866B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>73850773DC05DB0F801C716B2A9E95F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EEC4FBB73D6358C9CDBB2F4E028D71C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
