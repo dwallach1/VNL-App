@@ -7,42 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01B12D71C179CC6A565704116E858C1B /* MKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBF8D35B3D936CAB9F39EA0038DA16 /* MKLabel.swift */; };
-		02A83B2F19D954DC7EE0475E2B3FA31A /* MKCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0556FD003CCD43E927520BE7DB51CF5 /* MKCardView.swift */; };
-		030AAB1BDF10037089A21E9111149C35 /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5780F3A18E23F5F25646E47DC90F7E7F /* MKTextField.swift */; };
-		0C7E153D76BF6B3C40D21CE02BA7FB09 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A19F4323ED3E45505F29A810706662C3 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BF240C77FED1EB7613F4C921C60CEAC /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199A5B9518354F921E05F4FD7A8F935 /* YokoTextField.swift */; };
-		339F3E231FF3CA852E40ACEDAEB9D246 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B121FE4D708E63B92E90A87FCCA82DB /* JiroTextField.swift */; };
-		3929AC913D376C01B40FB69EA8B3F248 /* MKEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444267097B1D67552221784D025E3A6B /* MKEmbedMainControllerSegue.swift */; };
-		3C14274D068233AF8A7BB8CABB7793B4 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9DAECBF52C21F8CEF7E12663B5FD6B /* KaedeTextField.swift */; };
-		3E05F4EBFD3584C0A70A2723C25122D8 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36046761A6C6531CF9F9A90637872CD3 /* AkiraTextField.swift */; };
-		42C502CE861D568BC0D1A346F65F01AE /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAD3F1E9BA1D9BDA5CF445F06F2A6B /* YoshikoTextField.swift */; };
-		4D47B36679220E649AACBC7E5EEEAD1F /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3D99566FCBA9FEF7C2DD96E6221B95 /* MKLayer.swift */; };
-		54F60E414FE3324EEC543A544F27396D /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD18916BAF6EFE0773DAF95D381CCD3 /* MKTableViewCell.swift */; };
+		01B12D71C179CC6A565704116E858C1B /* MKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBBC9C6983BFCE49DE4F9DA0F43F2 /* MKLabel.swift */; };
+		02A83B2F19D954DC7EE0475E2B3FA31A /* MKCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E72C108D65BBCA2570DA34827D4FCA /* MKCardView.swift */; };
+		030AAB1BDF10037089A21E9111149C35 /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147C8C5B2439EA00DD2788C56F5446A3 /* MKTextField.swift */; };
+		0C7E153D76BF6B3C40D21CE02BA7FB09 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04089BAA113161CE811B49B38A888C3E /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BF240C77FED1EB7613F4C921C60CEAC /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3295716B1586F9CF08211561B6EBB /* YokoTextField.swift */; };
+		339F3E231FF3CA852E40ACEDAEB9D246 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3444646B1664C67394AA32101CADDF30 /* JiroTextField.swift */; };
+		3929AC913D376C01B40FB69EA8B3F248 /* MKEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4BDB4CB6EFD036EE80A9D9E2BAFF4C /* MKEmbedMainControllerSegue.swift */; };
+		3C14274D068233AF8A7BB8CABB7793B4 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FD77E3C704F71A30CBC60B367EBA03 /* KaedeTextField.swift */; };
+		3E05F4EBFD3584C0A70A2723C25122D8 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89E0773066744F91E131DD639EB2F8 /* AkiraTextField.swift */; };
+		42C502CE861D568BC0D1A346F65F01AE /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D96E70AC804530DE8E8A130A9B30817 /* YoshikoTextField.swift */; };
+		4D47B36679220E649AACBC7E5EEEAD1F /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E07AC2E615482F7F88BDBAA005A17F7 /* MKLayer.swift */; };
+		54F60E414FE3324EEC543A544F27396D /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB029BC53A2AF38E13C7F60C823AD62 /* MKTableViewCell.swift */; };
 		58AFF57B5CB8417CBB08FA288981AAA2 /* Pods-VNL App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50830C1FB0400947A0F1213E084ED50D /* Pods-VNL App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5CE7100E99FB1255905051162EE1EBF4 /* MKCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD8EE1B0A75E30AE92777B9D1A0AA80 /* MKCollectionViewCell.swift */; };
-		6CFB0832D2C6CD3C069C5ADE8D326BA6 /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB574F5AFACC0CDAE76F74E40ECD7C6 /* TextFieldsEffects.swift */; };
-		7D7FB1098C675CADDF59A5732DD0C34D /* MKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F47FE3B1865F30D5D6B60509316C8 /* MKImageView.swift */; };
-		7EC4E0B104A3717E0F5C3395776B0847 /* MKNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426A6EFE8F5288E9944465EDF95C23EB /* MKNavigationBar.swift */; };
+		5CE7100E99FB1255905051162EE1EBF4 /* MKCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA02A0C15F31B747D302A5F76E17396 /* MKCollectionViewCell.swift */; };
+		6CFB0832D2C6CD3C069C5ADE8D326BA6 /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D90D070AD051DDD4A8EA0303846B75D /* TextFieldsEffects.swift */; };
+		7D7FB1098C675CADDF59A5732DD0C34D /* MKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A0F81C47F2F309AA9F0F82AF30BE46 /* MKImageView.swift */; };
+		7EC4E0B104A3717E0F5C3395776B0847 /* MKNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33821A8DA4AE365EF2FFE0E933DC3DB /* MKNavigationBar.swift */; };
 		80457AA247A1A1A6DCD02D51E26FB3D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		86AA75001C6D9B7BE3ACE289BA41E1FA /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFB0791553BFFD305A3F8BA69F5DB3 /* MinoruTextField.swift */; };
-		8A3E3C220E42806A661AD7D6D8858FEF /* MKEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D5243EF38FD189BCF20F15BD7B87A /* MKEmbedDrawerControllerSegue.swift */; };
+		86AA75001C6D9B7BE3ACE289BA41E1FA /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8474CDF4237A4E81049E0C1A9BC2CB /* MinoruTextField.swift */; };
+		8A3E3C220E42806A661AD7D6D8858FEF /* MKEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37231F47110637EB2C243AF871CA782A /* MKEmbedDrawerControllerSegue.swift */; };
 		8FA3AD2C78434DF1F7484C6B1907E4B0 /* Pods-VNL App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A3EC0416B4D611256452EB367ED646 /* Pods-VNL App-dummy.m */; };
-		911A81DD8925D69CC89728890007D6C4 /* MKActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A51FEF6298C90F05CF8051E737E7A44 /* MKActivityIndicator.swift */; };
-		96310C022FEDA3773E49529266625D62 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0868E30008388F939E5A102C70CD611D /* TextFieldEffects-dummy.m */; };
-		9796AE0844C7548884DCF218E91D9A7E /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF826CC3B10DC48F031FA4B945DFE603 /* MKButton.swift */; };
-		981BE6D0CA46A95C2B137B60240EED22 /* MKSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4B31EDBC476ABC4B739308A09F47F4 /* MKSwitch.swift */; };
-		9A870347E771B20EFEF0F75CAFE06383 /* MaterialKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF721FABDF151A8B9D979FC447AC8C1 /* MaterialKit-dummy.m */; };
+		911A81DD8925D69CC89728890007D6C4 /* MKActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D519DAA06B58F515DB13F355560C4C36 /* MKActivityIndicator.swift */; };
+		96310C022FEDA3773E49529266625D62 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B3FF70751EF9D9E5DE560D63271241 /* TextFieldEffects-dummy.m */; };
+		9796AE0844C7548884DCF218E91D9A7E /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2067C3689F274CE5E5AEF0BD1DF9D324 /* MKButton.swift */; };
+		981BE6D0CA46A95C2B137B60240EED22 /* MKSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085B50876E3B516AA1C3013F01322E46 /* MKSwitch.swift */; };
+		9A870347E771B20EFEF0F75CAFE06383 /* MaterialKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E13861345A06C025DB6AE2ED212E37 /* MaterialKit-dummy.m */; };
 		9D32323E74AAB5E3D44DAA33593D06B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		9D695DF0DC77CFAF26BEF5D2ADB46593 /* MKSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EFA137EBCFEFDAE8021AB10D5EBBE8 /* MKSnackbar.swift */; };
+		9D695DF0DC77CFAF26BEF5D2ADB46593 /* MKSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169C1228E7023C8020CEF26445886B9D /* MKSnackbar.swift */; };
 		B6ADBE756896F582382003F471E8A1AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		C05130205581B768D8184C1548131141 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A818CEABB693671BEE71AF9055A30A /* IsaoTextField.swift */; };
-		CB29F89DFC1694B54301C629B68D43BB /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B02954350828BCAA18D405ECF3EF3 /* HoshiTextField.swift */; };
-		D3BF782C490DC3581DD2E636F125EC97 /* MKRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B36AF031A2FEA8CD14ECF2D72C400F7 /* MKRefreshControl.swift */; };
-		D9D46AB254E4E9B5F340DD3DCB78A1F0 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59260C3B3D1DBD76F72CCCC2EDCDE1A /* MKColor.swift */; };
-		DB1771352B24FA2202B3EB7DCC4EAE8B /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7944BA4D3D16020C82BCD4701769CC4 /* MadokaTextField.swift */; };
-		DE3BF77BE039F15E8233058A34F24C8B /* MaterialKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 410D0E79A572604C840FE80EC6DA6B0B /* MaterialKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3B755F999AE0897F1EBEADA06DA637C /* MKSideDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D89CE8D3B5D27295977CDC6AA8DD46 /* MKSideDrawerViewController.swift */; };
+		C05130205581B768D8184C1548131141 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79848D10ED3E7DBA7FAA473D5A61E54 /* IsaoTextField.swift */; };
+		CB29F89DFC1694B54301C629B68D43BB /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA7A26D5D2A203C020A5D02C2EEDCFD /* HoshiTextField.swift */; };
+		D3BF782C490DC3581DD2E636F125EC97 /* MKRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6300882D9C8C9B1D06D8E7F191472F /* MKRefreshControl.swift */; };
+		D9D46AB254E4E9B5F340DD3DCB78A1F0 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34BF1389D91CC727CD41A9DF8D0BDC5 /* MKColor.swift */; };
+		DB1771352B24FA2202B3EB7DCC4EAE8B /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6B841C83242641C1F9378C6383CF9 /* MadokaTextField.swift */; };
+		DE3BF77BE039F15E8233058A34F24C8B /* MaterialKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DABEB269A1245892B260BB842E87DE1 /* MaterialKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3B755F999AE0897F1EBEADA06DA637C /* MKSideDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646A614C0B97A76A3AD05A88ADB246 /* MKSideDrawerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,68 +63,71 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0199A5B9518354F921E05F4FD7A8F935 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
-		042D5243EF38FD189BCF20F15BD7B87A /* MKEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKEmbedDrawerControllerSegue.swift; path = Source/MKEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
-		0868E30008388F939E5A102C70CD611D /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
-		0B8C0ADFDAF1A439E78569E6DE46F670 /* MaterialKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-prefix.pch"; sourceTree = "<group>"; };
+		04089BAA113161CE811B49B38A888C3E /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		044845A57082BC2429DCBF953A336AF1 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		085B50876E3B516AA1C3013F01322E46 /* MKSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKSwitch.swift; path = Source/MKSwitch.swift; sourceTree = "<group>"; };
+		0B4084FE9A9E3CFB258C211042FB4F48 /* GoogleParsingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleParsingUtilities.framework; path = Frameworks/GoogleParsingUtilities.framework; sourceTree = "<group>"; };
 		0C9FF5EA7564D2FC990EB6160396DCA0 /* Pods-VNL App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VNL App-acknowledgements.plist"; sourceTree = "<group>"; };
-		1B36AF031A2FEA8CD14ECF2D72C400F7 /* MKRefreshControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRefreshControl.swift; path = Source/MKRefreshControl.swift; sourceTree = "<group>"; };
-		1C4B31EDBC476ABC4B739308A09F47F4 /* MKSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKSwitch.swift; path = Source/MKSwitch.swift; sourceTree = "<group>"; };
-		1DDAD3F1E9BA1D9BDA5CF445F06F2A6B /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
-		24FFB0791553BFFD305A3F8BA69F5DB3 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
-		25A818CEABB693671BEE71AF9055A30A /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
-		26EBF8D35B3D936CAB9F39EA0038DA16 /* MKLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLabel.swift; path = Source/MKLabel.swift; sourceTree = "<group>"; };
+		0E8A82E9B0A2EC50736C5D603576B8BC /* MaterialKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MaterialKit.modulemap; sourceTree = "<group>"; };
+		147C8C5B2439EA00DD2788C56F5446A3 /* MKTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKTextField.swift; path = Source/MKTextField.swift; sourceTree = "<group>"; };
+		169C1228E7023C8020CEF26445886B9D /* MKSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKSnackbar.swift; path = Source/MKSnackbar.swift; sourceTree = "<group>"; };
+		190DD783E3CF4F729CC315C5696E82C3 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		1AF6B841C83242641C1F9378C6383CF9 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		1EA7A26D5D2A203C020A5D02C2EEDCFD /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		2067C3689F274CE5E5AEF0BD1DF9D324 /* MKButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKButton.swift; path = Source/MKButton.swift; sourceTree = "<group>"; };
+		26B3FF70751EF9D9E5DE560D63271241 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
 		27A3EC0416B4D611256452EB367ED646 /* Pods-VNL App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VNL App-dummy.m"; sourceTree = "<group>"; };
-		2B121FE4D708E63B92E90A87FCCA82DB /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
-		2BB574F5AFACC0CDAE76F74E40ECD7C6 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
-		2D3D99566FCBA9FEF7C2DD96E6221B95 /* MKLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLayer.swift; path = Source/MKLayer.swift; sourceTree = "<group>"; };
-		36046761A6C6531CF9F9A90637872CD3 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
-		378F47FE3B1865F30D5D6B60509316C8 /* MKImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKImageView.swift; path = Source/MKImageView.swift; sourceTree = "<group>"; };
-		3AF3A227C8E623685C3D56E7C9C355E8 /* MaterialKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MaterialKit.modulemap; sourceTree = "<group>"; };
+		2FB029BC53A2AF38E13C7F60C823AD62 /* MKTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKTableViewCell.swift; path = Source/MKTableViewCell.swift; sourceTree = "<group>"; };
+		32E72C108D65BBCA2570DA34827D4FCA /* MKCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKCardView.swift; path = Source/MKCardView.swift; sourceTree = "<group>"; };
+		3444646B1664C67394AA32101CADDF30 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		37231F47110637EB2C243AF871CA782A /* MKEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKEmbedDrawerControllerSegue.swift; path = Source/MKEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
 		3B45A082CBF2CA4853047415B8011B52 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		410D0E79A572604C840FE80EC6DA6B0B /* MaterialKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-umbrella.h"; sourceTree = "<group>"; };
-		426A6EFE8F5288E9944465EDF95C23EB /* MKNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKNavigationBar.swift; path = Source/MKNavigationBar.swift; sourceTree = "<group>"; };
-		444267097B1D67552221784D025E3A6B /* MKEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKEmbedMainControllerSegue.swift; path = Source/MKEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
-		4F09754D05DD28E475E4039C99B66622 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		3B8474CDF4237A4E81049E0C1A9BC2CB /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		4E07AC2E615482F7F88BDBAA005A17F7 /* MKLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLayer.swift; path = Source/MKLayer.swift; sourceTree = "<group>"; };
+		4E07D013DA9656A5A282D091ACBC8617 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		4FFB3489D1567B41AAEFA1E47411777E /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
 		50830C1FB0400947A0F1213E084ED50D /* Pods-VNL App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VNL App-umbrella.h"; sourceTree = "<group>"; };
-		5780F3A18E23F5F25646E47DC90F7E7F /* MKTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKTextField.swift; path = Source/MKTextField.swift; sourceTree = "<group>"; };
-		6750BA382F7BF21AAF52A6881439EC26 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
-		6A51FEF6298C90F05CF8051E737E7A44 /* MKActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKActivityIndicator.swift; path = Source/MKActivityIndicator.swift; sourceTree = "<group>"; };
+		5B89E0773066744F91E131DD639EB2F8 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		5DABEB269A1245892B260BB842E87DE1 /* MaterialKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-umbrella.h"; sourceTree = "<group>"; };
+		5EDA2F5DAACFCE8BBEFB2519FBA0BAF7 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		64513977AA148622039B7A017E2399FE /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		6AA02A0C15F31B747D302A5F76E17396 /* MKCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKCollectionViewCell.swift; path = Source/MKCollectionViewCell.swift; sourceTree = "<group>"; };
+		6D4BDB4CB6EFD036EE80A9D9E2BAFF4C /* MKEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKEmbedMainControllerSegue.swift; path = Source/MKEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
 		71C5AB25698DB634DDE9691FF4210E73 /* Pods_VNL_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VNL_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77261F93622D8D91F2C16A878D6980FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		804876DF922490143164F46F1180A494 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		84DA661AF3A81AD2370DDDE92F3C1B5A /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		7A8C790F760A0C5B01807EB094C35A2D /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		87E13861345A06C025DB6AE2ED212E37 /* MaterialKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialKit-dummy.m"; sourceTree = "<group>"; };
 		8BC89DE663020AFCAD675B8E491F6BA7 /* Pods-VNL App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VNL App.release.xcconfig"; sourceTree = "<group>"; };
-		8CF721FABDF151A8B9D979FC447AC8C1 /* MaterialKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialKit-dummy.m"; sourceTree = "<group>"; };
+		8D646A614C0B97A76A3AD05A88ADB246 /* MKSideDrawerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKSideDrawerViewController.swift; path = Source/MKSideDrawerViewController.swift; sourceTree = "<group>"; };
 		8D706822B2104FC49894224A9FD1D29C /* Pods-VNL App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VNL App-frameworks.sh"; sourceTree = "<group>"; };
-		8FD18916BAF6EFE0773DAF95D381CCD3 /* MKTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKTableViewCell.swift; path = Source/MKTableViewCell.swift; sourceTree = "<group>"; };
+		924662BF85D029B06FF9D572EC6A5583 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A19F4323ED3E45505F29A810706662C3 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
-		A1D89CE8D3B5D27295977CDC6AA8DD46 /* MKSideDrawerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKSideDrawerViewController.swift; path = Source/MKSideDrawerViewController.swift; sourceTree = "<group>"; };
-		A59260C3B3D1DBD76F72CCCC2EDCDE1A /* MKColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKColor.swift; path = Source/MKColor.swift; sourceTree = "<group>"; };
-		A7944BA4D3D16020C82BCD4701769CC4 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
-		A7C51A5AAA3B3C3946F65429F7EF8198 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		AC7FECC6C330F79E8F2F7FD7C1380AB2 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		BBF18EAC4B7DD0B7B1C6A7208DDB8F27 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9F3BE2E52132EE841D1EFC235272C68 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		96B60D11D03D74B0F0C0E7C607344860 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		9A6300882D9C8C9B1D06D8E7F191472F /* MKRefreshControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRefreshControl.swift; path = Source/MKRefreshControl.swift; sourceTree = "<group>"; };
+		9D90D070AD051DDD4A8EA0303846B75D /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
+		9D96E70AC804530DE8E8A130A9B30817 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		A111345632696FD44EEC166AE94EB2D0 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		A2E3295716B1586F9CF08211561B6EBB /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		B0FD77E3C704F71A30CBC60B367EBA03 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		B320E99476E1C0B9605DD0E97156B54B /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		BB7E19CE3DE90232CC63CAEA5F116FA5 /* MaterialKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-prefix.pch"; sourceTree = "<group>"; };
+		C19A865ED1919A0087BFD57076C17C3B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C969B2D270D742E36CBDC3F44840DCEC /* MaterialKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialKit.xcconfig; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D22C2001C496A3585A3ED017F2AB9A26 /* Pods-VNL App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VNL App-resources.sh"; sourceTree = "<group>"; };
-		D58C9BAF374F0E5FCC79790614573747 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
-		DA9DAECBF52C21F8CEF7E12663B5FD6B /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
-		DAD8EE1B0A75E30AE92777B9D1A0AA80 /* MKCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKCollectionViewCell.swift; path = Source/MKCollectionViewCell.swift; sourceTree = "<group>"; };
-		DBB776C0ADFD693503C04D3133BD4E96 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		D34BF1389D91CC727CD41A9DF8D0BDC5 /* MKColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKColor.swift; path = Source/MKColor.swift; sourceTree = "<group>"; };
+		D519DAA06B58F515DB13F355560C4C36 /* MKActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKActivityIndicator.swift; path = Source/MKActivityIndicator.swift; sourceTree = "<group>"; };
 		DECFCD1762E518096CCB78A91EADE8E3 /* MaterialKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF826CC3B10DC48F031FA4B945DFE603 /* MKButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKButton.swift; path = Source/MKButton.swift; sourceTree = "<group>"; };
-		E2633469A0941C6256DDA2181DF4909C /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		DF826E30671703D7A8D31B3F69F253B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E30300DCD182D9BF89423F84170EE35A /* Pods-VNL App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VNL App.debug.xcconfig"; sourceTree = "<group>"; };
-		E9EFA137EBCFEFDAE8021AB10D5EBBE8 /* MKSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKSnackbar.swift; path = Source/MKSnackbar.swift; sourceTree = "<group>"; };
+		E33821A8DA4AE365EF2FFE0E933DC3DB /* MKNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKNavigationBar.swift; path = Source/MKNavigationBar.swift; sourceTree = "<group>"; };
+		E5A0F81C47F2F309AA9F0F82AF30BE46 /* MKImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKImageView.swift; path = Source/MKImageView.swift; sourceTree = "<group>"; };
 		EAB53751FD464BBB45E74439D61F4333 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0556FD003CCD43E927520BE7DB51CF5 /* MKCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKCardView.swift; path = Source/MKCardView.swift; sourceTree = "<group>"; };
-		F21B02954350828BCAA18D405ECF3EF3 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		F14EBBC9C6983BFCE49DE4F9DA0F43F2 /* MKLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLabel.swift; path = Source/MKLabel.swift; sourceTree = "<group>"; };
+		F79848D10ED3E7DBA7FAA473D5A61E54 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		FA7C840107CE274F556848E707653D8D /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
 		FA8AD9A94F8F5A4754A122E44FD503F9 /* Pods-VNL App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VNL App-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FB174E0D10FC3F3BD84F738EFCE698F8 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
 		FD1CE959281B98F780A7C2DD6BFAE7EE /* Pods-VNL App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VNL App.modulemap"; sourceTree = "<group>"; };
-		FF73C7EE76561BAADF84BFA070E6BB54 /* MaterialKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialKit.xcconfig; sourceTree = "<group>"; };
+		FD76B729E1C3DE44C94365259F975B9A /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,20 +158,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F4CE5095793C32A842A531B1A11F10C /* Firebase */ = {
+		02ED8D907279ACF42DA61A7ABFE73287 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D894955C4826C7C97AA0BA92D897443B /* Analytics */,
+				B320E99476E1C0B9605DD0E97156B54B /* FirebaseAuth.framework */,
 			);
-			path = Firebase;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		14F541E540ED446FE8B24C4685A6F96C /* GoogleInterchangeUtilities */ = {
+		048A4A621A087B07D84E1A881C124644 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE05D85435A60570B6386104E9B31A6A /* Frameworks */,
+				DF826E30671703D7A8D31B3F69F253B0 /* Info.plist */,
+				FD76B729E1C3DE44C94365259F975B9A /* TextFieldEffects.modulemap */,
+				5EDA2F5DAACFCE8BBEFB2519FBA0BAF7 /* TextFieldEffects.xcconfig */,
+				26B3FF70751EF9D9E5DE560D63271241 /* TextFieldEffects-dummy.m */,
+				4FFB3489D1567B41AAEFA1E47411777E /* TextFieldEffects-prefix.pch */,
+				04089BAA113161CE811B49B38A888C3E /* TextFieldEffects-umbrella.h */,
 			);
-			path = GoogleInterchangeUtilities;
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
+			sourceTree = "<group>";
+		};
+		13DF599C85CF9FCE89EA4C6032A7F7B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96B60D11D03D74B0F0C0E7C607344860 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FA9B126AFEADC0CC4AACFEFED1AEDED /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				421EE637C16D1F83FA6E26BA2F1EC824 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
 		258AF20C2FE6623A83A6A02D376432BA /* Pods-VNL App */ = {
@@ -189,22 +214,6 @@
 			path = "Target Support Files/Pods-VNL App";
 			sourceTree = "<group>";
 		};
-		38CDB249FED12908FB9F06E91654D3A4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4F09754D05DD28E475E4039C99B66622 /* GoogleUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		39ECA8F42BC34810C12AD7973449AB13 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FB174E0D10FC3F3BD84F738EFCE698F8 /* FirebaseDatabase.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,66 +222,108 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		4E70BD705CFCD6AEAD7350B833F1E158 /* Support Files */ = {
+		421EE637C16D1F83FA6E26BA2F1EC824 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				77261F93622D8D91F2C16A878D6980FB /* Info.plist */,
-				3AF3A227C8E623685C3D56E7C9C355E8 /* MaterialKit.modulemap */,
-				FF73C7EE76561BAADF84BFA070E6BB54 /* MaterialKit.xcconfig */,
-				8CF721FABDF151A8B9D979FC447AC8C1 /* MaterialKit-dummy.m */,
-				0B8C0ADFDAF1A439E78569E6DE46F670 /* MaterialKit-prefix.pch */,
-				410D0E79A572604C840FE80EC6DA6B0B /* MaterialKit-umbrella.h */,
+				7A8C790F760A0C5B01807EB094C35A2D /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		460E39BC48297C08B6242DBD4E736625 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				64513977AA148622039B7A017E2399FE /* FIRInstanceID.h */,
+				4B40EF6F9D449DDE27307CEBE1514793 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		48814989FEFF18499FB2D7C154581B88 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C19A865ED1919A0087BFD57076C17C3B /* Info.plist */,
+				0E8A82E9B0A2EC50736C5D603576B8BC /* MaterialKit.modulemap */,
+				C969B2D270D742E36CBDC3F44840DCEC /* MaterialKit.xcconfig */,
+				87E13861345A06C025DB6AE2ED212E37 /* MaterialKit-dummy.m */,
+				BB7E19CE3DE90232CC63CAEA5F116FA5 /* MaterialKit-prefix.pch */,
+				5DABEB269A1245892B260BB842E87DE1 /* MaterialKit-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MaterialKit";
 			sourceTree = "<group>";
 		};
-		50114A2E6B221DB8E65087B8FD0D41D4 /* Frameworks */ = {
+		4AAFC1D887DD930148A121B5C701508B /* GoogleNetworkingUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				A7C51A5AAA3B3C3946F65429F7EF8198 /* FirebaseAnalytics.framework */,
+				AFB59D9BDC086AF3F78A73E03A7E7524 /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		4B40EF6F9D449DDE27307CEBE1514793 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A111345632696FD44EEC166AE94EB2D0 /* FirebaseInstanceID.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		531DD947A0D05BA58138E4E030E3C835 /* TextFieldEffects */ = {
+		4B72FE9BA034D2957DB96D646AC46FC3 /* GoogleInterchangeUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				36046761A6C6531CF9F9A90637872CD3 /* AkiraTextField.swift */,
-				F21B02954350828BCAA18D405ECF3EF3 /* HoshiTextField.swift */,
-				25A818CEABB693671BEE71AF9055A30A /* IsaoTextField.swift */,
-				2B121FE4D708E63B92E90A87FCCA82DB /* JiroTextField.swift */,
-				DA9DAECBF52C21F8CEF7E12663B5FD6B /* KaedeTextField.swift */,
-				A7944BA4D3D16020C82BCD4701769CC4 /* MadokaTextField.swift */,
-				24FFB0791553BFFD305A3F8BA69F5DB3 /* MinoruTextField.swift */,
-				2BB574F5AFACC0CDAE76F74E40ECD7C6 /* TextFieldsEffects.swift */,
-				0199A5B9518354F921E05F4FD7A8F935 /* YokoTextField.swift */,
-				1DDAD3F1E9BA1D9BDA5CF445F06F2A6B /* YoshikoTextField.swift */,
-				6825FD30AE6A857AC4C7D37D34B62497 /* Support Files */,
+				B81587F5D962E2EBA622B5E74E37C813 /* Frameworks */,
 			);
-			path = TextFieldEffects;
+			path = GoogleInterchangeUtilities;
 			sourceTree = "<group>";
 		};
-		575BC4A4A9C7C5E45C12206884AC0326 /* GoogleSymbolUtilities */ = {
+		4C12B10C28553739D5160DBCC212F5B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FAFDBB159922842F222DF496E540F32B /* Frameworks */,
+				0B4084FE9A9E3CFB258C211042FB4F48 /* GoogleParsingUtilities.framework */,
 			);
-			path = GoogleSymbolUtilities;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6825FD30AE6A857AC4C7D37D34B62497 /* Support Files */ = {
+		4F89B7E015ED9B8484D2A62FAC8F5752 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BBF18EAC4B7DD0B7B1C6A7208DDB8F27 /* Info.plist */,
-				84DA661AF3A81AD2370DDDE92F3C1B5A /* TextFieldEffects.modulemap */,
-				C9F3BE2E52132EE841D1EFC235272C68 /* TextFieldEffects.xcconfig */,
-				0868E30008388F939E5A102C70CD611D /* TextFieldEffects-dummy.m */,
-				DBB776C0ADFD693503C04D3133BD4E96 /* TextFieldEffects-prefix.pch */,
-				A19F4323ED3E45505F29A810706662C3 /* TextFieldEffects-umbrella.h */,
+				044845A57082BC2429DCBF953A336AF1 /* GoogleSymbolUtilities.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/TextFieldEffects";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5359CF0C65DC6E9F106638BA253043D1 /* GoogleParsingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				4C12B10C28553739D5160DBCC212F5B2 /* Frameworks */,
+			);
+			path = GoogleParsingUtilities;
+			sourceTree = "<group>";
+		};
+		783FC3419890F5D1929526E4EA7B3464 /* MaterialKit */ = {
+			isa = PBXGroup;
+			children = (
+				D519DAA06B58F515DB13F355560C4C36 /* MKActivityIndicator.swift */,
+				2067C3689F274CE5E5AEF0BD1DF9D324 /* MKButton.swift */,
+				32E72C108D65BBCA2570DA34827D4FCA /* MKCardView.swift */,
+				6AA02A0C15F31B747D302A5F76E17396 /* MKCollectionViewCell.swift */,
+				D34BF1389D91CC727CD41A9DF8D0BDC5 /* MKColor.swift */,
+				37231F47110637EB2C243AF871CA782A /* MKEmbedDrawerControllerSegue.swift */,
+				6D4BDB4CB6EFD036EE80A9D9E2BAFF4C /* MKEmbedMainControllerSegue.swift */,
+				E5A0F81C47F2F309AA9F0F82AF30BE46 /* MKImageView.swift */,
+				F14EBBC9C6983BFCE49DE4F9DA0F43F2 /* MKLabel.swift */,
+				4E07AC2E615482F7F88BDBAA005A17F7 /* MKLayer.swift */,
+				E33821A8DA4AE365EF2FFE0E933DC3DB /* MKNavigationBar.swift */,
+				9A6300882D9C8C9B1D06D8E7F191472F /* MKRefreshControl.swift */,
+				8D646A614C0B97A76A3AD05A88ADB246 /* MKSideDrawerViewController.swift */,
+				169C1228E7023C8020CEF26445886B9D /* MKSnackbar.swift */,
+				085B50876E3B516AA1C3013F01322E46 /* MKSwitch.swift */,
+				2FB029BC53A2AF38E13C7F60C823AD62 /* MKTableViewCell.swift */,
+				147C8C5B2439EA00DD2788C56F5446A3 /* MKTextField.swift */,
+				48814989FEFF18499FB2D7C154581B88 /* Support Files */,
+			);
+			path = MaterialKit;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -280,68 +331,68 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C5515229EF2C863CFBA0F412A41273D6 /* Pods */,
+				D36F622ED63D92F648F86BAC7BC0DB96 /* Pods */,
 				CA251362D6F8740226302DA67342BA46 /* Products */,
 				F16B44F7EF513F1A8E4D33127A6AD3D3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		87823D5BE10BAF75E9A791A96A7DE50C /* FirebaseAnalytics */ = {
+		9B2D38298586E87C8230573FB7C507B8 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				50114A2E6B221DB8E65087B8FD0D41D4 /* Frameworks */,
+				CBEBF382D200721BDB1737962DEEF710 /* Analytics */,
 			);
-			path = FirebaseAnalytics;
+			path = Firebase;
 			sourceTree = "<group>";
 		};
-		A4F7E4B5728715FCA21DF7D08E5809B7 /* MaterialKit */ = {
+		A7B9315DD1170159DF314E538F486BAB /* GoogleSymbolUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				6A51FEF6298C90F05CF8051E737E7A44 /* MKActivityIndicator.swift */,
-				DF826CC3B10DC48F031FA4B945DFE603 /* MKButton.swift */,
-				F0556FD003CCD43E927520BE7DB51CF5 /* MKCardView.swift */,
-				DAD8EE1B0A75E30AE92777B9D1A0AA80 /* MKCollectionViewCell.swift */,
-				A59260C3B3D1DBD76F72CCCC2EDCDE1A /* MKColor.swift */,
-				042D5243EF38FD189BCF20F15BD7B87A /* MKEmbedDrawerControllerSegue.swift */,
-				444267097B1D67552221784D025E3A6B /* MKEmbedMainControllerSegue.swift */,
-				378F47FE3B1865F30D5D6B60509316C8 /* MKImageView.swift */,
-				26EBF8D35B3D936CAB9F39EA0038DA16 /* MKLabel.swift */,
-				2D3D99566FCBA9FEF7C2DD96E6221B95 /* MKLayer.swift */,
-				426A6EFE8F5288E9944465EDF95C23EB /* MKNavigationBar.swift */,
-				1B36AF031A2FEA8CD14ECF2D72C400F7 /* MKRefreshControl.swift */,
-				A1D89CE8D3B5D27295977CDC6AA8DD46 /* MKSideDrawerViewController.swift */,
-				E9EFA137EBCFEFDAE8021AB10D5EBBE8 /* MKSnackbar.swift */,
-				1C4B31EDBC476ABC4B739308A09F47F4 /* MKSwitch.swift */,
-				8FD18916BAF6EFE0773DAF95D381CCD3 /* MKTableViewCell.swift */,
-				5780F3A18E23F5F25646E47DC90F7E7F /* MKTextField.swift */,
-				4E70BD705CFCD6AEAD7350B833F1E158 /* Support Files */,
+				4F89B7E015ED9B8484D2A62FAC8F5752 /* Frameworks */,
 			);
-			path = MaterialKit;
+			path = GoogleSymbolUtilities;
 			sourceTree = "<group>";
 		};
-		AA5793873859FC6BE02CA68C3B9ECA83 /* FirebaseInstanceID */ = {
+		A80C4C4DCC1C9BEA14C622356612F8B2 /* TextFieldEffects */ = {
 			isa = PBXGroup;
 			children = (
-				E2633469A0941C6256DDA2181DF4909C /* FIRInstanceID.h */,
-				D28D20D77C868805594A0D6F3CA1685E /* Frameworks */,
+				5B89E0773066744F91E131DD639EB2F8 /* AkiraTextField.swift */,
+				1EA7A26D5D2A203C020A5D02C2EEDCFD /* HoshiTextField.swift */,
+				F79848D10ED3E7DBA7FAA473D5A61E54 /* IsaoTextField.swift */,
+				3444646B1664C67394AA32101CADDF30 /* JiroTextField.swift */,
+				B0FD77E3C704F71A30CBC60B367EBA03 /* KaedeTextField.swift */,
+				1AF6B841C83242641C1F9378C6383CF9 /* MadokaTextField.swift */,
+				3B8474CDF4237A4E81049E0C1A9BC2CB /* MinoruTextField.swift */,
+				9D90D070AD051DDD4A8EA0303846B75D /* TextFieldsEffects.swift */,
+				A2E3295716B1586F9CF08211561B6EBB /* YokoTextField.swift */,
+				9D96E70AC804530DE8E8A130A9B30817 /* YoshikoTextField.swift */,
+				048A4A621A087B07D84E1A881C124644 /* Support Files */,
 			);
-			path = FirebaseInstanceID;
+			path = TextFieldEffects;
 			sourceTree = "<group>";
 		};
-		B1A7A3E86E72B76949400C5B2668ABA8 /* FirebaseDatabase */ = {
+		AAD2F0CD2B48AC7527CA3F8C9E135615 /* GoogleUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				39ECA8F42BC34810C12AD7973449AB13 /* Frameworks */,
-			);
-			path = FirebaseDatabase;
-			sourceTree = "<group>";
-		};
-		B4824C8358A505D7C64EC124FA213493 /* GoogleUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				38CDB249FED12908FB9F06E91654D3A4 /* Frameworks */,
+				13DF599C85CF9FCE89EA4C6032A7F7B1 /* Frameworks */,
 			);
 			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		AFB59D9BDC086AF3F78A73E03A7E7524 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				190DD783E3CF4F729CC315C5696E82C3 /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B81587F5D962E2EBA622B5E74E37C813 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				924662BF85D029B06FF9D572EC6A5583 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -350,22 +401,6 @@
 				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C5515229EF2C863CFBA0F412A41273D6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0F4CE5095793C32A842A531B1A11F10C /* Firebase */,
-				87823D5BE10BAF75E9A791A96A7DE50C /* FirebaseAnalytics */,
-				B1A7A3E86E72B76949400C5B2668ABA8 /* FirebaseDatabase */,
-				AA5793873859FC6BE02CA68C3B9ECA83 /* FirebaseInstanceID */,
-				14F541E540ED446FE8B24C4685A6F96C /* GoogleInterchangeUtilities */,
-				575BC4A4A9C7C5E45C12206884AC0326 /* GoogleSymbolUtilities */,
-				B4824C8358A505D7C64EC124FA213493 /* GoogleUtilities */,
-				A4F7E4B5728715FCA21DF7D08E5809B7 /* MaterialKit */,
-				531DD947A0D05BA58138E4E030E3C835 /* TextFieldEffects */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		CA251362D6F8740226302DA67342BA46 /* Products */ = {
@@ -378,28 +413,55 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE05D85435A60570B6386104E9B31A6A /* Frameworks */ = {
+		CA3437E9BADDF745435CBC1EBFF0F6AD /* FirebaseAuth */ = {
 			isa = PBXGroup;
 			children = (
-				6750BA382F7BF21AAF52A6881439EC26 /* GoogleInterchangeUtilities.framework */,
+				02ED8D907279ACF42DA61A7ABFE73287 /* Frameworks */,
 			);
-			name = Frameworks;
+			path = FirebaseAuth;
 			sourceTree = "<group>";
 		};
-		D28D20D77C868805594A0D6F3CA1685E /* Frameworks */ = {
+		CBEBF382D200721BDB1737962DEEF710 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				AC7FECC6C330F79E8F2F7FD7C1380AB2 /* FirebaseInstanceID.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D894955C4826C7C97AA0BA92D897443B /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				D58C9BAF374F0E5FCC79790614573747 /* Firebase.h */,
+				4E07D013DA9656A5A282D091ACBC8617 /* Firebase.h */,
 			);
 			name = Analytics;
+			sourceTree = "<group>";
+		};
+		D36F622ED63D92F648F86BAC7BC0DB96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B2D38298586E87C8230573FB7C507B8 /* Firebase */,
+				1FA9B126AFEADC0CC4AACFEFED1AEDED /* FirebaseAnalytics */,
+				CA3437E9BADDF745435CBC1EBFF0F6AD /* FirebaseAuth */,
+				D600171FF4F4BAA07FE35C77788D106A /* FirebaseDatabase */,
+				460E39BC48297C08B6242DBD4E736625 /* FirebaseInstanceID */,
+				4B72FE9BA034D2957DB96D646AC46FC3 /* GoogleInterchangeUtilities */,
+				4AAFC1D887DD930148A121B5C701508B /* GoogleNetworkingUtilities */,
+				5359CF0C65DC6E9F106638BA253043D1 /* GoogleParsingUtilities */,
+				A7B9315DD1170159DF314E538F486BAB /* GoogleSymbolUtilities */,
+				AAD2F0CD2B48AC7527CA3F8C9E135615 /* GoogleUtilities */,
+				783FC3419890F5D1929526E4EA7B3464 /* MaterialKit */,
+				A80C4C4DCC1C9BEA14C622356612F8B2 /* TextFieldEffects */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D50B6C67DBF0C407684CC463C1053F74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA7C840107CE274F556848E707653D8D /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D600171FF4F4BAA07FE35C77788D106A /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				D50B6C67DBF0C407684CC463C1053F74 /* Frameworks */,
+			);
+			path = FirebaseDatabase;
 			sourceTree = "<group>";
 		};
 		F16B44F7EF513F1A8E4D33127A6AD3D3 /* Targets Support Files */ = {
@@ -408,14 +470,6 @@
 				258AF20C2FE6623A83A6A02D376432BA /* Pods-VNL App */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		FAFDBB159922842F222DF496E540F32B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				804876DF922490143164F46F1180A494 /* GoogleSymbolUtilities.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -672,7 +726,7 @@
 		};
 		4BC109F45C6225A6AB57BBCE8B78219B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9F3BE2E52132EE841D1EFC235272C68 /* TextFieldEffects.xcconfig */;
+			baseConfigurationReference = 5EDA2F5DAACFCE8BBEFB2519FBA0BAF7 /* TextFieldEffects.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -701,7 +755,7 @@
 		};
 		4EB67690164CCA80CD3B9ECCF1F8A3F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF73C7EE76561BAADF84BFA070E6BB54 /* MaterialKit.xcconfig */;
+			baseConfigurationReference = C969B2D270D742E36CBDC3F44840DCEC /* MaterialKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -807,7 +861,7 @@
 		};
 		8696C2A0E2371F728806D4B5B1D8EDDC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9F3BE2E52132EE841D1EFC235272C68 /* TextFieldEffects.xcconfig */;
+			baseConfigurationReference = 5EDA2F5DAACFCE8BBEFB2519FBA0BAF7 /* TextFieldEffects.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -837,7 +891,7 @@
 		};
 		ACE7CAAC5DD4C2C47BB1147240457D90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF73C7EE76561BAADF84BFA070E6BB54 /* MaterialKit.xcconfig */;
+			baseConfigurationReference = C969B2D270D742E36CBDC3F44840DCEC /* MaterialKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
