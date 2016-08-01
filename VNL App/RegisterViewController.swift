@@ -84,9 +84,11 @@ class RegisterViewController: UIViewController {
         AppState.sharedInstance.signedIn = true
         NSNotificationCenter.defaultCenter().postNotificationName(Constants.NotificationKeys.SignedIn, object: nil, userInfo: nil)
         
-        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        let homeNavigationController = UINavigationController(rootViewController: homeVC)
-        self.presentViewController(homeNavigationController, animated: true, completion: nil)
+//        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+//        let homeNavigationController = UINavigationController(rootViewController: homeVC)
+//        self.presentViewController(homeNavigationController, animated: true, completion: nil)
+        let navigationViewController = NavigationViewController(nibName: "NavigationViewController", bundle: nil)
+        self.presentViewController(navigationViewController, animated: true, completion: nil)
     }
     
     @IBAction func homeButtonTapped(sender: UIButton) {

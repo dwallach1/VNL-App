@@ -12,42 +12,49 @@ import Firebase
 
 class NavigationViewController: UINavigationController {
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
     var menu: MediumMenu?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         UIApplication.sharedApplication().statusBarStyle = .LightContent
+        self.navigationBar.tintColor = UIColor.VNLDarkBlue()
+        
+        let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        setViewControllers([homeViewController], animated: false)
         
         let item1 = MediumMenuItem(title: "Home") {
             let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-            self.navigationController!.setViewControllers([homeViewController], animated: false)
+            self.setViewControllers([homeViewController], animated: false)
         }
         
         let item2 = MediumMenuItem(title: "Settings") {
-            let settingsTableViewController = SettingsTableViewController(nibName: "SettingsTableViewController", bundle: nil)
-            self.navigationController!.setViewControllers([settingsTableViewController], animated: false)
+            let settingsViewController = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
+            self.setViewControllers([settingsViewController], animated: false)
         }
         
-        let item3 = MediumMenuItem(title: "Logout") {
-            //            let landingViewController = LandingViewController(nibname: "LandingViewController", bundle: nil)
-            //            self.setViewControllers([landingViewController], animated: false)
-            
+        let item3 = MediumMenuItem(title: "Logout") {            
             let firebaseAuth = FIRAuth.auth()
             do {
                 try firebaseAuth?.signOut()
                 AppState.sharedInstance.signedIn = false
                 let landingViewController = LandingViewController(nibName: "LandingViewController", bundle: nil)
-                self.navigationController!.setViewControllers([landingViewController], animated: false)
+//                self.setViewControllers([landingViewController], animated: false)
+                self.presentViewController(landingViewController, animated: true, completion: nil)
             } catch let signOutError as NSError {
                 print ("Error signing out: \(signOutError)")
             }
         }
         
         menu = MediumMenu(items: [item1, item2, item3], forViewController: self)
+        menu!.textColor = UIColor.VNLBlue()
+        menu!.backgroundColor = UIColor.VNLDarkBlue()
+        menu!.highlightTextColor = UIColor.whiteColor()
+        menu!.titleAlignment = .Center
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.viewDidLoad()
     }
     
     func showMenu() {

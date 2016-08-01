@@ -10,7 +10,7 @@ import UIKit
 import MaterialKit
 import Firebase
 
-class LandingViewController: UIViewController {
+class LandingViewController: BaseViewController {
 
     @IBOutlet weak var registerButton: MKButton!
     @IBOutlet weak var loginButton: MKButton!
@@ -18,20 +18,6 @@ class LandingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.VNLDarkBlue()
-        
-//        let filePath = NSBundle.mainBundle().pathForResource("Landing", ofType: "gif")
-//        let gif = NSData(contentsOfFile: filePath!)
-//        
-//        let webViewBG = UIWebView(frame: gifView.frame)
-//        webViewBG.loadData(gif!, MIMEType: "image/gif", textEncodingName: String(), baseURL: NSURL())
-//        webViewBG.userInteractionEnabled = false
-//        webViewBG.center.y = gifView.center.y + 60
-//        webViewBG.center.x = gifView.center.x - 100
-//        webViewBG.frame.size = gifView.frame.size
-//        webViewBG.contentMode = .Center
-////        webViewBG.center = gifView.center
-//        gifView.addSubview(webViewBG)
-
         
         registerButton.setTitleColor(UIColor.VNLBlue(), forState: .Normal)
         registerButton.setTitle("Register", forState: .Normal)
@@ -81,8 +67,9 @@ class LandingViewController: UIViewController {
         homeNavigationController.navigationBar.barTintColor = UIColor.VNLDarkBlue()
 
         
-        self.presentViewController(homeNavigationController, animated: true, completion: nil)
-//        self.presentViewController(HomeViewController(), animated: true, completion: nil)
+//        self.presentViewController(homeNavigationController, animated: true, completion: nil)
+        let navigationViewController = NavigationViewController(nibName: "NavigationViewController", bundle: nil)
+        self.presentViewController(navigationViewController, animated: true, completion: nil)
 
     }
 

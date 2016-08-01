@@ -11,7 +11,7 @@ import MaterialKit
 import TextFieldEffects
 import Firebase
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
 
     @IBOutlet weak var emailField: HoshiTextField!
     @IBOutlet weak var passwordField: HoshiTextField!
@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         self.view.backgroundColor = UIColor.VNLDarkBlue()
         let toolBar = UIToolbar().ToolbarPiker(#selector(dismissPicker))
@@ -102,9 +103,11 @@ class LoginViewController: UIViewController {
         AppState.sharedInstance.signedIn = true
         NSNotificationCenter.defaultCenter().postNotificationName(Constants.NotificationKeys.SignedIn, object: nil, userInfo: nil)
         
-        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        let homeNavigationController = UINavigationController(rootViewController: homeVC)
-        self.presentViewController(homeNavigationController, animated: true, completion: nil)
+//        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+//        let homeNavigationController = UINavigationController(rootViewController: homeVC)
+//        self.presentViewController(homeNavigationController, animated: true, completion: nil)
+        let navigationViewController = NavigationViewController(nibName: "NavigationViewController", bundle: nil)
+        self.presentViewController(navigationViewController, animated: true, completion: nil)
     }
 
     

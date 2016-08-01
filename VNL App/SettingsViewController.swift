@@ -1,5 +1,5 @@
 //
-//  SideMenuViewController.swift
+//  SettingsViewController.swift
 //  VNL App
 //
 //  Created by David Wallach on 8/1/16.
@@ -8,10 +8,13 @@
 
 import UIKit
 
-class SideMenuViewController: UIViewController {
+class SettingsViewController: BaseViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.VNLDarkBlue()
+        print("settings loaded")
+        // Do any additional setup after loading the view.
     }
-    
+
+
 }
