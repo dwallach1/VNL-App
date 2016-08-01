@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MediumMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-VNL App.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>69B82A1FB7169822FBD3CE15F8D5866B</key>
+		<key>6FE604B3558A2B828BDC4F6630746E78</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +37,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EEC4FBB73D6358C9CDBB2F4E028D71C9</key>
+		<key>9CEAD0495F88A5458B3D7F8570A0EA3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1965797D891B63FDCED9AE910F2B1FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

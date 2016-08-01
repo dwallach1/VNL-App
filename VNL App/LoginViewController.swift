@@ -21,28 +21,27 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.VNLBlue()
+        self.view.backgroundColor = UIColor.VNLDarkBlue()
         let toolBar = UIToolbar().ToolbarPiker(#selector(dismissPicker))
 
-        
-        emailField.borderActiveColor = UIColor.whiteColor()
-        emailField.borderInactiveColor = UIColor.whiteColor()
-        emailField.textColor = UIColor.whiteColor()
-        emailField.placeholderColor = UIColor.whiteColor()
+        emailField.borderActiveColor = UIColor.VNLBlue()
+        emailField.borderInactiveColor = UIColor.VNLBlue()
+        emailField.textColor = UIColor.VNLBlue()
+        emailField.placeholderColor = UIColor.VNLBlue()
         emailField.inputAccessoryView = toolBar
         
-        passwordField.borderActiveColor = UIColor.whiteColor()
-        passwordField.borderInactiveColor = UIColor.whiteColor()
-        passwordField.textColor = UIColor.whiteColor()
-        passwordField.placeholderColor = UIColor.whiteColor()
+        passwordField.borderActiveColor = UIColor.VNLBlue()
+        passwordField.borderInactiveColor = UIColor.VNLBlue()
+        passwordField.textColor = UIColor.VNLBlue()
+        passwordField.placeholderColor = UIColor.VNLBlue()
         passwordField.inputAccessoryView = toolBar
         
-        loginButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        loginButton.setTitleColor(UIColor.VNLBlue(), forState: .Normal)
         loginButton.setTitle("Login", forState: .Normal)
-        loginButton.rippleLayerColor = UIColor.whiteColor()
+        loginButton.rippleLayerColor = UIColor.VNLBlue()
         loginButton.backgroundColor = UIColor.clearColor()
         loginButton.layer.borderWidth = 3
-        loginButton.layer.borderColor = UIColor.whiteColor().CGColor
+        loginButton.layer.borderColor = UIColor.VNLBlue().CGColor
         
     }
     

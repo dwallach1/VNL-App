@@ -16,12 +16,11 @@
 // }
 
 
-
 {
   "rooms" : {
     "type" : {
       "rate" : 
-      "amount open" : 
+      "available" : 10 
     } 
   }
 

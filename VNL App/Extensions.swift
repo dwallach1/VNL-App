@@ -20,6 +20,11 @@ extension UIColor {
         let colour = UIColor(red: 134/255, green: 167/255, blue: 193/255, alpha: 1)
         return colour
     }
+    class func VNLDarkBlue() -> UIColor {
+        let colour = UIColor(red: 37/255, green: 41/255, blue: 47/255, alpha: 1)
+        return colour
+    }
+
 }
 
 extension UIToolbar {

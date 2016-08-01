@@ -17,7 +17,7 @@ class LandingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.VNLBlue()
+        self.view.backgroundColor = UIColor.VNLDarkBlue()
         
 //        let filePath = NSBundle.mainBundle().pathForResource("Landing", ofType: "gif")
 //        let gif = NSData(contentsOfFile: filePath!)
@@ -33,20 +33,20 @@ class LandingViewController: UIViewController {
 //        gifView.addSubview(webViewBG)
 
         
-        registerButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        registerButton.setTitleColor(UIColor.VNLBlue(), forState: .Normal)
         registerButton.setTitle("Register", forState: .Normal)
-        registerButton.rippleLayerColor = UIColor.whiteColor()
+        registerButton.rippleLayerColor = UIColor.VNLBlue()
         registerButton.backgroundColor = UIColor.clearColor()
         registerButton.layer.borderWidth = 3
-        registerButton.layer.borderColor = UIColor.whiteColor().CGColor
+        registerButton.layer.borderColor = UIColor.VNLBlue().CGColor
         registerButton.addTarget(self, action: #selector(registerButtonTapped), forControlEvents: .TouchUpInside)
 
-        loginButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        loginButton.setTitleColor(UIColor.VNLBlue(), forState: .Normal)
         loginButton.setTitle("Login", forState: .Normal)
-        loginButton.rippleLayerColor = UIColor.whiteColor()
+        loginButton.rippleLayerColor = UIColor.VNLBlue()
         loginButton.backgroundColor = UIColor.clearColor()
         loginButton.layer.borderWidth = 3
-        loginButton.layer.borderColor = UIColor.whiteColor().CGColor
+        loginButton.layer.borderColor = UIColor.VNLBlue().CGColor
         loginButton.addTarget(self, action: #selector(loginButtonTapped), forControlEvents: .TouchUpInside)
         
     }
@@ -76,7 +76,15 @@ class LandingViewController: UIViewController {
         
         let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
         let homeNavigationController = UINavigationController(rootViewController: homeVC)
+        homeNavigationController.navigationBar.translucent = false
+        homeNavigationController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        homeNavigationController.navigationBar.barTintColor = UIColor.VNLDarkBlue()
+
+        
         self.presentViewController(homeNavigationController, animated: true, completion: nil)
+//        self.presentViewController(HomeViewController(), animated: true, completion: nil)
+
     }
 
 }
+

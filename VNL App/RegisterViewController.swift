@@ -21,30 +21,30 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.VNLBlue()
+        self.view.backgroundColor = UIColor.VNLDarkBlue()
         
-        self.view.backgroundColor = UIColor.VNLBlue()
         let toolBar = UIToolbar().ToolbarPiker(#selector(dismissPicker))
         
-        
-        emailField.borderActiveColor = UIColor.whiteColor()
-        emailField.borderInactiveColor = UIColor.whiteColor()
-        emailField.textColor = UIColor.whiteColor()
-        emailField.placeholderColor = UIColor.whiteColor()
+        emailField.borderActiveColor = UIColor.VNLBlue()
+        emailField.borderInactiveColor = UIColor.VNLBlue()
+        emailField.textColor = UIColor.VNLBlue()
+        emailField.placeholderColor = UIColor.VNLBlue()
         emailField.inputAccessoryView = toolBar
         
-        passwordField.borderActiveColor = UIColor.whiteColor()
-        passwordField.borderInactiveColor = UIColor.whiteColor()
-        passwordField.textColor = UIColor.whiteColor()
-        passwordField.placeholderColor = UIColor.whiteColor()
+        passwordField.borderActiveColor = UIColor.VNLBlue()
+        passwordField.borderInactiveColor = UIColor.VNLBlue()
+        passwordField.textColor = UIColor.VNLBlue()
+        passwordField.placeholderColor = UIColor.VNLBlue()
         passwordField.inputAccessoryView = toolBar
         
-        registerUserButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        registerUserButton.setTitleColor(UIColor.VNLBlue(), forState: .Normal)
         registerUserButton.setTitle("Register", forState: .Normal)
-        registerUserButton.rippleLayerColor = UIColor.whiteColor()
+        registerUserButton.rippleLayerColor = UIColor.VNLBlue()
         registerUserButton.backgroundColor = UIColor.clearColor()
         registerUserButton.layer.borderWidth = 3
-        registerUserButton.layer.borderColor = UIColor.whiteColor().CGColor
+        registerUserButton.layer.borderColor = UIColor.VNLBlue().CGColor
+        
+        homeButton.titleLabel?.textColor = UIColor.VNLBlue()
     }
 
     @IBAction func didTapSignUp(sender: AnyObject) {
@@ -87,6 +87,10 @@ class RegisterViewController: UIViewController {
         let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
         let homeNavigationController = UINavigationController(rootViewController: homeVC)
         self.presentViewController(homeNavigationController, animated: true, completion: nil)
+    }
+    
+    @IBAction func homeButtonTapped(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)   
     }
     
     func dismissPicker() {
