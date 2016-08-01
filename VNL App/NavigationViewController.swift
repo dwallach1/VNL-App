@@ -18,6 +18,7 @@ class NavigationViewController: UINavigationController {
         super.viewDidLoad()
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         self.navigationBar.tintColor = UIColor.VNLDarkBlue()
+        self.navigationBar.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 400)
         
         let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
         setViewControllers([homeViewController], animated: false)

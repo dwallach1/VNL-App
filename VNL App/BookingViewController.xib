@@ -5,9 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="VNL_App" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookingViewController" customModule="VNL_App" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="63f-eK-NeJ" id="WQU-Nn-lsE"/>
+                <outlet property="tableView" destination="9SD-5d-8Qk" id="jM9-wT-u3C"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,17 +16,17 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="63f-eK-NeJ">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9SD-5d-8Qk">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="63f-eK-NeJ" secondAttribute="trailing" id="2Ag-TT-m6I"/>
-                <constraint firstItem="63f-eK-NeJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8II-sH-MLH"/>
-                <constraint firstAttribute="bottom" secondItem="63f-eK-NeJ" secondAttribute="bottom" id="HOT-LT-34m"/>
-                <constraint firstItem="63f-eK-NeJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bgR-Ic-XhX"/>
+                <constraint firstAttribute="bottom" secondItem="9SD-5d-8Qk" secondAttribute="bottom" id="GZI-kP-rcd"/>
+                <constraint firstAttribute="trailing" secondItem="9SD-5d-8Qk" secondAttribute="trailing" id="JEC-dU-xIX"/>
+                <constraint firstItem="9SD-5d-8Qk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RhR-Ft-gjw"/>
+                <constraint firstItem="9SD-5d-8Qk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wqS-0m-yqP"/>
             </constraints>
         </view>
     </objects>
