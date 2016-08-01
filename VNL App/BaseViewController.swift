@@ -20,5 +20,4 @@ class BaseViewController: UIViewController {
         self.title = AppState.sharedInstance.screen
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
-
 }

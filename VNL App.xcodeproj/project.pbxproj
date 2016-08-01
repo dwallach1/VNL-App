@@ -116,17 +116,14 @@
 				63F05EB31D4B610300854B14 /* LoginViewController.xib */,
 				639B0F841D4B91DC00EA49AA /* HomeViewController.swift */,
 				639B0F851D4B91DC00EA49AA /* HomeViewController.xib */,
-				638100A61D4F76960095634C /* SettingsViewController.swift */,
-				638100A71D4F76960095634C /* SettingsViewController.xib */,
-				638100AF1D4F86920095634C /* SettingsTableViewCell.swift */,
-				638100B01D4F86920095634C /* SettingsTableViewCell.xib */,
-				638100AA1D4F7D660095634C /* Hotel Booking */,
+				638100BB1D4FDA000095634C /* Settings */,
+				638100AA1D4F7D660095634C /* Booking */,
 				63F05EB61D4B610E00854B14 /* Supporting Files */,
 			);
 			path = "VNL App";
 			sourceTree = "<group>";
 		};
-		638100AA1D4F7D660095634C /* Hotel Booking */ = {
+		638100AA1D4F7D660095634C /* Booking */ = {
 			isa = PBXGroup;
 			children = (
 				638100B71D4F927D0095634C /* BookingViewController.swift */,
@@ -134,7 +131,18 @@
 				638100AB1D4F7D830095634C /* BookingTableViewCell.swift */,
 				638100AC1D4F7D830095634C /* BookingTableViewCell.xib */,
 			);
-			name = "Hotel Booking";
+			name = Booking;
+			sourceTree = "<group>";
+		};
+		638100BB1D4FDA000095634C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				638100A61D4F76960095634C /* SettingsViewController.swift */,
+				638100A71D4F76960095634C /* SettingsViewController.xib */,
+				638100AF1D4F86920095634C /* SettingsTableViewCell.swift */,
+				638100B01D4F86920095634C /* SettingsTableViewCell.xib */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 		639B0F7B1D4B6A3F00EA49AA /* Images */ = {

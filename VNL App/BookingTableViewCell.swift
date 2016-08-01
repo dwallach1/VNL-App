@@ -10,15 +10,18 @@ import UIKit
 
 class BookingTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var roomImage: UIImageView!
+    @IBOutlet weak var roomTitle: UILabel!
+    @IBOutlet weak var roomSubTitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        roomImage.contentMode = .Left
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }

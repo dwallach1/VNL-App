@@ -11,6 +11,7 @@ import UIKit
 class SettingsViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         AppState.sharedInstance.screen = "Settings"
@@ -27,7 +28,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     
   
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("settingCell", forIndexPath: indexPath) as? SettingsTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("settingCell", forIndexPath: indexPath) as? SettingsTableViewCell
         
         cell?.textLabel?.text = "Hello"
         

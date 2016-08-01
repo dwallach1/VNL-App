@@ -26,6 +26,8 @@ class NavigationViewController: UINavigationController {
         let item1 = MediumMenuItem(title: "Home") {
             let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
             self.setViewControllers([homeViewController], animated: false)
+            AppState.sharedInstance.screen = "Home"
+
         }
         
         let item2 = MediumMenuItem(title: "Settings") {
@@ -41,7 +43,6 @@ class NavigationViewController: UINavigationController {
                 try firebaseAuth?.signOut()
                 AppState.sharedInstance.signedIn = false
                 let landingViewController = LandingViewController(nibName: "LandingViewController", bundle: nil)
-//                self.setViewControllers([landingViewController], animated: false)
                 self.presentViewController(landingViewController, animated: true, completion: nil)
             } catch let signOutError as NSError {
                 print ("Error signing out: \(signOutError)")
@@ -62,6 +63,14 @@ class NavigationViewController: UINavigationController {
     
     func showMenu() {
         menu?.show()
+    }
+    
+    func enableMenu() {
+        menu?.enabled = true
+    }
+    
+    func disableMenu() {
+        menu?.enabled = false
     }
 }
     

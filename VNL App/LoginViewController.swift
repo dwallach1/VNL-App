@@ -106,7 +106,6 @@ class LoginViewController: BaseViewController {
         self.presentViewController(navigationViewController, animated: true, completion: nil)
 
     }
-
     
     func dismissPicker() {
         view.endEditing(true)
