@@ -12,6 +12,7 @@ class SettingsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        AppState.sharedInstance.screen = "Settings"
         print("settings loaded")
         // Do any additional setup after loading the view.
     }

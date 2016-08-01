@@ -7,6 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="VNL_App" customModuleProvider="target">
             <connections>
+                <outlet property="cellFour" destination="tMh-9R-wYh" id="Wtz-QB-NZG"/>
+                <outlet property="cellOne" destination="SFU-r6-9fn" id="Ypt-PS-U1D"/>
+                <outlet property="cellThree" destination="7k4-ak-DkZ" id="x5t-lD-Gp7"/>
+                <outlet property="cellTwo" destination="53J-gR-RCR" id="8Sv-IC-N6X"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,16 +27,16 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFU-r6-9fn" userLabel="CellOne">
-                    <rect key="frame" x="30" y="100" width="125" height="100"/>
+                    <rect key="frame" x="20" y="100" width="150" height="150"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="nkk-LA-mLC">
-                            <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                         </imageView>
                         <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyJ-RH-Lia" userLabel="Mask">
-                            <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cell One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54H-Zf-6L7">
-                                    <rect key="frame" x="30" y="39.5" width="65" height="21"/>
+                                    <rect key="frame" x="42.5" y="64.5" width="65" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -48,7 +52,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="CyJ-RH-Lia" secondAttribute="bottom" id="2bT-fq-RRn"/>
-                        <constraint firstAttribute="width" constant="125" id="4cR-tz-fzr"/>
+                        <constraint firstAttribute="width" constant="150" id="4cR-tz-fzr"/>
                         <constraint firstItem="nkk-LA-mLC" firstAttribute="top" secondItem="SFU-r6-9fn" secondAttribute="top" id="HWM-6z-HcM"/>
                         <constraint firstAttribute="bottom" secondItem="nkk-LA-mLC" secondAttribute="bottom" id="HWO-nn-6KI"/>
                         <constraint firstItem="CyJ-RH-Lia" firstAttribute="top" secondItem="SFU-r6-9fn" secondAttribute="top" id="XgJ-5u-AM1"/>
@@ -56,20 +60,20 @@
                         <constraint firstItem="nkk-LA-mLC" firstAttribute="leading" secondItem="SFU-r6-9fn" secondAttribute="leading" id="f1L-ns-7vw"/>
                         <constraint firstAttribute="trailing" secondItem="CyJ-RH-Lia" secondAttribute="trailing" id="kBl-RI-Owf"/>
                         <constraint firstItem="CyJ-RH-Lia" firstAttribute="leading" secondItem="SFU-r6-9fn" secondAttribute="leading" id="r5f-c5-f7T"/>
-                        <constraint firstAttribute="height" constant="100" id="vZz-1z-vdk"/>
+                        <constraint firstAttribute="height" constant="150" id="vZz-1z-vdk"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53J-gR-RCR" userLabel="CellTwo">
-                    <rect key="frame" x="445" y="100" width="125" height="100"/>
+                    <rect key="frame" x="430" y="100" width="150" height="150"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Um9-ec-GiL">
-                            <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                         </imageView>
                         <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJh-Vr-xhW" userLabel="Mask">
-                            <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cell Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUk-MO-LaQ">
-                                    <rect key="frame" x="30" y="39.5" width="65" height="21"/>
+                                    <rect key="frame" x="42.5" y="64.5" width="65" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -95,16 +99,16 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7k4-ak-DkZ" userLabel="CellThree">
-                    <rect key="frame" x="30" y="240" width="125" height="100"/>
+                    <rect key="frame" x="20" y="300" width="150" height="150"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="I7d-Mv-VkL">
-                            <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                         </imageView>
                         <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Mi-Xj-ywJ">
-                            <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cell Three" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDR-mA-Pg8">
-                                    <rect key="frame" x="23.5" y="39.5" width="78" height="21"/>
+                                    <rect key="frame" x="36" y="64.5" width="78" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -130,16 +134,16 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMh-9R-wYh" userLabel="CellFour">
-                    <rect key="frame" x="445" y="240" width="125" height="100"/>
+                    <rect key="frame" x="430" y="300" width="150" height="150"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="eOf-e2-02r">
-                            <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                         </imageView>
                         <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAY-x9-4US">
-                            <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cell Four" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oL4-ie-LgR">
-                                    <rect key="frame" x="28.5" y="39" width="68" height="21"/>
+                                    <rect key="frame" x="41" y="64" width="68" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -167,21 +171,21 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="SFU-r6-9fn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="06L-XS-m8T"/>
+                <constraint firstItem="SFU-r6-9fn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="06L-XS-m8T"/>
                 <constraint firstItem="53J-gR-RCR" firstAttribute="width" secondItem="SFU-r6-9fn" secondAttribute="width" id="0c1-Lr-zTn"/>
                 <constraint firstItem="7k4-ak-DkZ" firstAttribute="width" secondItem="SFU-r6-9fn" secondAttribute="width" id="2t8-2h-AV6"/>
                 <constraint firstItem="53J-gR-RCR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="3gA-Kc-H7Q"/>
                 <constraint firstAttribute="bottom" secondItem="Gsg-gy-7M0" secondAttribute="bottom" constant="15" id="5xT-5u-lhu"/>
                 <constraint firstItem="tMh-9R-wYh" firstAttribute="height" secondItem="53J-gR-RCR" secondAttribute="height" id="Emo-Bg-eI3"/>
                 <constraint firstItem="7k4-ak-DkZ" firstAttribute="height" secondItem="SFU-r6-9fn" secondAttribute="height" id="GIR-rx-6eb"/>
-                <constraint firstAttribute="trailing" secondItem="53J-gR-RCR" secondAttribute="trailing" constant="30" id="NSF-Sr-D7p"/>
-                <constraint firstItem="7k4-ak-DkZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Vpb-a2-eW1"/>
+                <constraint firstAttribute="trailing" secondItem="53J-gR-RCR" secondAttribute="trailing" constant="20" id="NSF-Sr-D7p"/>
+                <constraint firstItem="7k4-ak-DkZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Vpb-a2-eW1"/>
                 <constraint firstItem="53J-gR-RCR" firstAttribute="height" secondItem="SFU-r6-9fn" secondAttribute="height" id="eXa-5L-dOm"/>
-                <constraint firstItem="tMh-9R-wYh" firstAttribute="top" secondItem="53J-gR-RCR" secondAttribute="bottom" constant="40" id="gTg-Cr-NW5"/>
-                <constraint firstAttribute="trailing" secondItem="tMh-9R-wYh" secondAttribute="trailing" constant="30" id="jhs-ti-kx4"/>
+                <constraint firstItem="tMh-9R-wYh" firstAttribute="top" secondItem="53J-gR-RCR" secondAttribute="bottom" constant="50" id="gTg-Cr-NW5"/>
+                <constraint firstAttribute="trailing" secondItem="tMh-9R-wYh" secondAttribute="trailing" constant="20" id="jhs-ti-kx4"/>
                 <constraint firstItem="tMh-9R-wYh" firstAttribute="width" secondItem="53J-gR-RCR" secondAttribute="width" id="kpd-Xc-olL"/>
                 <constraint firstItem="SFU-r6-9fn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="uvB-5t-Kg6"/>
-                <constraint firstItem="7k4-ak-DkZ" firstAttribute="top" secondItem="SFU-r6-9fn" secondAttribute="bottom" constant="40" id="vgc-7C-5NC"/>
+                <constraint firstItem="7k4-ak-DkZ" firstAttribute="top" secondItem="SFU-r6-9fn" secondAttribute="bottom" constant="50" id="vgc-7C-5NC"/>
                 <constraint firstItem="Gsg-gy-7M0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yon-Uf-4GX"/>
             </constraints>
             <point key="canvasLocation" x="239" y="233"/>

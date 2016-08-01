@@ -13,6 +13,8 @@
 		631C216B1D4A10A000F5EC19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 631C216A1D4A10A000F5EC19 /* GoogleService-Info.plist */; };
 		638100A81D4F76960095634C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638100A61D4F76960095634C /* SettingsViewController.swift */; };
 		638100A91D4F76960095634C /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638100A71D4F76960095634C /* SettingsViewController.xib */; };
+		638100AD1D4F7D830095634C /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638100AB1D4F7D830095634C /* BookingTableViewCell.swift */; };
+		638100AE1D4F7D830095634C /* BookingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638100AC1D4F7D830095634C /* BookingTableViewCell.xib */; };
 		639B0F7D1D4B6A5100EA49AA /* Landing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 639B0F7C1D4B6A5100EA49AA /* Landing.gif */; };
 		639B0F801D4B6A8100EA49AA /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */; };
 		639B0F811D4B6A8100EA49AA /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639B0F7F1D4B6A8100EA49AA /* LandingViewController.xib */; };
@@ -25,11 +27,8 @@
 		639B0F8F1D4B95EC00EA49AA /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639B0F8D1D4B95EC00EA49AA /* RegisterViewController.xib */; };
 		63DCCCE61D4F31790045FB7F /* HotelBookingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DCCCE41D4F31790045FB7F /* HotelBookingTableViewController.swift */; };
 		63DCCCE71D4F31790045FB7F /* HotelBookingTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63DCCCE51D4F31790045FB7F /* HotelBookingTableViewController.xib */; };
-		63DCCCEA1D4F31EB0045FB7F /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DCCCE81D4F31EB0045FB7F /* SettingsTableViewController.swift */; };
-		63DCCCEB1D4F31EB0045FB7F /* SettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63DCCCE91D4F31EB0045FB7F /* SettingsTableViewController.xib */; };
 		63DCCCF11D4F49290045FB7F /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DCCCF01D4F49290045FB7F /* NavigationViewController.swift */; };
 		63DCCD0D1D4F5FA30045FB7F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DCCD0B1D4F5FA30045FB7F /* BaseViewController.swift */; };
-		63DCCD0E1D4F5FA30045FB7F /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63DCCD0C1D4F5FA30045FB7F /* BaseViewController.xib */; };
 		63F05EB41D4B610300854B14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F05EB21D4B610300854B14 /* LoginViewController.swift */; };
 		63F05EB51D4B610300854B14 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F05EB31D4B610300854B14 /* LoginViewController.xib */; };
 		CC26F598E08F5CE6267E13C2 /* Pods_VNL_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C82D0500C0985FF5F1090F2 /* Pods_VNL_App.framework */; };
@@ -45,6 +44,8 @@
 		631C216A1D4A10A000F5EC19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		638100A61D4F76960095634C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		638100A71D4F76960095634C /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		638100AB1D4F7D830095634C /* BookingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
+		638100AC1D4F7D830095634C /* BookingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingTableViewCell.xib; sourceTree = "<group>"; };
 		639B0F7C1D4B6A5100EA49AA /* Landing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Landing.gif; path = images/Landing.gif; sourceTree = SOURCE_ROOT; };
 		639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		639B0F7F1D4B6A8100EA49AA /* LandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
@@ -57,11 +58,8 @@
 		639B0F8D1D4B95EC00EA49AA /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		63DCCCE41D4F31790045FB7F /* HotelBookingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelBookingTableViewController.swift; sourceTree = "<group>"; };
 		63DCCCE51D4F31790045FB7F /* HotelBookingTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelBookingTableViewController.xib; sourceTree = "<group>"; };
-		63DCCCE81D4F31EB0045FB7F /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
-		63DCCCE91D4F31EB0045FB7F /* SettingsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTableViewController.xib; sourceTree = "<group>"; };
 		63DCCCF01D4F49290045FB7F /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		63DCCD0B1D4F5FA30045FB7F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		63DCCD0C1D4F5FA30045FB7F /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		63F05EB21D4B610300854B14 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		63F05EB31D4B610300854B14 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		8F5818EB5AE2B319892AE944 /* Pods-VNL App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VNL App.release.xcconfig"; path = "Pods/Target Support Files/Pods-VNL App/Pods-VNL App.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +102,8 @@
 				639B0F7B1D4B6A3F00EA49AA /* Images */,
 				631C21581D4A107900F5EC19 /* AppDelegate.swift */,
 				631C215F1D4A107900F5EC19 /* Assets.xcassets */,
+				63DCCCF01D4F49290045FB7F /* NavigationViewController.swift */,
+				63DCCD0B1D4F5FA30045FB7F /* BaseViewController.swift */,
 				639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */,
 				639B0F7F1D4B6A8100EA49AA /* LandingViewController.xib */,
 				639B0F8C1D4B95EC00EA49AA /* RegisterViewController.swift */,
@@ -112,18 +112,23 @@
 				63F05EB31D4B610300854B14 /* LoginViewController.xib */,
 				639B0F841D4B91DC00EA49AA /* HomeViewController.swift */,
 				639B0F851D4B91DC00EA49AA /* HomeViewController.xib */,
-				63DCCD0B1D4F5FA30045FB7F /* BaseViewController.swift */,
-				63DCCD0C1D4F5FA30045FB7F /* BaseViewController.xib */,
-				63DCCCF01D4F49290045FB7F /* NavigationViewController.swift */,
-				63DCCCE41D4F31790045FB7F /* HotelBookingTableViewController.swift */,
-				63DCCCE51D4F31790045FB7F /* HotelBookingTableViewController.xib */,
-				63DCCCE81D4F31EB0045FB7F /* SettingsTableViewController.swift */,
-				63DCCCE91D4F31EB0045FB7F /* SettingsTableViewController.xib */,
-				63F05EB61D4B610E00854B14 /* Supporting Files */,
 				638100A61D4F76960095634C /* SettingsViewController.swift */,
 				638100A71D4F76960095634C /* SettingsViewController.xib */,
+				638100AA1D4F7D660095634C /* Hotel Booking */,
+				63F05EB61D4B610E00854B14 /* Supporting Files */,
 			);
 			path = "VNL App";
+			sourceTree = "<group>";
+		};
+		638100AA1D4F7D660095634C /* Hotel Booking */ = {
+			isa = PBXGroup;
+			children = (
+				63DCCCE41D4F31790045FB7F /* HotelBookingTableViewController.swift */,
+				63DCCCE51D4F31790045FB7F /* HotelBookingTableViewController.xib */,
+				638100AB1D4F7D830095634C /* BookingTableViewCell.swift */,
+				638100AC1D4F7D830095634C /* BookingTableViewCell.xib */,
+			);
+			name = "Hotel Booking";
 			sourceTree = "<group>";
 		};
 		639B0F7B1D4B6A3F00EA49AA /* Images */ = {
@@ -228,14 +233,13 @@
 			files = (
 				63DCCCE71D4F31790045FB7F /* HotelBookingTableViewController.xib in Resources */,
 				639B0F811D4B6A8100EA49AA /* LandingViewController.xib in Resources */,
+				638100AE1D4F7D830095634C /* BookingTableViewCell.xib in Resources */,
 				63F05EB51D4B610300854B14 /* LoginViewController.xib in Resources */,
 				631C21631D4A107900F5EC19 /* LaunchScreen.storyboard in Resources */,
 				639B0F7D1D4B6A5100EA49AA /* Landing.gif in Resources */,
-				63DCCCEB1D4F31EB0045FB7F /* SettingsTableViewController.xib in Resources */,
 				631C216B1D4A10A000F5EC19 /* GoogleService-Info.plist in Resources */,
 				638100A91D4F76960095634C /* SettingsViewController.xib in Resources */,
 				639B0F871D4B91DC00EA49AA /* HomeViewController.xib in Resources */,
-				63DCCD0E1D4F5FA30045FB7F /* BaseViewController.xib in Resources */,
 				631C21601D4A107900F5EC19 /* Assets.xcassets in Resources */,
 				639B0F8F1D4B95EC00EA49AA /* RegisterViewController.xib in Resources */,
 			);
@@ -298,6 +302,7 @@
 			files = (
 				63DCCCF11D4F49290045FB7F /* NavigationViewController.swift in Sources */,
 				63DCCCE61D4F31790045FB7F /* HotelBookingTableViewController.swift in Sources */,
+				638100AD1D4F7D830095634C /* BookingTableViewCell.swift in Sources */,
 				639B0F861D4B91DC00EA49AA /* HomeViewController.swift in Sources */,
 				63F05EB41D4B610300854B14 /* LoginViewController.swift in Sources */,
 				639B0F801D4B6A8100EA49AA /* LandingViewController.swift in Sources */,
@@ -305,7 +310,6 @@
 				639B0F8E1D4B95EC00EA49AA /* RegisterViewController.swift in Sources */,
 				639B0F891D4B924700EA49AA /* AppState.swift in Sources */,
 				639B0F8B1D4B937A00EA49AA /* Constants.swift in Sources */,
-				63DCCCEA1D4F31EB0045FB7F /* SettingsTableViewController.swift in Sources */,
 				638100A81D4F76960095634C /* SettingsViewController.swift in Sources */,
 				631C21591D4A107900F5EC19 /* AppDelegate.swift in Sources */,
 				639B0F831D4B701E00EA49AA /* Extensions.swift in Sources */,

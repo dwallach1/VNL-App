@@ -14,15 +14,10 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         let icon = UIBarButtonItem(image: UIImage(named: "sideMenuIcon"), style: .Plain, target: navigationController, action: #selector(NavigationViewController.showMenu))
-//        icon.imageInsets = UIEdgeInsetsMake(-10, 0, 0, 0)
         icon.tintColor = UIColor.whiteColor()
         navigationItem.leftBarButtonItem = icon
-//        navigationController?.navigationBar.tintColor = UIColor.VNLBlue()
-        navigationController?.navigationBar.opaque = false
-        navigationController?.navigationBar.translucent = false
-        navigationController?.navigationBar.backgroundColor = UIColor.VNLBlue()
         navigationController?.navigationBar.barTintColor = UIColor.VNLBlue()
-        self.title = "Home"
+        self.title = AppState.sharedInstance.screen
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
 

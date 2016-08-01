@@ -25,17 +25,16 @@ class RegisterViewController: UIViewController {
         
         let toolBar = UIToolbar().ToolbarPiker(#selector(dismissPicker))
         
-        emailField.borderActiveColor = UIColor.VNLBlue()
-        emailField.borderInactiveColor = UIColor.VNLBlue()
-        emailField.textColor = UIColor.VNLBlue()
-        emailField.placeholderColor = UIColor.VNLBlue()
-        emailField.inputAccessoryView = toolBar
+        let textFields : [HoshiTextField] = [passwordField, emailField]
         
-        passwordField.borderActiveColor = UIColor.VNLBlue()
-        passwordField.borderInactiveColor = UIColor.VNLBlue()
-        passwordField.textColor = UIColor.VNLBlue()
-        passwordField.placeholderColor = UIColor.VNLBlue()
-        passwordField.inputAccessoryView = toolBar
+        for field in textFields {
+            field.borderActiveColor = UIColor.VNLBlue()
+            field.borderInactiveColor = UIColor.VNLBlue()
+            field.textColor = UIColor.VNLBlue()
+            field.placeholderColor = UIColor.VNLBlue()
+            field.inputAccessoryView = toolBar
+
+        }
         
         registerUserButton.setTitleColor(UIColor.VNLBlue(), forState: .Normal)
         registerUserButton.setTitle("Register", forState: .Normal)
@@ -83,12 +82,10 @@ class RegisterViewController: UIViewController {
         AppState.sharedInstance.photoUrl = user?.photoURL
         AppState.sharedInstance.signedIn = true
         NSNotificationCenter.defaultCenter().postNotificationName(Constants.NotificationKeys.SignedIn, object: nil, userInfo: nil)
-        
-//        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
-//        let homeNavigationController = UINavigationController(rootViewController: homeVC)
-//        self.presentViewController(homeNavigationController, animated: true, completion: nil)
+
         let navigationViewController = NavigationViewController(nibName: "NavigationViewController", bundle: nil)
         self.presentViewController(navigationViewController, animated: true, completion: nil)
+
     }
     
     @IBAction func homeButtonTapped(sender: UIButton) {

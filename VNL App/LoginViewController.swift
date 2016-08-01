@@ -21,22 +21,21 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         self.view.backgroundColor = UIColor.VNLDarkBlue()
+        
         let toolBar = UIToolbar().ToolbarPiker(#selector(dismissPicker))
+        
+        let textFields : [HoshiTextField] = [passwordField, emailField]
+        
+        for field in textFields {
+            field.borderActiveColor = UIColor.VNLBlue()
+            field.borderInactiveColor = UIColor.VNLBlue()
+            field.textColor = UIColor.VNLBlue()
+            field.placeholderColor = UIColor.VNLBlue()
+            field.inputAccessoryView = toolBar
+            
+        }
 
-        emailField.borderActiveColor = UIColor.VNLBlue()
-        emailField.borderInactiveColor = UIColor.VNLBlue()
-        emailField.textColor = UIColor.VNLBlue()
-        emailField.placeholderColor = UIColor.VNLBlue()
-        emailField.inputAccessoryView = toolBar
-        
-        passwordField.borderActiveColor = UIColor.VNLBlue()
-        passwordField.borderInactiveColor = UIColor.VNLBlue()
-        passwordField.textColor = UIColor.VNLBlue()
-        passwordField.placeholderColor = UIColor.VNLBlue()
-        passwordField.inputAccessoryView = toolBar
-        
         loginButton.setTitleColor(UIColor.VNLBlue(), forState: .Normal)
         loginButton.setTitle("Login", forState: .Normal)
         loginButton.rippleLayerColor = UIColor.VNLBlue()
@@ -103,11 +102,9 @@ class LoginViewController: BaseViewController {
         AppState.sharedInstance.signedIn = true
         NSNotificationCenter.defaultCenter().postNotificationName(Constants.NotificationKeys.SignedIn, object: nil, userInfo: nil)
         
-//        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
-//        let homeNavigationController = UINavigationController(rootViewController: homeVC)
-//        self.presentViewController(homeNavigationController, animated: true, completion: nil)
         let navigationViewController = NavigationViewController(nibName: "NavigationViewController", bundle: nil)
         self.presentViewController(navigationViewController, animated: true, completion: nil)
+
     }
 
     

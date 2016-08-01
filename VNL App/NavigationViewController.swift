@@ -30,6 +30,8 @@ class NavigationViewController: UINavigationController {
         let item2 = MediumMenuItem(title: "Settings") {
             let settingsViewController = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
             self.setViewControllers([settingsViewController], animated: false)
+            AppState.sharedInstance.screen = "Settings"
+
         }
         
         let item3 = MediumMenuItem(title: "Logout") {            
