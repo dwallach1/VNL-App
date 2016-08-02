@@ -19,8 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         
         let landingVC = LandingViewController(nibName: "LandingViewController", bundle: nil)
+        let initialNavigationVC = UINavigationController(rootViewController: landingVC)
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.rootViewController = landingVC
+        self.window?.rootViewController = initialNavigationVC
         self.window?.makeKeyAndVisible()
         return true
     }

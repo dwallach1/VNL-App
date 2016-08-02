@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="EmailField" destination="DXq-Sc-OKz" id="KZc-cz-gIK"/>
                 <outlet property="loginButton" destination="u2K-oP-uWJ" id="ZFA-JD-g5M"/>
+                <outlet property="loginView" destination="OvE-nO-FqU" id="0ci-l1-f00"/>
                 <outlet property="passwordField" destination="zE3-Ci-fcJ" id="Q2u-Co-EzQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,67 +19,67 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VNLlogo" translatesAutoresizingMaskIntoConstraints="NO" id="VMh-5N-d3D">
-                    <rect key="frame" x="175" y="30" width="250" height="50"/>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-nO-FqU" userLabel="Login View">
+                    <rect key="frame" x="20" y="80" width="560" height="440"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zE3-Ci-fcJ" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <rect key="frame" x="10" y="185" width="540" height="75"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2K-oP-uWJ" customClass="MKButton" customModule="MaterialKit">
+                            <rect key="frame" x="425" y="320" width="125" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="51y-Xs-uRM"/>
+                                <constraint firstAttribute="height" constant="30" id="UkB-Cj-Wfc"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="didTapSignIn:" destination="-1" eventType="touchUpInside" id="JGW-Nc-Q7U"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1W2-rT-eft">
+                            <rect key="frame" x="178.5" y="355" width="123" height="30"/>
+                            <state key="normal" title="Forgot password?">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="didRequestPasswordReset:" destination="-1" eventType="touchUpInside" id="fVq-Oy-41b"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXq-Sc-OKz" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <rect key="frame" x="10" y="60" width="540" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="miM-Dj-Yer"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="250" id="rGJ-sC-7oN"/>
-                        <constraint firstAttribute="height" constant="50" id="xby-M2-zcW"/>
+                        <constraint firstItem="1W2-rT-eft" firstAttribute="centerY" secondItem="OvE-nO-FqU" secondAttribute="centerY" constant="150" id="1w7-O1-zZt"/>
+                        <constraint firstItem="zE3-Ci-fcJ" firstAttribute="top" secondItem="DXq-Sc-OKz" secondAttribute="bottom" constant="50" id="490-rH-Pfe"/>
+                        <constraint firstItem="DXq-Sc-OKz" firstAttribute="top" secondItem="OvE-nO-FqU" secondAttribute="top" constant="60" id="9rH-Pb-HZO"/>
+                        <constraint firstAttribute="trailing" secondItem="zE3-Ci-fcJ" secondAttribute="trailing" constant="10" id="ALf-WF-9VN"/>
+                        <constraint firstItem="1W2-rT-eft" firstAttribute="centerX" secondItem="OvE-nO-FqU" secondAttribute="centerX" constant="-40" id="EKX-Xb-tQv"/>
+                        <constraint firstItem="zE3-Ci-fcJ" firstAttribute="leading" secondItem="OvE-nO-FqU" secondAttribute="leading" constant="10" id="PfP-7x-iIj"/>
+                        <constraint firstAttribute="trailing" secondItem="DXq-Sc-OKz" secondAttribute="trailing" constant="10" id="RnA-1d-NKb"/>
+                        <constraint firstItem="u2K-oP-uWJ" firstAttribute="top" secondItem="zE3-Ci-fcJ" secondAttribute="bottom" constant="60" id="Wvp-Ip-ypZ"/>
+                        <constraint firstAttribute="trailing" secondItem="u2K-oP-uWJ" secondAttribute="trailing" constant="10" id="aNU-5w-bRT"/>
+                        <constraint firstItem="zE3-Ci-fcJ" firstAttribute="height" secondItem="DXq-Sc-OKz" secondAttribute="height" id="kBK-cM-oTx"/>
+                        <constraint firstItem="DXq-Sc-OKz" firstAttribute="leading" secondItem="OvE-nO-FqU" secondAttribute="leading" constant="10" id="unv-Bo-Mii"/>
                     </constraints>
-                </imageView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXq-Sc-OKz" customClass="HoshiTextField" customModule="TextFieldEffects">
-                    <rect key="frame" x="30" y="120" width="540" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="miM-Dj-Yer"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zE3-Ci-fcJ" customClass="HoshiTextField" customModule="TextFieldEffects">
-                    <rect key="frame" x="30" y="190" width="540" height="50"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2K-oP-uWJ" customClass="MKButton" customModule="MaterialKit">
-                    <rect key="frame" x="237.5" y="300" width="125" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="125" id="51y-Xs-uRM"/>
-                        <constraint firstAttribute="height" constant="30" id="UkB-Cj-Wfc"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="didTapSignIn:" destination="-1" eventType="touchUpInside" id="JGW-Nc-Q7U"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1W2-rT-eft">
-                    <rect key="frame" x="238.5" y="350" width="123" height="30"/>
-                    <state key="normal" title="Forgot password?">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="didRequestPasswordReset:" destination="-1" eventType="touchUpInside" id="fVq-Oy-41b"/>
-                    </connections>
-                </button>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="DXq-Sc-OKz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AEI-Cc-KcN"/>
-                <constraint firstItem="u2K-oP-uWJ" firstAttribute="top" secondItem="zE3-Ci-fcJ" secondAttribute="bottom" constant="60" id="CHD-6h-K41"/>
-                <constraint firstItem="1W2-rT-eft" firstAttribute="top" secondItem="u2K-oP-uWJ" secondAttribute="bottom" constant="20" id="D9u-0V-JP8"/>
-                <constraint firstItem="VMh-5N-d3D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FiX-lH-Sm4"/>
-                <constraint firstItem="zE3-Ci-fcJ" firstAttribute="top" secondItem="DXq-Sc-OKz" secondAttribute="bottom" constant="20" id="R03-Rq-dXM"/>
-                <constraint firstItem="DXq-Sc-OKz" firstAttribute="top" secondItem="VMh-5N-d3D" secondAttribute="bottom" constant="40" id="UBq-mH-fTB"/>
-                <constraint firstItem="1W2-rT-eft" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZZm-2A-vFr"/>
-                <constraint firstItem="zE3-Ci-fcJ" firstAttribute="height" secondItem="DXq-Sc-OKz" secondAttribute="height" id="bIZ-NH-h7Y"/>
-                <constraint firstAttribute="trailing" secondItem="DXq-Sc-OKz" secondAttribute="trailing" constant="30" id="fKi-wq-RLk"/>
-                <constraint firstItem="zE3-Ci-fcJ" firstAttribute="width" secondItem="DXq-Sc-OKz" secondAttribute="width" id="ivQ-ZI-JZv"/>
-                <constraint firstItem="DXq-Sc-OKz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="meh-rz-PUN"/>
-                <constraint firstItem="zE3-Ci-fcJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pkr-Ce-IvF"/>
-                <constraint firstItem="u2K-oP-uWJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="snt-4c-tIw"/>
-                <constraint firstItem="VMh-5N-d3D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="w6j-wf-gVB"/>
+                <constraint firstItem="OvE-nO-FqU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="IMS-q9-aw0"/>
+                <constraint firstItem="OvE-nO-FqU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Pre-oF-fY8"/>
+                <constraint firstAttribute="trailing" secondItem="OvE-nO-FqU" secondAttribute="trailing" constant="20" id="gi8-ET-nIR"/>
+                <constraint firstAttribute="bottom" secondItem="OvE-nO-FqU" secondAttribute="bottom" constant="80" id="q3d-gX-fZ6"/>
             </constraints>
+            <point key="canvasLocation" x="277" y="293"/>
         </view>
     </objects>
-    <resources>
-        <image name="VNLlogo" width="344" height="60"/>
-    </resources>
 </document>

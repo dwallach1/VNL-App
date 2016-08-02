@@ -12,4 +12,5 @@ target 'VNL App' do
   pod 'TextFieldEffects'
   pod 'MaterialKit', '~> 0.4'
   pod 'MediumMenu'
+  pod 'JTAppleCalendar'
 end

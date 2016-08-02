@@ -30,9 +30,37 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("settingCell", forIndexPath: indexPath) as? SettingsTableViewCell
         
-        cell?.textLabel?.text = "Hello"
-        
-        return cell!
+        let section = indexPath.section
+        switch section {
+            case 0:
+                if indexPath.row == 0 {
+                    cell?.titleLabel?.text = "Allow Push Notifications"
+                    cell?.pushSwitch.hidden = false
+                }
+                if indexPath.row == 1 {
+                    cell?.titleLabel?.text = "Join Our Email List"
+                }
+                return cell!
+            case 1:
+                cell?.titleLabel?.text = "Add or Update Credit Card"
+                return cell!
+            case 2:
+
+                if indexPath.row == 0 {
+                    cell?.titleLabel?.text = "Change Password"
+                }
+                else if indexPath.row == 1 {
+                    cell?.titleLabel?.text = "Update Hotel Prefrences"
+                }
+                else if indexPath.row == 2 {
+                    cell?.titleLabel?.text = "Delete Account"
+                    cell?.titleLabel?.textColor = UIColor.VNLRed()
+                }
+                return cell!
+
+            default:
+                return cell!
+        }
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -43,22 +71,22 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
 
         switch section {
             case 0:
-                return 3
+                return 2
             case 1:
                 return 1
             default:
-                return 2
+                return 3
         }
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return "Profile"
+            return "Preferences"
         case 1:
             return "Payment"
         default:
-            return "Preferences"
+            return "Profile"
         }
     }
     

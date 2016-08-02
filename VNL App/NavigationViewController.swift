@@ -54,11 +54,12 @@ class NavigationViewController: UINavigationController {
         menu!.backgroundColor = UIColor.VNLDarkBlue()
         menu!.highlightTextColor = UIColor.whiteColor()
         menu!.titleAlignment = .Center
-        
+        menu!.enabled = true
     }
     
     override func viewDidAppear(animated: Bool) {
         self.viewDidLoad()
+       
     }
     
     func showMenu() {

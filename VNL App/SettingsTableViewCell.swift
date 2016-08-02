@@ -10,9 +10,13 @@ import UIKit
 
 class SettingsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var pushSwitch: UISwitch!
+    @IBOutlet weak var titleLabel: UILabel!
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        pushSwitch.hidden = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

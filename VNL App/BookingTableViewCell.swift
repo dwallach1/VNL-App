@@ -16,7 +16,6 @@ class BookingTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        roomImage.contentMode = .Left
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

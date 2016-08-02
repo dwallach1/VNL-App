@@ -19,7 +19,10 @@
 		638100B21D4F86920095634C /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638100B01D4F86920095634C /* SettingsTableViewCell.xib */; };
 		638100B91D4F927D0095634C /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638100B71D4F927D0095634C /* BookingViewController.swift */; };
 		638100BA1D4F927D0095634C /* BookingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638100B81D4F927D0095634C /* BookingViewController.xib */; };
-		639B0F7D1D4B6A5100EA49AA /* Landing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 639B0F7C1D4B6A5100EA49AA /* Landing.gif */; };
+		638D46681D50878B0073201E /* CalendarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D46661D50878B0073201E /* CalendarViewCell.swift */; };
+		638D46691D50878B0073201E /* CalendarViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638D46671D50878B0073201E /* CalendarViewCell.xib */; };
+		638D466C1D5088B40073201E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D466A1D5088B40073201E /* CalendarViewController.swift */; };
+		638D466D1D5088B40073201E /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638D466B1D5088B40073201E /* CalendarViewController.xib */; };
 		639B0F801D4B6A8100EA49AA /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */; };
 		639B0F811D4B6A8100EA49AA /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639B0F7F1D4B6A8100EA49AA /* LandingViewController.xib */; };
 		639B0F831D4B701E00EA49AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639B0F821D4B701E00EA49AA /* Extensions.swift */; };
@@ -52,7 +55,10 @@
 		638100B01D4F86920095634C /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
 		638100B71D4F927D0095634C /* BookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
 		638100B81D4F927D0095634C /* BookingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingViewController.xib; sourceTree = "<group>"; };
-		639B0F7C1D4B6A5100EA49AA /* Landing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Landing.gif; path = images/Landing.gif; sourceTree = SOURCE_ROOT; };
+		638D46661D50878B0073201E /* CalendarViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewCell.swift; sourceTree = "<group>"; };
+		638D46671D50878B0073201E /* CalendarViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewCell.xib; sourceTree = "<group>"; };
+		638D466A1D5088B40073201E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		638D466B1D5088B40073201E /* CalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		639B0F7F1D4B6A8100EA49AA /* LandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
 		639B0F821D4B701E00EA49AA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -103,7 +109,6 @@
 		631C21571D4A107900F5EC19 /* VNL App */ = {
 			isa = PBXGroup;
 			children = (
-				639B0F7B1D4B6A3F00EA49AA /* Images */,
 				631C21581D4A107900F5EC19 /* AppDelegate.swift */,
 				631C215F1D4A107900F5EC19 /* Assets.xcassets */,
 				63DCCCF01D4F49290045FB7F /* NavigationViewController.swift */,
@@ -116,8 +121,8 @@
 				63F05EB31D4B610300854B14 /* LoginViewController.xib */,
 				639B0F841D4B91DC00EA49AA /* HomeViewController.swift */,
 				639B0F851D4B91DC00EA49AA /* HomeViewController.xib */,
-				638100BB1D4FDA000095634C /* Settings */,
 				638100AA1D4F7D660095634C /* Booking */,
+				638100BB1D4FDA000095634C /* Settings */,
 				63F05EB61D4B610E00854B14 /* Supporting Files */,
 			);
 			path = "VNL App";
@@ -130,6 +135,7 @@
 				638100B81D4F927D0095634C /* BookingViewController.xib */,
 				638100AB1D4F7D830095634C /* BookingTableViewCell.swift */,
 				638100AC1D4F7D830095634C /* BookingTableViewCell.xib */,
+				638D46651D5087440073201E /* Calendar */,
 			);
 			name = Booking;
 			sourceTree = "<group>";
@@ -145,12 +151,15 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
-		639B0F7B1D4B6A3F00EA49AA /* Images */ = {
+		638D46651D5087440073201E /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				639B0F7C1D4B6A5100EA49AA /* Landing.gif */,
+				638D466A1D5088B40073201E /* CalendarViewController.swift */,
+				638D466B1D5088B40073201E /* CalendarViewController.xib */,
+				638D46661D50878B0073201E /* CalendarViewCell.swift */,
+				638D46671D50878B0073201E /* CalendarViewCell.xib */,
 			);
-			name = Images;
+			name = Calendar;
 			sourceTree = "<group>";
 		};
 		63F05EB61D4B610E00854B14 /* Supporting Files */ = {
@@ -246,10 +255,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				639B0F811D4B6A8100EA49AA /* LandingViewController.xib in Resources */,
+				638D46691D50878B0073201E /* CalendarViewCell.xib in Resources */,
 				638100AE1D4F7D830095634C /* BookingTableViewCell.xib in Resources */,
 				63F05EB51D4B610300854B14 /* LoginViewController.xib in Resources */,
 				631C21631D4A107900F5EC19 /* LaunchScreen.storyboard in Resources */,
-				639B0F7D1D4B6A5100EA49AA /* Landing.gif in Resources */,
+				638D466D1D5088B40073201E /* CalendarViewController.xib in Resources */,
 				638100B21D4F86920095634C /* SettingsTableViewCell.xib in Resources */,
 				638100BA1D4F927D0095634C /* BookingViewController.xib in Resources */,
 				631C216B1D4A10A000F5EC19 /* GoogleService-Info.plist in Resources */,
@@ -315,7 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638D466C1D5088B40073201E /* CalendarViewController.swift in Sources */,
 				63DCCCF11D4F49290045FB7F /* NavigationViewController.swift in Sources */,
+				638D46681D50878B0073201E /* CalendarViewCell.swift in Sources */,
 				638100AD1D4F7D830095634C /* BookingTableViewCell.swift in Sources */,
 				639B0F861D4B91DC00EA49AA /* HomeViewController.swift in Sources */,
 				638100B11D4F86920095634C /* SettingsTableViewCell.swift in Sources */,

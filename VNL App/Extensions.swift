@@ -24,6 +24,10 @@ extension UIColor {
         let colour = UIColor(red: 37/255, green: 41/255, blue: 47/255, alpha: 1)
         return colour
     }
+    class func VNLGreen() -> UIColor {
+        let colour = UIColor(red: 131/255, green: 179/255, blue: 72/255, alpha: 1)
+        return colour
+    }
 
 }
 
@@ -47,4 +51,12 @@ extension UIToolbar {
         return toolBar
     }
     
+}
+
+extension UILabel{
+    func addTextSpacing(spacing: CGFloat){
+        let attributedString = NSMutableAttributedString(string: self.text!)
+        attributedString.addAttribute(NSKernAttributeName, value: spacing, range: NSRange(location: 0, length: self.text!.characters.count))
+        self.attributedText = attributedString
+    }
 }

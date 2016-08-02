@@ -13,6 +13,7 @@ import Firebase
 
 class LoginViewController: BaseViewController {
 
+    @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var emailField: HoshiTextField!
     @IBOutlet weak var passwordField: HoshiTextField!
     
@@ -20,29 +21,8 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.backgroundColor = UIColor.VNLDarkBlue()
-        
-        let toolBar = UIToolbar().ToolbarPiker(#selector(dismissPicker))
-        
-        let textFields : [HoshiTextField] = [passwordField, emailField]
-        
-        for field in textFields {
-            field.borderActiveColor = UIColor.VNLBlue()
-            field.borderInactiveColor = UIColor.VNLBlue()
-            field.textColor = UIColor.VNLBlue()
-            field.placeholderColor = UIColor.VNLBlue()
-            field.inputAccessoryView = toolBar
-            
-        }
-
-        loginButton.setTitleColor(UIColor.VNLBlue(), forState: .Normal)
-        loginButton.setTitle("Login", forState: .Normal)
-        loginButton.rippleLayerColor = UIColor.VNLBlue()
-        loginButton.backgroundColor = UIColor.clearColor()
-        loginButton.layer.borderWidth = 3
-        loginButton.layer.borderColor = UIColor.VNLBlue().CGColor
-        
+        self.addBackground()
+        self.initializeConstraints()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -112,5 +92,50 @@ class LoginViewController: BaseViewController {
     }
     
 
+}
+
+
+extension LoginViewController {
+    func addBackground() {
+        // screen width and height:
+        let width = UIScreen.mainScreen().bounds.size.width
+        let height = UIScreen.mainScreen().bounds.size.height
+        
+        let imageViewBackground = UIImageView(frame: CGRectMake(0, 0, width, height))
+        imageViewBackground.image = UIImage(named: "terms2")
+        
+        // you can change the content mode:
+        imageViewBackground.contentMode = UIViewContentMode.ScaleAspectFill
+        imageViewBackground.alpha = 0.7
+        self.view.addSubview(imageViewBackground)
+        self.view.sendSubviewToBack(imageViewBackground)
+    }
+    
+    func initializeConstraints(){
+        
+        let toolBar = UIToolbar().ToolbarPiker(#selector(dismissPicker))
+        let textFields : [HoshiTextField] = [passwordField, emailField]
+        
+        for field in textFields {
+            field.backgroundColor = UIColor.whiteColor()
+            field.borderActiveColor = UIColor.VNLGreen()
+            field.borderInactiveColor = UIColor.VNLGreen()
+            field.textColor = UIColor.blackColor()
+            field.placeholderColor = UIColor.blackColor()
+            field.placeholderFontScale = 1.3
+            field.inputAccessoryView = toolBar
+            
+        }
+        
+        loginButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        loginButton.setTitle("Login", forState: .Normal)
+        loginButton.rippleLayerColor = UIColor.whiteColor()
+        loginButton.backgroundColor = UIColor.VNLBlue()
+        loginButton.layer.cornerRadius = 4
+        
+        loginView.layer.cornerRadius = 4
+        
+        
+    }
 }
 

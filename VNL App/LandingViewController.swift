@@ -10,31 +10,19 @@ import UIKit
 import MaterialKit
 import Firebase
 
-class LandingViewController: BaseViewController {
+class LandingViewController: UIViewController {
 
+    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var registerButton: MKButton!
     @IBOutlet weak var loginButton: MKButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.VNLDarkBlue()
-        
-        let buttons: [MKButton] = [registerButton, loginButton]
-        
-        for button in buttons {
-            button.setTitleColor(UIColor.VNLBlue(), forState: .Normal)
-            button.rippleLayerColor = UIColor.VNLBlue()
-            button.backgroundColor = UIColor.clearColor()
-            button.layer.borderWidth = 3
-            button.layer.borderColor = UIColor.VNLBlue().CGColor
-        }
-        
-        registerButton.setTitle("Register", forState: .Normal)
-        registerButton.addTarget(self, action: #selector(registerButtonTapped), forControlEvents: .TouchUpInside)
-
-        loginButton.setTitle("Login", forState: .Normal)
-        loginButton.addTarget(self, action: #selector(loginButtonTapped), forControlEvents: .TouchUpInside)
-        
+        self.addBackground()
+        self.setButtonAttributes()
+        welcomeLabel.addTextSpacing(9.0)
+        detailLabel.addTextSpacing(4.0)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -64,5 +52,42 @@ class LandingViewController: BaseViewController {
         self.presentViewController(navigationViewController, animated: true, completion: nil)
     }
 
+}
+
+extension LandingViewController {
+    func addBackground() {
+        // screen width and height:
+        let width = UIScreen.mainScreen().bounds.size.width
+        let height = UIScreen.mainScreen().bounds.size.height
+        
+        let imageViewBackground = UIImageView(frame: CGRectMake(0, 0, width, height))
+        imageViewBackground.image = UIImage(named: "Main Background")
+        
+        // you can change the content mode:
+        imageViewBackground.contentMode = UIViewContentMode.ScaleAspectFill
+        
+        self.view.addSubview(imageViewBackground)
+        self.view.sendSubviewToBack(imageViewBackground)
+    }
+}
+
+extension LandingViewController {
+    
+    func setButtonAttributes() {
+        registerButton.backgroundColor = UIColor.VNLRed()
+        registerButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        registerButton.rippleLayerColor = UIColor.blackColor()
+        registerButton.rippleLayerColor.colorWithAlphaComponent(1.0)
+        registerButton.setTitle("CURIOUS?", forState: .Normal)
+        registerButton.addTarget(self, action: #selector(registerButtonTapped), forControlEvents: .TouchUpInside)
+        
+        loginButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.borderColor = UIColor.whiteColor().CGColor
+        loginButton.rippleLayerColor = UIColor.whiteColor()
+        loginButton.setTitle("MEMBERS", forState: .Normal)
+        loginButton.addTarget(self, action: #selector(loginButtonTapped), forControlEvents: .TouchUpInside)
+        
+    }
 }
 
