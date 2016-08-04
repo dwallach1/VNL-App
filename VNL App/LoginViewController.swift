@@ -11,7 +11,7 @@ import MaterialKit
 import TextFieldEffects
 import Firebase
 
-class LoginViewController: BaseViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var emailField: HoshiTextField!
@@ -22,7 +22,7 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addBackground()
-        self.initializeConstraints()
+        self.setAtributes()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -111,18 +111,18 @@ extension LoginViewController {
         self.view.sendSubviewToBack(imageViewBackground)
     }
     
-    func initializeConstraints(){
+    func setAtributes(){
         
         let toolBar = UIToolbar().ToolbarPiker(#selector(dismissPicker))
         let textFields : [HoshiTextField] = [passwordField, emailField]
         
         for field in textFields {
-            field.backgroundColor = UIColor.whiteColor()
+            field.backgroundColor = UIColor.clearColor()
             field.borderActiveColor = UIColor.VNLGreen()
             field.borderInactiveColor = UIColor.VNLGreen()
             field.textColor = UIColor.blackColor()
             field.placeholderColor = UIColor.blackColor()
-            field.placeholderFontScale = 1.3
+            field.placeholderFontScale = 1.1
             field.inputAccessoryView = toolBar
             
         }
@@ -134,8 +134,7 @@ extension LoginViewController {
         loginButton.layer.cornerRadius = 4
         
         loginView.layer.cornerRadius = 4
-        
-        
+        loginView.opaque = true
     }
 }
 

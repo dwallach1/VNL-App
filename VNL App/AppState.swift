@@ -16,5 +16,8 @@ class AppState: NSObject {
     var signedIn = false
     var displayName: String?
     var photoUrl: NSURL?
-    var screen: String = "Home"
+    var screen: String = "home"
+    var selectedCell: String = "home"
+    
+
 }

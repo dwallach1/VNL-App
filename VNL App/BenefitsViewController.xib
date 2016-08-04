@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BenefitsViewController" customModule="VNL_App" customModuleProvider="target">
+            <connections>
+                <outlet property="centerImage" destination="VI5-Rd-FmJ" id="129-Lk-Hgb"/>
+                <outlet property="titleLabel" destination="Wu0-mW-WxQ" id="9Aj-G1-572"/>
+                <outlet property="titleView" destination="YFV-Oc-xbk" id="IU1-6d-emx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFV-Oc-xbk">
+                    <rect key="frame" x="0.0" y="40" width="600" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BENEFITS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wu0-mW-WxQ">
+                            <rect key="frame" x="261.5" y="14" width="77" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="76h-TX-NFq"/>
+                        <constraint firstItem="Wu0-mW-WxQ" firstAttribute="centerX" secondItem="YFV-Oc-xbk" secondAttribute="centerX" id="XGR-ql-aIk"/>
+                        <constraint firstItem="Wu0-mW-WxQ" firstAttribute="centerY" secondItem="YFV-Oc-xbk" secondAttribute="centerY" id="kE7-Hp-v4O"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="benefits1" translatesAutoresizingMaskIntoConstraints="NO" id="VI5-Rd-FmJ">
+                    <rect key="frame" x="0.0" y="120" width="600" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="kQb-78-M5l"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YFV-Oc-xbk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="IiV-I7-enG"/>
+                <constraint firstItem="VI5-Rd-FmJ" firstAttribute="top" secondItem="YFV-Oc-xbk" secondAttribute="bottom" constant="30" id="bIO-fI-lBw"/>
+                <constraint firstAttribute="trailing" secondItem="VI5-Rd-FmJ" secondAttribute="trailing" id="u4o-Gc-XcN"/>
+                <constraint firstItem="VI5-Rd-FmJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ugx-bO-vNQ"/>
+                <constraint firstItem="YFV-Oc-xbk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vUs-st-bIX"/>
+                <constraint firstAttribute="trailing" secondItem="YFV-Oc-xbk" secondAttribute="trailing" id="yIC-gL-R4q"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="benefits1" width="1920" height="500"/>
+    </resources>
+</document>

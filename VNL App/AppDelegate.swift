@@ -20,8 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let landingVC = LandingViewController(nibName: "LandingViewController", bundle: nil)
         let initialNavigationVC = UINavigationController(rootViewController: landingVC)
+//        let navVC = NavigationViewController()
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = initialNavigationVC
+//        self.window?.rootViewController = navVC
         self.window?.makeKeyAndVisible()
         return true
     }

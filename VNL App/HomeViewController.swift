@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import MediumMenu
 import MaterialKit
 
-class HomeViewController: BaseViewController {
+class HomeViewController: UIViewController {
     
     
     @IBOutlet weak var cellOne: UIView!
