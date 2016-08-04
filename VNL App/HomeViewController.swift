@@ -22,10 +22,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.VNLDarkBlue()
-        self.view.frame.size.height = 60
-
-        AppState.sharedInstance.screen = "Home"
-
+        self.title = "Home"
+        
         let cells : [UIView] = [cellOne, cellTwo, cellThree, cellFour]
         
         for cell in cells {
@@ -38,6 +36,17 @@ class HomeViewController: UIViewController {
         
         cellOneButton.rippleEnabled = true
         cellOneButton.rippleLayerColor = UIColor.whiteColor()
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        let sideMenu = UIBarButtonItem(image: UIImage(named: "sideMenuIcon"), style: .Plain, target: self, action: #selector(loggedInSideMenuTapped))
+        sideMenu.tintColor = UIColor.grayColor()
+        self.navigationItem.leftBarButtonItem = sideMenu
+        
+        let profileMenu = UIBarButtonItem(image: UIImage(named: "profileIcon"), style: .Plain, target: self, action: #selector(profileIconTapped))
+        profileMenu.tintColor = UIColor.grayColor()
+        profileMenu.title = "LOGIN"
+        self.navigationItem.rightBarButtonItem = profileMenu
+        
     }
     
     @IBAction func bookingButtonTapped() {

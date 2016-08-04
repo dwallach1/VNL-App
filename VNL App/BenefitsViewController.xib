@@ -18,39 +18,134 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFV-Oc-xbk">
-                    <rect key="frame" x="0.0" y="40" width="600" height="50"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BENEFITS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wu0-mW-WxQ">
-                            <rect key="frame" x="261.5" y="14" width="77" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="76h-TX-NFq"/>
-                        <constraint firstItem="Wu0-mW-WxQ" firstAttribute="centerX" secondItem="YFV-Oc-xbk" secondAttribute="centerX" id="XGR-ql-aIk"/>
-                        <constraint firstItem="Wu0-mW-WxQ" firstAttribute="centerY" secondItem="YFV-Oc-xbk" secondAttribute="centerY" id="kE7-Hp-v4O"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXi-8A-0Ao" userLabel="Slide Show" customClass="ImageSlideshow" customModule="ImageSlideshow">
-                    <rect key="frame" x="0.0" y="130" width="600" height="200"/>
+                    <rect key="frame" x="0.0" y="135" width="600" height="200"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="AcO-J6-d5T"/>
                     </constraints>
                 </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2d8-Ic-6W7">
+                    <rect key="frame" x="0.0" y="355" width="600" height="225"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">By Special arrangement, our benefits include:
+
+Dedicated online host
+No membership charge
+First option on packages
+Special birthday benefits
+Accommodation Upgrade
+Special booking conditions
+Pre-launch announcements
+Exclusive accommodation rates
+Tailored accommodation packages
+R200 VNL Money on first check-in
+Preferential and paperless check-in
+Special rates on exclusive experiences
+International members qualify for local rates
+Complimentary wine with dinner when staying and dining with us
+
+* Terms and conditions apply</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFV-Oc-xbk">
+                    <rect key="frame" x="0.0" y="40" width="600" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BENEFITS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wu0-mW-WxQ">
+                            <rect key="frame" x="254" y="22.5" width="91.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="76h-TX-NFq"/>
+                        <constraint firstItem="Wu0-mW-WxQ" firstAttribute="centerX" secondItem="YFV-Oc-xbk" secondAttribute="centerX" id="XGR-ql-aIk"/>
+                        <constraint firstItem="Wu0-mW-WxQ" firstAttribute="centerY" secondItem="YFV-Oc-xbk" secondAttribute="centerY" id="kE7-Hp-v4O"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="2d8-Ic-6W7" firstAttribute="top" secondItem="NXi-8A-0Ao" secondAttribute="bottom" constant="20" id="0DD-N5-7V5"/>
                 <constraint firstItem="YFV-Oc-xbk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="IiV-I7-enG"/>
-                <constraint firstItem="NXi-8A-0Ao" firstAttribute="top" secondItem="YFV-Oc-xbk" secondAttribute="bottom" constant="40" id="T4s-G2-dgT"/>
+                <constraint firstItem="NXi-8A-0Ao" firstAttribute="top" secondItem="YFV-Oc-xbk" secondAttribute="bottom" constant="25" id="T4s-G2-dgT"/>
+                <constraint firstItem="2d8-Ic-6W7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hPO-wc-mU5"/>
                 <constraint firstItem="NXi-8A-0Ao" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m92-8H-Gi5"/>
                 <constraint firstItem="YFV-Oc-xbk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vUs-st-bIX"/>
                 <constraint firstAttribute="trailing" secondItem="NXi-8A-0Ao" secondAttribute="trailing" id="veH-Ck-k1T"/>
+                <constraint firstAttribute="trailing" secondItem="2d8-Ic-6W7" secondAttribute="trailing" id="x2e-4y-mPo"/>
                 <constraint firstAttribute="trailing" secondItem="YFV-Oc-xbk" secondAttribute="trailing" id="yIC-gL-R4q"/>
+                <constraint firstAttribute="bottom" secondItem="2d8-Ic-6W7" secondAttribute="bottom" constant="20" id="zGe-pe-OoZ"/>
+            </constraints>
+        </view>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kFN-4c-w4b">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xv-Ck-4Lg" userLabel="Slide Show" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                    <rect key="frame" x="0.0" y="125" width="600" height="200"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="uAR-MB-evL"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyx-Kw-Gj0">
+                    <rect key="frame" x="0.0" y="345" width="600" height="235"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">By Special arrangement, our benefits include:
+
+Dedicated online host
+No membership charge
+First option on packages
+Special birthday benefits
+Accommodation Upgrade
+Special booking conditions
+Pre-launch announcements
+Exclusive accommodation rates
+Tailored accommodation packages
+R200 VNL Money on first check-in
+Preferential and paperless check-in
+Special rates on exclusive experiences
+International members qualify for local rates
+Complimentary wine with dinner when staying and dining with us
+
+* Terms and conditions apply</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUK-Kr-NKK">
+                    <rect key="frame" x="0.0" y="40" width="600" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BENEFITS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16E-ix-Icz">
+                            <rect key="frame" x="254" y="17.5" width="91.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="16E-ix-Icz" firstAttribute="centerY" secondItem="sUK-Kr-NKK" secondAttribute="centerY" id="5xd-WV-URn"/>
+                        <constraint firstItem="16E-ix-Icz" firstAttribute="centerX" secondItem="sUK-Kr-NKK" secondAttribute="centerX" id="Bwq-St-xpL"/>
+                        <constraint firstAttribute="height" constant="60" id="ZkP-lI-ASj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sUK-Kr-NKK" firstAttribute="leading" secondItem="kFN-4c-w4b" secondAttribute="leading" id="0y5-V2-eUW"/>
+                <constraint firstItem="3xv-Ck-4Lg" firstAttribute="top" secondItem="sUK-Kr-NKK" secondAttribute="bottom" constant="25" id="5wK-yY-Qgi"/>
+                <constraint firstAttribute="trailing" secondItem="sUK-Kr-NKK" secondAttribute="trailing" id="BGO-0w-3wV"/>
+                <constraint firstAttribute="trailing" secondItem="3xv-Ck-4Lg" secondAttribute="trailing" id="CTh-Qf-Rcg"/>
+                <constraint firstItem="3xv-Ck-4Lg" firstAttribute="leading" secondItem="kFN-4c-w4b" secondAttribute="leading" id="JxV-MG-Ai2"/>
+                <constraint firstItem="sUK-Kr-NKK" firstAttribute="top" secondItem="kFN-4c-w4b" secondAttribute="top" constant="40" id="N8Q-33-deZ"/>
+                <constraint firstAttribute="bottom" secondItem="oyx-Kw-Gj0" secondAttribute="bottom" constant="20" id="NNr-ii-yRn"/>
+                <constraint firstItem="oyx-Kw-Gj0" firstAttribute="leading" secondItem="kFN-4c-w4b" secondAttribute="leading" id="YSW-KA-AL4"/>
+                <constraint firstAttribute="trailing" secondItem="oyx-Kw-Gj0" secondAttribute="trailing" id="eh2-Q4-TIt"/>
+                <constraint firstItem="oyx-Kw-Gj0" firstAttribute="top" secondItem="3xv-Ck-4Lg" secondAttribute="bottom" constant="20" id="y7e-0G-I6k"/>
             </constraints>
         </view>
     </objects>

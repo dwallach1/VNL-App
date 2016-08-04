@@ -79,4 +79,26 @@ extension UIViewController {
         let loginVC = LoginViewController(nibName: "LoginViewController", bundle: nil)
         self.presentViewController(loginVC, animated: true, completion: nil)
     }
+    
+    func loggedInSideMenuTapped() {
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromLeft
+        view.window!.layer.addAnimation(transition, forKey: kCATransition)
+        let memberSideMenuVC = MemberSideViewController(nibName: "MemberSideViewController", bundle: nil)
+        let navigationController = UINavigationController(rootViewController: memberSideMenuVC)
+        presentViewController(navigationController, animated: false, completion: nil)
+    }
+    
+    func profileIconTapped() {
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromRight
+        view.window!.layer.addAnimation(transition, forKey: kCATransition)
+        let profileVC = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
+        let navigationController = UINavigationController(rootViewController: profileVC)
+        presentViewController(navigationController, animated: false, completion: nil)
+    }
 }

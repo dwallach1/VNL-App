@@ -25,9 +25,11 @@
                         <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ro-sh-oZD">
                             <rect key="frame" x="0.0" y="0.0" width="560" height="440"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pae-vj-r5K">
-                                    <rect key="frame" x="257" y="396" width="46" height="30"/>
-                                    <state key="normal" title="Home"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pae-vj-r5K">
+                                    <rect key="frame" x="259.5" y="396" width="41" height="30"/>
+                                    <state key="normal" title="Home">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
                                     <connections>
                                         <action selector="homeButtonTapped:" destination="-1" eventType="touchUpInside" id="Bcy-OC-Qhe"/>
                                     </connections>

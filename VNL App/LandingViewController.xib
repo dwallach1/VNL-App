@@ -7,9 +7,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingViewController" customModule="VNL_App" customModuleProvider="target">
             <connections>
+                <outlet property="curiousButton" destination="wBe-bY-JTA" id="MZC-zr-fuS"/>
                 <outlet property="detailLabel" destination="Rhn-Pt-RQo" id="K0x-eL-hyt"/>
-                <outlet property="loginButton" destination="K8V-uK-Qfz" id="dtx-cf-SN4"/>
-                <outlet property="registerButton" destination="wBe-bY-JTA" id="N57-7b-ih9"/>
+                <outlet property="memberButton" destination="K8V-uK-Qfz" id="cEM-5d-gfN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="welcomeLabel" destination="6Wc-mH-1od" id="vDx-h3-dIq"/>
             </connections>
@@ -33,12 +33,12 @@
                         <constraint firstAttribute="width" constant="150" id="mwg-aw-MBX"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                    <state key="normal" title="Register"/>
+                    <state key="normal" title="Curious?"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8V-uK-Qfz" customClass="MKButton" customModule="MaterialKit">
                     <rect key="frame" x="224.5" y="450" width="150" height="35"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                    <state key="normal" title="Login"/>
+                    <state key="normal" title="Members"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wc-mH-1od">
                     <rect key="frame" x="185" y="270" width="230.5" height="25.5"/>
@@ -59,7 +59,7 @@
                         <constraint firstAttribute="height" constant="30" id="Hdd-LY-0rJ"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="8"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>

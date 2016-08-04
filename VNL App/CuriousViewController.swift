@@ -1,5 +1,5 @@
 //
-//  BenefitsViewController.swift
+//  CuriousViewController.swift
 //  VNL App
 //
 //  Created by David Wallach on 8/4/16.
@@ -9,19 +9,13 @@
 import UIKit
 import ImageSlideshow
 
+class CuriousViewController: UIViewController {
 
-class BenefitsViewController: UIViewController {
-
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var titleView: UIView!
     @IBOutlet var slideshow: ImageSlideshow!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleView.backgroundColor = UIColor.VNLBlue()
-        titleLabel.textColor = UIColor.whiteColor()
-        
+
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         let sideMenu = UIBarButtonItem(image: UIImage(named: "sideMenuIcon"), style: .Plain, target: self, action: #selector(sideMenuTapped))
         sideMenu.tintColor = UIColor.grayColor()
@@ -29,6 +23,7 @@ class BenefitsViewController: UIViewController {
         
         let loginMenu = UIBarButtonItem(image: UIImage(named: "loginIcon"), style: .Plain, target: self, action: #selector(loginIconTapped))
         loginMenu.tintColor = UIColor.grayColor()
+        loginMenu.title = "LOGIN"
         self.navigationItem.rightBarButtonItem = loginMenu
         
         slideshow.backgroundColor = UIColor.whiteColor()
@@ -36,9 +31,7 @@ class BenefitsViewController: UIViewController {
         slideshow.pageControlPosition = PageControlPosition.UnderScrollView
         slideshow.pageControl.currentPageIndicatorTintColor = UIColor.lightGrayColor();
         slideshow.contentScaleMode = .ScaleAspectFill
-        slideshow.setImageInputs([ImageSource(imageString: "benefits1")!, ImageSource(imageString: "benefits2")!, ImageSource(imageString: "benefits3")!])
-
+        slideshow.setImageInputs([ImageSource(imageString: "hermanusp1")!, ImageSource(imageString: "home3_1")!])
     }
-
 
 }

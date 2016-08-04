@@ -14,8 +14,8 @@ class LandingViewController: UIViewController {
 
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var welcomeLabel: UILabel!
-    @IBOutlet weak var registerButton: MKButton!
-    @IBOutlet weak var loginButton: MKButton!
+    @IBOutlet weak var curiousButton: MKButton!
+    @IBOutlet weak var memberButton: MKButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,14 +42,16 @@ class LandingViewController: UIViewController {
         }
     }
 
-    func loginButtonTapped(){
+    func memberButtonTapped(){
         let loginVC = LoginViewController(nibName: "LoginViewController", bundle: nil)
         self.presentViewController(loginVC, animated: true, completion: nil)
     }
     
-    func registerButtonTapped() {
-        let registerVC = RegisterViewController(nibName: "RegisterViewController", bundle: nil)
-        self.presentViewController(registerVC, animated: true, completion: nil)
+    func curiousButtonTapped() {
+        let curiousVC = CuriousViewController(nibName: "CuriousViewController", bundle: nil)
+        let navVC = UINavigationController(rootViewController: curiousVC)
+        self.presentViewController(navVC, animated: true, completion: nil)
+        AppState.sharedInstance.screen = "curious"
     }
     
     func signedIn(user: FIRUser?) {
@@ -82,19 +84,19 @@ extension LandingViewController {
     }
     
     func setButtonAttributes() {
-        registerButton.backgroundColor = UIColor.VNLRed()
-        registerButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        registerButton.rippleLayerColor = UIColor.blackColor()
-        registerButton.rippleLayerColor.colorWithAlphaComponent(1.0)
-        registerButton.setTitle("CURIOUS?", forState: .Normal)
-        registerButton.addTarget(self, action: #selector(registerButtonTapped), forControlEvents: .TouchUpInside)
+        curiousButton.backgroundColor = UIColor.VNLRed()
+        curiousButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        curiousButton.rippleLayerColor = UIColor.blackColor()
+        curiousButton.rippleLayerColor.colorWithAlphaComponent(1.0)
+        curiousButton.setTitle("CURIOUS?", forState: .Normal)
+        curiousButton.addTarget(self, action: #selector(curiousButtonTapped), forControlEvents: .TouchUpInside)
         
-        loginButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        loginButton.layer.borderWidth = 1
-        loginButton.layer.borderColor = UIColor.whiteColor().CGColor
-        loginButton.rippleLayerColor = UIColor.whiteColor()
-        loginButton.setTitle("MEMBERS", forState: .Normal)
-        loginButton.addTarget(self, action: #selector(loginButtonTapped), forControlEvents: .TouchUpInside)
+        memberButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        memberButton.layer.borderWidth = 1
+        memberButton.layer.borderColor = UIColor.whiteColor().CGColor
+        memberButton.rippleLayerColor = UIColor.whiteColor()
+        memberButton.setTitle("MEMBERS", forState: .Normal)
+        memberButton.addTarget(self, action: #selector(memberButtonTapped), forControlEvents: .TouchUpInside)
         
     }
 }

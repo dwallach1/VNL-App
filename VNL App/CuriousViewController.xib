@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CuriousViewController" customModule="VNL_App" customModuleProvider="target">
+            <connections>
+                <outlet property="slideshow" destination="YxW-Ci-Pdz" id="aSY-8F-atD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YxW-Ci-Pdz" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="9fR-41-gCx"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO VNL LEISURE CLUB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3f-Nn-uzJ">
+                    <rect key="frame" x="143.5" y="280" width="313" height="21"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="od3-Cz-ChC">
+                    <rect key="frame" x="144" y="309" width="313" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Lkx-64-b0W"/>
+                        <constraint firstAttribute="width" constant="313" id="cWe-wl-fQO"/>
+                    </constraints>
+                    <string key="text">We offer members amazing experiences at the best rates
+
+Experiences currently being enjoyed by our members:</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A54-Q6-RgZ" userLabel="cell View">
+                    <rect key="frame" x="20" y="429" width="100" height="151"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uhm-jq-EwO">
+                            <rect key="frame" x="0.0" y="70" width="100" height="81"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Romantic package at the Camps Bay Retreat for only ">
+                                    <attributes>
+                                        <color key="NSColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name="Helvetica"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops/>
+                                        </paragraphStyle>
+                                        <color key="NSStrokeColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="R1200">
+                                    <attributes>
+                                        <color key="NSColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops/>
+                                        </paragraphStyle>
+                                        <color key="NSStrokeColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment>
+                                    <string key="content"> per couple
+</string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name="Helvetica"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops/>
+                                        </paragraphStyle>
+                                        <color key="NSStrokeColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="couple" translatesAutoresizingMaskIntoConstraints="NO" id="73B-ZY-xEK">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="HiL-un-u2j"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="6wv-iq-GF7"/>
+                        <constraint firstItem="Uhm-jq-EwO" firstAttribute="top" secondItem="73B-ZY-xEK" secondAttribute="bottom" constant="-5" id="E6y-AR-6IA"/>
+                        <constraint firstItem="73B-ZY-xEK" firstAttribute="leading" secondItem="A54-Q6-RgZ" secondAttribute="leading" id="JX8-G4-zqw"/>
+                        <constraint firstItem="73B-ZY-xEK" firstAttribute="top" secondItem="A54-Q6-RgZ" secondAttribute="top" id="MUZ-GU-Ncj"/>
+                        <constraint firstAttribute="trailing" secondItem="73B-ZY-xEK" secondAttribute="trailing" id="Q4P-fJ-ERk"/>
+                        <constraint firstAttribute="bottom" secondItem="Uhm-jq-EwO" secondAttribute="bottom" id="brG-zZ-iww"/>
+                        <constraint firstItem="Uhm-jq-EwO" firstAttribute="leading" secondItem="A54-Q6-RgZ" secondAttribute="leading" id="td7-RV-IaD"/>
+                        <constraint firstAttribute="trailing" secondItem="Uhm-jq-EwO" secondAttribute="trailing" id="vte-FB-s9h"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUn-Uz-yts" userLabel="cell 2 View">
+                    <rect key="frame" x="250" y="429" width="100" height="151"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campsbay2" translatesAutoresizingMaskIntoConstraints="NO" id="Pzd-hg-qTo">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="mPe-js-5bT"/>
+                            </constraints>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RT2-Tv-MPm">
+                            <rect key="frame" x="0.0" y="70" width="100" height="81"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">School holiday weekend
+getaway in Langebaan from </string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name="Helvetica"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops/>
+                                        </paragraphStyle>
+                                        <color key="NSStrokeColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="R650">
+                                    <attributes>
+                                        <color key="NSColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops/>
+                                        </paragraphStyle>
+                                        <color key="NSStrokeColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment>
+                                    <string key="content"> per person
+</string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name="Helvetica"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops/>
+                                        </paragraphStyle>
+                                        <color key="NSStrokeColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RT2-Tv-MPm" secondAttribute="trailing" id="9cH-0Z-D53"/>
+                        <constraint firstItem="Pzd-hg-qTo" firstAttribute="leading" secondItem="uUn-Uz-yts" secondAttribute="leading" id="9zB-hd-Lqn"/>
+                        <constraint firstAttribute="trailing" secondItem="Pzd-hg-qTo" secondAttribute="trailing" id="HYI-P7-YY1"/>
+                        <constraint firstItem="RT2-Tv-MPm" firstAttribute="top" secondItem="Pzd-hg-qTo" secondAttribute="bottom" constant="-5" id="N6i-5i-mYA"/>
+                        <constraint firstAttribute="bottom" secondItem="RT2-Tv-MPm" secondAttribute="bottom" id="O5n-nD-bKR"/>
+                        <constraint firstAttribute="width" constant="100" id="PqF-sf-rQ7"/>
+                        <constraint firstItem="Pzd-hg-qTo" firstAttribute="top" secondItem="uUn-Uz-yts" secondAttribute="top" id="UCi-SV-efO"/>
+                        <constraint firstItem="RT2-Tv-MPm" firstAttribute="leading" secondItem="uUn-Uz-yts" secondAttribute="leading" id="Z8X-ST-i2E"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HoT-R7-Rdl" userLabel="cell View">
+                    <rect key="frame" x="480" y="429" width="100" height="151"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Icy-xy-b6g">
+                            <rect key="frame" x="0.0" y="70" width="100" height="81"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">Whale watching weekend
+excursion in Hermanus at </string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name="Helvetica"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops/>
+                                        </paragraphStyle>
+                                        <color key="NSStrokeColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="R1400">
+                                    <attributes>
+                                        <color key="NSColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops/>
+                                        </paragraphStyle>
+                                        <color key="NSStrokeColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment>
+                                    <string key="content"> per night
+</string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name="Helvetica"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops/>
+                                        </paragraphStyle>
+                                        <color key="NSStrokeColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whale-watching" translatesAutoresizingMaskIntoConstraints="NO" id="WIV-X2-hBf">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="8DT-2f-b88"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Icy-xy-b6g" firstAttribute="leading" secondItem="HoT-R7-Rdl" secondAttribute="leading" id="9Ss-R7-Erz"/>
+                        <constraint firstAttribute="bottom" secondItem="Icy-xy-b6g" secondAttribute="bottom" id="AAZ-q2-CXj"/>
+                        <constraint firstItem="WIV-X2-hBf" firstAttribute="leading" secondItem="HoT-R7-Rdl" secondAttribute="leading" id="Abj-wA-x0B"/>
+                        <constraint firstAttribute="trailing" secondItem="WIV-X2-hBf" secondAttribute="trailing" id="u9x-fI-8iV"/>
+                        <constraint firstAttribute="trailing" secondItem="Icy-xy-b6g" secondAttribute="trailing" id="wGV-h1-zpn"/>
+                        <constraint firstItem="WIV-X2-hBf" firstAttribute="top" secondItem="HoT-R7-Rdl" secondAttribute="top" id="zFv-uz-Khw"/>
+                        <constraint firstItem="Icy-xy-b6g" firstAttribute="top" secondItem="WIV-X2-hBf" secondAttribute="bottom" constant="-5" id="zfC-FG-Rk4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="HoT-R7-Rdl" secondAttribute="bottom" constant="20" id="8rS-0x-tjf"/>
+                <constraint firstItem="uUn-Uz-yts" firstAttribute="height" secondItem="A54-Q6-RgZ" secondAttribute="height" id="Amr-G8-RKB"/>
+                <constraint firstItem="HoT-R7-Rdl" firstAttribute="height" secondItem="uUn-Uz-yts" secondAttribute="height" id="JJn-RT-HB0"/>
+                <constraint firstItem="od3-Cz-ChC" firstAttribute="top" secondItem="K3f-Nn-uzJ" secondAttribute="bottom" constant="8" id="Llv-S4-1aj"/>
+                <constraint firstItem="HoT-R7-Rdl" firstAttribute="width" secondItem="uUn-Uz-yts" secondAttribute="width" id="Of1-aJ-hbq"/>
+                <constraint firstItem="od3-Cz-ChC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Of9-sA-LGR"/>
+                <constraint firstItem="A54-Q6-RgZ" firstAttribute="top" secondItem="od3-Cz-ChC" secondAttribute="bottom" constant="20" id="R6J-Em-Rem"/>
+                <constraint firstAttribute="bottom" secondItem="uUn-Uz-yts" secondAttribute="bottom" constant="20" id="YcF-qc-Fm1"/>
+                <constraint firstItem="73B-ZY-xEK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="efE-kg-6vT"/>
+                <constraint firstAttribute="bottom" secondItem="RT2-Tv-MPm" secondAttribute="bottom" constant="20" id="erq-Bx-5oM"/>
+                <constraint firstItem="K3f-Nn-uzJ" firstAttribute="top" secondItem="YxW-Ci-Pdz" secondAttribute="bottom" constant="30" id="hyC-rG-mUc"/>
+                <constraint firstItem="od3-Cz-ChC" firstAttribute="width" secondItem="K3f-Nn-uzJ" secondAttribute="width" id="iSP-cN-ixE"/>
+                <constraint firstItem="YxW-Ci-Pdz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iXv-U6-rcD"/>
+                <constraint firstAttribute="bottom" secondItem="Uhm-jq-EwO" secondAttribute="bottom" constant="20" id="k5f-sS-5tU"/>
+                <constraint firstItem="uUn-Uz-yts" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="laF-iI-TcR"/>
+                <constraint firstItem="YxW-Ci-Pdz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mfp-v7-IEU"/>
+                <constraint firstItem="K3f-Nn-uzJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uqh-Jb-UhC"/>
+                <constraint firstItem="uUn-Uz-yts" firstAttribute="width" secondItem="A54-Q6-RgZ" secondAttribute="width" id="vC8-7K-FXr"/>
+                <constraint firstAttribute="trailing" secondItem="HoT-R7-Rdl" secondAttribute="trailing" constant="20" id="yPd-On-tGX"/>
+                <constraint firstAttribute="trailing" secondItem="YxW-Ci-Pdz" secondAttribute="trailing" id="yTQ-5t-HhI"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="campsbay2" width="1920" height="500"/>
+        <image name="couple" width="300" height="200"/>
+        <image name="whale-watching" width="300" height="200"/>
+    </resources>
+</document>
