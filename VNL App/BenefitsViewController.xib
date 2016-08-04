@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BenefitsViewController" customModule="VNL_App" customModuleProvider="target">
             <connections>
-                <outlet property="centerImage" destination="VI5-Rd-FmJ" id="129-Lk-Hgb"/>
+                <outlet property="slideshow" destination="NXi-8A-0Ao" id="sGD-S9-8PB"/>
                 <outlet property="titleLabel" destination="Wu0-mW-WxQ" id="9Aj-G1-572"/>
                 <outlet property="titleView" destination="YFV-Oc-xbk" id="IU1-6d-emx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -35,25 +35,23 @@
                         <constraint firstItem="Wu0-mW-WxQ" firstAttribute="centerY" secondItem="YFV-Oc-xbk" secondAttribute="centerY" id="kE7-Hp-v4O"/>
                     </constraints>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="benefits1" translatesAutoresizingMaskIntoConstraints="NO" id="VI5-Rd-FmJ">
-                    <rect key="frame" x="0.0" y="120" width="600" height="200"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXi-8A-0Ao" userLabel="Slide Show" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                    <rect key="frame" x="0.0" y="130" width="600" height="200"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="200" id="kQb-78-M5l"/>
+                        <constraint firstAttribute="height" constant="200" id="AcO-J6-d5T"/>
                     </constraints>
-                </imageView>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="YFV-Oc-xbk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="IiV-I7-enG"/>
-                <constraint firstItem="VI5-Rd-FmJ" firstAttribute="top" secondItem="YFV-Oc-xbk" secondAttribute="bottom" constant="30" id="bIO-fI-lBw"/>
-                <constraint firstAttribute="trailing" secondItem="VI5-Rd-FmJ" secondAttribute="trailing" id="u4o-Gc-XcN"/>
-                <constraint firstItem="VI5-Rd-FmJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ugx-bO-vNQ"/>
+                <constraint firstItem="NXi-8A-0Ao" firstAttribute="top" secondItem="YFV-Oc-xbk" secondAttribute="bottom" constant="40" id="T4s-G2-dgT"/>
+                <constraint firstItem="NXi-8A-0Ao" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m92-8H-Gi5"/>
                 <constraint firstItem="YFV-Oc-xbk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vUs-st-bIX"/>
+                <constraint firstAttribute="trailing" secondItem="NXi-8A-0Ao" secondAttribute="trailing" id="veH-Ck-k1T"/>
                 <constraint firstAttribute="trailing" secondItem="YFV-Oc-xbk" secondAttribute="trailing" id="yIC-gL-R4q"/>
             </constraints>
         </view>
     </objects>
-    <resources>
-        <image name="benefits1" width="1920" height="500"/>
-    </resources>
 </document>

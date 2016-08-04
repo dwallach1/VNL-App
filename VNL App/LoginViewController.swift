@@ -82,8 +82,9 @@ class LoginViewController: UIViewController {
         AppState.sharedInstance.signedIn = true
         NSNotificationCenter.defaultCenter().postNotificationName(Constants.NotificationKeys.SignedIn, object: nil, userInfo: nil)
         
-        let navigationViewController = NavigationViewController(nibName: "NavigationViewController", bundle: nil)
-        self.presentViewController(navigationViewController, animated: true, completion: nil)
+        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let navigationVC = UINavigationController(rootViewController: homeVC)
+        self.presentViewController(navigationVC, animated: true, completion: nil)
 
     }
     
@@ -91,6 +92,11 @@ class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
+    @IBAction func homeButtonTapped(sender: AnyObject) {
+        let landingVC = LandingViewController(nibName: "LandingViewController", bundle: nil)
+        let navVC = UINavigationController(rootViewController: landingVC)
+        presentViewController(navVC, animated: true, completion: nil)
+    }
 
 }
 

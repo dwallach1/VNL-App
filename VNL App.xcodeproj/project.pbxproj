@@ -123,10 +123,7 @@
 				631C215F1D4A107900F5EC19 /* Assets.xcassets */,
 				639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */,
 				639B0F7F1D4B6A8100EA49AA /* LandingViewController.xib */,
-				638D46771D53229F0073201E /* SideMenuViewController.swift */,
-				638D46781D53229F0073201E /* SideMenuViewController.xib */,
-				638D46721D5320040073201E /* SideMenuTableViewCell.swift */,
-				638D46731D5320040073201E /* SideMenuTableViewCell.xib */,
+				638D467F1D5346710073201E /* Side Menu */,
 				63F05EB21D4B610300854B14 /* LoginViewController.swift */,
 				63F05EB31D4B610300854B14 /* LoginViewController.xib */,
 				639B0F841D4B91DC00EA49AA /* HomeViewController.swift */,
@@ -183,6 +180,17 @@
 				639B0F8D1D4B95EC00EA49AA /* RegisterViewController.xib */,
 			);
 			name = "Old unused files - to be deleted";
+			sourceTree = "<group>";
+		};
+		638D467F1D5346710073201E /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				638D46771D53229F0073201E /* SideMenuViewController.swift */,
+				638D46781D53229F0073201E /* SideMenuViewController.xib */,
+				638D46721D5320040073201E /* SideMenuTableViewCell.swift */,
+				638D46731D5320040073201E /* SideMenuTableViewCell.xib */,
+			);
+			name = "Side Menu";
 			sourceTree = "<group>";
 		};
 		63F05EB61D4B610E00854B14 /* Supporting Files */ = {

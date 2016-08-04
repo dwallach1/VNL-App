@@ -23,10 +23,16 @@ class LandingViewController: UIViewController {
         self.setButtonAttributes()
         welcomeLabel.addTextSpacing(9.0)
         detailLabel.addTextSpacing(4.0)
+        
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         let sideMenu = UIBarButtonItem(image: UIImage(named: "sideMenuIcon"), style: .Plain, target: self, action: #selector(sideMenuTapped))
         sideMenu.tintColor = UIColor.grayColor()
         self.navigationItem.leftBarButtonItem = sideMenu
+        
+        let loginMenu = UIBarButtonItem(image: UIImage(named: "loginIcon"), style: .Plain, target: self, action: #selector(loginIconTapped))
+        loginMenu.tintColor = UIColor.grayColor()
+        loginMenu.title = "LOGIN"
+        self.navigationItem.rightBarButtonItem = loginMenu
     
     }
     
@@ -52,9 +58,9 @@ class LandingViewController: UIViewController {
         AppState.sharedInstance.photoUrl = user?.photoURL
         AppState.sharedInstance.signedIn = true
         NSNotificationCenter.defaultCenter().postNotificationName(Constants.NotificationKeys.SignedIn, object: nil, userInfo: nil)
-
-        let navigationViewController = NavigationViewController(nibName: "NavigationViewController", bundle: nil)
-        self.presentViewController(navigationViewController, animated: true, completion: nil)
+        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let navigationVC = UINavigationController(rootViewController: homeVC)
+        self.presentViewController(navigationVC, animated: true, completion: nil)
     }
 
 }
@@ -91,18 +97,5 @@ extension LandingViewController {
         loginButton.addTarget(self, action: #selector(loginButtonTapped), forControlEvents: .TouchUpInside)
         
     }
-    
-    func sideMenuTapped() {
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = kCATransitionPush
-        transition.subtype = kCATransitionFromLeft
-        view.window!.layer.addAnimation(transition, forKey: kCATransition)
-        let sideMenuViewController = SideMenuViewController(nibName: "SideMenuViewController", bundle: nil)
-        let navigationController = UINavigationController(rootViewController: sideMenuViewController)
-        presentViewController(navigationController, animated: false, completion: nil)
-        
-    }
-
 }
 

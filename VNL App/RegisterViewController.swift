@@ -83,8 +83,9 @@ class RegisterViewController: UIViewController {
         AppState.sharedInstance.signedIn = true
         NSNotificationCenter.defaultCenter().postNotificationName(Constants.NotificationKeys.SignedIn, object: nil, userInfo: nil)
 
-        let navigationViewController = NavigationViewController(nibName: "NavigationViewController", bundle: nil)
-        self.presentViewController(navigationViewController, animated: true, completion: nil)
+        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let navigationVC = UINavigationController(rootViewController: homeVC)
+        self.presentViewController(navigationVC, animated: true, completion: nil)
 
     }
     

@@ -27,6 +27,10 @@ class SideMenuViewController: UIViewController {
         let sideMenu = UIBarButtonItem(image: UIImage(named: "backIcon"), style: .Plain, target: self, action: #selector(sideMenuTapped))
         sideMenu.tintColor = UIColor.grayColor()
         self.navigationItem.leftBarButtonItem = sideMenu
+        
+        let loginMenu = UIBarButtonItem(image: UIImage(named: "loginIcon"), style: .Plain, target: self, action: #selector(loginIconTapped))
+        loginMenu.tintColor = UIColor.grayColor()
+        self.navigationItem.rightBarButtonItem = loginMenu
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -38,11 +42,15 @@ class SideMenuViewController: UIViewController {
                 sideTableView.selectRowAtIndexPath(defaultIndexPath, animated: true, scrollPosition: .None)
             } else if AppState.sharedInstance.screen == "benefits" && cell == 1 {
                 sideTableView.selectRowAtIndexPath(defaultIndexPath, animated: true, scrollPosition: .None)
+            } else if AppState.sharedInstance.screen == "questions" && cell == 2 {
+                sideTableView.selectRowAtIndexPath(defaultIndexPath, animated: true, scrollPosition: .None)
+            } else if AppState.sharedInstance.screen == "contact" && cell == 3 {
+                sideTableView.selectRowAtIndexPath(defaultIndexPath, animated: true, scrollPosition: .None)
             }
         }
     }
     
-    func sideMenuTapped() {
+    override func sideMenuTapped() {
         let transition = CATransition()
         transition.duration = 0.5
         transition.type = kCATransitionPush
@@ -94,32 +102,18 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        switch (indexPath.row) {
-//        case 0:
-//            sideMenuTapped()
-//            break
-//        case 1:
-//            let benefitsVC = BenefitsViewController(nibName: "BenefitsViewController", bundle: nil)
-//            let navVC = NavigationViewController(rootViewController: benefitsVC)
-//            self.presentViewController(navVC, animated: true, completion: nil)
-//            break
-//        case 2:
-//            break
-//        case 3:
-//            break
-//        default:
-//            break
-//        }
-        
+
         if indexPath.row == 0 {
-            sideMenuTapped()
+            let landingVC = LandingViewController(nibName: "LandingViewController", bundle: nil)
+            let navVC = UINavigationController(rootViewController: landingVC)
+            self.presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "home"
         }
         if indexPath.row == 1 {
             let benefitsVC = BenefitsViewController(nibName: "BenefitsViewController", bundle: nil)
             let navVC = UINavigationController(rootViewController: benefitsVC)
             self.presentViewController(navVC, animated: true, completion: nil)
             AppState.sharedInstance.screen = "benefits"
-
         }
         
     }

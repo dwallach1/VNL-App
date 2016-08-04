@@ -60,3 +60,23 @@ extension UILabel{
         self.attributedText = attributedString
     }
 }
+
+
+extension UIViewController {
+    func sideMenuTapped() {
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromLeft
+        view.window!.layer.addAnimation(transition, forKey: kCATransition)
+        let sideMenuViewController = SideMenuViewController(nibName: "SideMenuViewController", bundle: nil)
+        let navigationController = UINavigationController(rootViewController: sideMenuViewController)
+        presentViewController(navigationController, animated: false, completion: nil)
+        
+    }
+    
+    func loginIconTapped() {
+        let loginVC = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        self.presentViewController(loginVC, animated: true, completion: nil)
+    }
+}

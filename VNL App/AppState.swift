@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import MediumMenu
 
 class AppState: NSObject {
 

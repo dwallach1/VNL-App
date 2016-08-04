@@ -7,47 +7,39 @@
 //
 
 import UIKit
+import ImageSlideshow
+
 
 class BenefitsViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var titleView: UIView!
-    @IBOutlet weak var centerImage: UIImageView!
+    @IBOutlet var slideshow: ImageSlideshow!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         titleView.backgroundColor = UIColor.VNLBlue()
         titleLabel.textColor = UIColor.whiteColor()
-        centerImage.contentMode = .ScaleAspectFill
         
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         let sideMenu = UIBarButtonItem(image: UIImage(named: "sideMenuIcon"), style: .Plain, target: self, action: #selector(sideMenuTapped))
         sideMenu.tintColor = UIColor.grayColor()
         self.navigationItem.leftBarButtonItem = sideMenu
         
-        let loginMenu = UIBarButtonItem(image: UIImage(named: "loginIcon"), style: .Plain, target: self, action: #selector(loginButtonTapped))        
+        let loginMenu = UIBarButtonItem(image: UIImage(named: "loginIcon"), style: .Plain, target: self, action: #selector(loginIconTapped))
         loginMenu.tintColor = UIColor.grayColor()
         self.navigationItem.rightBarButtonItem = loginMenu
+        
+        slideshow.backgroundColor = UIColor.whiteColor()
+        slideshow.slideshowInterval = 5.0
+        slideshow.pageControlPosition = PageControlPosition.UnderScrollView
+        slideshow.pageControl.currentPageIndicatorTintColor = UIColor.lightGrayColor();
+        slideshow.pageControl.pageIndicatorTintColor = UIColor.blackColor();
+        slideshow.contentScaleMode = .ScaleAspectFill
+        slideshow.setImageInputs([ImageSource(imageString: "benefits1")!, ImageSource(imageString: "benefits2")!, ImageSource(imageString: "benefits3")!])
+
     }
 
 
-}
-
-
-extension BenefitsViewController {
-    func sideMenuTapped() {
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = kCATransitionPush
-        transition.subtype = kCATransitionFromLeft
-        view.window!.layer.addAnimation(transition, forKey: kCATransition)
-        let sideMenuViewController = SideMenuViewController(nibName: "SideMenuViewController", bundle: nil)
-        let navigationController = UINavigationController(rootViewController: sideMenuViewController)
-        presentViewController(navigationController, animated: false, completion: nil)
-    }
-    
-    func loginButtonTapped() {
-        let loginVC = LoginViewController(nibName: "LoginViewController", bundle: nil)
-        self.presentViewController(loginVC, animated: true, completion: nil)
-    }
 }

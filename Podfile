@@ -11,6 +11,6 @@ target 'VNL App' do
   pod 'Firebase/Auth'
   pod 'TextFieldEffects'
   pod 'MaterialKit', '~> 0.4'
-  pod 'MediumMenu'
   pod 'JTAppleCalendar'
+  pod 'ImageSlideshow', '~> 0.4'
 end
