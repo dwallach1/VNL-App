@@ -11,9 +11,6 @@ import UIKit
 
 class DropdownSideTableViewController: UITableViewController {
     
-    var childStatus = false // false is closed, true is open
-    var parentStatus = false //false is closed, true is open
-    
     @IBOutlet var sideTableView: UITableView!
     
     let data = [
@@ -41,18 +38,12 @@ class DropdownSideTableViewController: UITableViewController {
         
         sideTableView.backgroundColor = UIColor.VNLDarkBlue()
         sideTableView.separatorColor = UIColor.blackColor()
-        sideTableView.backgroundColor = UIColor.VNLDarkBlue()
         sideTableView.rowHeight = 88
         
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         let sideMenu = UIBarButtonItem(image: UIImage(named: "backIcon"), style: .Plain, target: self, action: #selector(sideMenuTapped))
         sideMenu.tintColor = UIColor.grayColor()
         self.navigationItem.leftBarButtonItem = sideMenu
-        
-        let profileMenu = UIBarButtonItem(image: UIImage(named: "profileIcon"), style: .Plain, target: self, action: #selector(profileIconTapped))
-        profileMenu.tintColor = UIColor.grayColor()
-        self.navigationItem.rightBarButtonItem = profileMenu
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -80,9 +71,6 @@ class DropdownSideTableViewController: UITableViewController {
         view.window!.layer.addAnimation(transition, forKey: kCATransition)
         dismissViewControllerAnimated(false, completion: nil)
     }
-
-    
-
 }
 
 
@@ -95,75 +83,83 @@ extension DropdownSideTableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return displayedRows.count
     }
-    
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = (tableView.dequeueReusableCellWithIdentifier("CollapsibleTableViewCell") as? CollapsibleTableViewCell) ?? CollapsibleTableViewCell(style: .Default, reuseIdentifier: "CollapsibleTableViewCell")
         
-
         cell.configure(displayedRows[indexPath.row])
         
-        let bgColorView = UIView()
-        bgColorView.backgroundColor = UIColor.VNLBlue()
-        cell.selectedBackgroundView = bgColorView
-        cell.backgroundColor = UIColor.VNLDarkBlue()
-        
-        let iconView = UIImageView()
-        iconView.frame.origin.x = cell.frame.origin.x + 20
-        iconView.frame.origin.y = cell.frame.origin.y
+        var iconView = UIImageView()
+        iconView  = UIImageView(frame:CGRectMake(view.frame.width - 20, 20, 30, 30))
+        iconView.tintColor = UIColor.whiteColor()
         iconView.image = UIImage(named: "dropDownIcon")
-        cell.addSubview(iconView)
         
-        let dropDownButton = UIButton()
-        dropDownButton.backgroundColor = UIColor.clearColor()
-        dropDownButton.frame = cell.frame
-        dropDownButton.addTarget(self, action: #selector(dropDownIconTapped), forControlEvents: .TouchUpInside)
-        cell.addSubview(dropDownButton)
-        cell.bringSubviewToFront(dropDownButton)
-        
+        cell.backgroundColor = UIColor.VNLDarkBlue()
+
         if cell.tag < 0 {
             cell.textLabel?.textColor = UIColor.whiteColor()
             cell.textLabel?.textAlignment = .Left
+            cell.textLabel?.font = UIFont(name: "Helvetica", size: 12.0)
             tableView.rowHeight = 44
+            
+            let bgColorView = UIView()
+            bgColorView.backgroundColor = UIColor.VNLGreen()
+            cell.selectedBackgroundView = bgColorView
         }
         else {
+            tableView.rowHeight = 88
             cell.textLabel?.textColor = UIColor.whiteColor()
             cell.textLabel?.textAlignment = .Center
+            if cell.tag > 0 {
+                cell.accessoryView = iconView
+            }
+            
+            let bgColorView = UIView()
+            bgColorView.backgroundColor = UIColor.VNLBlue()
+            cell.selectedBackgroundView = bgColorView
         }
-        
-        if cell.tag > 0 {
-            cell.addButton()
-        }
-        
-        let viewModel = displayedRows[indexPath.row]
-        if viewModel.children.count > 0 {
-            cell.backgroundColor = UIColor.VNLDarkBlue()
-        }
+    
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: false)
         let viewModel = displayedRows[indexPath.row]
+        
+        print("\(indexPath.row) +++++++ \(viewModel.label)")
+
         if viewModel.children.count > 0 {
             let range = indexPath.row+1...indexPath.row+viewModel.children.count
             let indexPaths = range.map{return NSIndexPath(forRow: $0, inSection: indexPath.section)}
             tableView.beginUpdates()
             if viewModel.isCollapsed {
-                childStatus = true
                 displayedRows.insertContentsOf(viewModel.children, at: indexPath.row+1)
                 tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
             } else {
-                childStatus = false
-                tableView.rowHeight = 88
                 displayedRows.removeRange(range)
                 tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
+                tableView.rowHeight = 88
+                tableView.deselectRowAtIndexPath(indexPath, animated: false)
+
             }
             tableView.endUpdates()
         }
         viewModel.isCollapsed = !viewModel.isCollapsed
         setAppState(indexPath)
+        setSegue(indexPath)
+        
     }
 
+    func setSegue(indexPath: NSIndexPath) {
+        let viewModel = displayedRows[indexPath.row]
+        if viewModel.label == "Rates" {
+            if indexPath.row == 0 {
+                print("hermanus")
+            }
+            if indexPath.row == 1 {
+                print("lagenbaum")
+            }
+        }
+    }
     
     func setAppState(indexPath: NSIndexPath) {
         if indexPath.row == 0 {
@@ -178,14 +174,8 @@ extension DropdownSideTableViewController {
             AppState.sharedInstance.screen = "partners"
         }
         if indexPath.row == 3 {
-//            let contactVC = ContactViewController(nibName: "ContactViewController", bundle: nil)
-//            let navVC = UINavigationController(rootViewController: contactVC)
-//            self.presentViewController(navVC, animated: true, completion: nil)
             AppState.sharedInstance.screen = "contact"
         }
     }
     
-    func dropDownIconTapped() {
-        print("hit here")
-    }
 }

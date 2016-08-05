@@ -20,6 +20,11 @@ class SettingsViewController: UIViewController {
         tableView.registerNib(settingsTableViewCell, forCellReuseIdentifier: "settingCell")
         tableView.dataSource = self
         tableView.delegate = self
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        let sideMenu = UIBarButtonItem(image: UIImage(named: "backIcon"), style: .Plain, target: self, action: #selector(dismissView))
+        sideMenu.tintColor = UIColor.grayColor()
+        self.navigationItem.leftBarButtonItem = sideMenu
     }
 }
 

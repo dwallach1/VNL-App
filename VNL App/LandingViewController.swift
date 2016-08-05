@@ -46,9 +46,9 @@ class LandingViewController: UIViewController {
             self.signedIn(user)
         }
         welcomeLabel.fadeIn(2)
-        detailLabel.fadeIn(3)
-        memberButton.fadeIn(4)
-        curiousButton.fadeIn(4)
+        detailLabel.fadeIn(2)
+        memberButton.fadeIn(3)
+        curiousButton.fadeIn(3)
     }
 
     func memberButtonTapped(){
@@ -106,7 +106,6 @@ extension LandingViewController {
         memberButton.rippleLayerColor = UIColor.whiteColor()
         memberButton.setTitle("MEMBERS", forState: .Normal)
         memberButton.addTarget(self, action: #selector(memberButtonTapped), forControlEvents: .TouchUpInside)
-        
     }
 }
 

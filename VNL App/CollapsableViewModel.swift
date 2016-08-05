@@ -45,33 +45,6 @@ class CollapsibleTableViewCell: UITableViewCell {
         }
     }
     
-    let dropdownButton = UIButton()
-    
-    func addButton() {
-        dropdownButton.tag = -1
-        dropdownButton.frame = self.frame
-        let contentrect = dropdownButton.contentRectForBounds(CGRect(x: self.frame.width - 20, y: self.frame.height / 2, width: 60, height: 60))
-        
-//            (frame: CGRect(x: self.frame.width - 20, y: self.frame.height / 2, width: 60, height: 60))
-//        dropdownButton.setImage(UIImage(named: "dropDownIcon"), forState: .Normal)
-//        dropdownButton.imageView?.frame = (frame: CGRect(x: self.frame.width - 20, y: self.frame.height / 2, width: 60, height: 60))
-//        dropdownButton.imageView?.image = UIImage(named: "dropDownIcon")
-        dropdownButton.tintColor = UIColor.whiteColor()
-        dropdownButton.addTarget(self, action: #selector(addButtonTapped), forControlEvents: .TouchUpInside)
-        self.addSubview(dropdownButton)
-        self.bringSubviewToFront(dropdownButton)
-    }
-    
-    func addButtonTapped(){
-        if dropdownButton.tag == -1 {
-            dropdownButton.setImage(UIImage(named: "upIcon"), forState: .Normal)
-            dropdownButton.tag = 1
-            
-            return
-        }
-        dropdownButton.tag = -1
-        dropdownButton.setImage(UIImage(named: "dropDownIcon"), forState: .Normal)
-    }
     
     override func layoutSubviews() {
         super.layoutSubviews()

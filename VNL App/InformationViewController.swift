@@ -9,8 +9,10 @@
 import UIKit
 import ImageSlideshow
 import MaterialKit
+import MessageUI
 
-class InformationViewController: UIViewController {
+
+class InformationViewController: UIViewController, MFMailComposeViewControllerDelegate {
     @IBOutlet weak var titleView: UIView!
 
     @IBOutlet weak var slideshow: ImageSlideshow!
@@ -52,6 +54,28 @@ class InformationViewController: UIViewController {
 
 extension InformationViewController {
     func applyButtonTapped() {
-        return
+        let mailComposeViewController = configureMailComposeViewController()
+        if MFMailComposeViewController.canSendMail()  {
+            self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+        } else {
+            self.showSendMailErrorAlert()
+        }
+        
+    }
+    
+    
+    func configureMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        
+        mailComposerVC.setToRecipients(["members@vlife.co.za"])
+        mailComposerVC.setSubject("VNL Lesiure Club Application")
+        mailComposerVC.setMessageBody("Hello, \n I would like to become a member. \n", isHTML: false)
+        return mailComposerVC
+    }
+    
+    func showSendMailErrorAlert(){
+        let sendMailErrorAlert = UIAlertView(title: "Could not send Email", message: "Your device could not send email, please check your internet connection.", delegate: self, cancelButtonTitle: "OK")
+        sendMailErrorAlert.show()
     }
 }

@@ -28,6 +28,10 @@ extension UIColor {
         let colour = UIColor(red: 131/255, green: 179/255, blue: 72/255, alpha: 1)
         return colour
     }
+    class func VNLGrey() -> UIColor {
+        let colour = UIColor(red: 70/255, green: 70/255, blue: 70/255, alpha: 1)
+        return colour
+    }
 
 }
 
@@ -75,6 +79,15 @@ extension UIViewController {
         
     }
     
+    func dismissView() {
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromLeft
+        view.window!.layer.addAnimation(transition, forKey: kCATransition)
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     func loginIconTapped() {
         let loginVC = LoginViewController(nibName: "LoginViewController", bundle: nil)
         self.presentViewController(loginVC, animated: true, completion: nil)
@@ -112,11 +125,6 @@ extension UIView {
         })
     }
     
-    /**
-     Fade out a view with a duration
-     
-     - parameter duration: custom animation duration
-     */
     func fadeOut(duration duration: NSTimeInterval = 1.0) {
         UIView.animateWithDuration(duration, animations: {
             self.alpha = 0.0
@@ -124,3 +132,4 @@ extension UIView {
     }
 
 }
+

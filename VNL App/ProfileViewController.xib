@@ -8,6 +8,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="VNL_App" customModuleProvider="target">
             <connections>
                 <outlet property="sideTableView" destination="uHN-nH-tJ3" id="cd2-n1-WcU"/>
+                <outlet property="topLabelBackground" destination="nF4-lj-JDR" id="n21-hL-iUw"/>
+                <outlet property="userImage" destination="abC-71-VGO" id="qcs-RD-U4R"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,12 +18,26 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uHN-nH-tJ3">
+                    <rect key="frame" x="0.0" y="350" width="600" height="220"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="cLu-Xv-dUb"/>
+                    </constraints>
+                </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nF4-lj-JDR">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                    <rect key="frame" x="0.0" y="44" width="600" height="306"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XO3-Po-iNQ">
-                            <rect key="frame" x="262.5" y="64.5" width="75.5" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userImage" translatesAutoresizingMaskIntoConstraints="NO" id="abC-71-VGO">
+                            <rect key="frame" x="40" y="103" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="bgT-UT-2gF"/>
+                                <constraint firstAttribute="width" constant="100" id="t5m-yr-cHh"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, David" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XO3-Po-iNQ">
+                            <rect key="frame" x="160" y="141" width="390" height="24"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -29,27 +45,26 @@
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="XO3-Po-iNQ" firstAttribute="centerY" secondItem="nF4-lj-JDR" secondAttribute="centerY" id="2PE-eA-dRd"/>
-                        <constraint firstItem="XO3-Po-iNQ" firstAttribute="centerX" secondItem="nF4-lj-JDR" secondAttribute="centerX" id="M1p-D7-O2J"/>
-                        <constraint firstAttribute="height" constant="150" id="sDD-RY-BOe"/>
+                        <constraint firstItem="XO3-Po-iNQ" firstAttribute="leading" secondItem="abC-71-VGO" secondAttribute="trailing" constant="20" id="Tc3-73-tUO"/>
+                        <constraint firstItem="abC-71-VGO" firstAttribute="leading" secondItem="nF4-lj-JDR" secondAttribute="leading" constant="40" id="bYb-WJ-kFj"/>
+                        <constraint firstAttribute="trailing" secondItem="XO3-Po-iNQ" secondAttribute="trailing" constant="50" id="g1j-YR-oCW"/>
+                        <constraint firstItem="abC-71-VGO" firstAttribute="centerY" secondItem="nF4-lj-JDR" secondAttribute="centerY" id="h7F-73-gdN"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uHN-nH-tJ3">
-                    <rect key="frame" x="0.0" y="150" width="600" height="528"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="528" id="cLu-Xv-dUb"/>
-                    </constraints>
-                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="nF4-lj-JDR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4h3-78-8eO"/>
+                <constraint firstItem="nF4-lj-JDR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="4h3-78-8eO"/>
                 <constraint firstAttribute="trailing" secondItem="uHN-nH-tJ3" secondAttribute="trailing" id="GD7-Zs-427"/>
-                <constraint firstItem="uHN-nH-tJ3" firstAttribute="top" secondItem="nF4-lj-JDR" secondAttribute="bottom" id="KlC-Bp-L7E"/>
                 <constraint firstItem="uHN-nH-tJ3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WlF-Bk-QKg"/>
                 <constraint firstItem="nF4-lj-JDR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ccr-Yw-7VY"/>
                 <constraint firstAttribute="trailing" secondItem="nF4-lj-JDR" secondAttribute="trailing" id="f6R-jm-jWQ"/>
+                <constraint firstItem="uHN-nH-tJ3" firstAttribute="top" secondItem="nF4-lj-JDR" secondAttribute="bottom" id="gme-2y-RPX"/>
+                <constraint firstAttribute="bottom" secondItem="uHN-nH-tJ3" secondAttribute="bottom" constant="30" id="nBD-IR-HNV"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="userImage" width="225" height="225"/>
+    </resources>
 </document>

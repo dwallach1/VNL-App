@@ -28,6 +28,7 @@
 		6362E9BF1D5468CE009DD3A2 /* CollapsableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E9BE1D5468CE009DD3A2 /* CollapsableViewModel.swift */; };
 		6362E9C21D546CFC009DD3A2 /* DropdownSideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E9C01D546CFC009DD3A2 /* DropdownSideTableViewController.swift */; };
 		6362E9C31D546CFC009DD3A2 /* DropdownSideTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362E9C11D546CFC009DD3A2 /* DropdownSideTableViewController.xib */; };
+		6362E9C61D54D16C009DD3A2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6362E9C51D54D16C009DD3A2 /* MessageUI.framework */; };
 		638100A81D4F76960095634C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638100A61D4F76960095634C /* SettingsViewController.swift */; };
 		638100A91D4F76960095634C /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638100A71D4F76960095634C /* SettingsViewController.xib */; };
 		638100AD1D4F7D830095634C /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638100AB1D4F7D830095634C /* BookingTableViewCell.swift */; };
@@ -86,6 +87,7 @@
 		6362E9BE1D5468CE009DD3A2 /* CollapsableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsableViewModel.swift; sourceTree = "<group>"; };
 		6362E9C01D546CFC009DD3A2 /* DropdownSideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownSideTableViewController.swift; sourceTree = "<group>"; };
 		6362E9C11D546CFC009DD3A2 /* DropdownSideTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropdownSideTableViewController.xib; sourceTree = "<group>"; };
+		6362E9C51D54D16C009DD3A2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		638100A61D4F76960095634C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		638100A71D4F76960095634C /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		638100AB1D4F7D830095634C /* BookingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6362E9C61D54D16C009DD3A2 /* MessageUI.framework in Frameworks */,
 				CC26F598E08F5CE6267E13C2 /* Pods_VNL_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +287,7 @@
 		9C235BBB6F753ACB3466E4E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6362E9C51D54D16C009DD3A2 /* MessageUI.framework */,
 				3C82D0500C0985FF5F1090F2 /* Pods_VNL_App.framework */,
 			);
 			name = Frameworks;

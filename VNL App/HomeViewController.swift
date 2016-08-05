@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
         profileMenu.tintColor = UIColor.grayColor()
         self.navigationItem.rightBarButtonItem = profileMenu
         
-        slideshow.backgroundColor = UIColor.blueColor()
+        slideshow.backgroundColor = UIColor.whiteColor()
         slideshow.slideshowInterval = 5.0
         slideshow.contentScaleMode = .ScaleAspectFill
         slideshow.setImageInputs([ImageSource(imageString: "apply3")!, ImageSource(imageString: "apply2")!, ImageSource(imageString: "apply1")!])
