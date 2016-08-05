@@ -15,19 +15,30 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUK-Qf-PHW">
-                        <rect key="frame" x="139" y="11.5" width="42" height="21"/>
+                        <rect key="frame" x="139" y="11" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G8A-fa-Z6c">
+                        <rect key="frame" x="0.0" y="0.0" width="68" height="43.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="HSf-qh-G2U"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="G8A-fa-Z6c" secondAttribute="bottom" id="5JY-2t-omV"/>
                     <constraint firstItem="XUK-Qf-PHW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GVV-EP-Ehi"/>
+                    <constraint firstItem="G8A-fa-Z6c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ias-33-ccq"/>
                     <constraint firstItem="XUK-Qf-PHW" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="XcJ-dI-tPe"/>
+                    <constraint firstItem="G8A-fa-Z6c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hA9-in-5gr"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="cellLabel" destination="XUK-Qf-PHW" id="kAt-8y-97X"/>
+                <outlet property="imageIcon" destination="G8A-fa-Z6c" id="yhr-FP-heU"/>
+                <outlet property="imageView" destination="G8A-fa-Z6c" id="avV-Yu-oJT"/>
             </connections>
         </tableViewCell>
     </objects>

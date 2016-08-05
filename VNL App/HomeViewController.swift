@@ -8,35 +8,18 @@
 
 import UIKit
 import MaterialKit
+import ImageSlideshow
 
 class HomeViewController: UIViewController {
-    
-    
-    @IBOutlet weak var cellOne: UIView!
-    @IBOutlet weak var cellTwo: UIView!
-    @IBOutlet weak var cellThree: UIView!
-    @IBOutlet weak var cellFour: UIView!
-    
-    @IBOutlet weak var cellOneButton: MKButton!
+   
+    @IBOutlet weak var exclusiveLabel: UILabel!
+    @IBOutlet weak var fansLabel: UILabel!
+    @IBOutlet weak var slideshow: ImageSlideshow!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.VNLDarkBlue()
-        self.title = "Home"
-        
-        let cells : [UIView] = [cellOne, cellTwo, cellThree, cellFour]
-        
-        for cell in cells {
-            cell.backgroundColor = UIColor.VNLBlue()
-            cell.layer.cornerRadius = cell.bounds.size.width / 2
-            cell.layer.masksToBounds = true
-            cell.layer.borderWidth = 4
-            cell.layer.borderColor = UIColor.whiteColor().CGColor
-        }
-        
-        cellOneButton.rippleEnabled = true
-        cellOneButton.rippleLayerColor = UIColor.whiteColor()
-        
+
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         let sideMenu = UIBarButtonItem(image: UIImage(named: "sideMenuIcon"), style: .Plain, target: self, action: #selector(loggedInSideMenuTapped))
         sideMenu.tintColor = UIColor.grayColor()
@@ -44,16 +27,26 @@ class HomeViewController: UIViewController {
         
         let profileMenu = UIBarButtonItem(image: UIImage(named: "profileIcon"), style: .Plain, target: self, action: #selector(profileIconTapped))
         profileMenu.tintColor = UIColor.grayColor()
-        profileMenu.title = "LOGIN"
         self.navigationItem.rightBarButtonItem = profileMenu
         
+        slideshow.backgroundColor = UIColor.blueColor()
+        slideshow.slideshowInterval = 5.0
+        slideshow.contentScaleMode = .ScaleAspectFill
+        slideshow.setImageInputs([ImageSource(imageString: "apply3")!, ImageSource(imageString: "apply2")!, ImageSource(imageString: "apply1")!])
+        
+        exclusiveLabel.alpha = 0
+        fansLabel.alpha = 0
     }
     
-    @IBAction func bookingButtonTapped() {
-        let bookingVC = BookingViewController(nibName: "BookingViewController", bundle: nil)
-        self.showViewController(bookingVC, sender: self)
-        AppState.sharedInstance.screen = "Booking"
-
+    override func viewDidAppear(animated: Bool) {
+        self.performSelector(#selector(fade), withObject: self, afterDelay: 7)
+        exclusiveLabel.fadeIn(2)
+        fansLabel.fadeIn(3)
+    }
+    
+    func fade() {
+        exclusiveLabel.fadeOut()
+        fansLabel.fadeOut()
     }
 }
 

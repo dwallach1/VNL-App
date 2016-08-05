@@ -86,8 +86,9 @@ extension UIViewController {
         transition.type = kCATransitionPush
         transition.subtype = kCATransitionFromLeft
         view.window!.layer.addAnimation(transition, forKey: kCATransition)
-        let memberSideMenuVC = MemberSideViewController(nibName: "MemberSideViewController", bundle: nil)
-        let navigationController = UINavigationController(rootViewController: memberSideMenuVC)
+//        let memberSideMenuVC = MemberSideViewController(nibName: "MemberSideViewController", bundle: nil)
+        let dropdownVC = DropdownSideTableViewController(nibName: "DropdownSideTableViewController", bundle: nil)
+        let navigationController = UINavigationController(rootViewController: dropdownVC)
         presentViewController(navigationController, animated: false, completion: nil)
     }
     
@@ -101,4 +102,25 @@ extension UIViewController {
         let navigationController = UINavigationController(rootViewController: profileVC)
         presentViewController(navigationController, animated: false, completion: nil)
     }
+}
+
+extension UIView {
+    
+    func fadeIn(duration: NSTimeInterval) {
+        UIView.animateWithDuration(duration, animations: {
+            self.alpha = 1.0
+        })
+    }
+    
+    /**
+     Fade out a view with a duration
+     
+     - parameter duration: custom animation duration
+     */
+    func fadeOut(duration duration: NSTimeInterval = 1.0) {
+        UIView.animateWithDuration(duration, animations: {
+            self.alpha = 0.0
+        })
+    }
+
 }

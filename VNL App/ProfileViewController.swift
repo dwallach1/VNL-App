@@ -24,7 +24,6 @@ class ProfileViewController: UIViewController {
         sideTableView.rowHeight = 88
         sideTableView.registerNib(UINib(nibName: "ProfileTableViewCell", bundle: nil), forCellReuseIdentifier: "profileCell")
         
-        
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         let sideMenu = UIBarButtonItem(image: UIImage(named: "backIcon"), style: .Plain, target: self, action: #selector(sideMenuTapped))
         sideMenu.tintColor = UIColor.grayColor()
@@ -72,6 +71,9 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
             break
         case 5:
             cell?.cellLabel.text = "LOGOUT"
+            cell?.imageIcon.image = UIImage(named: "loginIcon")
+            cell?.imageIcon.tintColor = UIColor.VNLGreen()
+            cell?.imageIcon.contentMode = .ScaleAspectFit
             break
         default:
             break

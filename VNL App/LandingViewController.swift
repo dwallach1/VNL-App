@@ -33,6 +33,11 @@ class LandingViewController: UIViewController {
         loginMenu.tintColor = UIColor.grayColor()
         loginMenu.title = "LOGIN"
         self.navigationItem.rightBarButtonItem = loginMenu
+        
+        memberButton.alpha = 0
+        curiousButton.alpha = 0
+        detailLabel.alpha = 0
+        welcomeLabel.alpha = 0
     
     }
     
@@ -40,6 +45,10 @@ class LandingViewController: UIViewController {
         if let user = FIRAuth.auth()?.currentUser {
             self.signedIn(user)
         }
+        welcomeLabel.fadeIn(2)
+        detailLabel.fadeIn(3)
+        memberButton.fadeIn(4)
+        curiousButton.fadeIn(4)
     }
 
     func memberButtonTapped(){

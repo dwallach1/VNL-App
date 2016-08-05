@@ -19,26 +19,12 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-nO-FqU" userLabel="Login View">
+                <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-nO-FqU" userLabel="Login View">
                     <rect key="frame" x="20" y="80" width="560" height="440"/>
                     <subviews>
                         <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ro-sh-oZD">
                             <rect key="frame" x="0.0" y="0.0" width="560" height="440"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pae-vj-r5K">
-                                    <rect key="frame" x="259.5" y="396" width="41" height="30"/>
-                                    <state key="normal" title="Home">
-                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="homeButtonTapped:" destination="-1" eventType="touchUpInside" id="Bcy-OC-Qhe"/>
-                                    </connections>
-                                </button>
-                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="pae-vj-r5K" firstAttribute="centerX" secondItem="8Ro-sh-oZD" secondAttribute="centerX" id="6l4-Tp-nyj"/>
-                            </constraints>
                         </view>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zE3-Ci-fcJ" customClass="HoshiTextField" customModule="TextFieldEffects">
                             <rect key="frame" x="10" y="185" width="540" height="75"/>
@@ -85,7 +71,6 @@
                         <constraint firstAttribute="trailing" secondItem="zE3-Ci-fcJ" secondAttribute="trailing" constant="10" id="ALf-WF-9VN"/>
                         <constraint firstItem="1W2-rT-eft" firstAttribute="centerX" secondItem="OvE-nO-FqU" secondAttribute="centerX" id="EKX-Xb-tQv"/>
                         <constraint firstItem="8Ro-sh-oZD" firstAttribute="top" secondItem="OvE-nO-FqU" secondAttribute="top" id="Fh1-qy-UI9"/>
-                        <constraint firstItem="pae-vj-r5K" firstAttribute="top" secondItem="1W2-rT-eft" secondAttribute="bottom" constant="11" id="LyM-gk-MG9"/>
                         <constraint firstAttribute="trailing" secondItem="8Ro-sh-oZD" secondAttribute="trailing" id="OA3-rI-YEK"/>
                         <constraint firstItem="zE3-Ci-fcJ" firstAttribute="leading" secondItem="OvE-nO-FqU" secondAttribute="leading" constant="10" id="PfP-7x-iIj"/>
                         <constraint firstAttribute="trailing" secondItem="DXq-Sc-OKz" secondAttribute="trailing" constant="10" id="RnA-1d-NKb"/>

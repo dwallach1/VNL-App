@@ -112,7 +112,6 @@
 		00086FD2C5CA901930874821E7A0ADAF /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
 		068000150DFDCB13D51F6F909D264E03 /* MaterialKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-umbrella.h"; sourceTree = "<group>"; };
 		06BC10D2DD0065C8D9D218F879FB4F48 /* Pods_VNL_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VNL_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		074AD2026CEDB835AB233AD1B657FF7F /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		0B5A20FC564C00A4F42F1E4630628641 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
 		0C9FF5EA7564D2FC990EB6160396DCA0 /* Pods-VNL App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VNL App-acknowledgements.plist"; sourceTree = "<group>"; };
 		0CA1EF2083AEE27F1DBF01A7EE02DC6E /* ImageSlideshow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageSlideshow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +135,7 @@
 		50830C1FB0400947A0F1213E084ED50D /* Pods-VNL App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VNL App-umbrella.h"; sourceTree = "<group>"; };
 		566ECDC10F1C5373D49F2E96755D0C76 /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
 		568370394C05F4B748C9BA69413AC8D9 /* ImageSlideshow.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageSlideshow.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5778A641DB2163CCFD6AC4A0176C897C /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		5C93CB852E301610DA3BF3928C06AAE0 /* MKColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKColor.swift; path = Source/MKColor.swift; sourceTree = "<group>"; };
 		5CB8FDCA3F9BE37834A3F079F23E240B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		629FFD61EB496631DFB092751552CD37 /* ic_cross_white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_cross_white@2x.png"; path = "Pod/Assets/ic_cross_white@2x.png"; sourceTree = "<group>"; };
@@ -156,6 +156,7 @@
 		8902D974BEFCCE4B5B80D0AFEE88AE0F /* MaterialKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-prefix.pch"; sourceTree = "<group>"; };
 		8AC9B1B72D79B6E92554DAF3AF5F2477 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
 		8B0853166F21B2648EE90106DC386617 /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
+		8B3248CE98092521C5A76E7C7769F0FA /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
 		8BC89DE663020AFCAD675B8E491F6BA7 /* Pods-VNL App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VNL App.release.xcconfig"; sourceTree = "<group>"; };
 		8D54B8D9DBA8D57A3D55C7421FE0B333 /* MKNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKNavigationBar.swift; path = Source/MKNavigationBar.swift; sourceTree = "<group>"; };
 		8D706822B2104FC49894224A9FD1D29C /* Pods-VNL App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VNL App-frameworks.sh"; sourceTree = "<group>"; };
@@ -166,7 +167,6 @@
 		969BF337D14AE2F14437CD735438E929 /* JTAppleCalendarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayout.swift; path = Sources/Classes/JTAppleCalendarLayout.swift; sourceTree = "<group>"; };
 		96C9614F23F60C8699F63068E0BB2D65 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DECD864BF67101BA15B9EFE092776D5 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		A074F48EC0613741BB91A543763406D7 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
 		A0C16C5FAAFB31C33BC160B439B26593 /* MKImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKImageView.swift; path = Source/MKImageView.swift; sourceTree = "<group>"; };
 		A6CA266B6AC66CAB5CB55E05A884CCEF /* ic_cross_white@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_cross_white@3x.png"; path = "Pod/Assets/ic_cross_white@3x.png"; sourceTree = "<group>"; };
 		A83A5FA7405482F89E29973988C332B1 /* MKLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLabel.swift; path = Source/MKLabel.swift; sourceTree = "<group>"; };
@@ -178,6 +178,7 @@
 		B7A54978F2E689E18B7115D3DFDCACC4 /* MKSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKSnackbar.swift; path = Source/MKSnackbar.swift; sourceTree = "<group>"; };
 		B83E191B824565A1950AA604145D4B07 /* ResourceBundle-ImageSlideshow-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ImageSlideshow-Info.plist"; sourceTree = "<group>"; };
 		B951178C15D5E5D947FC9162A83BAF80 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		BCF1FE55883F03086FC79EAED9F6C771 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
 		BE673397CCE9D6F3D815872AE7DD3A4F /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
 		BE696C32B4A86D9BE856D8A2ECB0DA34 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
 		BFA7F191E5C2914E92AAC6AF2C79E2F0 /* MaterialKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,7 +187,6 @@
 		C3B0DFFB712749EFB777C1A44E7E93DB /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
 		C70128EB153F96457F50016247D987C6 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		C8A58354AAF223FD275614415EC05F09 /* MKLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLayer.swift; path = Source/MKLayer.swift; sourceTree = "<group>"; };
-		CDE6039A9791A90A29ED776D5EED09B0 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
 		CE50340AB4F0CFA94D93D7F1025187DB /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D22C2001C496A3585A3ED017F2AB9A26 /* Pods-VNL App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VNL App-resources.sh"; sourceTree = "<group>"; };
@@ -290,6 +290,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ImageSlideshow";
+			sourceTree = "<group>";
+		};
+		1F6F5EFA11DFA2FA9BEBFE0BA3077976 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				BCF1FE55883F03086FC79EAED9F6C771 /* FIRInstanceID.h */,
+				A507F89CD6E5E53EE7F9669B251CD283 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
 		250D2ACFDFEE4CEB4131EE4E5BB838D1 /* Frameworks */ = {
@@ -459,17 +468,25 @@
 		80DD49CB1E37D22FA50CEDA2CB86B955 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				AC2E7145A82A3BD616CCE76399968F3F /* Analytics */,
+				903AFC7DED50AEAF7E86642A1DCE44ED /* Analytics */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
 		};
-		AC2E7145A82A3BD616CCE76399968F3F /* Analytics */ = {
+		903AFC7DED50AEAF7E86642A1DCE44ED /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				A074F48EC0613741BB91A543763406D7 /* Firebase.h */,
+				8B3248CE98092521C5A76E7C7769F0FA /* Firebase.h */,
 			);
 			name = Analytics;
+			sourceTree = "<group>";
+		};
+		A507F89CD6E5E53EE7F9669B251CD283 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5778A641DB2163CCFD6AC4A0176C897C /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AF094BED2D3BC4A4D433E6A024661129 /* FirebaseDatabase */ = {
@@ -534,14 +551,6 @@
 			path = GoogleInterchangeUtilities;
 			sourceTree = "<group>";
 		};
-		C944CB7AE22E1B6B3836D7F42E292D3D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				074AD2026CEDB835AB233AD1B657FF7F /* FirebaseInstanceID.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CDE8217AD35EAF47655BD31171690623 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -563,7 +572,7 @@
 				B58E9F9CAC22C6026F9A2B2CDD3102C8 /* FirebaseAnalytics */,
 				AFD30422CBFAE523CF6B5CD4D1CFA5E3 /* FirebaseAuth */,
 				AF094BED2D3BC4A4D433E6A024661129 /* FirebaseDatabase */,
-				F7279E0D6297BD7AF9B7913BDDA566A5 /* FirebaseInstanceID */,
+				1F6F5EFA11DFA2FA9BEBFE0BA3077976 /* FirebaseInstanceID */,
 				C5827D80A4B1612473F5FB8290477074 /* GoogleInterchangeUtilities */,
 				0A59C88C7E16B0103D68BE00F8B51675 /* GoogleNetworkingUtilities */,
 				6F9906D9480807F7A1413E51B62025EC /* GoogleParsingUtilities */,
@@ -640,15 +649,6 @@
 				0BC3FB5BACC3D95F8D44AA784EF47BAF /* Frameworks */,
 			);
 			path = GoogleSymbolUtilities;
-			sourceTree = "<group>";
-		};
-		F7279E0D6297BD7AF9B7913BDDA566A5 /* FirebaseInstanceID */ = {
-			isa = PBXGroup;
-			children = (
-				CDE6039A9791A90A29ED776D5EED09B0 /* FIRInstanceID.h */,
-				C944CB7AE22E1B6B3836D7F42E292D3D /* Frameworks */,
-			);
-			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
 		FC0A0197C01290107B0527135FD0CD35 /* Frameworks */ = {

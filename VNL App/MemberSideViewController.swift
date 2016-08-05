@@ -11,6 +11,7 @@ import UIKit
 class MemberSideViewController: UIViewController {
 
     @IBOutlet weak var sideTableView: UITableView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +70,7 @@ extension MemberSideViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
+
     }
     
     
@@ -121,7 +123,6 @@ extension MemberSideViewController: UITableViewDelegate, UITableViewDataSource {
             self.presentViewController(navVC, animated: true, completion: nil)
             AppState.sharedInstance.screen = "contact"
         }
-        
     }
 }
 

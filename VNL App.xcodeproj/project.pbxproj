@@ -25,6 +25,9 @@
 		6362E9B91D537209009DD3A2 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362E9B71D537209009DD3A2 /* ProfileTableViewCell.xib */; };
 		6362E9BC1D537E3C009DD3A2 /* CuriousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E9BA1D537E3C009DD3A2 /* CuriousViewController.swift */; };
 		6362E9BD1D537E3C009DD3A2 /* CuriousViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362E9BB1D537E3C009DD3A2 /* CuriousViewController.xib */; };
+		6362E9BF1D5468CE009DD3A2 /* CollapsableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E9BE1D5468CE009DD3A2 /* CollapsableViewModel.swift */; };
+		6362E9C21D546CFC009DD3A2 /* DropdownSideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E9C01D546CFC009DD3A2 /* DropdownSideTableViewController.swift */; };
+		6362E9C31D546CFC009DD3A2 /* DropdownSideTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362E9C11D546CFC009DD3A2 /* DropdownSideTableViewController.xib */; };
 		638100A81D4F76960095634C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638100A61D4F76960095634C /* SettingsViewController.swift */; };
 		638100A91D4F76960095634C /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638100A71D4F76960095634C /* SettingsViewController.xib */; };
 		638100AD1D4F7D830095634C /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638100AB1D4F7D830095634C /* BookingTableViewCell.swift */; };
@@ -80,6 +83,9 @@
 		6362E9B71D537209009DD3A2 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		6362E9BA1D537E3C009DD3A2 /* CuriousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuriousViewController.swift; sourceTree = "<group>"; };
 		6362E9BB1D537E3C009DD3A2 /* CuriousViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CuriousViewController.xib; sourceTree = "<group>"; };
+		6362E9BE1D5468CE009DD3A2 /* CollapsableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsableViewModel.swift; sourceTree = "<group>"; };
+		6362E9C01D546CFC009DD3A2 /* DropdownSideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownSideTableViewController.swift; sourceTree = "<group>"; };
+		6362E9C11D546CFC009DD3A2 /* DropdownSideTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropdownSideTableViewController.xib; sourceTree = "<group>"; };
 		638100A61D4F76960095634C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		638100A71D4F76960095634C /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		638100AB1D4F7D830095634C /* BookingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
@@ -169,7 +175,10 @@
 				638D46761D5320120073201E /* Old unused files - to be deleted */,
 				638100AA1D4F7D660095634C /* Booking */,
 				638100BB1D4FDA000095634C /* Settings */,
+				6362E9C41D54968F009DD3A2 /* Models */,
 				63F05EB61D4B610E00854B14 /* Supporting Files */,
+				6362E9C01D546CFC009DD3A2 /* DropdownSideTableViewController.swift */,
+				6362E9C11D546CFC009DD3A2 /* DropdownSideTableViewController.xib */,
 			);
 			path = "VNL App";
 			sourceTree = "<group>";
@@ -194,6 +203,14 @@
 				6362E9B71D537209009DD3A2 /* ProfileTableViewCell.xib */,
 			);
 			name = "Profile Menu";
+			sourceTree = "<group>";
+		};
+		6362E9C41D54968F009DD3A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6362E9BE1D5468CE009DD3A2 /* CollapsableViewModel.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		638100AA1D4F7D660095634C /* Booking */ = {
@@ -364,6 +381,7 @@
 				6362E9B01D536D76009DD3A2 /* MemberSideViewCell.xib in Resources */,
 				638100A91D4F76960095634C /* SettingsViewController.xib in Resources */,
 				639B0F871D4B91DC00EA49AA /* HomeViewController.xib in Resources */,
+				6362E9C31D546CFC009DD3A2 /* DropdownSideTableViewController.xib in Resources */,
 				631C21601D4A107900F5EC19 /* Assets.xcassets in Resources */,
 				639B0F8F1D4B95EC00EA49AA /* RegisterViewController.xib in Resources */,
 			);
@@ -426,6 +444,7 @@
 			files = (
 				6362E9BC1D537E3C009DD3A2 /* CuriousViewController.swift in Sources */,
 				638D466C1D5088B40073201E /* CalendarViewController.swift in Sources */,
+				6362E9C21D546CFC009DD3A2 /* DropdownSideTableViewController.swift in Sources */,
 				6362E9AB1D536D5E009DD3A2 /* MemberSideViewController.swift in Sources */,
 				633BC45B1D53621200B9DD6A /* InformationViewController.swift in Sources */,
 				63DCCCF11D4F49290045FB7F /* NavigationViewController.swift in Sources */,
@@ -433,6 +452,7 @@
 				638100AD1D4F7D830095634C /* BookingTableViewCell.swift in Sources */,
 				639B0F861D4B91DC00EA49AA /* HomeViewController.swift in Sources */,
 				638100B11D4F86920095634C /* SettingsTableViewCell.swift in Sources */,
+				6362E9BF1D5468CE009DD3A2 /* CollapsableViewModel.swift in Sources */,
 				638D467D1D533B1A0073201E /* BenefitsViewController.swift in Sources */,
 				6362E9B81D537209009DD3A2 /* ProfileTableViewCell.swift in Sources */,
 				63F05EB41D4B610300854B14 /* LoginViewController.swift in Sources */,

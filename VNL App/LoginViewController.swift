@@ -91,13 +91,6 @@ class LoginViewController: UIViewController {
     func dismissPicker() {
         view.endEditing(true)
     }
-    
-    @IBAction func homeButtonTapped(sender: AnyObject) {
-        let landingVC = LandingViewController(nibName: "LandingViewController", bundle: nil)
-        let navVC = UINavigationController(rootViewController: landingVC)
-        presentViewController(navVC, animated: true, completion: nil)
-    }
-
 }
 
 
@@ -108,7 +101,7 @@ extension LoginViewController {
         let height = UIScreen.mainScreen().bounds.size.height
         
         let imageViewBackground = UIImageView(frame: CGRectMake(0, 0, width, height))
-        imageViewBackground.image = UIImage(named: "terms2")
+        imageViewBackground.image = UIImage(named: "prime")
         
         // you can change the content mode:
         imageViewBackground.contentMode = UIViewContentMode.ScaleAspectFill
@@ -128,7 +121,7 @@ extension LoginViewController {
             field.borderInactiveColor = UIColor.VNLGreen()
             field.textColor = UIColor.blackColor()
             field.placeholderColor = UIColor.blackColor()
-            field.placeholderFontScale = 1.1
+            field.placeholderFontScale = 1.0
             field.inputAccessoryView = toolBar
             
         }
