@@ -30,7 +30,6 @@ class SettingsViewController: UIViewController {
 
 
 extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
-    
   
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("settingCell", forIndexPath: indexPath) as? SettingsTableViewCell
@@ -55,7 +54,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
                     cell?.titleLabel?.text = "Change Password"
                 }
                 else if indexPath.row == 1 {
-                    cell?.titleLabel?.text = "Update Hotel Prefrences"
+                    cell?.titleLabel?.text = "Update Profile"
                 }
                 else if indexPath.row == 2 {
                     cell?.titleLabel?.text = "Delete Account"
@@ -106,5 +105,14 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.section == 2 {
+            if indexPath.row == 1 {
+                let editUserVC = EditProfileViewController(nibName: "EditProfileViewController", bundle: nil)
+                let navVC = UINavigationController(rootViewController: editUserVC)
+                presentViewController(navVC, animated: true, completion: nil)
+            }
+        }
+    }
 }
 

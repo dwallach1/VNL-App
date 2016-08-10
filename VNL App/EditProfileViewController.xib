@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileViewController" customModule="VNL_App" customModuleProvider="target">
+            <connections>
+                <outlet property="changeUsernameTextField" destination="JIW-kT-Ekd" id="din-D4-OqJ"/>
+                <outlet property="displayNameLabel" destination="eca-35-eqo" id="sfP-gH-LDJ"/>
+                <outlet property="profileImageView" destination="VIw-3T-5lH" id="j4i-dN-Ztj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pac-Hd-80t">
+                    <rect key="frame" x="0.0" y="44" width="600" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userImage" translatesAutoresizingMaskIntoConstraints="NO" id="VIw-3T-5lH">
+                            <rect key="frame" x="20" y="37.5" width="125" height="125"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="WpK-gX-kWK"/>
+                                <constraint firstAttribute="height" constant="125" id="igC-qk-ZH8"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeT-9X-Jkb">
+                            <rect key="frame" x="20" y="37.5" width="125" height="125"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="imageButtonTapped:" destination="-1" eventType="touchUpInside" id="nhe-Ao-TIt"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Display Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eca-35-eqo">
+                            <rect key="frame" x="204" y="89" width="105" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="XeT-9X-Jkb" firstAttribute="bottom" secondItem="VIw-3T-5lH" secondAttribute="bottom" id="2h7-Pf-LGc"/>
+                        <constraint firstItem="eca-35-eqo" firstAttribute="centerY" secondItem="pac-Hd-80t" secondAttribute="centerY" id="4Db-1s-ruf"/>
+                        <constraint firstItem="XeT-9X-Jkb" firstAttribute="leading" secondItem="VIw-3T-5lH" secondAttribute="leading" id="Eje-gW-Wq8"/>
+                        <constraint firstItem="XeT-9X-Jkb" firstAttribute="trailing" secondItem="VIw-3T-5lH" secondAttribute="trailing" id="FXc-4M-uxC"/>
+                        <constraint firstItem="eca-35-eqo" firstAttribute="leading" secondItem="VIw-3T-5lH" secondAttribute="trailing" constant="30" id="Hoe-LU-Wda"/>
+                        <constraint firstItem="XeT-9X-Jkb" firstAttribute="width" secondItem="VIw-3T-5lH" secondAttribute="width" id="Peq-3h-0dR"/>
+                        <constraint firstItem="XeT-9X-Jkb" firstAttribute="top" secondItem="VIw-3T-5lH" secondAttribute="top" id="jeU-Qw-HTJ"/>
+                        <constraint firstAttribute="height" constant="200" id="nCj-d3-ZJt"/>
+                        <constraint firstItem="VIw-3T-5lH" firstAttribute="centerY" secondItem="pac-Hd-80t" secondAttribute="centerY" id="qEf-mA-gBc"/>
+                        <constraint firstItem="VIw-3T-5lH" firstAttribute="leading" secondItem="pac-Hd-80t" secondAttribute="leading" constant="20" id="sL4-Ab-uFi"/>
+                        <constraint firstItem="XeT-9X-Jkb" firstAttribute="height" secondItem="VIw-3T-5lH" secondAttribute="height" id="zOH-oT-rvs"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Change username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JIW-kT-Ekd" customClass="HoshiTextField" customModule="TextFieldEffects">
+                    <rect key="frame" x="20" y="284" width="560" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="LPH-9B-gcO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pac-Hd-80t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4yv-mw-3Mc"/>
+                <constraint firstItem="JIW-kT-Ekd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="5Gm-h8-yvA"/>
+                <constraint firstItem="pac-Hd-80t" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="JfV-04-0Af"/>
+                <constraint firstItem="JIW-kT-Ekd" firstAttribute="top" secondItem="pac-Hd-80t" secondAttribute="bottom" constant="40" id="Nlo-QK-blC"/>
+                <constraint firstAttribute="trailing" secondItem="pac-Hd-80t" secondAttribute="trailing" id="VR7-Fc-W7q"/>
+                <constraint firstAttribute="trailing" secondItem="JIW-kT-Ekd" secondAttribute="trailing" constant="20" id="vhZ-VI-BAG"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="userImage" width="225" height="225"/>
+    </resources>
+</document>

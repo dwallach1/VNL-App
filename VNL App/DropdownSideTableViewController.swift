@@ -25,7 +25,8 @@ class DropdownSideTableViewController: UITableViewController {
             CollapsibleViewModel(label: "HERMANUS PACKAGES", childTag: -1),
             CollapsibleViewModel(label: "LANGEBAAN PACKAGES", childTag: -1),
             CollapsibleViewModel(label: "CAPE TOWN PACKAGES", childTag: -1)], childTag: 3),
-        CollapsibleViewModel(label: "BOOKING", childTag: 0),
+        CollapsibleViewModel(label: "BOOKING", image: nil, children: [
+            CollapsibleViewModel(label: "CAMPS BAY", childTag: -1)], childTag: 1),
         CollapsibleViewModel(label: "HOST PARTNERS", childTag: 0),
         CollapsibleViewModel(label: "CONTACT", childTag: 0),
         ]
@@ -158,6 +159,12 @@ extension DropdownSideTableViewController {
             if indexPath.row == 1 {
                 print("lagenbaum")
             }
+        }
+        
+        if viewModel.label == "CAMPS BAY" && indexPath.row == 3 {
+            let campsBayVC = CampsBayBookingViewController(nibName: "CampsBayBookingViewController", bundle: nil)
+            let navVC = UINavigationController(rootViewController: campsBayVC)
+            presentViewController(navVC, animated: true, completion: nil)
         }
     }
     

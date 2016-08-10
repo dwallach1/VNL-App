@@ -25,6 +25,8 @@
   }
 
   "users" : {
-    "username" :
+    "uid" :
+    "firstName"
+    "lastName"
   }
 }

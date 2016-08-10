@@ -29,14 +29,14 @@
 		6362E9C21D546CFC009DD3A2 /* DropdownSideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E9C01D546CFC009DD3A2 /* DropdownSideTableViewController.swift */; };
 		6362E9C31D546CFC009DD3A2 /* DropdownSideTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362E9C11D546CFC009DD3A2 /* DropdownSideTableViewController.xib */; };
 		6362E9C61D54D16C009DD3A2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6362E9C51D54D16C009DD3A2 /* MessageUI.framework */; };
+		6362E9C91D54D8CF009DD3A2 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E9C71D54D8CF009DD3A2 /* EditProfileViewController.swift */; };
+		6362E9CA1D54D8CF009DD3A2 /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362E9C81D54D8CF009DD3A2 /* EditProfileViewController.xib */; };
 		638100A81D4F76960095634C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638100A61D4F76960095634C /* SettingsViewController.swift */; };
 		638100A91D4F76960095634C /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638100A71D4F76960095634C /* SettingsViewController.xib */; };
-		638100AD1D4F7D830095634C /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638100AB1D4F7D830095634C /* BookingTableViewCell.swift */; };
-		638100AE1D4F7D830095634C /* BookingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638100AC1D4F7D830095634C /* BookingTableViewCell.xib */; };
 		638100B11D4F86920095634C /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638100AF1D4F86920095634C /* SettingsTableViewCell.swift */; };
 		638100B21D4F86920095634C /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638100B01D4F86920095634C /* SettingsTableViewCell.xib */; };
-		638100B91D4F927D0095634C /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638100B71D4F927D0095634C /* BookingViewController.swift */; };
-		638100BA1D4F927D0095634C /* BookingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638100B81D4F927D0095634C /* BookingViewController.xib */; };
+		638100B91D4F927D0095634C /* CampsBayBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638100B71D4F927D0095634C /* CampsBayBookingViewController.swift */; };
+		638100BA1D4F927D0095634C /* CampsBayBookingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638100B81D4F927D0095634C /* CampsBayBookingViewController.xib */; };
 		638D46681D50878B0073201E /* CalendarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D46661D50878B0073201E /* CalendarViewCell.swift */; };
 		638D46691D50878B0073201E /* CalendarViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638D46671D50878B0073201E /* CalendarViewCell.xib */; };
 		638D466C1D5088B40073201E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D466A1D5088B40073201E /* CalendarViewController.swift */; };
@@ -47,6 +47,13 @@
 		638D467A1D53229F0073201E /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638D46781D53229F0073201E /* SideMenuViewController.xib */; };
 		638D467D1D533B1A0073201E /* BenefitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D467B1D533B1A0073201E /* BenefitsViewController.swift */; };
 		638D467E1D533B1A0073201E /* BenefitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638D467C1D533B1A0073201E /* BenefitsViewController.xib */; };
+		639A413B1D5B051B00E992AC /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A413A1D5B051B00E992AC /* BookingModel.swift */; };
+		639A41421D5B0D3C00E992AC /* CampsBayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A41401D5B0D3C00E992AC /* CampsBayTableViewCell.swift */; };
+		639A41431D5B0D3C00E992AC /* CampsBayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639A41411D5B0D3C00E992AC /* CampsBayTableViewCell.xib */; };
+		639A414A1D5B11DF00E992AC /* BayHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A41481D5B11DF00E992AC /* BayHotelViewController.swift */; };
+		639A414B1D5B11DF00E992AC /* BayHotelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639A41491D5B11DF00E992AC /* BayHotelViewController.xib */; };
+		639A414E1D5B151900E992AC /* BayHotelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A414C1D5B151900E992AC /* BayHotelCollectionViewCell.swift */; };
+		639A414F1D5B151900E992AC /* BayHotelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639A414D1D5B151900E992AC /* BayHotelCollectionViewCell.xib */; };
 		639B0F801D4B6A8100EA49AA /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */; };
 		639B0F811D4B6A8100EA49AA /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639B0F7F1D4B6A8100EA49AA /* LandingViewController.xib */; };
 		639B0F831D4B701E00EA49AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639B0F821D4B701E00EA49AA /* Extensions.swift */; };
@@ -88,14 +95,14 @@
 		6362E9C01D546CFC009DD3A2 /* DropdownSideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownSideTableViewController.swift; sourceTree = "<group>"; };
 		6362E9C11D546CFC009DD3A2 /* DropdownSideTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropdownSideTableViewController.xib; sourceTree = "<group>"; };
 		6362E9C51D54D16C009DD3A2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6362E9C71D54D8CF009DD3A2 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		6362E9C81D54D8CF009DD3A2 /* EditProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditProfileViewController.xib; sourceTree = "<group>"; };
 		638100A61D4F76960095634C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		638100A71D4F76960095634C /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
-		638100AB1D4F7D830095634C /* BookingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
-		638100AC1D4F7D830095634C /* BookingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingTableViewCell.xib; sourceTree = "<group>"; };
 		638100AF1D4F86920095634C /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		638100B01D4F86920095634C /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
-		638100B71D4F927D0095634C /* BookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
-		638100B81D4F927D0095634C /* BookingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingViewController.xib; sourceTree = "<group>"; };
+		638100B71D4F927D0095634C /* CampsBayBookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampsBayBookingViewController.swift; sourceTree = "<group>"; };
+		638100B81D4F927D0095634C /* CampsBayBookingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampsBayBookingViewController.xib; sourceTree = "<group>"; };
 		638D46661D50878B0073201E /* CalendarViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewCell.swift; sourceTree = "<group>"; };
 		638D46671D50878B0073201E /* CalendarViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewCell.xib; sourceTree = "<group>"; };
 		638D466A1D5088B40073201E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +113,13 @@
 		638D46781D53229F0073201E /* SideMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
 		638D467B1D533B1A0073201E /* BenefitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitsViewController.swift; sourceTree = "<group>"; };
 		638D467C1D533B1A0073201E /* BenefitsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitsViewController.xib; sourceTree = "<group>"; };
+		639A413A1D5B051B00E992AC /* BookingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
+		639A41401D5B0D3C00E992AC /* CampsBayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampsBayTableViewCell.swift; sourceTree = "<group>"; };
+		639A41411D5B0D3C00E992AC /* CampsBayTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampsBayTableViewCell.xib; sourceTree = "<group>"; };
+		639A41481D5B11DF00E992AC /* BayHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BayHotelViewController.swift; sourceTree = "<group>"; };
+		639A41491D5B11DF00E992AC /* BayHotelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BayHotelViewController.xib; sourceTree = "<group>"; };
+		639A414C1D5B151900E992AC /* BayHotelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BayHotelCollectionViewCell.swift; sourceTree = "<group>"; };
+		639A414D1D5B151900E992AC /* BayHotelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BayHotelCollectionViewCell.xib; sourceTree = "<group>"; };
 		639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		639B0F7F1D4B6A8100EA49AA /* LandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
 		639B0F821D4B701E00EA49AA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -161,27 +175,19 @@
 				639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */,
 				639B0F7F1D4B6A8100EA49AA /* LandingViewController.xib */,
 				638D467F1D5346710073201E /* Non-Member Side Menu */,
+				639A41391D5B02AC00E992AC /* Static Non-Member Files */,
 				6362E9A81D536D42009DD3A2 /* Member Side Menu */,
 				6362E9B11D5371DE009DD3A2 /* Profile Menu */,
-				6362E9BA1D537E3C009DD3A2 /* CuriousViewController.swift */,
-				6362E9BB1D537E3C009DD3A2 /* CuriousViewController.xib */,
 				63F05EB21D4B610300854B14 /* LoginViewController.swift */,
 				63F05EB31D4B610300854B14 /* LoginViewController.xib */,
 				639B0F841D4B91DC00EA49AA /* HomeViewController.swift */,
 				639B0F851D4B91DC00EA49AA /* HomeViewController.xib */,
-				638D467B1D533B1A0073201E /* BenefitsViewController.swift */,
-				638D467C1D533B1A0073201E /* BenefitsViewController.xib */,
-				633BC4591D53621200B9DD6A /* InformationViewController.swift */,
-				633BC45A1D53621200B9DD6A /* InformationViewController.xib */,
 				633BC45F1D5365E900B9DD6A /* ContactViewController.swift */,
 				633BC4601D5365E900B9DD6A /* ContactViewController.xib */,
-				638D46761D5320120073201E /* Old unused files - to be deleted */,
 				638100AA1D4F7D660095634C /* Booking */,
-				638100BB1D4FDA000095634C /* Settings */,
 				6362E9C41D54968F009DD3A2 /* Models */,
 				63F05EB61D4B610E00854B14 /* Supporting Files */,
-				6362E9C01D546CFC009DD3A2 /* DropdownSideTableViewController.swift */,
-				6362E9C11D546CFC009DD3A2 /* DropdownSideTableViewController.xib */,
+				638D46761D5320120073201E /* Old unused files - to be deleted */,
 			);
 			path = "VNL App";
 			sourceTree = "<group>";
@@ -189,10 +195,8 @@
 		6362E9A81D536D42009DD3A2 /* Member Side Menu */ = {
 			isa = PBXGroup;
 			children = (
-				6362E9A91D536D5E009DD3A2 /* MemberSideViewController.swift */,
-				6362E9AA1D536D5E009DD3A2 /* MemberSideViewController.xib */,
-				6362E9AD1D536D76009DD3A2 /* MemberSideViewCell.swift */,
-				6362E9AE1D536D76009DD3A2 /* MemberSideViewCell.xib */,
+				6362E9C01D546CFC009DD3A2 /* DropdownSideTableViewController.swift */,
+				6362E9C11D546CFC009DD3A2 /* DropdownSideTableViewController.xib */,
 			);
 			name = "Member Side Menu";
 			sourceTree = "<group>";
@@ -204,6 +208,9 @@
 				6362E9B31D5371F7009DD3A2 /* ProfileViewController.xib */,
 				6362E9B61D537209009DD3A2 /* ProfileTableViewCell.swift */,
 				6362E9B71D537209009DD3A2 /* ProfileTableViewCell.xib */,
+				638100BB1D4FDA000095634C /* Settings */,
+				6362E9C71D54D8CF009DD3A2 /* EditProfileViewController.swift */,
+				6362E9C81D54D8CF009DD3A2 /* EditProfileViewController.xib */,
 			);
 			name = "Profile Menu";
 			sourceTree = "<group>";
@@ -212,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				6362E9BE1D5468CE009DD3A2 /* CollapsableViewModel.swift */,
+				639A413A1D5B051B00E992AC /* BookingModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -219,10 +227,14 @@
 		638100AA1D4F7D660095634C /* Booking */ = {
 			isa = PBXGroup;
 			children = (
-				638100B71D4F927D0095634C /* BookingViewController.swift */,
-				638100B81D4F927D0095634C /* BookingViewController.xib */,
-				638100AB1D4F7D830095634C /* BookingTableViewCell.swift */,
-				638100AC1D4F7D830095634C /* BookingTableViewCell.xib */,
+				638100B71D4F927D0095634C /* CampsBayBookingViewController.swift */,
+				638100B81D4F927D0095634C /* CampsBayBookingViewController.xib */,
+				639A41401D5B0D3C00E992AC /* CampsBayTableViewCell.swift */,
+				639A41411D5B0D3C00E992AC /* CampsBayTableViewCell.xib */,
+				639A41481D5B11DF00E992AC /* BayHotelViewController.swift */,
+				639A41491D5B11DF00E992AC /* BayHotelViewController.xib */,
+				639A414C1D5B151900E992AC /* BayHotelCollectionViewCell.swift */,
+				639A414D1D5B151900E992AC /* BayHotelCollectionViewCell.xib */,
 				638D46651D5087440073201E /* Calendar */,
 			);
 			name = Booking;
@@ -253,6 +265,10 @@
 		638D46761D5320120073201E /* Old unused files - to be deleted */ = {
 			isa = PBXGroup;
 			children = (
+				6362E9A91D536D5E009DD3A2 /* MemberSideViewController.swift */,
+				6362E9AA1D536D5E009DD3A2 /* MemberSideViewController.xib */,
+				6362E9AD1D536D76009DD3A2 /* MemberSideViewCell.swift */,
+				6362E9AE1D536D76009DD3A2 /* MemberSideViewCell.xib */,
 				63DCCCF01D4F49290045FB7F /* NavigationViewController.swift */,
 				639B0F8C1D4B95EC00EA49AA /* RegisterViewController.swift */,
 				639B0F8D1D4B95EC00EA49AA /* RegisterViewController.xib */,
@@ -269,6 +285,19 @@
 				638D46731D5320040073201E /* SideMenuTableViewCell.xib */,
 			);
 			name = "Non-Member Side Menu";
+			sourceTree = "<group>";
+		};
+		639A41391D5B02AC00E992AC /* Static Non-Member Files */ = {
+			isa = PBXGroup;
+			children = (
+				6362E9BA1D537E3C009DD3A2 /* CuriousViewController.swift */,
+				6362E9BB1D537E3C009DD3A2 /* CuriousViewController.xib */,
+				638D467B1D533B1A0073201E /* BenefitsViewController.swift */,
+				638D467C1D533B1A0073201E /* BenefitsViewController.xib */,
+				633BC4591D53621200B9DD6A /* InformationViewController.swift */,
+				633BC45A1D53621200B9DD6A /* InformationViewController.xib */,
+			);
+			name = "Static Non-Member Files";
 			sourceTree = "<group>";
 		};
 		63F05EB61D4B610E00854B14 /* Supporting Files */ = {
@@ -368,8 +397,8 @@
 				639B0F811D4B6A8100EA49AA /* LandingViewController.xib in Resources */,
 				633BC4621D5365E900B9DD6A /* ContactViewController.xib in Resources */,
 				638D46691D50878B0073201E /* CalendarViewCell.xib in Resources */,
+				639A41431D5B0D3C00E992AC /* CampsBayTableViewCell.xib in Resources */,
 				6362E9AC1D536D5E009DD3A2 /* MemberSideViewController.xib in Resources */,
-				638100AE1D4F7D830095634C /* BookingTableViewCell.xib in Resources */,
 				63F05EB51D4B610300854B14 /* LoginViewController.xib in Resources */,
 				638D467A1D53229F0073201E /* SideMenuViewController.xib in Resources */,
 				631C21631D4A107900F5EC19 /* LaunchScreen.storyboard in Resources */,
@@ -379,12 +408,15 @@
 				638D46751D5320040073201E /* SideMenuTableViewCell.xib in Resources */,
 				6362E9BD1D537E3C009DD3A2 /* CuriousViewController.xib in Resources */,
 				638100B21D4F86920095634C /* SettingsTableViewCell.xib in Resources */,
-				638100BA1D4F927D0095634C /* BookingViewController.xib in Resources */,
+				638100BA1D4F927D0095634C /* CampsBayBookingViewController.xib in Resources */,
+				639A414F1D5B151900E992AC /* BayHotelCollectionViewCell.xib in Resources */,
 				638D467E1D533B1A0073201E /* BenefitsViewController.xib in Resources */,
+				6362E9CA1D54D8CF009DD3A2 /* EditProfileViewController.xib in Resources */,
 				631C216B1D4A10A000F5EC19 /* GoogleService-Info.plist in Resources */,
 				6362E9B01D536D76009DD3A2 /* MemberSideViewCell.xib in Resources */,
 				638100A91D4F76960095634C /* SettingsViewController.xib in Resources */,
 				639B0F871D4B91DC00EA49AA /* HomeViewController.xib in Resources */,
+				639A414B1D5B11DF00E992AC /* BayHotelViewController.xib in Resources */,
 				6362E9C31D546CFC009DD3A2 /* DropdownSideTableViewController.xib in Resources */,
 				631C21601D4A107900F5EC19 /* Assets.xcassets in Resources */,
 				639B0F8F1D4B95EC00EA49AA /* RegisterViewController.xib in Resources */,
@@ -453,7 +485,8 @@
 				633BC45B1D53621200B9DD6A /* InformationViewController.swift in Sources */,
 				63DCCCF11D4F49290045FB7F /* NavigationViewController.swift in Sources */,
 				638D46681D50878B0073201E /* CalendarViewCell.swift in Sources */,
-				638100AD1D4F7D830095634C /* BookingTableViewCell.swift in Sources */,
+				639A413B1D5B051B00E992AC /* BookingModel.swift in Sources */,
+				639A414E1D5B151900E992AC /* BayHotelCollectionViewCell.swift in Sources */,
 				639B0F861D4B91DC00EA49AA /* HomeViewController.swift in Sources */,
 				638100B11D4F86920095634C /* SettingsTableViewCell.swift in Sources */,
 				6362E9BF1D5468CE009DD3A2 /* CollapsableViewModel.swift in Sources */,
@@ -462,17 +495,20 @@
 				63F05EB41D4B610300854B14 /* LoginViewController.swift in Sources */,
 				633BC4611D5365E900B9DD6A /* ContactViewController.swift in Sources */,
 				639B0F801D4B6A8100EA49AA /* LandingViewController.swift in Sources */,
+				639A414A1D5B11DF00E992AC /* BayHotelViewController.swift in Sources */,
 				639B0F8E1D4B95EC00EA49AA /* RegisterViewController.swift in Sources */,
 				639B0F891D4B924700EA49AA /* AppState.swift in Sources */,
 				639B0F8B1D4B937A00EA49AA /* Constants.swift in Sources */,
 				6362E9B41D5371F7009DD3A2 /* ProfileViewController.swift in Sources */,
+				6362E9C91D54D8CF009DD3A2 /* EditProfileViewController.swift in Sources */,
 				6362E9AF1D536D76009DD3A2 /* MemberSideViewCell.swift in Sources */,
 				638100A81D4F76960095634C /* SettingsViewController.swift in Sources */,
 				631C21591D4A107900F5EC19 /* AppDelegate.swift in Sources */,
 				638D46741D5320040073201E /* SideMenuTableViewCell.swift in Sources */,
-				638100B91D4F927D0095634C /* BookingViewController.swift in Sources */,
+				638100B91D4F927D0095634C /* CampsBayBookingViewController.swift in Sources */,
 				638D46791D53229F0073201E /* SideMenuViewController.swift in Sources */,
 				639B0F831D4B701E00EA49AA /* Extensions.swift in Sources */,
+				639A41421D5B0D3C00E992AC /* CampsBayTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

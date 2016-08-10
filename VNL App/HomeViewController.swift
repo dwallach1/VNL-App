@@ -36,14 +36,12 @@ class HomeViewController: UIViewController {
         
         exclusiveLabel.alpha = 0
         fansLabel.alpha = 0
-    }
-    
-    override func viewDidAppear(animated: Bool) {
+        
         self.performSelector(#selector(fade), withObject: self, afterDelay: 7)
         exclusiveLabel.fadeIn(2)
         fansLabel.fadeIn(3)
     }
-    
+        
     func fade() {
         exclusiveLabel.fadeOut()
         fansLabel.fadeOut()

@@ -11,6 +11,7 @@ import Firebase
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var topLabelBackground: UIView!
     @IBOutlet weak var sideTableView: UITableView!
@@ -32,6 +33,9 @@ class ProfileViewController: UIViewController {
         topLabelBackground.backgroundColor = UIColor.VNLGrey()
         userImage.layer.cornerRadius = userImage.frame.size.width / 2
         userImage.clipsToBounds = true
+        
+        welcomeLabel.text = "Welcome, \((FIRAuth.auth()?.currentUser?.displayName)!)"
+        welcomeLabel.adjustsFontSizeToFitWidth = true
     }
     
     override func sideMenuTapped() {
