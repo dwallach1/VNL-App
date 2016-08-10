@@ -11,10 +11,11 @@ import JTAppleCalendar
 
 class CalendarViewCell: JTAppleDayCellView {
 
+    @IBOutlet weak var selectedView: UIView!
     @IBOutlet weak var dayLabel: UILabel!
     
-    var normalDayColor = UIColor.blackColor()
-    var weekendDayColor = UIColor.grayColor()
+    var normalDayColor = UIColor.whiteColor()
+    var weekendDayColor = UIColor.VNLGrey()
     
     
     func setupCellBeforeDisplay(cellState: CellState, date: NSDate) {
@@ -25,17 +26,32 @@ class CalendarViewCell: JTAppleDayCellView {
         configureTextColor(cellState)
     }
     
-    func configureTextColor(cellState: CellState) {
-        if cellState.dateBelongsTo == .ThisMonth {
-            dayLabel.textColor = normalDayColor
-        } else {
-            dayLabel.textColor = weekendDayColor
-        }
-    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.backgroundColor = UIColor.whiteColor()
+        
+        selectedView.layer.cornerRadius = selectedView.frame.size.width / 2
+        selectedView.clipsToBounds = true
+        selectedView.backgroundColor = UIColor.VNLBlue()
+    }
+    
+    func cellSelectionChanged(cellState: CellState) {
+        if cellState.isSelected {
+            selectedView.hidden = false
+            dayLabel.textColor = UIColor.whiteColor()
+        } else {
+            selectedView.hidden = true
+            dayLabel.textColor = UIColor.blackColor()
+        }
+    }
+    
+    func configureTextColor(cellState: CellState) {
+        if cellState.dateBelongsTo == .ThisMonth {
+            dayLabel.textColor = UIColor.blackColor()
+        } else {
+            dayLabel.textColor = UIColor.grayColor()
+        }
     }
     
 }

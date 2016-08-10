@@ -25,13 +25,13 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mountain Room" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cIi-sM-0yR">
                                 <rect key="frame" x="10" y="32" width="212" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="R 1,100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGY-dq-wcb">
-                                <rect key="frame" x="10" y="63" width="212" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R 1,100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGY-dq-wcb">
+                                <rect key="frame" x="10" y="63" width="212" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -49,13 +49,13 @@
                         </constraints>
                     </view>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" text="This room looks over the beautful beach. Has 3 beds 2 bath rooms. Great for a romantic weekend" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7l-Ba-ZeZ">
-                        <rect key="frame" x="0.0" y="125" width="200" height="101"/>
+                        <rect key="frame" x="0.0" y="115" width="200" height="111"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiF-EC-CrY" customClass="MKButton" customModule="MaterialKit">
-                        <rect key="frame" x="276" y="160" width="100" height="30"/>
+                        <rect key="frame" x="276" y="155" width="100" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="9Bd-L8-zeX"/>
                             <constraint firstAttribute="width" constant="100" id="NK7-sK-ucf"/>
@@ -72,7 +72,7 @@
                 <constraint firstItem="Wya-FO-KBJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="9oE-1s-MuV"/>
                 <constraint firstAttribute="trailing" secondItem="TfH-Vb-Ddr" secondAttribute="trailing" id="AIg-L1-7Tm"/>
                 <constraint firstItem="Wya-FO-KBJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Lbr-NX-GxN"/>
-                <constraint firstItem="p7l-Ba-ZeZ" firstAttribute="top" secondItem="Wya-FO-KBJ" secondAttribute="bottom" constant="20" id="TP6-hI-Xaq"/>
+                <constraint firstItem="p7l-Ba-ZeZ" firstAttribute="top" secondItem="Wya-FO-KBJ" secondAttribute="bottom" constant="10" id="TP6-hI-Xaq"/>
                 <constraint firstItem="TfH-Vb-Ddr" firstAttribute="leading" secondItem="Wya-FO-KBJ" secondAttribute="trailing" constant="5" id="jkz-ia-Qb9"/>
                 <constraint firstItem="p7l-Ba-ZeZ" firstAttribute="width" secondItem="Wya-FO-KBJ" secondAttribute="width" id="l9c-nJ-eeN"/>
                 <constraint firstItem="p7l-Ba-ZeZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oHi-yZ-80T"/>

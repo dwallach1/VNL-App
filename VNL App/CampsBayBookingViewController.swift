@@ -22,8 +22,6 @@ class CampsBayBookingViewController: UIViewController {
         dbref = FIRDatabase.database().reference().child("bookings")
         dbref = dbref.child("camps_bay")
         
-        
-        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 176
@@ -31,11 +29,25 @@ class CampsBayBookingViewController: UIViewController {
         self.view.backgroundColor = UIColor.VNLDarkBlue()
         
         self.navigationItem.title = "Camps Bay"
-        self.navigationController!.navigationBar.barStyle = UIBarStyle.Black
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blackColor()]
         self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+        let leftBarButton = UIBarButtonItem(image: UIImage(named: "backIcon"), style: .Plain, target: self, action: #selector(backButtonTapped))
+        leftBarButton.tintColor = UIColor.blackColor()
+        self.navigationItem.leftBarButtonItem = leftBarButton
         
         let campsBayCell = UINib(nibName: "CampsBayTableViewCell", bundle: nil)
         tableView.registerNib(campsBayCell, forCellReuseIdentifier: "campsBayCell")
+    }
+    
+    func backButtonTapped() {
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromTop
+        view.window!.layer.addAnimation(transition, forKey: kCATransition)
+        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let navVC = UINavigationController(rootViewController: homeVC)
+        presentViewController(navVC, animated: true, completion: nil)
     }
     
 //    func startObservingDB() {

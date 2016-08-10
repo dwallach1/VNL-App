@@ -16,8 +16,8 @@ class DropdownSideTableViewController: UITableViewController {
     let data = [
         CollapsibleViewModel(label: "RATES", image: nil, children: [
             CollapsibleViewModel(label: "HERMANUS", childTag: -1),
-            CollapsibleViewModel(label: "LANGEBAAN", childTag: -1),
             CollapsibleViewModel(label: "CAMPS BAY", childTag: -1),
+            CollapsibleViewModel(label: "LANGEBAAN", childTag: -1),
             CollapsibleViewModel(label: "DE WATERKANT", childTag: -1),
             CollapsibleViewModel(label: "MOUILLE POINT", childTag: -1),
             CollapsibleViewModel(label: "V&A WATERFRONT", childTag: -1)], childTag: 6),
@@ -48,16 +48,18 @@ class DropdownSideTableViewController: UITableViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        let cells = [0,1,2,3]
+        let cells = [0,1,2,3,4]
         for cell in cells {
             let defaultIndexPath: NSIndexPath = NSIndexPath(forRow: cell, inSection: 0)
             if AppState.sharedInstance.screen == "rates" && cell == 0 {
                 sideTableView.selectRowAtIndexPath(defaultIndexPath, animated: true, scrollPosition: .None)
             } else if AppState.sharedInstance.screen == "exclusive" && cell == 1 {
                 sideTableView.selectRowAtIndexPath(defaultIndexPath, animated: true, scrollPosition: .None)
-            } else if AppState.sharedInstance.screen == "partners" && cell == 2 {
+            } else if AppState.sharedInstance.screen == "booking" && cell == 2 {
                 sideTableView.selectRowAtIndexPath(defaultIndexPath, animated: true, scrollPosition: .None)
-            } else if AppState.sharedInstance.screen == "contact" && cell == 3 {
+            }  else if AppState.sharedInstance.screen == "partners" && cell == 3 {
+                sideTableView.selectRowAtIndexPath(defaultIndexPath, animated: true, scrollPosition: .None)
+            } else if AppState.sharedInstance.screen == "contact" && cell == 4 {
                 sideTableView.selectRowAtIndexPath(defaultIndexPath, animated: true, scrollPosition: .None)
             }
         }
@@ -127,23 +129,54 @@ extension DropdownSideTableViewController {
         let viewModel = displayedRows[indexPath.row]
         
         print("\(indexPath.row) +++++++ \(viewModel.label)")
+        print("\(AppState.sharedInstance.currCellState.open)")
+//        
+//        if AppState.sharedInstance.currCellState.open == true {
+//            tableView.beginUpdates()
+//            let cellToRemove = AppState.sharedInstance.currCellState.index
+//            let currViewModel = displayedRows[(cellToRemove?.row)!]
+//            let range = cellToRemove!.row+1...cellToRemove!.row+currViewModel.children.count
+//            let indexPaths = range.map{return NSIndexPath(forRow: $0, inSection: cellToRemove!.section)}
+//            
+//            displayedRows.removeRange(range)
+//            tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
+//            tableView.deselectRowAtIndexPath(cellToRemove!, animated: false)
+//            tableView.rowHeight = 88
+//            tableView.endUpdates()
+//        }
 
         if viewModel.children.count > 0 {
             let range = indexPath.row+1...indexPath.row+viewModel.children.count
             let indexPaths = range.map{return NSIndexPath(forRow: $0, inSection: indexPath.section)}
             tableView.beginUpdates()
+            
             if viewModel.isCollapsed {
+//                if AppState.sharedInstance.currCellState.open == true {
+//                    let cellToRemove = AppState.sharedInstance.currCellState.index
+//                    let currViewModel = displayedRows[(cellToRemove?.row)!]
+//                    let range = cellToRemove!.row+1...cellToRemove!.row+currViewModel.children.count
+//                    let indexPaths = range.map{return NSIndexPath(forRow: $0, inSection: cellToRemove!.section)}
+//                    print("got here ++++++ \(cellToRemove?.row))")
+//                    displayedRows.removeRange(range)
+//                    tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
+//                    tableView.deselectRowAtIndexPath(cellToRemove!, animated: false)
+//                    tableView.rowHeight = 88
+//                    AppState.sharedInstance.currCellState.open = false
+//                }
                 displayedRows.insertContentsOf(viewModel.children, at: indexPath.row+1)
                 tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
+//                AppState.sharedInstance.currCellState = cellState(open: true, index: indexPath)
             } else {
                 displayedRows.removeRange(range)
                 tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
                 tableView.rowHeight = 88
                 tableView.deselectRowAtIndexPath(indexPath, animated: false)
+//                AppState.sharedInstance.currCellState.open = false
 
             }
             tableView.endUpdates()
         }
+        
         viewModel.isCollapsed = !viewModel.isCollapsed
         setAppState(indexPath)
         setSegue(indexPath)
@@ -166,6 +199,12 @@ extension DropdownSideTableViewController {
             let navVC = UINavigationController(rootViewController: campsBayVC)
             presentViewController(navVC, animated: true, completion: nil)
         }
+        
+        if viewModel.label == "CONTACT" && indexPath.row == 4 {
+            let contactVC = ContactViewController(nibName: "ContactViewController", bundle: nil)
+            let navVC = UINavigationController(rootViewController: contactVC)
+            presentViewController(navVC, animated: true, completion: nil)
+        }
     }
     
     func setAppState(indexPath: NSIndexPath) {
@@ -173,14 +212,15 @@ extension DropdownSideTableViewController {
             AppState.sharedInstance.screen = "rates"
         }
         if indexPath.row == 1 {
-            
             AppState.sharedInstance.screen = "exclusive"
         }
         if indexPath.row == 2 {
-            
-            AppState.sharedInstance.screen = "partners"
+            AppState.sharedInstance.screen = "booking"
         }
         if indexPath.row == 3 {
+            AppState.sharedInstance.screen = "partners"
+        }
+        if indexPath.row == 4 {
             AppState.sharedInstance.screen = "contact"
         }
     }

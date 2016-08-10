@@ -9,8 +9,10 @@ target 'VNL App' do
   pod 'Firebase'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
   pod 'TextFieldEffects'
   pod 'MaterialKit', '~> 0.4'
   pod 'JTAppleCalendar'
+  pod 'SwiftDate', '~> 3.0'
   pod 'ImageSlideshow', '~> 0.4'
 end

@@ -11,20 +11,29 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBX-Rt-2JF">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt5-Ov-RdN">
-                    <rect key="frame" x="279" y="289.5" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <rect key="frame" x="282.5" y="291.5" width="35" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="nBX-Rt-2JF" secondAttribute="bottom" id="8t3-oV-rhT"/>
                 <constraint firstItem="wt5-Ov-RdN" firstAttribute="centerX" secondItem="FqC-l6-Oyj" secondAttribute="centerX" id="FgV-ce-yZ5"/>
+                <constraint firstItem="nBX-Rt-2JF" firstAttribute="leading" secondItem="FqC-l6-Oyj" secondAttribute="leading" id="RYT-W2-ITe"/>
                 <constraint firstItem="wt5-Ov-RdN" firstAttribute="centerY" secondItem="FqC-l6-Oyj" secondAttribute="centerY" id="Ysj-mn-zoy"/>
+                <constraint firstAttribute="trailing" secondItem="nBX-Rt-2JF" secondAttribute="trailing" id="agT-et-hy2"/>
+                <constraint firstItem="nBX-Rt-2JF" firstAttribute="top" secondItem="FqC-l6-Oyj" secondAttribute="top" id="woe-re-XMN"/>
             </constraints>
             <connections>
                 <outlet property="dayLabel" destination="wt5-Ov-RdN" id="RIs-TJ-duZ"/>
+                <outlet property="selectedView" destination="nBX-Rt-2JF" id="tzj-Eb-XU3"/>
             </connections>
             <point key="canvasLocation" x="-887" y="-1024"/>
         </view>

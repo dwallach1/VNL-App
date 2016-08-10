@@ -9,10 +9,14 @@
 import UIKit
 import TextFieldEffects
 import Firebase
+import FirebaseAuth
+import MaterialKit
 
 class EditProfileViewController: UIViewController {
 
-    @IBOutlet weak var changeUsernameTextField: HoshiTextField!
+    @IBOutlet weak var updateButton: MKButton!
+    @IBOutlet weak var lastNameTextField: HoshiTextField!
+    @IBOutlet weak var firstNameTextField: HoshiTextField!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var displayNameLabel: UILabel!
     
@@ -31,6 +35,18 @@ class EditProfileViewController: UIViewController {
         
     }
 
+    @IBAction func updateButtonTapped(sender: AnyObject) {
+//        var user = FIRAuth.auth()!.currentUser
+//       
+//        user.updateProfile({
+//            displayName: "\(firstNameTextField.text)",
+//            photoURL: "https://example.com/jane-q-user/profile.jpg"
+//        }).then(function() {
+//            // Update successful.
+//            }, function(error) {
+//                // An error happened.
+//            });
+    }
 
 }
 
@@ -44,7 +60,7 @@ extension EditProfileViewController {
         displayNameLabel.adjustsFontSizeToFitWidth = true
         
         let toolBar = UIToolbar().ToolbarPiker(#selector(dismissPicker))
-        let fields = [changeUsernameTextField]
+        let fields = [firstNameTextField, lastNameTextField]
         
         for field in fields {
             field.backgroundColor = UIColor.clearColor()
@@ -52,9 +68,16 @@ extension EditProfileViewController {
             field.borderInactiveColor = UIColor.VNLGreen()
             field.textColor = UIColor.blackColor()
             field.placeholderColor = UIColor.blackColor()
-//            field.placeholderFontScale = 1.0
             field.inputAccessoryView = toolBar
         }
+        
+        updateButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        updateButton.setTitle("Login", forState: .Normal)
+        updateButton.rippleLayerColor = UIColor.whiteColor()
+        updateButton.backgroundColor = UIColor.VNLBlue()
+        updateButton.layer.cornerRadius = 4
+
+    
     }
     
     func dismissPicker() {

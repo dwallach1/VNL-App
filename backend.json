@@ -1,0 +1,52 @@
+{
+  "campsBay": {
+    "bayHotel" : {
+      "rooms": {
+        "mountain" : {
+          "price" : 1100,
+          "open" : true
+        },
+				"classic" : {
+					"price" : 1100,
+					"open" : true
+				},
+				"clubClassic" : {
+					"price" : 1100,
+					"open": true
+				},
+				"premierMountain" : {
+					"price" : 1200,
+					"open" : true
+				},
+				"premierPool" : {
+					"price" : 1200,
+					"open" : true
+				},
+				"premierSea" :  {
+					"price" : 13250,
+					"open" : true
+				},
+				"cabana" : {
+					"price" : 1350,
+					"open" : true
+				},
+				"luxury" : {
+					"price" : 1200,
+					"open" : true
+				},
+				"suite" : {
+					"price" : 1200,
+					"open" : true
+				},
+				"penthouse" : {
+					"price" : 1350,
+					"open" : true
+				},
+				"adventurePad" : {
+					"price" : 1350,
+					"open" : true
+				}
+      }
+    }
+  }
+}

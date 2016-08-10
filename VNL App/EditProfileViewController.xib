@@ -7,9 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileViewController" customModule="VNL_App" customModuleProvider="target">
             <connections>
-                <outlet property="changeUsernameTextField" destination="JIW-kT-Ekd" id="din-D4-OqJ"/>
                 <outlet property="displayNameLabel" destination="eca-35-eqo" id="sfP-gH-LDJ"/>
+                <outlet property="firstNameTextField" destination="JIW-kT-Ekd" id="2vf-yN-YGq"/>
+                <outlet property="lastNameTextField" destination="AfT-kh-K9q" id="MgP-5f-REn"/>
                 <outlet property="profileImageView" destination="VIw-3T-5lH" id="j4i-dN-Ztj"/>
+                <outlet property="updateButton" destination="IpJ-qd-A5E" id="33E-to-uqW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,21 +24,21 @@
                     <rect key="frame" x="0.0" y="44" width="600" height="200"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userImage" translatesAutoresizingMaskIntoConstraints="NO" id="VIw-3T-5lH">
-                            <rect key="frame" x="20" y="37.5" width="125" height="125"/>
+                            <rect key="frame" x="20" y="37" width="125" height="125"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="125" id="WpK-gX-kWK"/>
                                 <constraint firstAttribute="height" constant="125" id="igC-qk-ZH8"/>
                             </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeT-9X-Jkb">
-                            <rect key="frame" x="20" y="37.5" width="125" height="125"/>
+                            <rect key="frame" x="20" y="37" width="125" height="125"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="imageButtonTapped:" destination="-1" eventType="touchUpInside" id="nhe-Ao-TIt"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Display Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eca-35-eqo">
-                            <rect key="frame" x="204" y="89" width="105" height="20.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eca-35-eqo">
+                            <rect key="frame" x="175" y="89" width="105" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
@@ -57,7 +59,7 @@
                         <constraint firstItem="XeT-9X-Jkb" firstAttribute="height" secondItem="VIw-3T-5lH" secondAttribute="height" id="zOH-oT-rvs"/>
                     </constraints>
                 </view>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Change username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JIW-kT-Ekd" customClass="HoshiTextField" customModule="TextFieldEffects">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JIW-kT-Ekd" customClass="HoshiTextField" customModule="TextFieldEffects">
                     <rect key="frame" x="20" y="284" width="560" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="LPH-9B-gcO"/>
@@ -65,14 +67,40 @@
                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AfT-kh-K9q" customClass="HoshiTextField" customModule="TextFieldEffects">
+                    <rect key="frame" x="20" y="354" width="560" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="uzb-n8-UdR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpJ-qd-A5E" customClass="MKButton" customModule="MaterialKit">
+                    <rect key="frame" x="254" y="539" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="U4k-eR-bO1"/>
+                        <constraint firstAttribute="height" constant="30" id="gD0-mE-q03"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="updateButtonTapped:" destination="-1" eventType="touchUpInside" id="HG0-fE-shP"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="pac-Hd-80t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4yv-mw-3Mc"/>
                 <constraint firstItem="JIW-kT-Ekd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="5Gm-h8-yvA"/>
+                <constraint firstItem="IpJ-qd-A5E" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7ta-sI-VLj"/>
+                <constraint firstItem="AfT-kh-K9q" firstAttribute="height" secondItem="JIW-kT-Ekd" secondAttribute="height" id="FzR-NM-rAP"/>
+                <constraint firstAttribute="trailing" secondItem="AfT-kh-K9q" secondAttribute="trailing" constant="20" id="GiU-gv-ZaE"/>
                 <constraint firstItem="pac-Hd-80t" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="JfV-04-0Af"/>
                 <constraint firstItem="JIW-kT-Ekd" firstAttribute="top" secondItem="pac-Hd-80t" secondAttribute="bottom" constant="40" id="Nlo-QK-blC"/>
                 <constraint firstAttribute="trailing" secondItem="pac-Hd-80t" secondAttribute="trailing" id="VR7-Fc-W7q"/>
+                <constraint firstItem="AfT-kh-K9q" firstAttribute="width" secondItem="JIW-kT-Ekd" secondAttribute="width" id="ZEd-4X-SKv"/>
+                <constraint firstAttribute="bottom" secondItem="IpJ-qd-A5E" secondAttribute="bottom" constant="30" id="iYP-S4-Hkn"/>
+                <constraint firstItem="AfT-kh-K9q" firstAttribute="top" secondItem="JIW-kT-Ekd" secondAttribute="bottom" constant="20" id="oGD-FR-wua"/>
+                <constraint firstItem="AfT-kh-K9q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="pwd-OY-I4S"/>
                 <constraint firstAttribute="trailing" secondItem="JIW-kT-Ekd" secondAttribute="trailing" constant="20" id="vhZ-VI-BAG"/>
             </constraints>
         </view>

@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftDate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TextFieldEffects.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,17 +42,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>093A3F0E4BD29F2D23012DAF69AA67D5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2E2ED75B03CF4A2D0719664A48C0B27E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>334C65BC4A90C07F1726670830E20A3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>73850773DC05DB0F801C716B2A9E95F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A397372BE10E91C9FCC74F74B649E8C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD6FEA4B5CF11D4420BD6EC3005AE164</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -58,11 +73,6 @@
 			<true/>
 		</dict>
 		<key>E7BEAF4DCE4B39E319ED8628F0399557</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FE5D19287BEAA47C609382C0958423A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -11,6 +11,9 @@ PODS:
   - Firebase/Database (3.4.0):
     - Firebase/Analytics
     - FirebaseDatabase (= 3.0.2)
+  - Firebase/Storage (3.4.0):
+    - Firebase/Analytics
+    - FirebaseStorage (= 1.0.2)
   - FirebaseAnalytics (3.3.0):
     - FirebaseInstanceID (~> 1.0)
     - GoogleInterchangeUtilities (~> 1.2)
@@ -24,6 +27,9 @@ PODS:
   - FirebaseDatabase (3.0.2):
     - FirebaseAnalytics (~> 3.2)
   - FirebaseInstanceID (1.0.8)
+  - FirebaseStorage (1.0.2):
+    - FirebaseAnalytics (~> 3.2)
+    - GoogleNetworkingUtilities (~> 1.2)
   - GoogleInterchangeUtilities (1.2.1):
     - GoogleSymbolUtilities (~> 1.0)
   - GoogleNetworkingUtilities (1.2.1):
@@ -39,15 +45,18 @@ PODS:
   - ImageSlideshow/Core (0.5.0)
   - JTAppleCalendar (4.1.4)
   - MaterialKit (0.4)
+  - SwiftDate (3.0.8)
   - TextFieldEffects (1.2.0)
 
 DEPENDENCIES:
   - Firebase
   - Firebase/Auth
   - Firebase/Database
+  - Firebase/Storage
   - ImageSlideshow (~> 0.4)
   - JTAppleCalendar
   - MaterialKit (~> 0.4)
+  - SwiftDate (~> 3.0)
   - TextFieldEffects
 
 SPEC CHECKSUMS:
@@ -56,6 +65,7 @@ SPEC CHECKSUMS:
   FirebaseAuth: 26fd291c3b552fc9658420b867520d5ae080421c
   FirebaseDatabase: 59bea2e7dfd81b3b8b2f8e396caf1a52c2ced6f7
   FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
+  FirebaseStorage: fa2a87dee81f682f553af6839daa37a750e65f6a
   GoogleInterchangeUtilities: def8415a862effc67d549d5b5b0b9c7a2f97d4de
   GoogleNetworkingUtilities: 3e83269048cfb498dc7ec83ab36813360965c74f
   GoogleParsingUtilities: 30b3896f9ee167dc78747f013d3de157ced1cadf
@@ -64,8 +74,9 @@ SPEC CHECKSUMS:
   ImageSlideshow: b2662127d093a42d9595a6b40af2817d064df251
   JTAppleCalendar: 3041603a19b9cb2acb4715f98675dfff4b69ef94
   MaterialKit: 2e5267bcf410b82793f2b92d2111f8ae4ed2c3f2
+  SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
 
-PODFILE CHECKSUM: 91597746b44ea38a3ac650cee2adb9bde32972bc
+PODFILE CHECKSUM: 4c77ecf5dbff36b330158799db3e4d725080010b
 
 COCOAPODS: 1.0.1

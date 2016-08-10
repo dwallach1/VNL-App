@@ -22,8 +22,9 @@ class BayHotelViewController: UICollectionViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blackColor()]
         self.navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
         
-        let leftBarButton = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(backButtonTapped))
-        navigationController?.navigationItem.leftBarButtonItem = leftBarButton
+        let leftBarButton = UIBarButtonItem(image: UIImage(named: "backIcon"), style: .Plain, target: self, action: #selector(backButtonTapped))
+        leftBarButton.tintColor = UIColor.blackColor()
+        self.navigationItem.leftBarButtonItem = leftBarButton
         
         collectionView?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.95)
         collectionView?.alwaysBounceVertical = true
@@ -34,9 +35,15 @@ class BayHotelViewController: UICollectionViewController {
     }
 
     func backButtonTapped() {
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromTop
+        view.window!.layer.addAnimation(transition, forKey: kCATransition)
         let campsBayVC = CampsBayBookingViewController(nibName: "CampsBayBookingViewController", bundle: nil)
         let navVC = UINavigationController(rootViewController: campsBayVC)
         presentViewController(navVC, animated: true, completion: nil)
+
     }
 
     // MARK: UICollectionViewDataSource
@@ -82,7 +89,7 @@ class BayHotelViewController: UICollectionViewController {
             cell?.cellImage.image = UIImage(named: "campsbay2")
             break
         case 5:
-            cell?.titleLabel.text = "Premeir Sea Room"
+            cell?.titleLabel.text = "Premier Sea Room"
             cell?.priceLabel.text = "R 1,350"
             cell?.cellImage.image = UIImage(named: "campsbay3")
             break
@@ -112,11 +119,18 @@ class BayHotelViewController: UICollectionViewController {
             cell?.cellImage.image = UIImage(named: "campsbay2")
             break
         default:
-            return cell!
+            break
         }
-        // Configure the cell
-    
+        
+        cell?.bookButton.addTarget(self, action: #selector(bookButtonTapped), forControlEvents: .TouchUpInside)
+        
         return cell!
+    }
+    
+    func bookButtonTapped() {
+        let bookingVC = CalendarViewController(nibName: "CalendarViewController", bundle: nil)
+        presentViewController(bookingVC, animated: true, completion: nil)
+ 
     }
 
     // MARK: UICollectionViewDelegate

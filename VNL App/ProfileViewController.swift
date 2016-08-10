@@ -76,7 +76,7 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
             break
         case 1:
             cell?.cellLabel.text = "SETTINGS"
-            cell?.imageIcon.image = UIImage(named: "settingsIcon")
+            cell?.imageIcon.image = UIImage(named: "IconSettings")
             cell?.imageIcon.tintColor = UIColor.VNLGreen()
             cell?.imageIcon.contentMode = .ScaleAspectFit
             break
@@ -96,11 +96,15 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         if indexPath.row == 0 {
+            let editUserVC = EditProfileViewController(nibName: "EditProfileViewController", bundle: nil)
+            let navVC = UINavigationController(rootViewController: editUserVC)
+            presentViewController(navVC, animated: true, completion: nil)
             
             AppState.sharedInstance.screen = "profile"
         }
         if indexPath.row == 1 {
             AppState.sharedInstance.screen = "settings"
+            
             let settingsVC = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
             let navVC = UINavigationController(rootViewController: settingsVC)
             presentViewController(navVC, animated: true, completion: nil)

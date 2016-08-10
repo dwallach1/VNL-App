@@ -28,6 +28,7 @@ class LandingViewController: UIViewController {
         let sideMenu = UIBarButtonItem(image: UIImage(named: "sideMenuIcon"), style: .Plain, target: self, action: #selector(sideMenuTapped))
         sideMenu.tintColor = UIColor.grayColor()
         self.navigationItem.leftBarButtonItem = sideMenu
+        self.navigationController?.navigationBar.frame = CGRectMake(0, 0, self.view.frame.width, 200)
         
         let loginMenu = UIBarButtonItem(image: UIImage(named: "loginIcon"), style: .Plain, target: self, action: #selector(loginIconTapped))
         loginMenu.tintColor = UIColor.grayColor()

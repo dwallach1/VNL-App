@@ -23,8 +23,6 @@ class BayHotelCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         self.backgroundColor = UIColor.whiteColor()
         titleView.backgroundColor = UIColor.whiteColor()
-//        descriptionTextView.backgroundColor = UIColor.VNLDarkBlue()
-//        descriptionTextView.textColor = UIColor.whiteColor()
         titleLabel.textColor = UIColor.blackColor()
         titleLabel.adjustsFontSizeToFitWidth = true
         priceLabel.textColor = UIColor.blackColor()
@@ -36,5 +34,8 @@ class BayHotelCollectionViewCell: UICollectionViewCell {
         bookButton.backgroundColor = UIColor.VNLBlue()
         bookButton.layer.cornerRadius = 4
     }
+    
+
+    
 
 }

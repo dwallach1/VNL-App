@@ -25,6 +25,7 @@ class ContactViewController: UIViewController {
         
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         var sideMenu = UIBarButtonItem()
+        
         if AppState.sharedInstance.signedIn == true {
             sideMenu = UIBarButtonItem(image: UIImage(named: "sideMenuIcon"), style: .Plain, target: self, action: #selector(loggedInSideMenuTapped))
         } else {
