@@ -40,12 +40,6 @@ class CalendarViewCell: JTAppleDayCellView {
     
     func configureTextColor(cellState: CellState) {
         
-//        if cellState.dateBelongsTo == .ThisMonth {
-//            dayLabel.textColor = UIColor.blackColor()
-//        } else {
-//            dayLabel.textColor = UIColor.grayColor()
-//        }
-        
         selectedView.layer.cornerRadius = selectedView.frame.size.width / 2
         selectedView.clipsToBounds = true
         bookedView.layer.cornerRadius = bookedView.frame.width / 2

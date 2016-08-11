@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CVCalendar.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>ImageSlideshow-ImageSlideshow.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,12 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>20FDDB2367CE051F46777C8DC2D9196C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5E1B62D4E357027C9737CCDB08C4C7FA</key>
+		<key>334C65BC4A90C07F1726670830E20A3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,12 +62,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>892EBAFBE4BFC5EC09C48E4F5AB0240C</key>
+		<key>A397372BE10E91C9FCC74F74B649E8C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA14B622689766F6B8A4F42FD9DE552F</key>
+		<key>BD6FEA4B5CF11D4420BD6EC3005AE164</key>
 		<dict>
 			<key>primary</key>
 			<true/>

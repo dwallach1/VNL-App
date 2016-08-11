@@ -58,7 +58,6 @@ class CalendarViewController: UIViewController {
         }
 
     }
-    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         calendarView.scrollToDate(today)
@@ -68,19 +67,38 @@ class CalendarViewController: UIViewController {
     @IBAction func bookButtonTapped() {
         let formatter = NSDateFormatter()
         formatter.dateFormat = "MMM dd, yyyy"
-//        var startDate = formatter.dateFromString(startDateTextField.text!)
-//        let endDate = formatter.dateFromString(endDateTextField.text!)
-        datesCurrentlySelected.sortInPlace()
-        var startDate = formatter.dateFromString(datesCurrentlySelected.minElement()!)
-        let endDate = formatter.dateFromString(datesCurrentlySelected.maxElement()!)
-        
-        while startDate?.compare(endDate!) != .OrderedDescending {
-            
-            datesBookedArray.append(formatter.stringFromDate(startDate!))
-            startDate = startDate?.add(0, months: 0, weeks: 0, days: 1, hours: 0, minutes: 0, seconds: 0, nanoseconds: 0)
-        }
 
-        self.ref.child("datesBooked").setValue(datesBookedArray)
+        if datesCurrentlySelected.count > 0 {
+            datesCurrentlySelected.sortInPlace()
+            var startDate = formatter.dateFromString(datesCurrentlySelected.minElement()!)
+            let endDate = formatter.dateFromString(datesCurrentlySelected.maxElement()!)
+        
+            while startDate?.compare(endDate!) != .OrderedDescending {
+                
+                datesBookedArray.append(formatter.stringFromDate(startDate!))
+                startDate = startDate?.add(0, months: 0, weeks: 0, days: 1, hours: 0, minutes: 0, seconds: 0, nanoseconds: 0)
+            }
+        
+//          let key = ref.childByAutoId().key
+//          let dates = datesBookedArray
+//          let childUpdates = ["/datesBooked/\(key)": dates]
+//          ref.updateChildValues(childUpdates)
+            for date in datesUnavailable {
+                datesBookedArray.append(date)
+            }
+
+            datesBookedArray.sortInPlace()
+            
+//            var i: Int = 0
+//            for date in datesBookedArray {
+//                if date == datesBookedArray[i+1] {
+//                    datesCurrentlySelected.removeAtIndex(i)
+//                }
+//                i += 1
+//            }
+        
+            self.ref.child("datesBooked").setValue(datesBookedArray)
+        }
 
         
     }
@@ -245,11 +263,12 @@ extension CalendarViewController {
         }
         
         priceLabel.adjustsFontSizeToFitWidth = true
+        priceLabel.textColor = UIColor.VNLGreen()
         priceView.layer.cornerRadius = priceView.frame.width / 2
         priceView.clipsToBounds = true
         priceView.layer.borderColor = UIColor.VNLGreen().CGColor
         priceView.layer.borderWidth = 8
-            
+        
     }
     
     func cancelButtonTapped() {

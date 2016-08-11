@@ -1,5 +1,4 @@
 PODS:
-  - CVCalendar (1.2.9)
   - Firebase (3.4.0):
     - Firebase/Core (= 3.4.0)
   - Firebase/Analytics (3.4.0):
@@ -50,7 +49,6 @@ PODS:
   - TextFieldEffects (1.2.0)
 
 DEPENDENCIES:
-  - CVCalendar (~> 1.2.9)
   - Firebase
   - Firebase/Auth
   - Firebase/Database
@@ -62,7 +60,6 @@ DEPENDENCIES:
   - TextFieldEffects
 
 SPEC CHECKSUMS:
-  CVCalendar: 0799256e0bc3b43e83b7e86c0729ce9ff0624cb6
   Firebase: 754562547af419cc2f4b15247fee419081924bc2
   FirebaseAnalytics: 228be2991cb28efb96cdafc4d62f64680e615c69
   FirebaseAuth: 26fd291c3b552fc9658420b867520d5ae080421c
@@ -80,6 +77,6 @@ SPEC CHECKSUMS:
   SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
 
-PODFILE CHECKSUM: 7d6962fe076b69194cd5ba61d014144a188faaf5
+PODFILE CHECKSUM: 48c877ac3e8dee4b9f50840d15ca4fef8b5a5c3c
 
 COCOAPODS: 1.0.1
