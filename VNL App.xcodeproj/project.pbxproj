@@ -47,8 +47,6 @@
 		638D467A1D53229F0073201E /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638D46781D53229F0073201E /* SideMenuViewController.xib */; };
 		638D467D1D533B1A0073201E /* BenefitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D467B1D533B1A0073201E /* BenefitsViewController.swift */; };
 		638D467E1D533B1A0073201E /* BenefitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638D467C1D533B1A0073201E /* BenefitsViewController.xib */; };
-		63991A101D5CB50D006BE345 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63991A0E1D5CB50D006BE345 /* BookingViewController.swift */; };
-		63991A111D5CB50D006BE345 /* BookingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63991A0F1D5CB50D006BE345 /* BookingViewController.xib */; };
 		639A413B1D5B051B00E992AC /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A413A1D5B051B00E992AC /* BookingModel.swift */; };
 		639A41421D5B0D3C00E992AC /* CampsBayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A41401D5B0D3C00E992AC /* CampsBayTableViewCell.swift */; };
 		639A41431D5B0D3C00E992AC /* CampsBayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639A41411D5B0D3C00E992AC /* CampsBayTableViewCell.xib */; };
@@ -117,8 +115,6 @@
 		638D46781D53229F0073201E /* SideMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
 		638D467B1D533B1A0073201E /* BenefitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitsViewController.swift; sourceTree = "<group>"; };
 		638D467C1D533B1A0073201E /* BenefitsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitsViewController.xib; sourceTree = "<group>"; };
-		63991A0E1D5CB50D006BE345 /* BookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
-		63991A0F1D5CB50D006BE345 /* BookingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingViewController.xib; sourceTree = "<group>"; };
 		639A413A1D5B051B00E992AC /* BookingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
 		639A41401D5B0D3C00E992AC /* CampsBayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampsBayTableViewCell.swift; sourceTree = "<group>"; };
 		639A41411D5B0D3C00E992AC /* CampsBayTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampsBayTableViewCell.xib; sourceTree = "<group>"; };
@@ -267,8 +263,6 @@
 				638D466B1D5088B40073201E /* CalendarViewController.xib */,
 				638D46661D50878B0073201E /* CalendarViewCell.swift */,
 				638D46671D50878B0073201E /* CalendarViewCell.xib */,
-				63991A0E1D5CB50D006BE345 /* BookingViewController.swift */,
-				63991A0F1D5CB50D006BE345 /* BookingViewController.xib */,
 			);
 			name = Calendar;
 			sourceTree = "<group>";
@@ -407,7 +401,6 @@
 			files = (
 				6362E9B51D5371F7009DD3A2 /* ProfileViewController.xib in Resources */,
 				639B0F811D4B6A8100EA49AA /* LandingViewController.xib in Resources */,
-				63991A111D5CB50D006BE345 /* BookingViewController.xib in Resources */,
 				633BC4621D5365E900B9DD6A /* ContactViewController.xib in Resources */,
 				638D46691D50878B0073201E /* CalendarViewCell.xib in Resources */,
 				639A41431D5B0D3C00E992AC /* CampsBayTableViewCell.xib in Resources */,
@@ -519,7 +512,6 @@
 				638100A81D4F76960095634C /* SettingsViewController.swift in Sources */,
 				631C21591D4A107900F5EC19 /* AppDelegate.swift in Sources */,
 				639A41511D5B3B5F00E992AC /* UserModel.swift in Sources */,
-				63991A101D5CB50D006BE345 /* BookingViewController.swift in Sources */,
 				638D46741D5320040073201E /* SideMenuTableViewCell.swift in Sources */,
 				638100B91D4F927D0095634C /* CampsBayBookingViewController.swift in Sources */,
 				638D46791D53229F0073201E /* SideMenuViewController.swift in Sources */,

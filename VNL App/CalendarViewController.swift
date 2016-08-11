@@ -15,6 +15,7 @@ import FirebaseDatabase
 
 class CalendarViewController: UIViewController {
 
+    @IBOutlet weak var priceView: UIView!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var startDateTextField: UIDatePickerTextField!
     @IBOutlet weak var endDateTextField: UIDatePickerTextField!
@@ -104,7 +105,6 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
     func calendar(calendar: JTAppleCalendarView, isAboutToDisplayCell cell: JTAppleDayCellView, date: NSDate, cellState: CellState) {
         let cell = (cell as! CalendarViewCell)
         
-        cell.selected = false
         cell.bookedView.hidden = true
         cell.selectedView.hidden = true
         cell.dayLabel.textColor = UIColor.blackColor()
@@ -113,24 +113,41 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         
         let formatter = NSDateFormatter()
         formatter.dateFormat = "MMM dd, yyyy"
+        
+        if cellState.dateBelongsTo == .ThisMonth {
+            cell.dayLabel.textColor = UIColor.blackColor()
+        } else {
+            if cell.bookedView.hidden {
+                cell.dayLabel.textColor = UIColor.grayColor()
+            }
+        }
+        
+        if cellState.date == today {
+            cell.selectedView.hidden = false
+            cell.selectedView.backgroundColor = UIColor.VNLRed()
+            cell.dayLabel.textColor = UIColor.whiteColor()
+            cell.bringSubviewToFront(cell.dayLabel)
+        }
 
-//        print("got phase 1") /***********************/
+        for date in datesCurrentlySelected {
+            if cellState.date == formatter.dateFromString(date) {
+                cell.selected = true
+                cell.selectedView.hidden = false
+                cell.selectedView.backgroundColor = UIColor.VNLBlue()
+                cell.dayLabel.textColor = UIColor.whiteColor()
+                cell.dayLabel.tintColor = UIColor.whiteColor()
+                cell.bringSubviewToFront(cell.dayLabel)
+            }
+        }
        
         for date in datesUnavailable {
-            
-//            print("got phase 2") /***********************/
-            
             if cellState.date == formatter.dateFromString(date) {
-                
-                print("\(cellState.date) +++++ \(formatter.dateFromString(date)) ") /***********************/
                 
                 cell.bookedView.hidden = false
                 cell.bookedView.backgroundColor = UIColor.VNLDarkBlue()
                 cell.dayLabel.textColor = UIColor.whiteColor()
                 cell.bringSubviewToFront(cell.dayLabel)
                 cell.userInteractionEnabled = false
-                
-                print("hacked the mainframe") /***********************/
             }
         }
         
@@ -144,10 +161,19 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         
         let formatter = NSDateFormatter()
         formatter.dateFormat = "MMM dd, yyyy"
-        datesCurrentlySelected.append(formatter.stringFromDate(cellState.date))
-        updatePrices()
         
-        print(cellState.date)
+        var duplicate = false
+        
+        for date in datesCurrentlySelected {
+            if cellState.date == formatter.dateFromString(date) {
+                duplicate = true
+            }
+        }
+        if duplicate != true {
+            datesCurrentlySelected.append(formatter.stringFromDate(cellState.date))
+            updatePrices()
+        }
+
     }
     
     func calendar(calendar: JTAppleCalendarView, didDeselectDate date: NSDate, cell: JTAppleDayCellView?, cellState: CellState) {
@@ -165,6 +191,13 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
             i += 1
         }
         
+        if cellState.date == today {
+            cell.selectedView.hidden = false
+            cell.selectedView.backgroundColor = UIColor.VNLRed()
+            cell.dayLabel.textColor = UIColor.whiteColor()
+            cell.bringSubviewToFront(cell.dayLabel)
+        }
+        
         updatePrices()
     }
     
@@ -174,10 +207,8 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         let year = startDate.year
         monthLabel.text = monthName
         yearLabel.text = "\(year)"
-        
-        for entry in datesUnavailable {
-            print(entry)
-        }
+        monthLabel.textColor = UIColor.VNLBlue()
+        yearLabel.textColor = UIColor.VNLBlue()
         
     }
 
@@ -212,6 +243,12 @@ extension CalendarViewController {
             textField.borderInactiveColor = UIColor.VNLBlue()
 
         }
+        
+        priceLabel.adjustsFontSizeToFitWidth = true
+        priceView.layer.cornerRadius = priceView.frame.width / 2
+        priceView.clipsToBounds = true
+        priceView.layer.borderColor = UIColor.VNLGreen().CGColor
+        priceView.layer.borderWidth = 8
             
     }
     
