@@ -11,17 +11,11 @@
 extension JTAppleCalendarView: UIScrollViewDelegate {
     /// Tells the delegate when the user finishes scrolling the content.
     public func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        
-        // Update the date when user lifts finger
-        delayRunOnGlobalThread(0.0, qos: QOS_CLASS_USER_INITIATED) { 
-            let currentSegmentDates = self.currentCalendarDateSegment()
-            delayRunOnMainThread(0.0, closure: { 
-                self.delegate?.calendar(self, didScrollToDateSegmentStartingWithdate: currentSegmentDates.startDate, endingWithDate: currentSegmentDates.endDate)
-            })
+        if pagingEnabled {
+            (calendarView.collectionViewLayout as! JTAppleCalendarLayoutProtocol).pointForFocusItem = targetContentOffset.memory
+            return
         }
-
-        if pagingEnabled || !cellSnapsToEdge { return }
-        // Snap to grid setup
+        
         var contentOffset: CGFloat = 0,
         theTargetContentOffset: CGFloat = 0,
         directionVelocity: CGFloat = 0,
@@ -46,7 +40,7 @@ extension JTAppleCalendarView: UIScrollViewDelegate {
         
         let calcTestPoint = {(velocity: CGFloat) -> CGPoint in
             var recalcOffset: CGFloat
-            if velocity >= 0 {
+            if velocity == 0 || velocity > 0 {
                 recalcOffset = theTargetContentOffset - (diff * self.scrollResistance)
             } else {
                 recalcOffset = theTargetContentOffset + (diff * self.scrollResistance)
@@ -56,12 +50,12 @@ extension JTAppleCalendarView: UIScrollViewDelegate {
             if self.direction == .Vertical {
                 retval = CGPoint(x: 0, y: recalcOffset)
             } else {
-                if self.registeredHeaderViews.count < 1 {
+                if headerViewXibs.count < 1 {
                     retval = CGPoint(x: recalcOffset, y: 0)
                 } else {
                     let targetSection =  Int(recalcOffset / self.calendarView.frame.size.width)
-                    let headerSize = self.referenceSizeForHeaderInSection(targetSection)
-                    retval = CGPoint(x: recalcOffset, y: headerSize.height)
+                    let headerHeigt = self.collectionView(self.calendarView, layout: self.calendarView.collectionViewLayout, referenceSizeForHeaderInSection: targetSection)
+                    retval = CGPoint(x: recalcOffset, y: headerHeigt.height)
                 }
             }
             
@@ -80,8 +74,12 @@ extension JTAppleCalendarView: UIScrollViewDelegate {
                         targetContentOffset.memory = CGPoint(x: targetOffset, y: 0)
                     }
                 }
+            } else {
+                print("")
             }
         }
+        
+        
         
         if (directionVelocity == 0) {
             guard let
@@ -115,102 +113,86 @@ extension JTAppleCalendarView: UIScrollViewDelegate {
                 setTestPoint(calcTestPoint(directionVelocity))
             }
         }
+        (calendarView.collectionViewLayout as! JTAppleCalendarLayoutProtocol).pointForFocusItem = targetContentOffset.memory
     }
     
     /// Tells the delegate when a scrolling animation in the scroll view concludes.
     public func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
-        if let shouldTrigger = triggerScrollToDateDelegate where shouldTrigger == true {
+        if triggerScrollToDateDelegate {
             scrollViewDidEndDecelerating(scrollView)
-            triggerScrollToDateDelegate = nil
         }
-        executeDelayedTasks()
         
-        // A scroll was just completed.
-        scrollInProgress = false
+        delayedExecutionClosure?()
+        delayedExecutionClosure = nil
+        
+        // Update the focus item whenever scrolled
+        (calendarView.collectionViewLayout as! JTAppleCalendarLayoutProtocol).pointForFocusItem = scrollView.contentOffset
     }
     
     /// Tells the delegate that the scroll view has ended decelerating the scrolling movement.
     public func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         let currentSegmentDates = currentCalendarDateSegment()
         self.delegate?.calendar(self, didScrollToDateSegmentStartingWithdate: currentSegmentDates.startDate, endingWithDate: currentSegmentDates.endDate)
+        
     }
 }
 
 // MARK: CollectionView delegates
 extension JTAppleCalendarView: UICollectionViewDataSource, UICollectionViewDelegate {
     /// Asks your data source object to provide a supplementary view to display in the collection view.
-    
     public func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        let reuseIdentifier: String
         guard let date = dateFromSection(indexPath.section) else {
             assert(false, "Date could not be generated fro section. This is a bug. Contact the developer")
             return UICollectionReusableView()
         }
         
-        let reuseIdentifier: String
-        var source: JTAppleCalendarViewSource = registeredHeaderViews[0]
-        
-        // Get the reuse identifier and index
-        if registeredHeaderViews.count == 1 {
-            switch registeredHeaderViews[0] {
-            case let .fromXib(xibName): reuseIdentifier = xibName
-            case let .fromClassName(className): reuseIdentifier = className
-            case let .fromType(classType): reuseIdentifier = classType.description()
-            }
+        if headerViewXibs.count == 1 {
+            reuseIdentifier = headerViewXibs[0]
         } else {
-            reuseIdentifier = delegate!.calendar(self, sectionHeaderIdentifierForDate: date)!
-            for item in registeredHeaderViews {
-                switch item {
-                case let .fromXib(xibName) where xibName == reuseIdentifier:
-                    source = item
-                    break
-                case let .fromClassName(className) where className == reuseIdentifier:
-                    source = item
-                    break
-                case let .fromType(type) where type.description() == reuseIdentifier:
-                    source = item
-                    break
-                default:
-                    continue
-                }
+            guard let identifier = delegate?.calendar(self, sectionHeaderIdentifierForDate: date) where headerViewXibs.contains(identifier) else {
+                assert(false, "Identifier was not registered")
+                return UICollectionReusableView()
             }
+            reuseIdentifier = identifier
         }
-        
-        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: reuseIdentifier, forIndexPath: indexPath) as! JTAppleCollectionReusableView
-        headerView.setupView(source)
-        headerView.update()
-        delegate?.calendar(self, isAboutToDisplaySectionHeader: headerView.view!, date: date, identifier: reuseIdentifier)
+        currentXib = reuseIdentifier
+        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind,
+                                                                               withReuseIdentifier: reuseIdentifier,
+                                                                               forIndexPath: indexPath) as! JTAppleCollectionReusableView
+
+        delegate?.calendar(self, isAboutToDisplaySectionHeader: headerView.view, date: date, identifier: reuseIdentifier)
         return headerView
-    }
-    
-    public func collectionView(collectionView: UICollectionView, didEndDisplayingCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
-        delegate?.calendar(self, isAboutToResetCell: (cell as! JTAppleDayCell).view!)
     }
     
     /// Asks your data source object for the cell that corresponds to the specified item in the collection view.
     public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         restoreSelectionStateForCellAtIndexPath(indexPath)
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellReuseIdentifier, forIndexPath: indexPath) as! JTAppleDayCell
-        
-        cell.setupView(cellViewSource)
-        cell.updateCellView(cellInset.x, cellInsetY: cellInset.y)
-        cell.bounds.origin = CGPoint(x: 0, y: 0)
+        let dayCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellReuseIdentifier, forIndexPath: indexPath) as! JTAppleDayCell
+
+        dayCell.bounds.origin.y = 0
+        dayCell.bounds.origin.x = 0
         
         let date = dateFromPath(indexPath)!
         let cellState = cellStateFromIndexPath(indexPath, withDate: date)
         
-        delegate?.calendar(self, isAboutToDisplayCell: cell.view!, date: date, cellState: cellState)
-
-        return cell
+        delegate?.calendar(self, isAboutToDisplayCell: dayCell.cellView, date: date, cellState: cellState)
+        
+        return dayCell
     }
     /// Asks your data source object for the number of sections in the collection view. The number of sections in collectionView.
     public func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        if !xibFileValid() {
+            return 0
+        }
+        
         return monthInfo.count
     }
 
     /// Asks your data source object for the number of items in the specified section. The number of rows in section.
     public func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return  MAX_NUMBER_OF_DAYS_IN_WEEK * cachedConfiguration.numberOfRows
+        return  MAX_NUMBER_OF_DAYS_IN_WEEK * numberOfRowsPerMonth
     }
     /// Asks the delegate if the specified item should be selected. true if the item should be selected or false if it should not.
     public func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -218,17 +200,17 @@ extension JTAppleCalendarView: UICollectionViewDataSource, UICollectionViewDeleg
         if let
             delegate = self.delegate,
             dateUserSelected = dateFromPath(indexPath),
-            cell = collectionView.cellForItemAtIndexPath(indexPath) as? JTAppleDayCell
-        where
-            cellWasNotDisabledOrHiddenByTheUser(cell) {
-            let cellState = cellStateFromIndexPath(indexPath, withDate: dateUserSelected)
-            return delegate.calendar(self, canSelectDate: dateUserSelected, cell: cell.view!, cellState: cellState)
+            cell = collectionView.cellForItemAtIndexPath(indexPath) as? JTAppleDayCell {
+            if cellWasNotDisabledOrHiddenByTheUser(cell) {
+                let cellState = cellStateFromIndexPath(indexPath, withDate: dateUserSelected)
+                return delegate.calendar(self, canSelectDate: dateUserSelected, cell: cell.cellView, cellState: cellState)
+            }
         }
         return false
     }
     
     func cellWasNotDisabledOrHiddenByTheUser(cell: JTAppleDayCell) -> Bool {
-        return cell.view!.hidden == false && cell.view!.userInteractionEnabled == true
+        return cell.cellView.hidden == false && cell.cellView.userInteractionEnabled == true
     }
     /// Tells the delegate that the item at the specified path was deselected. The collection view calls this method when the user successfully deselects an item in the collection view. It does not call this method when you programmatically deselect items.
     public func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
@@ -240,15 +222,15 @@ extension JTAppleCalendarView: UICollectionViewDataSource, UICollectionViewDeleg
             deleteCellFromSelectedSetIfSelected(indexPath)
             
             let selectedCell = collectionView.cellForItemAtIndexPath(indexPath) as? JTAppleDayCell // Cell may be nil if user switches month sections
-            let cellState = cellStateFromIndexPath(indexPath, withDate: dateDeselectedByUser, cell: selectedCell) // Although the cell may be nil, we still want to return the cellstate
+            let cellState = cellStateFromIndexPath(indexPath, withDate: dateDeselectedByUser) // Although the cell may be nil, we still want to return the cellstate
             
             if let anUnselectedCounterPartIndexPath = deselectCounterPartCellIndexPath(indexPath, date: dateDeselectedByUser, dateOwner: cellState.dateBelongsTo) {
                 deleteCellFromSelectedSetIfSelected(anUnselectedCounterPartIndexPath)
                 // ONLY if the counterPart cell is visible, then we need to inform the delegate
-                batchReloadIndexPaths([anUnselectedCounterPartIndexPath])
+                refreshIndexPathIfVisible(anUnselectedCounterPartIndexPath)
             }
             
-            delegate.calendar(self, didDeselectDate: dateDeselectedByUser, cell: selectedCell?.view, cellState: cellState)
+            delegate.calendar(self, didDeselectDate: dateDeselectedByUser, cell: selectedCell?.cellView, cellState: cellState)
         }
     }
     
@@ -257,10 +239,10 @@ extension JTAppleCalendarView: UICollectionViewDataSource, UICollectionViewDeleg
         if let
             delegate = self.delegate,
             dateDeSelectedByUser = dateFromPath(indexPath),
-            cell = collectionView.cellForItemAtIndexPath(indexPath) as? JTAppleDayCell
-        where cellWasNotDisabledOrHiddenByTheUser(cell) {
+            cell = collectionView.cellForItemAtIndexPath(indexPath) as? JTAppleDayCell {
             let cellState = cellStateFromIndexPath(indexPath, withDate: dateDeSelectedByUser)
-            return delegate.calendar(self, canDeselectDate: dateDeSelectedByUser, cell: cell.view!, cellState:  cellState)
+            delegate.calendar(self, canDeselectDate: dateDeSelectedByUser, cell: cell.cellView, cellState:  cellState)
+            return true
         }
         return false
     }
@@ -272,17 +254,38 @@ extension JTAppleCalendarView: UICollectionViewDataSource, UICollectionViewDeleg
 
             // Update model
             addCellToSelectedSetIfUnselected(indexPath, date:dateSelectedByUser)
+            
             let selectedCell = collectionView.cellForItemAtIndexPath(indexPath) as? JTAppleDayCell
+            let cellState = cellStateFromIndexPath(indexPath, withDate: dateSelectedByUser)
             
             // If cell has a counterpart cell, then select it as well
-            let cellState = cellStateFromIndexPath(indexPath, withDate: dateSelectedByUser, cell: selectedCell)
-            if let aSelectedCounterPartIndexPath = selectCounterPartCellIndexPathIfExists(indexPath, date: dateSelectedByUser, dateOwner: cellState.dateBelongsTo) {
+            if let aSelectedCounterPartIndexPath = selectCounterPartCellIndexPath(indexPath, date: dateSelectedByUser, dateOwner: cellState.dateBelongsTo) {
                 // ONLY if the counterPart cell is visible, then we need to inform the delegate
-                delayRunOnMainThread(0.0, closure: {
-                    self.batchReloadIndexPaths([aSelectedCounterPartIndexPath])
-                })
+                refreshIndexPathIfVisible(aSelectedCounterPartIndexPath)
             }
-            delegate.calendar(self, didSelectDate: dateSelectedByUser, cell: selectedCell?.view, cellState: cellState)
+            delegate.calendar(self, didSelectDate: dateSelectedByUser, cell: selectedCell?.cellView, cellState: cellState)
         }
+    }
+}
+
+extension JTAppleCalendarView:  UICollectionViewDelegateFlowLayout {
+    /// Asks the delegate for the size of the header view in the specified section.
+    public func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        if headerViewXibs.count < 1 { return CGSizeZero }
+        let size = calendarViewHeaderSizeForSection(section)
+        return size
+    }
+    
+    /// Asks the delegate for the size of the specified item’s cell.
+    public func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        if let size = indexPathSectionItemSize where size.section == indexPath.section {
+            return size.itemSize
+        }
+        
+        let headerHeight = self.collectionView(self.calendarView, layout: self.calendarView.collectionViewLayout, referenceSizeForHeaderInSection: indexPath.section)
+        let currentItemSize = (calendarView.collectionViewLayout as! JTAppleCalendarLayoutProtocol).itemSize
+        let size = CGSize(width: currentItemSize.width, height: (calendarView.frame.height - headerHeight.height) / CGFloat(numberOfRows()))
+        indexPathSectionItemSize = (section: indexPath.section, itemSize: size)
+        return size
     }
 }

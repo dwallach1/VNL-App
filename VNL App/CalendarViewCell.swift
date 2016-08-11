@@ -11,35 +11,24 @@ import JTAppleCalendar
 
 class CalendarViewCell: JTAppleDayCellView {
 
+    @IBOutlet weak var bookedView: UIView!
     @IBOutlet weak var selectedView: UIView!
     @IBOutlet weak var dayLabel: UILabel!
     
-    var normalDayColor = UIColor.whiteColor()
-    var weekendDayColor = UIColor.VNLGrey()
-    
+    var booked = false
+    var selected = false
     
     func setupCellBeforeDisplay(cellState: CellState, date: NSDate) {
-        // Setup Cell text
-        dayLabel.text =  cellState.text
         
-        // Setup text color
+        dayLabel.text =  cellState.text
         configureTextColor(cellState)
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-        self.backgroundColor = UIColor.whiteColor()
-        
-        selectedView.layer.cornerRadius = selectedView.frame.size.width / 2
-        selectedView.clipsToBounds = true
-        selectedView.backgroundColor = UIColor.VNLBlue()
-    }
     
     func cellSelectionChanged(cellState: CellState) {
-        if cellState.isSelected {
+        if cellState.isSelected == true {
             selectedView.hidden = false
-            dayLabel.textColor = UIColor.whiteColor()
+            selectedView.backgroundColor = UIColor.VNLGreen()
         } else {
             selectedView.hidden = true
             dayLabel.textColor = UIColor.blackColor()
@@ -52,6 +41,17 @@ class CalendarViewCell: JTAppleDayCellView {
         } else {
             dayLabel.textColor = UIColor.grayColor()
         }
+        
+        selectedView.layer.cornerRadius = selectedView.frame.size.width / 2
+        selectedView.clipsToBounds = true
+        bookedView.layer.cornerRadius = bookedView.frame.width / 2
+        bookedView.clipsToBounds = true
+        if cellState.date == NSDate.today() && AppState.sharedInstance.todayShown == false{
+            selectedView.hidden = false
+            selectedView.backgroundColor = UIColor.VNLRed()
+            AppState.sharedInstance.todayShown = true
+        }
+
     }
     
 }

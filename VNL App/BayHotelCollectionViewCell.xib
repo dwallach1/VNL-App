@@ -61,6 +61,9 @@
                             <constraint firstAttribute="width" constant="100" id="NK7-sK-ucf"/>
                         </constraints>
                         <state key="normal" title="Book Now"/>
+                        <connections>
+                            <action selector="bookNowButtonTapped" destination="gTV-IL-0wX" eventType="touchUpInside" id="dBQ-sf-2g6"/>
+                        </connections>
                     </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

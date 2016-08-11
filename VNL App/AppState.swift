@@ -18,6 +18,9 @@ class AppState: NSObject {
     var screen: String = "home"  //["home", "benefits", "information", "rates", "exclusive", "booking",      "partners", "contact]
     
     var selectedCell: String = "home"
+    var currRoomType: String = "nil"
+    var todayShown = false
+    
     var currCellState: cellState = cellState(open: false, index: nil)
 
 

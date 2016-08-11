@@ -65,104 +65,85 @@ class BayHotelViewController: UICollectionViewController {
         switch indexPath.row {
         case 0:
             cell?.titleLabel.text = "Mountain Room"
+            cell?.currRoomType = "mountain"
             cell?.priceLabel.text = "R 1,100"
             cell?.cellImage.image = UIImage(named: "campsbay1")
             break
         case 1:
             cell?.titleLabel.text = "Classic Room"
+            cell?.currRoomType = "classic"
             cell?.priceLabel.text = "R 1,100"
             cell?.cellImage.image = UIImage(named: "campsbay2")
             break
         case 2:
             cell?.titleLabel.text = "Club Classic Room"
+            cell?.currRoomType = "clubClassic"
             cell?.priceLabel.text = "R 1,100"
             cell?.cellImage.image = UIImage(named: "campsbay3")
             break
         case 3:
             cell?.titleLabel.text = "Premier Mountain Room"
+            cell?.currRoomType = "premierMountain"
             cell?.priceLabel.text = "R 1,200"
             cell?.cellImage.image = UIImage(named: "campsbay1")
             break
         case 4:
             cell?.titleLabel.text = "Premier Pool Room"
+            cell?.currRoomType = "premierPool"
             cell?.priceLabel.text = "R 1,200"
             cell?.cellImage.image = UIImage(named: "campsbay2")
             break
         case 5:
             cell?.titleLabel.text = "Premier Sea Room"
+            cell?.currRoomType = "premierSea"
             cell?.priceLabel.text = "R 1,350"
             cell?.cellImage.image = UIImage(named: "campsbay3")
             break
         case 6:
             cell?.titleLabel.text = "Cabana Room"
+            cell?.currRoomType = "cabana"
             cell?.priceLabel.text = "R 1,350"
             cell?.cellImage.image = UIImage(named: "campsbay1")
             break
         case 7:
             cell?.titleLabel.text = "Luxury Room"
+            cell?.currRoomType = "luxury"
             cell?.priceLabel.text = "R 1,200"
             cell?.cellImage.image = UIImage(named: "campsbay2")
             break
         case 8:
             cell?.titleLabel.text = "Suite"
+            cell?.currRoomType = "suite"
             cell?.priceLabel.text = "R 1,200"
             cell?.cellImage.image = UIImage(named: "campsbay3")
             break
         case 9:
             cell?.titleLabel.text = "Penthouse"
+            cell?.currRoomType = "penthouse"
             cell?.priceLabel.text = "R 1,350"
             cell?.cellImage.image = UIImage(named: "campsbay1")
             break
         case 10:
             cell?.titleLabel.text = "Adventure Pad"
+            cell?.currRoomType = "adventurePad"
             cell?.priceLabel.text = "R 1,350"
             cell?.cellImage.image = UIImage(named: "campsbay2")
             break
         default:
             break
         }
+
         
-        cell?.bookButton.addTarget(self, action: #selector(bookButtonTapped), forControlEvents: .TouchUpInside)
+        cell?.bookButton.addTarget(self, action: #selector(bookNowButtonTapped), forControlEvents: .TouchUpInside)
         
         return cell!
     }
     
-    func bookButtonTapped() {
+
+    func bookNowButtonTapped() {
         let bookingVC = CalendarViewController(nibName: "CalendarViewController", bundle: nil)
         presentViewController(bookingVC, animated: true, completion: nil)
- 
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(collectionView: UICollectionView, shouldShowMenuForItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, canPerformAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
-    
-    }
-    */
     
 }
 

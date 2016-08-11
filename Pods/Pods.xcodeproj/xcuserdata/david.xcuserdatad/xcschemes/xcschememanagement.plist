@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JTAppleCalendar-JTAppleCalendar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JTAppleCalendar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,7 +47,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2E2ED75B03CF4A2D0719664A48C0B27E</key>
+		<key>12ADE056CC77A09E47BA339684B30BB1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -68,6 +73,11 @@
 			<true/>
 		</dict>
 		<key>C15C986904B4FDA1D278FECFB1CFF1FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E4131100F54D47CB18FBEF558DD5B1A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

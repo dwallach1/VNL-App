@@ -43,7 +43,7 @@ PODS:
   - ImageSlideshow (0.5.0):
     - ImageSlideshow/Core (= 0.5.0)
   - ImageSlideshow/Core (0.5.0)
-  - JTAppleCalendar (4.1.4)
+  - JTAppleCalendar (3.0.1)
   - MaterialKit (0.4)
   - SwiftDate (3.0.8)
   - TextFieldEffects (1.2.0)
@@ -54,7 +54,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - ImageSlideshow (~> 0.4)
-  - JTAppleCalendar
+  - JTAppleCalendar (~> 3.0)
   - MaterialKit (~> 0.4)
   - SwiftDate (~> 3.0)
   - TextFieldEffects
@@ -72,11 +72,11 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
   ImageSlideshow: b2662127d093a42d9595a6b40af2817d064df251
-  JTAppleCalendar: 3041603a19b9cb2acb4715f98675dfff4b69ef94
+  JTAppleCalendar: 13d2c667bb7f2050fb266267b352904e4a808c82
   MaterialKit: 2e5267bcf410b82793f2b92d2111f8ae4ed2c3f2
   SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
 
-PODFILE CHECKSUM: 4c77ecf5dbff36b330158799db3e4d725080010b
+PODFILE CHECKSUM: 48c877ac3e8dee4b9f50840d15ca4fef8b5a5c3c
 
 COCOAPODS: 1.0.1

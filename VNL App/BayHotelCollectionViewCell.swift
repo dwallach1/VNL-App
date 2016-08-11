@@ -17,6 +17,7 @@ class BayHotelCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var titleView: UIView!
+    var currRoomType = "nil"
     
     
     override func awakeFromNib() {
@@ -33,6 +34,10 @@ class BayHotelCollectionViewCell: UICollectionViewCell {
         bookButton.rippleLayerColor = UIColor.whiteColor()
         bookButton.backgroundColor = UIColor.VNLBlue()
         bookButton.layer.cornerRadius = 4
+    }
+    
+    @IBAction func bookNowButtonTapped() {
+        AppState.sharedInstance.currRoomType = currRoomType
     }
     
 

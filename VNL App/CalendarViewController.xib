@@ -7,8 +7,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarViewController" customModule="VNL_App" customModuleProvider="target">
             <connections>
+                <outlet property="bookButton" destination="IhP-Hs-EpA" id="F9e-6E-XVe"/>
                 <outlet property="calendarView" destination="i1Z-4V-AMz" id="Uos-sO-nnI"/>
+                <outlet property="cancelButton" destination="7nF-qH-FEY" id="ijq-uc-g9c"/>
+                <outlet property="endDateTextField" destination="i4w-S8-7Nj" id="8iF-4g-vzy"/>
                 <outlet property="monthLabel" destination="OgR-E9-W9C" id="cmq-JV-Ihv"/>
+                <outlet property="startDateTextField" destination="FRu-sZ-qZh" id="eqT-UV-5pk"/>
+                <outlet property="todayButton" destination="isP-0e-V3J" id="YMM-cc-2cu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="yearLabel" destination="gSC-qO-4Og" id="Gff-Oc-766"/>
             </connections>
@@ -24,6 +29,12 @@
                     <color key="textColor" red="0.20692899209999999" green="0.20692899209999999" blue="0.20692899209999999" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgR-E9-W9C">
+                    <rect key="frame" x="20" y="29.5" width="580" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                    <color key="textColor" red="0.20692899209999999" green="0.20692899209999999" blue="0.20692899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1Z-4V-AMz" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
                     <rect key="frame" x="0.0" y="60.5" width="600" height="300"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,24 +42,69 @@
                         <constraint firstAttribute="height" constant="300" id="lrl-EF-mbN"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgR-E9-W9C">
-                    <rect key="frame" x="20" y="29.5" width="580" height="21"/>
-                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                    <color key="textColor" red="0.20692899209999999" green="0.20692899209999999" blue="0.20692899209999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nF-qH-FEY" customClass="MKButton" customModule="MaterialKit">
+                    <rect key="frame" x="20" y="550" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DSl-Gt-1rg"/>
+                        <constraint firstAttribute="width" constant="100" id="ID3-Rv-1LX"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhP-Hs-EpA" customClass="MKButton" customModule="MaterialKit">
+                    <rect key="frame" x="480" y="550" width="100" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="bookButtonTapped" destination="-1" eventType="touchUpInside" id="I5v-ge-CrF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isP-0e-V3J" customClass="MKButton" customModule="MaterialKit">
+                    <rect key="frame" x="480" y="20" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="cLE-n8-Ps8"/>
+                        <constraint firstAttribute="height" constant="30" id="dZS-Pj-ORC"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Start Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FRu-sZ-qZh" customClass="UIDatePickerTextField" customModule="VNL_App" customModuleProvider="target">
+                    <rect key="frame" x="20" y="380.5" width="560" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="yIE-Ea-ctW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="End Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i4w-S8-7Nj" customClass="UIDatePickerTextField" customModule="VNL_App" customModuleProvider="target">
+                    <rect key="frame" x="20" y="450.5" width="560" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="isP-0e-V3J" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="1Op-Fy-48N"/>
                 <constraint firstAttribute="trailing" secondItem="OgR-E9-W9C" secondAttribute="trailing" id="4lb-Ed-zQ5"/>
                 <constraint firstItem="i1Z-4V-AMz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5K7-cw-Moh"/>
+                <constraint firstAttribute="bottom" secondItem="IhP-Hs-EpA" secondAttribute="bottom" constant="20" id="9Ub-BY-JfF"/>
+                <constraint firstItem="FRu-sZ-qZh" firstAttribute="height" secondItem="i4w-S8-7Nj" secondAttribute="height" id="EXe-v7-58A"/>
                 <constraint firstItem="gSC-qO-4Og" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="HMt-km-DqE"/>
+                <constraint firstItem="FRu-sZ-qZh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="HbQ-Jt-s75"/>
                 <constraint firstItem="i1Z-4V-AMz" firstAttribute="top" secondItem="OgR-E9-W9C" secondAttribute="bottom" constant="10" id="J03-EX-Ecz"/>
+                <constraint firstItem="7nF-qH-FEY" firstAttribute="width" secondItem="IhP-Hs-EpA" secondAttribute="width" id="O1d-j1-lwU"/>
+                <constraint firstItem="i4w-S8-7Nj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="PSp-sh-QoF"/>
+                <constraint firstAttribute="trailing" secondItem="FRu-sZ-qZh" secondAttribute="trailing" constant="20" id="RaQ-wC-U8I"/>
                 <constraint firstItem="gSC-qO-4Og" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ShS-1L-kag"/>
+                <constraint firstAttribute="bottom" secondItem="7nF-qH-FEY" secondAttribute="bottom" constant="20" id="XRB-7U-7s0"/>
                 <constraint firstItem="OgR-E9-W9C" firstAttribute="top" secondItem="gSC-qO-4Og" secondAttribute="bottom" constant="5" id="YZd-er-gVJ"/>
+                <constraint firstItem="7nF-qH-FEY" firstAttribute="height" secondItem="IhP-Hs-EpA" secondAttribute="height" id="aMQ-aX-PbF"/>
+                <constraint firstItem="FRu-sZ-qZh" firstAttribute="top" secondItem="i1Z-4V-AMz" secondAttribute="bottom" constant="20" id="cdo-cy-PaV"/>
                 <constraint firstAttribute="trailing" secondItem="i1Z-4V-AMz" secondAttribute="trailing" id="ee7-dx-22v"/>
+                <constraint firstAttribute="trailing" secondItem="IhP-Hs-EpA" secondAttribute="trailing" constant="20" id="fPu-Ll-qJc"/>
+                <constraint firstItem="i4w-S8-7Nj" firstAttribute="top" secondItem="FRu-sZ-qZh" secondAttribute="bottom" constant="20" id="fTB-MK-iZp"/>
+                <constraint firstAttribute="trailing" secondItem="i4w-S8-7Nj" secondAttribute="trailing" constant="20" id="koy-B2-fg3"/>
+                <constraint firstItem="7nF-qH-FEY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="lv3-77-tFs"/>
                 <constraint firstItem="OgR-E9-W9C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="nt1-KX-Fhl"/>
                 <constraint firstAttribute="trailing" secondItem="gSC-qO-4Og" secondAttribute="trailing" id="vxC-YP-6sH"/>
+                <constraint firstAttribute="trailing" secondItem="isP-0e-V3J" secondAttribute="trailing" constant="20" id="zGw-gg-R4U"/>
             </constraints>
             <point key="canvasLocation" x="166" y="209"/>
         </view>
