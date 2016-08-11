@@ -12,6 +12,7 @@ import SwiftDate
 import MaterialKit
 import FirebaseDatabase
 
+
 class CalendarViewController: UIViewController {
 
     @IBOutlet weak var priceLabel: UILabel!
@@ -42,6 +43,19 @@ class CalendarViewController: UIViewController {
         calendarView.firstDayOfWeek = .Monday
         calendarView.allowsMultipleSelection = true
         self.setAttributes()
+        
+        ref = FIRDatabase.database().reference().child("campsBay").child("bayHotel").child("rooms").child("\(AppState.sharedInstance.currRoomType)")
+        
+        self.ref.observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+            if snapshot.exists() {
+                self.datesUnavailable = snapshot.value!["datesBooked"] as! [String]
+            }
+            self.price = snapshot.value!["price"] as! Int
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -53,8 +67,11 @@ class CalendarViewController: UIViewController {
     @IBAction func bookButtonTapped() {
         let formatter = NSDateFormatter()
         formatter.dateFormat = "MMM dd, yyyy"
-        var startDate = formatter.dateFromString(startDateTextField.text!)
-        let endDate = formatter.dateFromString(endDateTextField.text!)
+//        var startDate = formatter.dateFromString(startDateTextField.text!)
+//        let endDate = formatter.dateFromString(endDateTextField.text!)
+        datesCurrentlySelected.sortInPlace()
+        var startDate = formatter.dateFromString(datesCurrentlySelected.minElement()!)
+        let endDate = formatter.dateFromString(datesCurrentlySelected.maxElement()!)
         
         while startDate?.compare(endDate!) != .OrderedDescending {
             
@@ -87,36 +104,21 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
     func calendar(calendar: JTAppleCalendarView, isAboutToDisplayCell cell: JTAppleDayCellView, date: NSDate, cellState: CellState) {
         let cell = (cell as! CalendarViewCell)
         
-        ref = FIRDatabase.database().reference().child("campsBay").child("bayHotel").child("rooms").child("\(AppState.sharedInstance.currRoomType)")
-        
-        self.ref.observeSingleEventOfType(.Value, withBlock: { (snapshot) in
-            if snapshot.exists() {
-                self.datesUnavailable = snapshot.value!["datesBooked"] as! [String]
-            }
-            self.price = snapshot.value!["price"] as! Int
-            
-        }) { (error) in
-            print(error.localizedDescription)
-        }
+        cell.selected = false
+        cell.bookedView.hidden = true
+        cell.selectedView.hidden = true
+        cell.dayLabel.textColor = UIColor.blackColor()
+        cell.userInteractionEnabled = true
+
         
         let formatter = NSDateFormatter()
         formatter.dateFormat = "MMM dd, yyyy"
-        
-        
-//        var i: Int = 0
-//        for date in datesBookedArray {
-//            if formatter.dateFromString(date) < today {
-//                datesBookedArray.removeAtIndex(i)
-//            }
-//            i += 1
-//        }
 
-        
-        print("got here before") /***********************/
+//        print("got phase 1") /***********************/
        
         for date in datesUnavailable {
             
-            print("got here") /***********************/
+//            print("got phase 2") /***********************/
             
             if cellState.date == formatter.dateFromString(date) {
                 
@@ -128,7 +130,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
                 cell.bringSubviewToFront(cell.dayLabel)
                 cell.userInteractionEnabled = false
                 
-                print("heck ya") /***********************/
+                print("hacked the mainframe") /***********************/
             }
         }
         
@@ -144,6 +146,8 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         formatter.dateFormat = "MMM dd, yyyy"
         datesCurrentlySelected.append(formatter.stringFromDate(cellState.date))
         updatePrices()
+        
+        print(cellState.date)
     }
     
     func calendar(calendar: JTAppleCalendarView, didDeselectDate date: NSDate, cell: JTAppleDayCellView?, cellState: CellState) {
@@ -170,7 +174,10 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         let year = startDate.year
         monthLabel.text = monthName
         yearLabel.text = "\(year)"
-        viewDidLoad()
+        
+        for entry in datesUnavailable {
+            print(entry)
+        }
         
     }
 
@@ -223,6 +230,7 @@ extension CalendarViewController {
     }
     
     func updatePrices() {
+        priceLabel.hidden = false
         currentPayment = 0
         currentPayment = datesCurrentlySelected.count * price
         priceLabel.text = ("R \(currentPayment)")

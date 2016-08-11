@@ -50,11 +50,6 @@ class CalendarViewCell: JTAppleDayCellView {
         bookedView.layer.cornerRadius = bookedView.frame.width / 2
         bookedView.clipsToBounds = true
         
-//        if cellState.date == NSDate.today() {
-//            isTodayView.hidden = false
-//            isTodayView.backgroundColor = UIColor.VNLRed()
-//        }
-        
         if bookedView.hidden == false {
             dayLabel.textColor = UIColor.whiteColor()
         }

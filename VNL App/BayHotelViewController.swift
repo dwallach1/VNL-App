@@ -142,6 +142,7 @@ class BayHotelViewController: UICollectionViewController {
 
     func bookNowButtonTapped() {
         let bookingVC = CalendarViewController(nibName: "CalendarViewController", bundle: nil)
+//        let bookingVC = BookingViewController(nibName: "BookingViewController", bundle: nil)
         presentViewController(bookingVC, animated: true, completion: nil)
     }
     
