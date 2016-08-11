@@ -11,6 +11,7 @@ import JTAppleCalendar
 
 class CalendarViewCell: JTAppleDayCellView {
 
+    @IBOutlet weak var isTodayView: UIView!
     @IBOutlet weak var bookedView: UIView!
     @IBOutlet weak var selectedView: UIView!
     @IBOutlet weak var dayLabel: UILabel!
@@ -28,7 +29,9 @@ class CalendarViewCell: JTAppleDayCellView {
     func cellSelectionChanged(cellState: CellState) {
         if cellState.isSelected == true {
             selectedView.hidden = false
-            selectedView.backgroundColor = UIColor.VNLGreen()
+            selectedView.backgroundColor = UIColor.VNLBlue()
+            dayLabel.textColor = UIColor.whiteColor()
+            self.bringSubviewToFront(dayLabel)
         } else {
             selectedView.hidden = true
             dayLabel.textColor = UIColor.blackColor()
@@ -46,10 +49,14 @@ class CalendarViewCell: JTAppleDayCellView {
         selectedView.clipsToBounds = true
         bookedView.layer.cornerRadius = bookedView.frame.width / 2
         bookedView.clipsToBounds = true
-        if cellState.date == NSDate.today() && AppState.sharedInstance.todayShown == false{
-            selectedView.hidden = false
-            selectedView.backgroundColor = UIColor.VNLRed()
-            AppState.sharedInstance.todayShown = true
+        
+//        if cellState.date == NSDate.today() {
+//            isTodayView.hidden = false
+//            isTodayView.backgroundColor = UIColor.VNLRed()
+//        }
+        
+        if bookedView.hidden == false {
+            dayLabel.textColor = UIColor.whiteColor()
         }
 
     }

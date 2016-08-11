@@ -14,9 +14,10 @@ import FirebaseDatabase
 
 class CalendarViewController: UIViewController {
 
+    @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var startDateTextField: UIDatePickerTextField!
     @IBOutlet weak var endDateTextField: UIDatePickerTextField!
-    @IBOutlet weak var todayButton: MKButton!
+    @IBOutlet weak var todayButton: UIButton!
     @IBOutlet weak var cancelButton: MKButton!
     @IBOutlet weak var bookButton: MKButton!
     @IBOutlet weak var yearLabel: UILabel!
@@ -27,7 +28,10 @@ class CalendarViewController: UIViewController {
     var datesUnavailable: [String] = []
     var datesBookedArray: [String] = []
     var datesCurrentlySelected: [String] = []
+    var price: Int = 0
+    var currentPayment: Int = 0
     var ref: FIRDatabaseReference!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,20 +42,13 @@ class CalendarViewController: UIViewController {
         calendarView.firstDayOfWeek = .Monday
         calendarView.allowsMultipleSelection = true
         self.setAttributes()
-        
-
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         calendarView.scrollToDate(today)
-        
-
     }
-    
-    /****** Set up Database Communication *****/
-    
-    
+
     
     @IBAction func bookButtonTapped() {
         let formatter = NSDateFormatter()
@@ -66,19 +63,19 @@ class CalendarViewController: UIViewController {
         }
 
         self.ref.child("datesBooked").setValue(datesBookedArray)
+
+        
     }
 }
 
 
 extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDelegate  {
     // Setting up manditory protocol method
-   
     
     func configureCalendar(calendar: JTAppleCalendarView) -> (startDate: NSDate, endDate: NSDate, calendar: NSCalendar) {
-        // You can set your date using NSDate() or NSDateFormatter. Your choice.
-//        let firstDate = "1/1/2016".toDate(DateFormat.Custom("dd/MM/YY"))
         let formatter = NSDateFormatter()
         formatter.dateFormat = "MMM dd, yyyy"
+
         let firstDate = formatter.dateFromString("JAN 01, 2016")
         let secondDate = NSDate().add(3)
         let aCalendar = NSCalendar.currentCalendar() // Properly configure your calendar to your time zone here
@@ -92,12 +89,12 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         
         ref = FIRDatabase.database().reference().child("campsBay").child("bayHotel").child("rooms").child("\(AppState.sharedInstance.currRoomType)")
         
-        self.ref.child("datesBooked").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
-            
+        self.ref.observeSingleEventOfType(.Value, withBlock: { (snapshot) in
             if snapshot.exists() {
-                self.datesUnavailable = snapshot.value! as! [String]
+                self.datesUnavailable = snapshot.value!["datesBooked"] as! [String]
             }
-            // ...
+            self.price = snapshot.value!["price"] as! Int
+            
         }) { (error) in
             print(error.localizedDescription)
         }
@@ -105,15 +102,33 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         let formatter = NSDateFormatter()
         formatter.dateFormat = "MMM dd, yyyy"
         
-    
+        
+//        var i: Int = 0
+//        for date in datesBookedArray {
+//            if formatter.dateFromString(date) < today {
+//                datesBookedArray.removeAtIndex(i)
+//            }
+//            i += 1
+//        }
+
+        
+        print("got here before") /***********************/
+       
         for date in datesUnavailable {
+            
+            print("got here") /***********************/
+            
             if cellState.date == formatter.dateFromString(date) {
-                print("\(cellState.date) +++++ \(formatter.dateFromString(date)) ")
+                
+                print("\(cellState.date) +++++ \(formatter.dateFromString(date)) ") /***********************/
+                
                 cell.bookedView.hidden = false
-                cell.bookedView.backgroundColor = UIColor.VNLBlue()
+                cell.bookedView.backgroundColor = UIColor.VNLDarkBlue()
                 cell.dayLabel.textColor = UIColor.whiteColor()
                 cell.bringSubviewToFront(cell.dayLabel)
                 cell.userInteractionEnabled = false
+                
+                print("heck ya") /***********************/
             }
         }
         
@@ -123,23 +138,39 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
     
     func calendar(calendar: JTAppleCalendarView, didSelectDate date: NSDate, cell: JTAppleDayCellView?, cellState: CellState) {
         let cell = (cell as! CalendarViewCell)
-        cell.selected = true
         cell.cellSelectionChanged(cellState)
+        
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "MMM dd, yyyy"
+        datesCurrentlySelected.append(formatter.stringFromDate(cellState.date))
+        updatePrices()
     }
     
     func calendar(calendar: JTAppleCalendarView, didDeselectDate date: NSDate, cell: JTAppleDayCellView?, cellState: CellState) {
         let cell = (cell as! CalendarViewCell)
-        cell.selected = true
         cell.cellSelectionChanged(cellState)
+        
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "MMM dd, yyyy"
+        
+        var i: Int = 0
+        for date in datesCurrentlySelected {
+            if cellState.date == formatter.dateFromString(date) {
+                datesCurrentlySelected.removeAtIndex(i)
+            }
+            i += 1
+        }
+        
+        updatePrices()
     }
     
     
     func calendar(calendar: JTAppleCalendarView, didScrollToDateSegmentStartingWithdate startDate: NSDate, endingWithDate endDate: NSDate) {
-        configureCalendar(calendar)
         let monthName = startDate.monthName
         let year = startDate.year
         monthLabel.text = monthName
         yearLabel.text = "\(year)"
+        viewDidLoad()
         
     }
 
@@ -150,7 +181,7 @@ extension CalendarViewController {
     
     func setAttributes() {
         
-        let buttons = [cancelButton, bookButton, todayButton]
+        let buttons = [cancelButton, bookButton]
         
         for button in buttons {
             button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
@@ -161,6 +192,7 @@ extension CalendarViewController {
         cancelButton.setTitle("Cancel", forState: .Normal)
         cancelButton.addTarget(self, action: #selector(cancelButtonTapped), forControlEvents: .TouchUpInside)
         bookButton.setTitle("Book", forState: .Normal)
+        todayButton.tintColor = UIColor.VNLBlue()
         todayButton.setTitle("Today", forState: .Normal)
         todayButton.addTarget(self, action: #selector(todayButtonTapped), forControlEvents: .TouchUpInside)
         
@@ -171,6 +203,7 @@ extension CalendarViewController {
             textField.inputAccessoryView = toolBar
             textField.borderActiveColor = UIColor.VNLBlue()
             textField.borderInactiveColor = UIColor.VNLBlue()
+
         }
             
     }
@@ -186,6 +219,14 @@ extension CalendarViewController {
     
     func dismissPicker() {
         view.endEditing(true)
+        updatePrices()
+    }
+    
+    func updatePrices() {
+        currentPayment = 0
+        currentPayment = datesCurrentlySelected.count * price
+        priceLabel.text = ("R \(currentPayment)")
+        priceLabel.textColor = UIColor.VNLGreen()
     }
 
 }

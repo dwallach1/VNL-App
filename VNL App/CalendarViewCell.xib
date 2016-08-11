@@ -17,12 +17,12 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view hidden="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nBX-Rt-2JF">
-                    <rect key="frame" x="114" y="121" width="10" height="10"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SsQ-Vh-lIT">
+                    <rect key="frame" x="-182" y="-189" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="10" id="Xr1-kY-a2Z"/>
-                        <constraint firstAttribute="width" constant="10" id="hCk-Yj-7X0"/>
+                        <constraint firstAttribute="width" constant="30" id="Sv3-Pp-xKB"/>
+                        <constraint firstAttribute="height" constant="30" id="o1Y-l0-Lkg"/>
                     </constraints>
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XeR-9C-sgj">
@@ -31,6 +31,14 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="SAD-Gk-K5s"/>
                         <constraint firstAttribute="height" constant="30" id="ljf-IV-90V"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nBX-Rt-2JF">
+                    <rect key="frame" x="114" y="121" width="10" height="10"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="Xr1-kY-a2Z"/>
+                        <constraint firstAttribute="width" constant="5" id="hCk-Yj-7X0"/>
                     </constraints>
                 </view>
             </subviews>
@@ -42,12 +50,15 @@
                 <constraint firstItem="XeR-9C-sgj" firstAttribute="centerY" secondItem="FqC-l6-Oyj" secondAttribute="centerY" id="Ty5-XU-UbE"/>
                 <constraint firstItem="wt5-Ov-RdN" firstAttribute="centerY" secondItem="FqC-l6-Oyj" secondAttribute="centerY" id="Ysj-mn-zoy"/>
                 <constraint firstItem="nBX-Rt-2JF" firstAttribute="top" secondItem="wt5-Ov-RdN" secondAttribute="bottom" constant="2" id="aFW-lf-eSx"/>
+                <constraint firstItem="SsQ-Vh-lIT" firstAttribute="centerX" secondItem="FqC-l6-Oyj" secondAttribute="centerX" id="hLa-Vz-JxY"/>
+                <constraint firstItem="SsQ-Vh-lIT" firstAttribute="centerY" secondItem="FqC-l6-Oyj" secondAttribute="centerY" id="hUc-A2-z2M"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bookedView" destination="XeR-9C-sgj" id="iSH-0c-dAm"/>
                 <outlet property="dayLabel" destination="wt5-Ov-RdN" id="RIs-TJ-duZ"/>
-                <outlet property="selectedView" destination="nBX-Rt-2JF" id="tzj-Eb-XU3"/>
+                <outlet property="isTodayView" destination="nBX-Rt-2JF" id="r2S-9R-l75"/>
+                <outlet property="selectedView" destination="SsQ-Vh-lIT" id="Lph-jC-1Vn"/>
             </connections>
             <point key="canvasLocation" x="-1133.25" y="-990"/>
         </view>

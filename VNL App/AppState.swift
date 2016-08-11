@@ -17,10 +17,9 @@ class AppState: NSObject {
     var photoUrl: NSURL?
     var screen: String = "home"  //["home", "benefits", "information", "rates", "exclusive", "booking",      "partners", "contact]
     
-    var selectedCell: String = "home"
     var currRoomType: String = "nil"
-    var todayShown = false
     
+    var selectedCell: String = "home"
     var currCellState: cellState = cellState(open: false, index: nil)
 
 
