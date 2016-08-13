@@ -4,47 +4,47 @@
       "rooms": {
         "mountain" : {
           "price" : 1100,
-          "datesBooked" : []
+          "datesBooked" : ["nil"]
         },
 				"classic" : {
 					"price" : 1100,
-					"datesBooked" : []
+					"datesBooked" : ["nil"]
 				},
 				"clubClassic" : {
 					"price" : 1100,
-					"datesBooked": []
+					"datesBooked": ["nil"]
 				},
 				"premierMountain" : {
 					"price" : 1200,
-					"datesBooked" : []
+					"datesBooked" : ["nil"]
 				},
 				"premierPool" : {
 					"price" : 1200,
-					"datesBooked" : []
+					"datesBooked" : ["nil"]
 				},
 				"premierSea" :  {
 					"price" : 13250,
-					"datesBooked" : []
+					"datesBooked" : ["nil"]
 				},
 				"cabana" : {
 					"price" : 1350,
-					"datesBooked" : []
+					"datesBooked" : ["nil"]
 				},
 				"luxury" : {
 					"price" : 1200,
-					"datesBooked" : []
+					"datesBooked" : ["nil"]
 				},
 				"suite" : {
 					"price" : 1200,
-					"datesBooked" : []
+					"datesBooked" : ["nil"]
 				},
 				"penthouse" : {
 					"price" : 1350,
-					"datesBooked" : []
+					"datesBooked" : ["nil"]
 				},
 				"adventurePad" : {
 					"price" : 1350,
-					"datesBooked" : []
+					"datesBooked" : ["nil"]
 				}
       }
     }

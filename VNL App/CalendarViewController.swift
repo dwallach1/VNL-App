@@ -25,6 +25,14 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var calendarView: JTAppleCalendarView!
+    @IBOutlet weak var mondayLabel: UILabel!
+    @IBOutlet weak var tuesdayLabel: UILabel!
+    @IBOutlet weak var wednesdayLabel: UILabel!
+    @IBOutlet weak var thursdayLabel: UILabel!
+    @IBOutlet weak var fridayLabel: UILabel!
+    @IBOutlet weak var saturdayLabel: UILabel!
+    @IBOutlet weak var sundayLabel: UILabel!
+    
     
     let today = NSDate.today()
     var datesUnavailable: [String] = []
@@ -56,11 +64,16 @@ class CalendarViewController: UIViewController {
         }) { (error) in
             print(error.localizedDescription)
         }
-
+        calendarView.scrollToDate(today)
+        
+        performSelector(#selector(viewDidAppear), withObject: self, afterDelay: 1 )
     }
+    
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        calendarView.scrollToDate(today)
+        calendarView.reloadData()
+        todayButtonTapped()
     }
 
     
@@ -78,26 +91,19 @@ class CalendarViewController: UIViewController {
                 datesBookedArray.append(formatter.stringFromDate(startDate!))
                 startDate = startDate?.add(0, months: 0, weeks: 0, days: 1, hours: 0, minutes: 0, seconds: 0, nanoseconds: 0)
             }
-        
-//          let key = ref.childByAutoId().key
-//          let dates = datesBookedArray
-//          let childUpdates = ["/datesBooked/\(key)": dates]
-//          ref.updateChildValues(childUpdates)
+            
+           
             for date in datesUnavailable {
                 datesBookedArray.append(date)
             }
-
-            datesBookedArray.sortInPlace()
-            
-//            var i: Int = 0
-//            for date in datesBookedArray {
-//                if date == datesBookedArray[i+1] {
-//                    datesCurrentlySelected.removeAtIndex(i)
-//                }
-//                i += 1
-//            }
         
-            self.ref.child("datesBooked").setValue(datesBookedArray)
+            let updatedArray = sortList(datesBookedArray)
+            
+            for date in updatedArray {
+                print(date)
+            }
+            
+            self.ref.child("datesBooked").setValue(updatedArray)
         }
 
         
@@ -229,7 +235,29 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         yearLabel.textColor = UIColor.VNLBlue()
         
     }
+    
+    
+    func sortList(stringArray: [String]) -> [String] {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "MMM dd, yyyy"
+        
+        var tempArray: [NSDate] = []
+        var returnArray: [String] = []
+        
+        for entry in stringArray {
+            if entry != "nil" {
+                tempArray.append(formatter.dateFromString(entry)!)
+            }
+        }
 
+        tempArray.sortInPlace()
+        
+        for entry in tempArray {
+            returnArray.append(formatter.stringFromDate(entry))
+        }
+        
+        return returnArray
+    }
 }
 
 
@@ -260,6 +288,12 @@ extension CalendarViewController {
             textField.borderActiveColor = UIColor.VNLBlue()
             textField.borderInactiveColor = UIColor.VNLBlue()
 
+        }
+        
+        let weekdayLabels: [UILabel] = [mondayLabel, tuesdayLabel, wednesdayLabel, thursdayLabel, fridayLabel, saturdayLabel, sundayLabel]
+        
+        for label in weekdayLabels {
+            label.textColor = UIColor.VNLBlue()
         }
         
         priceLabel.adjustsFontSizeToFitWidth = true

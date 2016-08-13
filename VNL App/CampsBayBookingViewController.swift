@@ -7,21 +7,13 @@
 //
 
 import UIKit
-import FirebaseDatabase
 
 class CampsBayBookingViewController: UIViewController {
-    
-    var dbref: FIRDatabaseReference!
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        FIRDatabase.database().persistenceEnabled = true
-        
-        dbref = FIRDatabase.database().reference().child("bookings")
-        dbref = dbref.child("camps_bay")
-        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 176
@@ -40,29 +32,10 @@ class CampsBayBookingViewController: UIViewController {
     }
     
     func backButtonTapped() {
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = kCATransitionPush
-        transition.subtype = kCATransitionFromTop
-        view.window!.layer.addAnimation(transition, forKey: kCATransition)
         let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
         let navVC = UINavigationController(rootViewController: homeVC)
         presentViewController(navVC, animated: true, completion: nil)
     }
-    
-//    func startObservingDB() {
-//        dbref.observeEventType(.Value) { (snapshot: FIRDataSnapshot) in
-//            var newBookings = [Booking]()
-//            for booking in snapshot.children {
-//                let bookingObject = Booking(snapshot: booking as! FIRDataSnapshot)
-//                newBookings.append(bookingObject)
-//            }
-//            
-//            self.bookings =
-//        }) { (error: NSError) in
-//            print(error.description)
-//        }
-//    }
 }
 
 extension CampsBayBookingViewController: UITableViewDelegate, UITableViewDataSource {

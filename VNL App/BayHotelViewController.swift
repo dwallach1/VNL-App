@@ -35,11 +35,6 @@ class BayHotelViewController: UICollectionViewController {
     }
 
     func backButtonTapped() {
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = kCATransitionPush
-        transition.subtype = kCATransitionFromTop
-        view.window!.layer.addAnimation(transition, forKey: kCATransition)
         let campsBayVC = CampsBayBookingViewController(nibName: "CampsBayBookingViewController", bundle: nil)
         let navVC = UINavigationController(rootViewController: campsBayVC)
         presentViewController(navVC, animated: true, completion: nil)
