@@ -38,6 +38,9 @@ class CalendarViewController: UIViewController {
     var datesUnavailable: [String] = []
     var datesBookedArray: [String] = []
     var datesCurrentlySelected: [String] = []
+    var counts:[String:Int] = [:]
+    var dates: [NSDate] = []
+    var numRoomsAvailable: Int = 0
     var price: Int = 0
     var currentPayment: Int = 0
     var ref: FIRDatabaseReference!
@@ -51,29 +54,50 @@ class CalendarViewController: UIViewController {
         calendarView.cellInset = CGPoint(x: 0, y: 0)
         calendarView.firstDayOfWeek = .Monday
         calendarView.allowsMultipleSelection = true
+        
         self.setAttributes()
         
-        ref = FIRDatabase.database().reference().child("campsBay").child("bayHotel").child("rooms").child("\(AppState.sharedInstance.currRoomType)")
-        
-        self.ref.observeSingleEventOfType(.Value, withBlock: { (snapshot) in
-            if snapshot.exists() {
-                self.datesUnavailable = snapshot.value!["datesBooked"] as! [String]
-            }
-            self.price = snapshot.value!["price"] as! Int
-            
-        }) { (error) in
-            print(error.localizedDescription)
-        }
         calendarView.scrollToDate(today)
-        
-        performSelector(#selector(viewDidAppear), withObject: self, afterDelay: 1 )
+        performSelector(#selector(todayButtonTapped), withObject: self, afterDelay: 1 )
     }
     
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        connectToDB()
         calendarView.reloadData()
         todayButtonTapped()
+    
+    }
+    
+    func connectToDB() {
+        ref = FIRDatabase.database().reference().child("campsBay").child("bayHotel").child("rooms").child("\(AppState.sharedInstance.currRoomType)")
+        
+        
+        self.ref.observeEventType(.Value, withBlock: { (snapshot) in
+            
+            print("\(snapshot.value)  this is the snapshot value")
+            
+            if snapshot.exists() {
+                self.datesUnavailable = snapshot.value!["datesBooked"] as! [String]
+            }
+            self.price = snapshot.value!["price"] as! Int
+            self.numRoomsAvailable = snapshot.value!["numberOfRooms"] as! Int
+//            self.calendarView.reloadDates(self.dates)
+            self.countOccurences()
+            self.viewDidLoad()
+//            self.calendarView.reloadData()
+            
+            print(self.dates)
+            print("\(AppState.sharedInstance.currRoomType)")
+            print(self.price)
+            print(self.numRoomsAvailable)
+            print(self.datesUnavailable)
+
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+
     }
 
     
@@ -92,21 +116,51 @@ class CalendarViewController: UIViewController {
                 startDate = startDate?.add(0, months: 0, weeks: 0, days: 1, hours: 0, minutes: 0, seconds: 0, nanoseconds: 0)
             }
             
-           
             for date in datesUnavailable {
                 datesBookedArray.append(date)
             }
         
             let updatedArray = sortList(datesBookedArray)
             
-            for date in updatedArray {
-                print(date)
-            }
-            
             self.ref.child("datesBooked").setValue(updatedArray)
         }
 
         
+    }
+    
+    func sortList(stringArray: [String]) -> [String] {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "MMM dd, yyyy"
+        
+        var tempArray: [NSDate] = []
+        var returnArray: [String] = []
+        
+        for entry in stringArray {
+            if entry != "nil" {
+                tempArray.append(formatter.dateFromString(entry)!)
+            }
+        }
+        
+        tempArray.sortInPlace()
+        
+        for entry in tempArray {
+            returnArray.append(formatter.stringFromDate(entry))
+        }
+        return returnArray
+    }
+    
+    
+    func countOccurences() {
+        
+        for date in datesUnavailable {
+            counts[date] = (counts[date] ?? 0) + 1
+        }
+        
+//        print(counts)
+//
+//        for (key, value) in counts {
+//            print("\(key) occurs \(value) time(s)")
+//        }
     }
 }
 
@@ -139,6 +193,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         formatter.dateFormat = "MMM dd, yyyy"
         
         if cellState.dateBelongsTo == .ThisMonth {
+            dates.append(cellState.date)
             cell.dayLabel.textColor = UIColor.blackColor()
         } else {
             if cell.bookedView.hidden {
@@ -163,10 +218,14 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
                 cell.bringSubviewToFront(cell.dayLabel)
             }
         }
-       
-        for date in datesUnavailable {
-            if cellState.date == formatter.dateFromString(date) {
-                
+        
+
+        
+//        print(datesUnavailable)
+        print ("\(counts) this is the one that we care about")
+        
+        for (key, value) in counts {
+            if cellState.date == formatter.dateFromString(key) && value >= numRoomsAvailable {
                 cell.bookedView.hidden = false
                 cell.bookedView.backgroundColor = UIColor.VNLDarkBlue()
                 cell.dayLabel.textColor = UIColor.whiteColor()
@@ -174,6 +233,17 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
                 cell.userInteractionEnabled = false
             }
         }
+       
+//        for date in datesUnavailable {
+//            if cellState.date == formatter.dateFromString(date) {
+//                
+//                cell.bookedView.hidden = false
+//                cell.bookedView.backgroundColor = UIColor.VNLDarkBlue()
+//                cell.dayLabel.textColor = UIColor.whiteColor()
+//                cell.bringSubviewToFront(cell.dayLabel)
+//                cell.userInteractionEnabled = false
+//            }
+//        }
         
         cell.setupCellBeforeDisplay(cellState, date: date)
         
@@ -186,6 +256,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         let formatter = NSDateFormatter()
         formatter.dateFormat = "MMM dd, yyyy"
         
+        //Checker for double counting of currently selected cells
         var duplicate = false
         
         for date in datesCurrentlySelected {
@@ -234,29 +305,6 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         monthLabel.textColor = UIColor.VNLBlue()
         yearLabel.textColor = UIColor.VNLBlue()
         
-    }
-    
-    
-    func sortList(stringArray: [String]) -> [String] {
-        let formatter = NSDateFormatter()
-        formatter.dateFormat = "MMM dd, yyyy"
-        
-        var tempArray: [NSDate] = []
-        var returnArray: [String] = []
-        
-        for entry in stringArray {
-            if entry != "nil" {
-                tempArray.append(formatter.dateFromString(entry)!)
-            }
-        }
-
-        tempArray.sortInPlace()
-        
-        for entry in tempArray {
-            returnArray.append(formatter.stringFromDate(entry))
-        }
-        
-        return returnArray
     }
 }
 
@@ -312,7 +360,6 @@ extension CalendarViewController {
     func todayButtonTapped(){
         calendarView.scrollToDate(today)
     }
-    
     
     func dismissPicker() {
         view.endEditing(true)
