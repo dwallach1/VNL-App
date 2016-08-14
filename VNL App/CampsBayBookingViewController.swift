@@ -89,15 +89,15 @@ extension CampsBayBookingViewController: UITableViewDelegate, UITableViewDataSou
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.row == 0 {
+//        if indexPath.row == 0 {
             let bayHotelVC = BayHotelViewController(nibName: "BayHotelViewController", bundle: nil)
             let navVC = UINavigationController(rootViewController: bayHotelVC)
             presentViewController(navVC, animated: true, completion: nil)
-        } else {
-            let caldendarViewController = CalendarViewController(nibName: "CalendarViewController", bundle: nil)
-            self.showViewController(caldendarViewController, sender: self)
-
-        }
+//        } else {
+//            let caldendarViewController = CalendarViewController(nibName: "CalendarViewController", bundle: nil)
+//            self.showViewController(caldendarViewController, sender: self)
+//
+//        }
     }
     
 }

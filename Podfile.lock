@@ -46,6 +46,7 @@ PODS:
   - JTAppleCalendar (3.0.1)
   - MaterialKit (0.4)
   - SwiftDate (3.0.8)
+  - SwiftSpinner (0.9.5)
   - TextFieldEffects (1.2.0)
 
 DEPENDENCIES:
@@ -57,6 +58,7 @@ DEPENDENCIES:
   - JTAppleCalendar (~> 3.0)
   - MaterialKit (~> 0.4)
   - SwiftDate (~> 3.0)
+  - SwiftSpinner
   - TextFieldEffects
 
 SPEC CHECKSUMS:
@@ -75,8 +77,9 @@ SPEC CHECKSUMS:
   JTAppleCalendar: 13d2c667bb7f2050fb266267b352904e4a808c82
   MaterialKit: 2e5267bcf410b82793f2b92d2111f8ae4ed2c3f2
   SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
+  SwiftSpinner: c6585a0ae5c67eb33e737695cce88f0262008cce
   TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
 
-PODFILE CHECKSUM: 48c877ac3e8dee4b9f50840d15ca4fef8b5a5c3c
+PODFILE CHECKSUM: 7e1b10728e3c84c6219704431885d33892ea30f3
 
 COCOAPODS: 1.0.1

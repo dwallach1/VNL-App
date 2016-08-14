@@ -9,6 +9,7 @@
 import UIKit
 import MaterialKit
 import TextFieldEffects
+import SwiftSpinner
 import Firebase
 
 class LoginViewController: UIViewController {
@@ -36,6 +37,7 @@ class LoginViewController: UIViewController {
         // Sign In with credentials.
         let email = emailField.text
         let password = passwordField.text
+        SwiftSpinner.show("Connecting to Database to Authenticate User...")
         FIRAuth.auth()?.signInWithEmail(email!, password: password!) { (user, error) in
             if let error = error {
                 let errorAlert = UIAlertController(title: "Invalid Email or Password", message: "Please try again", preferredStyle: .Alert)
@@ -85,7 +87,8 @@ class LoginViewController: UIViewController {
         
         let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
         let navigationVC = UINavigationController(rootViewController: homeVC)
-        self.presentViewController(navigationVC, animated: true, completion: nil)
+        self.presentViewController(navigationVC, animated: false, completion: nil)
+        SwiftSpinner.hide()
 
     }
     

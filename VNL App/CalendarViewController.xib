@@ -10,14 +10,12 @@
                 <outlet property="bookButton" destination="IhP-Hs-EpA" id="F9e-6E-XVe"/>
                 <outlet property="calendarView" destination="i1Z-4V-AMz" id="Uos-sO-nnI"/>
                 <outlet property="cancelButton" destination="7nF-qH-FEY" id="ijq-uc-g9c"/>
-                <outlet property="endDateTextField" destination="i4w-S8-7Nj" id="8iF-4g-vzy"/>
                 <outlet property="fridayLabel" destination="gW6-9q-UDq" id="Iah-WM-KA6"/>
                 <outlet property="mondayLabel" destination="IhF-4S-sUH" id="1oL-Ph-OmW"/>
                 <outlet property="monthLabel" destination="OgR-E9-W9C" id="cmq-JV-Ihv"/>
                 <outlet property="priceLabel" destination="L1B-y4-E4U" id="Cgr-53-q3P"/>
                 <outlet property="priceView" destination="VxA-Zu-IM9" id="m0O-9o-7Fi"/>
                 <outlet property="saturdayLabel" destination="dau-XU-Y7Y" id="KFs-0o-WCx"/>
-                <outlet property="startDateTextField" destination="FRu-sZ-qZh" id="eqT-UV-5pk"/>
                 <outlet property="sundayLabel" destination="yro-rP-Txa" id="HP7-gl-oj2"/>
                 <outlet property="thursdayLabel" destination="ZqJ-8R-XaR" id="y6f-3t-9LT"/>
                 <outlet property="todayButton" destination="isP-0e-V3J" id="YMM-cc-2cu"/>
@@ -67,19 +65,6 @@
                     </constraints>
                     <state key="normal" title="Button"/>
                 </button>
-                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Start Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FRu-sZ-qZh" customClass="UIDatePickerTextField" customModule="VNL_App" customModuleProvider="target">
-                    <rect key="frame" x="20" y="401" width="560" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="yIE-Ea-ctW"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="End Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i4w-S8-7Nj" customClass="UIDatePickerTextField" customModule="VNL_App" customModuleProvider="target">
-                    <rect key="frame" x="20" y="471" width="560" height="50"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxA-Zu-IM9">
                     <rect key="frame" x="225" y="406" width="150" height="150"/>
                     <subviews>
@@ -192,26 +177,19 @@
                 <constraint firstAttribute="trailing" secondItem="OgR-E9-W9C" secondAttribute="trailing" id="4lb-Ed-zQ5"/>
                 <constraint firstItem="i1Z-4V-AMz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5K7-cw-Moh"/>
                 <constraint firstAttribute="bottom" secondItem="IhP-Hs-EpA" secondAttribute="bottom" constant="20" id="9Ub-BY-JfF"/>
-                <constraint firstItem="FRu-sZ-qZh" firstAttribute="height" secondItem="i4w-S8-7Nj" secondAttribute="height" id="EXe-v7-58A"/>
                 <constraint firstItem="gSC-qO-4Og" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="HMt-km-DqE"/>
-                <constraint firstItem="FRu-sZ-qZh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="HbQ-Jt-s75"/>
                 <constraint firstItem="7nF-qH-FEY" firstAttribute="width" secondItem="IhP-Hs-EpA" secondAttribute="width" id="O1d-j1-lwU"/>
                 <constraint firstItem="VxA-Zu-IM9" firstAttribute="top" secondItem="i1Z-4V-AMz" secondAttribute="bottom" constant="25" id="PAy-5n-ZE6"/>
-                <constraint firstItem="i4w-S8-7Nj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="PSp-sh-QoF"/>
                 <constraint firstItem="9cO-tg-CrP" firstAttribute="top" secondItem="OgR-E9-W9C" secondAttribute="bottom" constant="10" id="Qxy-iv-zbY"/>
-                <constraint firstAttribute="trailing" secondItem="FRu-sZ-qZh" secondAttribute="trailing" constant="20" id="RaQ-wC-U8I"/>
                 <constraint firstItem="gSC-qO-4Og" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ShS-1L-kag"/>
                 <constraint firstItem="VxA-Zu-IM9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VS1-8Y-OaR"/>
                 <constraint firstItem="9cO-tg-CrP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WyO-2b-D4F"/>
                 <constraint firstAttribute="bottom" secondItem="7nF-qH-FEY" secondAttribute="bottom" constant="20" id="XRB-7U-7s0"/>
                 <constraint firstItem="OgR-E9-W9C" firstAttribute="top" secondItem="gSC-qO-4Og" secondAttribute="bottom" constant="5" id="YZd-er-gVJ"/>
                 <constraint firstItem="7nF-qH-FEY" firstAttribute="height" secondItem="IhP-Hs-EpA" secondAttribute="height" id="aMQ-aX-PbF"/>
-                <constraint firstItem="FRu-sZ-qZh" firstAttribute="top" secondItem="i1Z-4V-AMz" secondAttribute="bottom" constant="20" id="cdo-cy-PaV"/>
                 <constraint firstAttribute="trailing" secondItem="i1Z-4V-AMz" secondAttribute="trailing" id="ee7-dx-22v"/>
                 <constraint firstAttribute="trailing" secondItem="IhP-Hs-EpA" secondAttribute="trailing" constant="20" id="fPu-Ll-qJc"/>
-                <constraint firstItem="i4w-S8-7Nj" firstAttribute="top" secondItem="FRu-sZ-qZh" secondAttribute="bottom" constant="20" id="fTB-MK-iZp"/>
                 <constraint firstItem="i1Z-4V-AMz" firstAttribute="top" secondItem="9cO-tg-CrP" secondAttribute="bottom" id="h2O-6h-0v4"/>
-                <constraint firstAttribute="trailing" secondItem="i4w-S8-7Nj" secondAttribute="trailing" constant="20" id="koy-B2-fg3"/>
                 <constraint firstItem="7nF-qH-FEY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="lv3-77-tFs"/>
                 <constraint firstItem="OgR-E9-W9C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="nt1-KX-Fhl"/>
                 <constraint firstAttribute="trailing" secondItem="9cO-tg-CrP" secondAttribute="trailing" id="qLh-U7-eJw"/>
