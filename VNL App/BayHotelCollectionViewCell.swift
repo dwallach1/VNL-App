@@ -38,6 +38,7 @@ class BayHotelCollectionViewCell: UICollectionViewCell {
     
     @IBAction func bookNowButtonTapped() {
         AppState.sharedInstance.currRoomType = currRoomType
+        AppState.sharedInstance.roomTitle = titleLabel.text!
     }
     
 

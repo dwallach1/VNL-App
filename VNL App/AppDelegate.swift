@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+//import Stripe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = initialNavigationVC
         self.window?.makeKeyAndVisible()
+        
+//        STPPaymentConfiguration.sharedConfiguration().publishableKey = "pk_test_EZNvHeX42Qg9OHC8G4XmV40O"
+
+        
         return true
     }
 

@@ -16,4 +16,5 @@ target 'VNL App' do
   pod 'SwiftDate', '~> 3.0'
   pod 'ImageSlideshow', '~> 0.4'
   pod 'SwiftSpinner'
+  
 end

@@ -46,13 +46,6 @@ class CalendarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        calendarView.dataSource = self
-        calendarView.delegate = self
-        calendarView.registerCellViewXib(fileName: "CalendarViewCell")
-        calendarView.cellInset = CGPoint(x: 0, y: 0)
-        calendarView.firstDayOfWeek = .Monday
-        calendarView.allowsMultipleSelection = true
-        
         self.setAttributes()
         
         calendarView.scrollToDate(today)
@@ -123,15 +116,12 @@ class CalendarViewController: UIViewController {
                 }
                 index += 1
             }
-
-            self.ref.child("datesBooked").setValue(updatedArray)
             
-            calendarView.userInteractionEnabled = false
-            
-
+            AppState.sharedInstance.updatedDBDates = updatedArray
             
             let paymentVC = PaymentViewController(nibName: "PaymentViewController", bundle: nil)
             self.presentViewController(paymentVC, animated: true, completion: nil)
+        
         } else {
             let errorAlert = UIAlertController(title: "No Date Was Selected", message: "Please select one or more dates", preferredStyle: .Alert)
             let dismiss = UIAlertAction(title: "Dismiss", style: .Cancel, handler: nil)
@@ -317,6 +307,13 @@ extension CalendarViewController {
     
     func setAttributes() {
         
+        calendarView.dataSource = self
+        calendarView.delegate = self
+        calendarView.registerCellViewXib(fileName: "CalendarViewCell")
+        calendarView.cellInset = CGPoint(x: 0, y: 0)
+        calendarView.firstDayOfWeek = .Monday
+        calendarView.allowsMultipleSelection = true
+        
         let buttons = [cancelButton, bookButton]
         
         for button in buttons {
@@ -328,7 +325,7 @@ extension CalendarViewController {
         
         cancelButton.setTitle("Cancel", forState: .Normal)
         cancelButton.addTarget(self, action: #selector(cancelButtonTapped), forControlEvents: .TouchUpInside)
-        bookButton.setTitle("Pay", forState: .Normal)
+        bookButton.setTitle("Book", forState: .Normal)
         todayButton.tintColor = UIColor.VNLBlue()
         todayButton.setTitle("Today", forState: .Normal)
         todayButton.addTarget(self, action: #selector(todayButtonTapped), forControlEvents: .TouchUpInside)

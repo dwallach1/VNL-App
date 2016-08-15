@@ -72,7 +72,7 @@ extension EditProfileViewController {
         }
         
         updateButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        updateButton.setTitle("Login", forState: .Normal)
+        updateButton.setTitle("Update", forState: .Normal)
         updateButton.rippleLayerColor = UIColor.whiteColor()
         updateButton.backgroundColor = UIColor.VNLBlue()
         updateButton.layer.cornerRadius = 4

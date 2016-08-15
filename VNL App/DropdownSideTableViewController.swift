@@ -128,51 +128,20 @@ extension DropdownSideTableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let viewModel = displayedRows[indexPath.row]
         
-        print("\(indexPath.row) +++++++ \(viewModel.label)")
-        print("\(AppState.sharedInstance.currCellState.open)")
-//        
-//        if AppState.sharedInstance.currCellState.open == true {
-//            tableView.beginUpdates()
-//            let cellToRemove = AppState.sharedInstance.currCellState.index
-//            let currViewModel = displayedRows[(cellToRemove?.row)!]
-//            let range = cellToRemove!.row+1...cellToRemove!.row+currViewModel.children.count
-//            let indexPaths = range.map{return NSIndexPath(forRow: $0, inSection: cellToRemove!.section)}
-//            
-//            displayedRows.removeRange(range)
-//            tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
-//            tableView.deselectRowAtIndexPath(cellToRemove!, animated: false)
-//            tableView.rowHeight = 88
-//            tableView.endUpdates()
-//        }
-
         if viewModel.children.count > 0 {
             let range = indexPath.row+1...indexPath.row+viewModel.children.count
             let indexPaths = range.map{return NSIndexPath(forRow: $0, inSection: indexPath.section)}
             tableView.beginUpdates()
             
             if viewModel.isCollapsed {
-//                if AppState.sharedInstance.currCellState.open == true {
-//                    let cellToRemove = AppState.sharedInstance.currCellState.index
-//                    let currViewModel = displayedRows[(cellToRemove?.row)!]
-//                    let range = cellToRemove!.row+1...cellToRemove!.row+currViewModel.children.count
-//                    let indexPaths = range.map{return NSIndexPath(forRow: $0, inSection: cellToRemove!.section)}
-//                    print("got here ++++++ \(cellToRemove?.row))")
-//                    displayedRows.removeRange(range)
-//                    tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
-//                    tableView.deselectRowAtIndexPath(cellToRemove!, animated: false)
-//                    tableView.rowHeight = 88
-//                    AppState.sharedInstance.currCellState.open = false
-//                }
+
                 displayedRows.insertContentsOf(viewModel.children, at: indexPath.row+1)
                 tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
-//                AppState.sharedInstance.currCellState = cellState(open: true, index: indexPath)
             } else {
                 displayedRows.removeRange(range)
                 tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
                 tableView.rowHeight = 88
                 tableView.deselectRowAtIndexPath(indexPath, animated: false)
-//                AppState.sharedInstance.currCellState.open = false
-
             }
             tableView.endUpdates()
         }
@@ -185,42 +154,38 @@ extension DropdownSideTableViewController {
 
     func setSegue(indexPath: NSIndexPath) {
         let viewModel = displayedRows[indexPath.row]
-        if viewModel.label == "Rates" {
-            if indexPath.row == 0 {
-                print("hermanus")
-            }
-            if indexPath.row == 1 {
-                print("lagenbaum")
-            }
-        }
-        
-        if viewModel.label == "CAMPS BAY" && indexPath.row == 3 {
+
+        if viewModel.label == "CAMPS BAY" && indexPath.row == 3 || viewModel.label == "CAMPS BAY" && indexPath.row == 6 || viewModel.label == "CAMPS BAY" && indexPath.row == 12 || viewModel.label == "CAMPS BAY" && indexPath.row == 9{
             let campsBayVC = CampsBayBookingViewController(nibName: "CampsBayBookingViewController", bundle: nil)
             let navVC = UINavigationController(rootViewController: campsBayVC)
             presentViewController(navVC, animated: true, completion: nil)
         }
         
-        if viewModel.label == "CONTACT" && indexPath.row == 4 {
+        else if viewModel.label == "CONTACT" && indexPath.row == 4 {
             let contactVC = ContactViewController(nibName: "ContactViewController", bundle: nil)
             let navVC = UINavigationController(rootViewController: contactVC)
             presentViewController(navVC, animated: true, completion: nil)
+        } else {
+            if viewModel.label != "RATES" && viewModel.label != "EXCLUSIVE PACKAGES" && viewModel.label != "BOOKING" {
+                let alert = UIAlertController(title: "Functionality Coming Soon", message: "We're just adding some finishing touches", preferredStyle: .Alert)
+                let dismiss = UIAlertAction(title: "Dismiss", style: .Cancel, handler: nil)
+                alert.addAction(dismiss)
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
         }
+        
     }
     
     func setAppState(indexPath: NSIndexPath) {
         if indexPath.row == 0 {
             AppState.sharedInstance.screen = "rates"
-        }
-        if indexPath.row == 1 {
+        } else if indexPath.row == 1 {
             AppState.sharedInstance.screen = "exclusive"
-        }
-        if indexPath.row == 2 {
+        } else if indexPath.row == 2 {
             AppState.sharedInstance.screen = "booking"
-        }
-        if indexPath.row == 3 {
+        } else if indexPath.row == 3 {
             AppState.sharedInstance.screen = "partners"
-        }
-        if indexPath.row == 4 {
+        } else if indexPath.row == 4 {
             AppState.sharedInstance.screen = "contact"
         }
     }

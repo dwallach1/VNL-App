@@ -87,8 +87,11 @@ extension CampsBayBookingViewController: UITableViewDelegate, UITableViewDataSou
         }
         return cell!
     }
+    
+
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
 //        if indexPath.row == 0 {
             let bayHotelVC = BayHotelViewController(nibName: "BayHotelViewController", bundle: nil)
             let navVC = UINavigationController(rootViewController: bayHotelVC)
@@ -98,6 +101,14 @@ extension CampsBayBookingViewController: UITableViewDelegate, UITableViewDataSou
 //            self.showViewController(caldendarViewController, sender: self)
 //
 //        }
+        
+        if indexPath.row == 0 {
+            AppState.sharedInstance.property = "The Bay Hotel"
+        }
+        if indexPath.row == 1 {
+            AppState.sharedInstance.property = "Camps Bay Retreat"
+        }
+        
     }
     
 }

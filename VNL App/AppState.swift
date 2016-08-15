@@ -15,25 +15,15 @@ class AppState: NSObject {
     var signedIn = false
     var displayName: String?
     var photoUrl: NSURL?
-    var screen: String = "home"  //["home", "benefits", "information", "rates", "exclusive", "booking",      "partners", "contact]
+    var screen: String = "home"  //["home", "benefits", "information", "rates", "exclusive", "booking", "partners", "contact]
     
-    var currRoomType: String = "nil"
-    var bookingDates: [String] = []
-    var price: Int = 0
-    
-    
-    
+    var currRoomType: String = "nil" //used for transfering data from booking page to thank you page
+    var bookingDates: [String] = [] //used for transfering data from booking page to thank you page
+    var updatedDBDates: [String] = [] //used for transfering data from booking page to thank you page
+    var price: Int = 0 //used to transfer current booking price to email and thank you page
+    var roomTitle: String = "nil" //used to gather correct prices of rooms
+    var property: String = "nil" //used for subject of inquire email
+
     var selectedCell: String = "home"
-    var currCellState: cellState = cellState(open: false, index: nil)
-
-
 }
 
-struct cellState {
-    var open: Bool
-    var index: NSIndexPath?
-    init (open: Bool, index: NSIndexPath?){
-        self.open = open
-        self.index = index
-    }
-}

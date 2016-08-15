@@ -17,14 +17,14 @@ class UIDatePickerTextField: HoshiTextField {
     override init(frame: CGRect){
         super.init(frame: frame)
         self.inputView = datePicker
-        setDate()
+//        setDate()
         datePicker.addTarget(self, action: #selector(setDate), forControlEvents: .ValueChanged)
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.inputView = datePicker
-        setDate()
+//        setDate()
         datePicker.addTarget(self, action: #selector(setDate), forControlEvents: .ValueChanged)
     }
     

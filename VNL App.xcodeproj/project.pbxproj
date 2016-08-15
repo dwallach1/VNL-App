@@ -49,7 +49,6 @@
 		638D467E1D533B1A0073201E /* BenefitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638D467C1D533B1A0073201E /* BenefitsViewController.xib */; };
 		63991A141D60A70D006BE345 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63991A121D60A70D006BE345 /* PaymentViewController.swift */; };
 		63991A151D60A70D006BE345 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63991A131D60A70D006BE345 /* PaymentViewController.xib */; };
-		639A413B1D5B051B00E992AC /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A413A1D5B051B00E992AC /* BookingModel.swift */; };
 		639A41421D5B0D3C00E992AC /* CampsBayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A41401D5B0D3C00E992AC /* CampsBayTableViewCell.swift */; };
 		639A41431D5B0D3C00E992AC /* CampsBayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639A41411D5B0D3C00E992AC /* CampsBayTableViewCell.xib */; };
 		639A414A1D5B11DF00E992AC /* BayHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A41481D5B11DF00E992AC /* BayHotelViewController.swift */; };
@@ -119,7 +118,6 @@
 		638D467C1D533B1A0073201E /* BenefitsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitsViewController.xib; sourceTree = "<group>"; };
 		63991A121D60A70D006BE345 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		63991A131D60A70D006BE345 /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
-		639A413A1D5B051B00E992AC /* BookingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
 		639A41401D5B0D3C00E992AC /* CampsBayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampsBayTableViewCell.swift; sourceTree = "<group>"; };
 		639A41411D5B0D3C00E992AC /* CampsBayTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampsBayTableViewCell.xib; sourceTree = "<group>"; };
 		639A41481D5B11DF00E992AC /* BayHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BayHotelViewController.swift; sourceTree = "<group>"; };
@@ -183,15 +181,13 @@
 				639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */,
 				639B0F7F1D4B6A8100EA49AA /* LandingViewController.xib */,
 				638D467F1D5346710073201E /* Non-Member Side Menu */,
-				639A41391D5B02AC00E992AC /* Static Non-Member Files */,
+				639A41391D5B02AC00E992AC /* Static Files */,
 				6362E9A81D536D42009DD3A2 /* Member Side Menu */,
 				6362E9B11D5371DE009DD3A2 /* Profile Menu */,
 				63F05EB21D4B610300854B14 /* LoginViewController.swift */,
 				63F05EB31D4B610300854B14 /* LoginViewController.xib */,
 				639B0F841D4B91DC00EA49AA /* HomeViewController.swift */,
 				639B0F851D4B91DC00EA49AA /* HomeViewController.xib */,
-				633BC45F1D5365E900B9DD6A /* ContactViewController.swift */,
-				633BC4601D5365E900B9DD6A /* ContactViewController.xib */,
 				638100AA1D4F7D660095634C /* Booking */,
 				6362E9C41D54968F009DD3A2 /* Models */,
 				63F05EB61D4B610E00854B14 /* Supporting Files */,
@@ -227,8 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				6362E9BE1D5468CE009DD3A2 /* CollapsableViewModel.swift */,
-				639A413A1D5B051B00E992AC /* BookingModel.swift */,
-				639A41501D5B3B5F00E992AC /* UserModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -276,6 +270,7 @@
 		638D46761D5320120073201E /* Old unused files - to be deleted */ = {
 			isa = PBXGroup;
 			children = (
+				639A41501D5B3B5F00E992AC /* UserModel.swift */,
 				6362E9A91D536D5E009DD3A2 /* MemberSideViewController.swift */,
 				6362E9AA1D536D5E009DD3A2 /* MemberSideViewController.xib */,
 				6362E9AD1D536D76009DD3A2 /* MemberSideViewCell.swift */,
@@ -298,9 +293,11 @@
 			name = "Non-Member Side Menu";
 			sourceTree = "<group>";
 		};
-		639A41391D5B02AC00E992AC /* Static Non-Member Files */ = {
+		639A41391D5B02AC00E992AC /* Static Files */ = {
 			isa = PBXGroup;
 			children = (
+				633BC45F1D5365E900B9DD6A /* ContactViewController.swift */,
+				633BC4601D5365E900B9DD6A /* ContactViewController.xib */,
 				6362E9BA1D537E3C009DD3A2 /* CuriousViewController.swift */,
 				6362E9BB1D537E3C009DD3A2 /* CuriousViewController.xib */,
 				638D467B1D533B1A0073201E /* BenefitsViewController.swift */,
@@ -308,7 +305,7 @@
 				633BC4591D53621200B9DD6A /* InformationViewController.swift */,
 				633BC45A1D53621200B9DD6A /* InformationViewController.xib */,
 			);
-			name = "Static Non-Member Files";
+			name = "Static Files";
 			sourceTree = "<group>";
 		};
 		63F05EB61D4B610E00854B14 /* Supporting Files */ = {
@@ -500,7 +497,6 @@
 				63DCCCF11D4F49290045FB7F /* NavigationViewController.swift in Sources */,
 				63991A141D60A70D006BE345 /* PaymentViewController.swift in Sources */,
 				638D46681D50878B0073201E /* CalendarViewCell.swift in Sources */,
-				639A413B1D5B051B00E992AC /* BookingModel.swift in Sources */,
 				639A414E1D5B151900E992AC /* BayHotelCollectionViewCell.swift in Sources */,
 				639B0F861D4B91DC00EA49AA /* HomeViewController.swift in Sources */,
 				638100B11D4F86920095634C /* SettingsTableViewCell.swift in Sources */,
@@ -583,6 +579,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -621,6 +618,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

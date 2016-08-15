@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+
+/******* THIS FILE IS UNUSED ******/
+
 class User {
     var uid: String
     var firstName: String
