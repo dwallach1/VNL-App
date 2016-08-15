@@ -12,6 +12,7 @@ import SwiftDate
 import MaterialKit
 import SwiftSpinner
 import FirebaseDatabase
+import NYAlertViewController
 
 
 class CalendarViewController: UIViewController {
@@ -47,7 +48,6 @@ class CalendarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setAttributes()
-        
         calendarView.scrollToDate(today)
         performSelector(#selector(todayButtonTapped), withObject: self, afterDelay: 1 )
     }
@@ -109,13 +109,16 @@ class CalendarViewController: UIViewController {
             AppState.sharedInstance.price = currentPayment
             AppState.sharedInstance.bookingDates = datesCurrentlySelected
             
-            var index: Int = 0
-            for date in updatedArray {
-                if formatter.dateFromString(date)?.compare(today) == .OrderedAscending {
-                    updatedArray.removeAtIndex(index)
+            if updatedArray.count > 1 {
+                var index: Int = 0
+                for date in updatedArray {
+                    if formatter.dateFromString(date)?.compare(today) == .OrderedAscending {
+                        updatedArray.removeAtIndex(index)
+                    }
+                    index += 1
                 }
-                index += 1
             }
+
             
             AppState.sharedInstance.updatedDBDates = updatedArray
             
@@ -123,11 +126,32 @@ class CalendarViewController: UIViewController {
             self.presentViewController(paymentVC, animated: true, completion: nil)
         
         } else {
-            let errorAlert = UIAlertController(title: "No Date Was Selected", message: "Please select one or more dates", preferredStyle: .Alert)
-            let dismiss = UIAlertAction(title: "Dismiss", style: .Cancel, handler: nil)
-            errorAlert.addAction(dismiss)
-            self.presentViewController(errorAlert, animated: true, completion: nil)
-
+            let alertViewController = NYAlertViewController()
+            
+            alertViewController.title = "No Date Was Selected"
+            alertViewController.message = "Please select one or more dates."
+            alertViewController.buttonCornerRadius = 20.0
+            alertViewController.view.tintColor = self.view.tintColor
+            alertViewController.titleFont = UIFont(name: "AvenirNext-Bold", size: 19.0)
+            alertViewController.messageFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+            alertViewController.cancelButtonTitleFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+            alertViewController.cancelButtonTitleFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+            alertViewController.buttonColor = UIColor.VNLBlue()
+            alertViewController.swipeDismissalGestureEnabled = false
+            alertViewController.backgroundTapDismissalGestureEnabled = false
+            
+            // Add alert actions
+            let cancelAction = NYAlertAction(
+                title: "Dismiss",
+                style: .Cancel,
+                handler: { (action: NYAlertAction!) -> Void in
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                }
+            )
+            alertViewController.addAction(cancelAction)
+            
+            // Present the alert view controller
+            self.presentViewController(alertViewController, animated: true, completion: nil)
         }
 
         
@@ -236,10 +260,34 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         let cell = (cell as! CalendarViewCell)
         
         if cellState.date.compare(today) == .OrderedAscending  {
-            let errorAlert = UIAlertController(title: "Selected Date Was Before Today", message: "Please select one or more dates in the relavent range", preferredStyle: .Alert)
-            let dismiss = UIAlertAction(title: "Dismiss", style: .Cancel, handler: nil)
-            errorAlert.addAction(dismiss)
-            self.presentViewController(errorAlert, animated: true, completion: nil)
+
+            let alertViewController = NYAlertViewController()
+
+            alertViewController.title = "Selected Date Was Before Current Date"
+            alertViewController.message = "Please select one or more dates in the relavent range."
+            alertViewController.buttonCornerRadius = 20.0
+            alertViewController.view.tintColor = self.view.tintColor
+            alertViewController.titleFont = UIFont(name: "AvenirNext-Bold", size: 19.0)
+            alertViewController.messageFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+            alertViewController.cancelButtonTitleFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+            alertViewController.cancelButtonTitleFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+            alertViewController.buttonColor = UIColor.VNLBlue()
+            alertViewController.swipeDismissalGestureEnabled = false
+            alertViewController.backgroundTapDismissalGestureEnabled = false
+            
+            // Add alert actions
+            let cancelAction = NYAlertAction(
+                title: "Dismiss",
+                style: .Cancel,
+                handler: { (action: NYAlertAction!) -> Void in
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                }
+            )
+            alertViewController.addAction(cancelAction)
+            
+            // Present the alert view controller
+            self.presentViewController(alertViewController, animated: true, completion: nil)
+            
             cell.selected = false
             cell.userInteractionEnabled = false
         }
@@ -367,5 +415,4 @@ extension CalendarViewController {
         AppState.sharedInstance.price = 0
         AppState.sharedInstance.bookingDates = []
     }
-
 }

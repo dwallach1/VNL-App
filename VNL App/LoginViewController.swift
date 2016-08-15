@@ -11,6 +11,7 @@ import MaterialKit
 import TextFieldEffects
 import SwiftSpinner
 import Firebase
+import NYAlertViewController
 
 class LoginViewController: UIViewController {
 
@@ -20,10 +21,14 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: MKButton!
     
+    let alertViewController = NYAlertViewController()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addBackground()
         self.setAtributes()
+        self.setUpAlert()
+
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -37,13 +42,23 @@ class LoginViewController: UIViewController {
         // Sign In with credentials.
         let email = emailField.text
         let password = passwordField.text
+        
         SwiftSpinner.show("Connecting to Database to Authenticate User...")
+        
         FIRAuth.auth()?.signInWithEmail(email!, password: password!) { (user, error) in
             if let error = error {
-                let errorAlert = UIAlertController(title: "Invalid Email or Password", message: "Please try again", preferredStyle: .Alert)
-                let dismiss = UIAlertAction(title: "Dismiss", style: .Cancel, handler: nil)
-                errorAlert.addAction(dismiss)
-                self.presentViewController(errorAlert, animated: true, completion: nil)
+                SwiftSpinner.hide()
+//                let errorAlert = UIAlertController(title: "Invalid Email or Password", message: "Please try again", preferredStyle: .Alert)
+//                let dismiss = UIAlertAction(title: "Dismiss", style: .Cancel, handler: nil)
+//                errorAlert.addAction(dismiss)
+//                self.presentViewController(errorAlert, animated: true, completion: nil)
+//                
+                // Set a title and message
+                self.alertViewController.title = "Invalid Email or Password"
+                self.alertViewController.message = "Please try again."
+                
+                // Present the alert view controller
+                self.presentViewController(self.alertViewController, animated: true, completion: nil)
                 
                 print(error.localizedDescription)
                 return
@@ -63,11 +78,13 @@ class LoginViewController: UIViewController {
             FIRAuth.auth()?.sendPasswordResetWithEmail(userInput!) { (error) in
                 if let error = error {
                     print(error.localizedDescription)
-                    let errorAlert = UIAlertController(title: "Error Retrieving Account", message: "No matching email was found in our database", preferredStyle: .Alert)
-                    let dismiss = UIAlertAction(title: "Dismiss", style: .Cancel, handler: nil)
-                    errorAlert.addAction(dismiss)
-                    self.presentViewController(errorAlert, animated: true, completion: nil)
-
+        
+                    // Set a title and message
+                    self.alertViewController.title = "Error Retrieving Account"
+                    self.alertViewController.message = "No matching email was found in our database."
+                    
+                    // Present the alert view controller
+                    self.presentViewController(self.alertViewController, animated: true, completion: nil)
                     return
                 }
             }
@@ -138,6 +155,31 @@ extension LoginViewController {
         
         loginView.layer.cornerRadius = 4
         loginView.opaque = true
+    }
+    
+    func setUpAlert() {
+        self.alertViewController.buttonCornerRadius = 20.0
+        self.alertViewController.view.tintColor = self.view.tintColor
+        
+        self.alertViewController.titleFont = UIFont(name: "AvenirNext-Bold", size: 19.0)
+        self.alertViewController.messageFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+        self.alertViewController.cancelButtonTitleFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+        self.alertViewController.cancelButtonTitleFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+        self.alertViewController.buttonColor = UIColor.VNLBlue()
+        
+        self.alertViewController.swipeDismissalGestureEnabled = false
+        self.alertViewController.backgroundTapDismissalGestureEnabled = false
+        
+        // Add alert actions
+        let cancelAction = NYAlertAction(
+            title: "Dismiss",
+            style: .Cancel,
+            handler: { (action: NYAlertAction!) -> Void in
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+        )
+        self.alertViewController.addAction(cancelAction)
+
     }
 }
 

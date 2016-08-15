@@ -9,7 +9,7 @@
 import UIKit
 import MaterialKit
 
-class BayHotelCollectionViewCell: UICollectionViewCell {
+class RoomListingCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var bookButton: MKButton!
     @IBOutlet weak var descriptionTextView: UITextView!
@@ -40,8 +40,4 @@ class BayHotelCollectionViewCell: UICollectionViewCell {
         AppState.sharedInstance.currRoomType = currRoomType
         AppState.sharedInstance.roomTitle = titleLabel.text!
     }
-    
-
-    
-
 }

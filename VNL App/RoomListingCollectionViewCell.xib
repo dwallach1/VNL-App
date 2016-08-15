@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hotelRoomCell" id="gTV-IL-0wX" customClass="BayHotelCollectionViewCell" customModule="VNL_App" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hotelRoomCell" id="gTV-IL-0wX" customClass="RoomListingCollectionViewCell" customModule="VNL_App" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="442" height="226"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -62,7 +62,7 @@
                         </constraints>
                         <state key="normal" title="Book Now"/>
                         <connections>
-                            <action selector="bookNowButtonTapped" destination="gTV-IL-0wX" eventType="touchUpInside" id="dBQ-sf-2g6"/>
+                            <action selector="bookNowButtonTapped" destination="gTV-IL-0wX" eventType="touchUpInside" id="hmy-Ax-sYX"/>
                         </connections>
                     </button>
                 </subviews>
@@ -84,7 +84,7 @@
             </constraints>
             <size key="customSize" width="442" height="226"/>
             <connections>
-                <outlet property="bookButton" destination="TiF-EC-CrY" id="6er-0G-bFv"/>
+                <outlet property="bookButton" destination="TiF-EC-CrY" id="3PM-YE-jnP"/>
                 <outlet property="cellImage" destination="Wya-FO-KBJ" id="n0I-Gd-FVM"/>
                 <outlet property="descriptionTextView" destination="p7l-Ba-ZeZ" id="zzC-yK-Bmj"/>
                 <outlet property="priceLabel" destination="GGY-dq-wcb" id="H7r-14-rgV"/>

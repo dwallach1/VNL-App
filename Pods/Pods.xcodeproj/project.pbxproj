@@ -7,94 +7,101 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01B12D71C179CC6A565704116E858C1B /* MKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EE5A26BCF030DF61993CEEC3FA7FD /* MKLabel.swift */; };
-		02A83B2F19D954DC7EE0475E2B3FA31A /* MKCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C410C06ED9EE50B1C9FDA6D007C2D795 /* MKCardView.swift */; };
-		030AAB1BDF10037089A21E9111149C35 /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4726D667D36A08D9F35607145B695ED6 /* MKTextField.swift */; };
-		0749CD828500AF3FABC20641BB9EB7C4 /* JTAppleCalendarFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFFFEC2370FA8C1997A58DF6A49A330 /* JTAppleCalendarFlowLayout.swift */; };
-		087ED0FC93B41FCB390181EB74E2B40A /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1872F1C063C59D223504DA37C7E7A95 /* TextFieldsEffects.swift */; };
-		090BAD0452CCA22293552775D3A409A1 /* FullScreenSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1412B7C472A5BDD3E3978B1783A84EC /* FullScreenSlideshowViewController.swift */; };
-		0CB36510F308488D25DF682B994C2FF6 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7886AB9A6E0BB935930950DA92EFCE74 /* TextFieldEffects-dummy.m */; };
-		12E68E6623E0E2AE859039D118895160 /* NSCalendar+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF0793C57B53D998E8B25F2B1845AD /* NSCalendar+SwiftDate.swift */; };
-		160BFEB49E79AC32123A150BF83EC350 /* DateInRegion+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF526FFB8C08E11E2FA1E58EAB604F90 /* DateInRegion+Formatter.swift */; };
-		1928FFB6BA7D08C7698E4A3811537D2A /* ImageSlideshow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E8F1BF1F8D822C45ADC6D79A97822C03 /* ImageSlideshow.bundle */; };
-		1E7954A7163610B005C065D4F23332A6 /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A933737941537B3F460E6EB8ED95BBD5 /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EBF4D6057E75AD73CC32DE4FD4673B9 /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC67438D6CCD8FC586CB0179ED804B /* InputSource.swift */; };
-		2005D467F202F4868BD157F32E94CDC9 /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E097A3BD6A1581F5C3B1BB692DFF5654 /* UIImageView+Tools.swift */; };
-		22D08DDE1C9DD30E70E0FD6C1D8F4383 /* Pods-VNL App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A3EC0416B4D611256452EB367ED646 /* Pods-VNL App-dummy.m */; };
-		275080F0BE6343CC59600A340DA7759D /* DateInRegion+StartEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940C1F99C51AA943F82874F9A0FD3A6 /* DateInRegion+StartEnd.swift */; };
-		2DA51256317D7293630111BCCE5CCF88 /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4A87BDBBD21C1F1E2C6AEC422345E4 /* JTAppleCalendar-dummy.m */; };
-		2DF11812133CD4FD25B5765D6C3EF446 /* SwiftSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = CA6CCFD8B6AE937F5F97355F9EB65E0D /* SwiftSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E3D0198322265F2BA265530A005CFDC /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C803639030F69A8977828AD1D572A09 /* SwiftSpinner.swift */; };
-		3653BB75D3915093FC51942E28ED06C6 /* DateInRegion+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4D73B8C2354BA1EE8663E63DC18F9D /* DateInRegion+Components.swift */; };
-		36FE8C360600F89A92E86A63C5295706 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D88F617478A4D18B0E04351142CF6 /* MinoruTextField.swift */; };
-		37AB17F044C24A99CE9E552BAC2971A3 /* UserInteractionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B0C10677660DBF3B8A54DDB570EF6 /* UserInteractionFunctions.swift */; };
-		3929AC913D376C01B40FB69EA8B3F248 /* MKEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78285F9ADCBA9CCA6B312282346F4BC6 /* MKEmbedMainControllerSegue.swift */; };
-		39D3FA6A13B952F93932AC16D6076698 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		3B2E731A616902B2F4381CC7E56B9223 /* SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E160F8015BB6298C394DF26764F3C42 /* SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D0093D959485925BBDFD59E4516BE68 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EED3AD442D7E54C6E0C75A79A62729F /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DCDB7539055404613699ADE804F307D /* Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E02C245BFDE32A5EA0FC48BAD321A /* Additions.swift */; };
-		48F38C40DDE2EB5741B2086997F454A9 /* JTAppleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351E31F806643F21517B11FB74CEB7D /* JTAppleCollectionReusableView.swift */; };
-		49835968D57A5F5864F424F145C61998 /* JTAppleCalendar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 513F6416C3087526E19E0C869C1BF1CD /* JTAppleCalendar.bundle */; };
-		4989E2413AEB0E725CB15DD47A3EF83F /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC90EC4378D72348F1B766E2E58267 /* AkiraTextField.swift */; };
-		4A98CA649E7E310556D46E03C09215EF /* NSDateInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F48F0DD4B13E8D95004A5C57B4FF1 /* NSDateInterval.swift */; };
-		4D47B36679220E649AACBC7E5EEEAD1F /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3B4C0196EF990AD3E3467DDB776849 /* MKLayer.swift */; };
-		4E4FA25F7957ED2D1329E9ED6794926B /* DateInRegion+Comparisons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEBB040AC33D88524C74AF4F7E04017 /* DateInRegion+Comparisons.swift */; };
-		54F60E414FE3324EEC543A544F27396D /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219679F7132BC37E512085664696ABA1 /* MKTableViewCell.swift */; };
-		5CE7100E99FB1255905051162EE1EBF4 /* MKCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EB70ED6944BA3B0CC8F6ADA8AE96A8 /* MKCollectionViewCell.swift */; };
-		600AAB8FA0F719BA301F8A9430D315BD /* Dictionary+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E23C707E9B7315DAA2C69663218F99 /* Dictionary+SwiftDate.swift */; };
-		60E1D49AB7B8FD646D2488765DFF7938 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83556AA849C9F28E234815DB2BC780 /* KaedeTextField.swift */; };
-		60FA6F02DA24D10A06A6C0198A9D7A17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
-		61040EE7F6DA3740F95718FA082CED03 /* NSDateFormatter+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84428AE89652961E5C443A8FB244881 /* NSDateFormatter+SwiftDate.swift */; };
-		63AE3E78890ADAA83A750DC7780951C7 /* NSDate+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A902D289544D6D98056D3F9FAB06B8E /* NSDate+SwiftDate.swift */; };
-		6432FF7F04BEC6611818CAD21E2AD624 /* ZoomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A66555613A8833EB7C42A69BAF47C /* ZoomAnimatedTransitioning.swift */; };
-		6CA3EA85F6A6E72A0BF4EF0369854B81 /* JTAppleDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D8BE7F602D05532C28E2BBAA227E12 /* JTAppleDayCell.swift */; };
-		6D10D443E02244AC1380F8655EE4C7D7 /* ImageSlideshow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77442B630A6CAA72A78A545593669B /* ImageSlideshow.swift */; };
-		728021CA5802D430F1524A532B1A31DC /* NSDateComponents+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D9ACB9B565923B75CA0DCF438BBB97 /* NSDateComponents+SwiftDate.swift */; };
-		7472B179FB11FDAE76D29877A2A5F1DE /* DateInRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351382E979C91517360299D16DF25C93 /* DateInRegion.swift */; };
-		7AEBF93FA6F70E80F55817B2C9B7EBA5 /* DateInRegion+Equations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCF2B73E7833802A9B256BBFA1C2137 /* DateInRegion+Equations.swift */; };
-		7C83D4B22AAA05A251DCB4587E07C6B3 /* DateInRegion+NSDatePort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6373B5DCB7FBC2189FEB3C77CAA2AC8A /* DateInRegion+NSDatePort.swift */; };
-		7D1FB8987AD78A7FFAA63D16C88E9A94 /* NSTimeZone+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219A828470EF24509663B936D7CAEBA /* NSTimeZone+SwiftDate.swift */; };
-		7D7FB1098C675CADDF59A5732DD0C34D /* MKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8336A96FA877B120B3CA968E087CB /* MKImageView.swift */; };
-		7EC4E0B104A3717E0F5C3395776B0847 /* MKNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285876EF56B867A15C3AEEFD5F76749B /* MKNavigationBar.swift */; };
-		7FA938B1C041ED524727E5657A2128C1 /* ic_cross_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A59DFE02600CBF8C8DD4D9CE1AD70DC7 /* ic_cross_white@2x.png */; };
-		8A3E3C220E42806A661AD7D6D8858FEF /* MKEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A305366DE2F172090B56FD3BF21E0446 /* MKEmbedDrawerControllerSegue.swift */; };
-		911A81DD8925D69CC89728890007D6C4 /* MKActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF802293E7242A7BEB2FD12836BC97 /* MKActivityIndicator.swift */; };
-		956C9A7C62F93FE26BC739BB45F93CC2 /* ImageSlideshowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0EF82E2B33A92BB4E6A835793060D5 /* ImageSlideshowItem.swift */; };
-		9796AE0844C7548884DCF218E91D9A7E /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BAEA4BFF143D3294106BEC95404E8F /* MKButton.swift */; };
-		981BE6D0CA46A95C2B137B60240EED22 /* MKSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D7328EA72A73B1887021D08AB68D4B /* MKSwitch.swift */; };
-		98ED544C0ECD1C3C17BBB48434C82B5F /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070BDF432062C0BEDADCCF3DC9607ED /* YoshikoTextField.swift */; };
-		9A870347E771B20EFEF0F75CAFE06383 /* MaterialKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC78FA518509FDD7C8FC73E78D97245 /* MaterialKit-dummy.m */; };
-		9B151557333AA230DFE8FC60AA336BAB /* SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0A65DBB9557CA39A3C3104EC6C6982 /* SwiftSpinner-dummy.m */; };
-		9D695DF0DC77CFAF26BEF5D2ADB46593 /* MKSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BF75D03B61AEE960C3239AA7A3EF9 /* MKSnackbar.swift */; };
-		A1477398F2804D1B9C88A23FF7351743 /* SwiftDate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB017439E2D48A7D8A38A361D0CA30 /* SwiftDate-dummy.m */; };
-		AF24CD20B018C60CBB3BE7023694BBDF /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2841050EFB09F7570F51B5663AB85F /* MadokaTextField.swift */; };
-		AFFDE684AC401D9A28AE5103AC563AB5 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F8686F4F0B943493DD758D1CC4375 /* Region.swift */; };
-		B14CDD17C2564A7603F1DAA298B49E9C /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A9DCB17F5CD7B78F512741649480E4 /* YokoTextField.swift */; };
-		B24EDA996C842952C56D45BB89F9BFC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		B30686D256F9B2FD2C143BF70EA659FB /* JTAppleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24313F37D7585CE6AFE25B6C5300762B /* JTAppleViews.swift */; };
-		B4B58D48938868D78771D589DCEFF45B /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48A27A8B8155DDB79B985978ABA065 /* IsaoTextField.swift */; };
+		01B12D71C179CC6A565704116E858C1B /* MKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5FA3B7B058A62971619B062B0139F /* MKLabel.swift */; };
+		02A83B2F19D954DC7EE0475E2B3FA31A /* MKCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B4D6021C8406E11C7013040F0F5CF /* MKCardView.swift */; };
+		030AAB1BDF10037089A21E9111149C35 /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2943E52126F0D4CF0F90B9079C7C84E5 /* MKTextField.swift */; };
+		0749CD828500AF3FABC20641BB9EB7C4 /* JTAppleCalendarFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B4D0EF57A4F024B4CACE3EBADA2833 /* JTAppleCalendarFlowLayout.swift */; };
+		07594103FFD35D550AA137BF0823D850 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875F6A258ED33FAB8EAF44041A1B3085 /* JiroTextField.swift */; };
+		090BAD0452CCA22293552775D3A409A1 /* FullScreenSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1E39DF30FCA0F1FC629A8CE479920 /* FullScreenSlideshowViewController.swift */; };
+		09E90699F4256A8988CDA448CBA328A7 /* NYAlertViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B42837526E82884F0079FD0077BB3941 /* NYAlertViewController-dummy.m */; };
+		0A734097AEBB5253A314D3A476C7DAED /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82303E8F1979981A710D3614D80DA5F3 /* Region.swift */; };
+		1049278708B32A1CB6E0F22D1B11D3D0 /* NYAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 58438FCDD83BA719F0186CC5E93924A2 /* NYAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		126B0F151202DCBFF01BD21A7708AE61 /* NSDateFormatter+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFCD7E936701691EC82A2D93820365 /* NSDateFormatter+SwiftDate.swift */; };
+		1372C905EAE4301E91E07D0D83FC9809 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		14AC9E5332C734BB323C8B2D0F443CD9 /* NSLocale+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD21484BC5CBC6BC315C214F41C52260 /* NSLocale+SwiftDate.swift */; };
+		16B517F72584E83C9CB4C1CC8077B743 /* Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769D80D9827544878B9CF5A5E50C4B98 /* Additions.swift */; };
+		179C1B06EE0524799838864778F26832 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		1928FFB6BA7D08C7698E4A3811537D2A /* ImageSlideshow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 59E7CDF7D1EDD9081DD8F38CECF83730 /* ImageSlideshow.bundle */; };
+		1E7954A7163610B005C065D4F23332A6 /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17963A1EDA740AC1F49686F79826E3D6 /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EBF4D6057E75AD73CC32DE4FD4673B9 /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD90CFE4B50BE4D7FC8310D18DD714 /* InputSource.swift */; };
+		1F6F9DE4DD970965DA223820119824BB /* Pods-VNL App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50830C1FB0400947A0F1213E084ED50D /* Pods-VNL App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2005D467F202F4868BD157F32E94CDC9 /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8017E5FE0B2D41BF73EBF5C992289 /* UIImageView+Tools.swift */; };
+		23E5032EFFE5DCE069D04D3221013EDC /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8C302877FDDA001C8B257041198DE /* AkiraTextField.swift */; };
+		27FBC08F270ADB23986F8250BA048EFB /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CC2012A07E9A500CA5571854DDC794 /* MinoruTextField.swift */; };
+		2DA51256317D7293630111BCCE5CCF88 /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEDB3152BAB83A944E9F989F4C5559E /* JTAppleCalendar-dummy.m */; };
+		3331B609280B09A2781889A5E51754F8 /* SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE5C5A88503DFD38CB306303EA1A1B99 /* SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3332097526DA5F23B01D82344B252735 /* NYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28409B078A587A4FDC141D3D680A1D23 /* NYAlertViewController.m */; };
+		37AB17F044C24A99CE9E552BAC2971A3 /* UserInteractionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34BDCA58DBE395AB47FDCEA05CD2504 /* UserInteractionFunctions.swift */; };
+		3929AC913D376C01B40FB69EA8B3F248 /* MKEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB039D6BA710B66FFA1AE1ACD84B22FF /* MKEmbedMainControllerSegue.swift */; };
+		3BD8F695AD5A420F15367D5A238D5C60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		45DA73A7DA39D066F06A1CC46EA458F3 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B1415AFF02DCEFD2AA6AA00A28AE0 /* YoshikoTextField.swift */; };
+		46255B110C98C9570D7E2D80F909A82C /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E3F6A876BCCFE0861BF316B863105 /* TextFieldEffects-dummy.m */; };
+		46D6CAFD3F9B8875DC3B64B20B2AE445 /* NSCalendar+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD8EA9347710C600894966ECE75FA2 /* NSCalendar+SwiftDate.swift */; };
+		4887A68F0BB4F663493BE780FEC70DF7 /* NSDateComponents+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE6374D17288CFFB14988730E218D3 /* NSDateComponents+SwiftDate.swift */; };
+		48F38C40DDE2EB5741B2086997F454A9 /* JTAppleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130B032CFABB6A1A1523268896272F33 /* JTAppleCollectionReusableView.swift */; };
+		494E8D911B0287F7A2BC36F099EA466D /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381B734DFCE0B2FFC65707F79ADA53CF /* TextFieldsEffects.swift */; };
+		49835968D57A5F5864F424F145C61998 /* JTAppleCalendar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0EAD2B0804CF2F209DF5C86E2A02BAA /* JTAppleCalendar.bundle */; };
+		4D47B36679220E649AACBC7E5EEEAD1F /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5902C885D9D5E26B92F4D939C6D22E76 /* MKLayer.swift */; };
+		4EC0155BD968E0C7634702FD8FD02A15 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23A0B11E5214F74AB7D18D88584F9FF /* IsaoTextField.swift */; };
+		54F60E414FE3324EEC543A544F27396D /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C8E632D6BFA5582605C77AB828141D /* MKTableViewCell.swift */; };
+		56BFB6CD2EF97BE121C148D62B933CAC /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40457B79541619F74D1E86DBFC5E3E8D /* KaedeTextField.swift */; };
+		5CE7100E99FB1255905051162EE1EBF4 /* MKCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6770495CA0AFD7860DFA4FCA20F34214 /* MKCollectionViewCell.swift */; };
+		5DF7C393DCF2B98F9C7D481558E340CB /* NYAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CCFF3D74304826FE67AD9A2F04F5C6A /* NYAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6432FF7F04BEC6611818CAD21E2AD624 /* ZoomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971160D260C53004B9F0909A8CE2281 /* ZoomAnimatedTransitioning.swift */; };
+		6CA3EA85F6A6E72A0BF4EF0369854B81 /* JTAppleDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E141BB2609C3537C7208F588D10980 /* JTAppleDayCell.swift */; };
+		6D0AE9EC8C73D49BDB28052FEE0BDB50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		6D10D443E02244AC1380F8655EE4C7D7 /* ImageSlideshow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C87EE1AAEB99087339180359174D9C /* ImageSlideshow.swift */; };
+		72216FADE8F4B2B31A4028A7106A869E /* SwiftDate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A023637567F147A25F5811F66EF5A81 /* SwiftDate-dummy.m */; };
+		7265E08744EFC82E757F9ADC5E98DE54 /* NSTimeInterval+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C679FE266E47CE47F747510A1AB66C /* NSTimeInterval+SwiftDate.swift */; };
+		72C0CD0EC1E173D9FBCF11D5A55D00BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		73C898CFD1971933A161B96302E975DD /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AADC5EF5B53119832FF6D4DC383C1BA /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79548FAE0E2229CBED8F96FD56041CF4 /* Pods-VNL App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A3EC0416B4D611256452EB367ED646 /* Pods-VNL App-dummy.m */; };
+		7D7FB1098C675CADDF59A5732DD0C34D /* MKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF04E93E2AD5C08A912B23519AB30B /* MKImageView.swift */; };
+		7EC4E0B104A3717E0F5C3395776B0847 /* MKNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61062A7C8EE3FFFB66D8D01389491BCD /* MKNavigationBar.swift */; };
+		7F2194A44D056FF741201A5CEFA32FF4 /* NYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BEDA2353A30AD37A8B54874CC310D1 /* NYAlertView.m */; };
+		7FA938B1C041ED524727E5657A2128C1 /* ic_cross_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D7DBD3C0418FD8B1CEA9AB74BC3D4D /* ic_cross_white@2x.png */; };
+		8A1641F7E2635D5A1ABA1BA52E37159D /* NYAlertViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E76FD28F4585CA4A44EB4204114498 /* NYAlertViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A3E3C220E42806A661AD7D6D8858FEF /* MKEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A6D21BFA759445EDB6A30D2676D09C /* MKEmbedDrawerControllerSegue.swift */; };
+		8DF3CEB7B8EA23E1A32B12671230E5FD /* DateInRegion+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147C81ABC2056148D328F312B2AA36B /* DateInRegion+Formatter.swift */; };
+		911A81DD8925D69CC89728890007D6C4 /* MKActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616C24503AF9D1C8A9A5C343C1F2E35 /* MKActivityIndicator.swift */; };
+		92FF7E91BC54BD1434B4F09AD1C775A6 /* NSTimeZone+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E2075512D597A871198275591821C4 /* NSTimeZone+SwiftDate.swift */; };
+		94FDC8ADEE9C83015E11C9192D74398C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		956C9A7C62F93FE26BC739BB45F93CC2 /* ImageSlideshowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC5EF18E35A449A31E27D1548AC28C /* ImageSlideshowItem.swift */; };
+		9796AE0844C7548884DCF218E91D9A7E /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F622E6868BD6FB819F91F5E5E9CC7 /* MKButton.swift */; };
+		981BE6D0CA46A95C2B137B60240EED22 /* MKSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475B4B2BECCF0C0C28A2DB5492F9816A /* MKSwitch.swift */; };
+		989BE0480A78D7817E4567EBDF267DB3 /* NSDate+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07786FC8458148CE49EEC0D95714518C /* NSDate+SwiftDate.swift */; };
+		9A870347E771B20EFEF0F75CAFE06383 /* MaterialKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EE8070868DA0E97EEF5D766D19768 /* MaterialKit-dummy.m */; };
+		9D63FD5F8730BA2F338F19D36FAA51A7 /* DateInRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426A48E04930C112656F8B0794D9264 /* DateInRegion.swift */; };
+		9D695DF0DC77CFAF26BEF5D2ADB46593 /* MKSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE981AD9F0D99C29216203FDEB5E03 /* MKSnackbar.swift */; };
+		A73974C09E28F172BFAB53847B9F854A /* DateInRegion+StartEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BAD03BF7F3D7D192F2AFCA33E18FDB /* DateInRegion+StartEnd.swift */; };
+		AC401C0017084342B66C0695952E8B49 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4906503B3AC19AE1D10FD30E2020F /* YokoTextField.swift */; };
+		ACB51FA7C1796752933AB8834AF8705E /* DateInRegion+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298A506976F275829F5667ADD9B264EE /* DateInRegion+Components.swift */; };
+		ADFA64D9631BF1712343EB8DFE8E00ED /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08667AA716560DB20F011C663DDF6C /* MadokaTextField.swift */; };
+		B06CA3348AA23A13E375958B45903909 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D882AE76C9A0CD332D26E04F46AC698 /* SwiftSpinner.swift */; };
+		B265A4B0C2F9765C11C581CBF2F4A273 /* Dictionary+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5211A0FEAE9907284F397BDE5A11A9 /* Dictionary+SwiftDate.swift */; };
+		B30686D256F9B2FD2C143BF70EA659FB /* JTAppleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681949ED0D66144E4F55778E5D31F17C /* JTAppleViews.swift */; };
+		B497F3FE7B3EAD7727328B7E22ADC06E /* DateInRegion+Equations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ACFF5FBD787E22B8612F061F66D3B5 /* DateInRegion+Equations.swift */; };
 		B6ADBE756896F582382003F471E8A1AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		B914EB99080B6F5B710563846637C6D9 /* UIImage+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE27A126D56F34EAD4FF3017A0A97127 /* UIImage+AspectFit.swift */; };
-		BDC53CEDB3268F69766F076D16D28F35 /* ImageSlideshow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C6D2CAB338CA48297D7F6B2980E7D /* ImageSlideshow-dummy.m */; };
-		C3C92C5DD75850B213244E72B4516794 /* Pods-VNL App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50830C1FB0400947A0F1213E084ED50D /* Pods-VNL App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C699A101F025AC2DD9DA0332A79659BA /* DateInRegion+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBBB8902A3122CEBBCA49045AFB087B /* DateInRegion+Operations.swift */; };
-		CCA17640175BE4C4C494D6A4F61805F2 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EC01AC1D57F00875C140D9FF53842C /* HoshiTextField.swift */; };
-		CD7CEF94D1E43844D13DDB75C5929FA5 /* JTAppleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B4D20D799A04580180D0BA9EE36B5 /* JTAppleCalendarView.swift */; };
+		B71846ED06C570A04484C20E421C1296 /* DateInRegion+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F96E9FCAAE2897CB618AA5813DDB /* DateInRegion+Operations.swift */; };
+		B914EB99080B6F5B710563846637C6D9 /* UIImage+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987C4477CE9AB4FCF369F606EAAF0023 /* UIImage+AspectFit.swift */; };
+		BDC53CEDB3268F69766F076D16D28F35 /* ImageSlideshow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F184D6AC197F5341E46968BAE350EDB /* ImageSlideshow-dummy.m */; };
+		CA83A1D7C604A96A2457B8CD119D4D28 /* SwiftDate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E85B3D693409B5A61CC6D0B29C491949 /* SwiftDate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD7CEF94D1E43844D13DDB75C5929FA5 /* JTAppleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34FEA58424C4F06F877037F8EAEFA5 /* JTAppleCalendarView.swift */; };
 		D03A000FA3B072484EDB7E26B03582F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		D067540D34C5FA3E3BAADD7A9ABC264A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		D3343954C790BC679CB47103E9291977 /* ImageSlideshow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC6B14FE1CA73F73F63524C7514403E /* ImageSlideshow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D354211C974CF066DB180701860527A3 /* JTAppleCalendarDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F439F152B29FE0197DFBDE8E2F5802 /* JTAppleCalendarDelegates.swift */; };
-		D3BF782C490DC3581DD2E636F125EC97 /* MKRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0384CA77AD96406E92200D1F1725F7 /* MKRefreshControl.swift */; };
-		D9D46AB254E4E9B5F340DD3DCB78A1F0 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA7C6B79A3BEE5294213A08D7AA2E7 /* MKColor.swift */; };
-		DE3BF77BE039F15E8233058A34F24C8B /* MaterialKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 861BA62CC2E1A631AE3963C9378BA3EB /* MaterialKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE7ECBBC95526D70C67ED4D89399C43B /* NSTimeInterval+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A034DB312A1BD3EDF5F697C9D34D8D9 /* NSTimeInterval+SwiftDate.swift */; };
-		E373895D74FA91E119E76F65CBB43A64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		E3B755F999AE0897F1EBEADA06DA637C /* MKSideDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB7C09C0489E63FD0232B9CDC24FCD2 /* MKSideDrawerViewController.swift */; };
-		E4FF75E8590D89B30F962254692E4891 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		E84BCAFBC3877ED0B3495BF5D3AB69A3 /* SwiftDate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D32B19FF381CD899973A3001528187CE /* SwiftDate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE1285A2175D8A4425A956331E9A608D /* ic_cross_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31177DF3FE55A5A160CB545B1EA84BEE /* ic_cross_white@3x.png */; };
-		F2778EC71673625428B507C22E0C53DD /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ECBF821B2F8A198609E2DB4FA816FB /* JiroTextField.swift */; };
-		FC44DBE365F605C21525131646FD53D3 /* NSLocale+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF324F5603B4C8E8BE72319DDCB126 /* NSLocale+SwiftDate.swift */; };
+		D1FFD29D4A73A76BA044F4F726BFFBF1 /* NSDateInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E80D464D17C5EE64369187FB6735AD2 /* NSDateInterval.swift */; };
+		D3343954C790BC679CB47103E9291977 /* ImageSlideshow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCF089700E796C8CEDAB5668C98FADD5 /* ImageSlideshow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D354211C974CF066DB180701860527A3 /* JTAppleCalendarDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA38C132ECCA39A2FAAFE5332679477 /* JTAppleCalendarDelegates.swift */; };
+		D3BF782C490DC3581DD2E636F125EC97 /* MKRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A66A6F54B39AF08D1FD87526436D37 /* MKRefreshControl.swift */; };
+		D9D46AB254E4E9B5F340DD3DCB78A1F0 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EBB47037FF1AABE13677592ADA118D /* MKColor.swift */; };
+		DE27ED300DA5C174971DAD843F1F0EB6 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066F7B3448FCAFEBEF7945F20D2621A /* HoshiTextField.swift */; };
+		DE3BF77BE039F15E8233058A34F24C8B /* MaterialKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A39764BF498F359A8E3E3AB5262FB803 /* MaterialKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E29CBC99BDE1B0112591F941426B8C23 /* DateInRegion+Comparisons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957F59F4655471C984C26DAE868F14F /* DateInRegion+Comparisons.swift */; };
+		E3B755F999AE0897F1EBEADA06DA637C /* MKSideDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A917BBF8BC5B0DC6D890A7E9B6596691 /* MKSideDrawerViewController.swift */; };
+		E6A24A22541009ED2BD1F2EB1490A6EB /* SwiftSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = A11ED7556EC9DB3B5B3C4B0B9103C75E /* SwiftSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE1285A2175D8A4425A956331E9A608D /* ic_cross_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B74D6ED52FAD935323E6B61D732E4C3A /* ic_cross_white@3x.png */; };
+		EE9C8C1CCDCCF632DCA4C4E1D4C84E48 /* DateInRegion+NSDatePort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BD2E293F8C41E80D265D6A9C7E703 /* DateInRegion+NSDatePort.swift */; };
+		FDA9DFFAE1CF89BCD8698869403861BB /* SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29745352CD9C70C608E9DE0D8CBA4367 /* SwiftSpinner-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,33 +112,12 @@
 			remoteGlobalIDString = C15C986904B4FDA1D278FECFB1CFF1FE;
 			remoteInfo = "ImageSlideshow-ImageSlideshow";
 		};
-		2451E2D2746507D301EC3A9BB6BD98C7 /* PBXContainerItemProxy */ = {
+		1A1821C49FA932F3600125FB30BD20D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 45E0CEBE00324A21212F5484AA2C4592;
-			remoteInfo = TextFieldEffects;
-		};
-		2957A80A80A05409528F204D741EF642 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 78C7E143008F620165D92B415F38EDBC;
+			remoteGlobalIDString = A38EC16160E24BA0E39876B4FCA2D873;
 			remoteInfo = SwiftSpinner;
-		};
-		56F080F600D0D6D70B8BFCE74C170904 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8346A17E508F883B822275929CE23C9D;
-			remoteInfo = SwiftDate;
-		};
-		611C4B223A810FAAA8B79B3EA2C6C7EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 73850773DC05DB0F801C716B2A9E95F5;
-			remoteInfo = MaterialKit;
 		};
 		64CA83936B868312EE03C182D680B278 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -140,167 +126,215 @@
 			remoteGlobalIDString = 12ADE056CC77A09E47BA339684B30BB1;
 			remoteInfo = "JTAppleCalendar-JTAppleCalendar";
 		};
-		AEE00E627B8FDD3B5B3829186EB1188C /* PBXContainerItemProxy */ = {
+		80335F054CA361B0598EDF24B0D2EF5C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E4131100F54D47CB18FBEF558DD5B1A6;
 			remoteInfo = JTAppleCalendar;
 		};
-		D15CE34F1FB38E21D4F3CC626ACBAC2A /* PBXContainerItemProxy */ = {
+		8B3216C33957509AAEE9CD956FC1D078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB96DA35F76AE7E6D5C409613DB6D4B;
+			remoteInfo = NYAlertViewController;
+		};
+		95A99F2CDEB2E4386D1CD4AC7E893B11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73850773DC05DB0F801C716B2A9E95F5;
+			remoteInfo = MaterialKit;
+		};
+		A7A95C7210842639FFC1F200BA905B53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 250506B5E9C482CC1CAC8D3DD5ED5945;
+			remoteInfo = SwiftDate;
+		};
+		C0D00C609C41A3EF084F8AE7EE8D4D7B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E7BEAF4DCE4B39E319ED8628F0399557;
 			remoteInfo = ImageSlideshow;
 		};
+		E31F31993AA541FDD825D4F48C53B2A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 540EB917BC154141F7AA5538867F3DCE;
+			remoteInfo = TextFieldEffects;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00410A05064C23343B2F898ABDE843DD /* SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftSpinner.modulemap; sourceTree = "<group>"; };
-		01DC67438D6CCD8FC586CB0179ED804B /* InputSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputSource.swift; path = Pod/Classes/Core/InputSource.swift; sourceTree = "<group>"; };
-		0300164BF37575425D84024969ED353A /* MaterialKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MaterialKit.modulemap; sourceTree = "<group>"; };
-		036DA259C2FBD5A9D8986FFD8F8E7D86 /* GoogleParsingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleParsingUtilities.framework; path = Frameworks/GoogleParsingUtilities.framework; sourceTree = "<group>"; };
-		06A8F5161E96548A3D61F349133364D5 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
-		07A0FEB6771D05024A113C4EE6B46333 /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
-		08E23C707E9B7315DAA2C69663218F99 /* Dictionary+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+SwiftDate.swift"; path = "Sources/SwiftDate/Dictionary+SwiftDate.swift"; sourceTree = "<group>"; };
+		044B48B3099CCDE0FD03DDF18EDA4085 /* SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpinner.xcconfig; sourceTree = "<group>"; };
+		061C7F54303086AC8C5FF743F07D6E25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07786FC8458148CE49EEC0D95714518C /* NSDate+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDate+SwiftDate.swift"; path = "Sources/SwiftDate/NSDate+SwiftDate.swift"; sourceTree = "<group>"; };
+		087A870AA951BB2EEBA66357541CA07C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A7B4D6021C8406E11C7013040F0F5CF /* MKCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKCardView.swift; path = Source/MKCardView.swift; sourceTree = "<group>"; };
+		0AADC5EF5B53119832FF6D4DC383C1BA /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		0C5AA511C7B42BFEA406A9771CDAE8D5 /* ImageSlideshow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageSlideshow.xcconfig; sourceTree = "<group>"; };
 		0C9FF5EA7564D2FC990EB6160396DCA0 /* Pods-VNL App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VNL App-acknowledgements.plist"; sourceTree = "<group>"; };
-		17335E0F271B88C929095AA6962C5AAC /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
-		186F8686F4F0B943493DD758D1CC4375 /* Region.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Region.swift; path = Sources/SwiftDate/Region.swift; sourceTree = "<group>"; };
-		1903C286C5F228DE6BDFF831BE3656C1 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
-		1A3B4C0196EF990AD3E3467DDB776849 /* MKLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLayer.swift; path = Source/MKLayer.swift; sourceTree = "<group>"; };
-		1B2C6D2CAB338CA48297D7F6B2980E7D /* ImageSlideshow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageSlideshow-dummy.m"; sourceTree = "<group>"; };
-		1C2841050EFB09F7570F51B5663AB85F /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
-		1E9C7F6A1BD1DC8A8AC5B7C497D65E1D /* MaterialKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F29D4FAB2AEF32B3A9B645836600447 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FCC83FC1B77E080CE249F56C9B8DB9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2070BDF432062C0BEDADCCF3DC9607ED /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
-		219679F7132BC37E512085664696ABA1 /* MKTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKTableViewCell.swift; path = Source/MKTableViewCell.swift; sourceTree = "<group>"; };
-		23F439F152B29FE0197DFBDE8E2F5802 /* JTAppleCalendarDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarDelegates.swift; path = Pod/Classes/JTAppleCalendarDelegates.swift; sourceTree = "<group>"; };
-		24313F37D7585CE6AFE25B6C5300762B /* JTAppleViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleViews.swift; path = Pod/Classes/JTAppleViews.swift; sourceTree = "<group>"; };
-		249D550EAC1B6EC2DD732B24D02C4E04 /* MaterialKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-prefix.pch"; sourceTree = "<group>"; };
-		249D761FCDDF23B9A7CE34948C98613F /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		25AA17FEC3DC5C5681CC1A6E013E98E3 /* SwiftDate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftDate.xcconfig; sourceTree = "<group>"; };
-		25EE0D1A5962730BCEBD3468F9AB88C7 /* Pods_VNL_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VNL_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E80D464D17C5EE64369187FB6735AD2 /* NSDateInterval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDateInterval.swift; path = Sources/SwiftDate/NSDateInterval.swift; sourceTree = "<group>"; };
+		11B278F58A4027A68569DAD6AF5613AF /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
+		130B032CFABB6A1A1523268896272F33 /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCollectionReusableView.swift; path = Pod/Classes/JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
+		17963A1EDA740AC1F49686F79826E3D6 /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
+		199612F7499D6FC561197365A8B18C3D /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA1111E83E656225A22D8DAC391BC1D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F236AFC7A5C459A35442BFD1F8783F /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		21BFCD7E936701691EC82A2D93820365 /* NSDateFormatter+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDateFormatter+SwiftDate.swift"; path = "Sources/SwiftDate/NSDateFormatter+SwiftDate.swift"; sourceTree = "<group>"; };
+		245A33FE473FB89C8096BF839E3E6727 /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
 		27A3EC0416B4D611256452EB367ED646 /* Pods-VNL App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VNL App-dummy.m"; sourceTree = "<group>"; };
-		27AB017439E2D48A7D8A38A361D0CA30 /* SwiftDate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftDate-dummy.m"; sourceTree = "<group>"; };
-		285876EF56B867A15C3AEEFD5F76749B /* MKNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKNavigationBar.swift; path = Source/MKNavigationBar.swift; sourceTree = "<group>"; };
-		2B6D88F617478A4D18B0E04351142CF6 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
-		2DB7C09C0489E63FD0232B9CDC24FCD2 /* MKSideDrawerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKSideDrawerViewController.swift; path = Source/MKSideDrawerViewController.swift; sourceTree = "<group>"; };
-		31177DF3FE55A5A160CB545B1EA84BEE /* ic_cross_white@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_cross_white@3x.png"; path = "Pod/Assets/ic_cross_white@3x.png"; sourceTree = "<group>"; };
-		351382E979C91517360299D16DF25C93 /* DateInRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInRegion.swift; path = Sources/SwiftDate/DateInRegion.swift; sourceTree = "<group>"; };
-		37429A226A58A8F37091D3709441C31F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AA60B563D5B44E16B74CD8CD0F9DDBF /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
-		3BA006EA8DC21E5B5C3B3ABEA69C7624 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		406BC8606911B83EDE29120F42853F34 /* SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpinner.xcconfig; sourceTree = "<group>"; };
-		42EDC6F8BD4B4BB0A8BACCB3B40D99DE /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		44A9DCB17F5CD7B78F512741649480E4 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
-		4726D667D36A08D9F35607145B695ED6 /* MKTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKTextField.swift; path = Source/MKTextField.swift; sourceTree = "<group>"; };
-		48303F9B5772464A7EF2C9DB517B54A2 /* ImageSlideshow.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ImageSlideshow.modulemap; sourceTree = "<group>"; };
-		4A034DB312A1BD3EDF5F697C9D34D8D9 /* NSTimeInterval+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimeInterval+SwiftDate.swift"; path = "Sources/SwiftDate/NSTimeInterval+SwiftDate.swift"; sourceTree = "<group>"; };
-		4AFFFEC2370FA8C1997A58DF6A49A330 /* JTAppleCalendarFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarFlowLayout.swift; path = Pod/Classes/JTAppleCalendarFlowLayout.swift; sourceTree = "<group>"; };
-		4B48A27A8B8155DDB79B985978ABA065 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
-		4BCF2B73E7833802A9B256BBFA1C2137 /* DateInRegion+Equations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Equations.swift"; path = "Sources/SwiftDate/DateInRegion+Equations.swift"; sourceTree = "<group>"; };
-		4D4D64C727AB5DC97A3610535BE0AD47 /* SwiftDate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-prefix.pch"; sourceTree = "<group>"; };
-		4DBA3705E5B1DF388058D95AD729FD4B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EED3AD442D7E54C6E0C75A79A62729F /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		28409B078A587A4FDC141D3D680A1D23 /* NYAlertViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYAlertViewController.m; path = NYAlertViewController/NYAlertViewController.m; sourceTree = "<group>"; };
+		2943E52126F0D4CF0F90B9079C7C84E5 /* MKTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKTextField.swift; path = Source/MKTextField.swift; sourceTree = "<group>"; };
+		29745352CD9C70C608E9DE0D8CBA4367 /* SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
+		298A506976F275829F5667ADD9B264EE /* DateInRegion+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Components.swift"; path = "Sources/SwiftDate/DateInRegion+Components.swift"; sourceTree = "<group>"; };
+		2DAD8EA9347710C600894966ECE75FA2 /* NSCalendar+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSCalendar+SwiftDate.swift"; path = "Sources/SwiftDate/NSCalendar+SwiftDate.swift"; sourceTree = "<group>"; };
+		381B734DFCE0B2FFC65707F79ADA53CF /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
+		3D8D647DB2B34FEDBBCA3130AEED775A /* NYAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6EE8070868DA0E97EEF5D766D19768 /* MaterialKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialKit-dummy.m"; sourceTree = "<group>"; };
+		3F7E3F6A876BCCFE0861BF316B863105 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		40457B79541619F74D1E86DBFC5E3E8D /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		41A66A6F54B39AF08D1FD87526436D37 /* MKRefreshControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRefreshControl.swift; path = Source/MKRefreshControl.swift; sourceTree = "<group>"; };
+		44B4D0EF57A4F024B4CACE3EBADA2833 /* JTAppleCalendarFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarFlowLayout.swift; path = Pod/Classes/JTAppleCalendarFlowLayout.swift; sourceTree = "<group>"; };
+		475B4B2BECCF0C0C28A2DB5492F9816A /* MKSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKSwitch.swift; path = Source/MKSwitch.swift; sourceTree = "<group>"; };
+		4CA82D291875F605162BED0655E79A3A /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		4D0AC9B67C667D18C00904754FA1C53A /* SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftSpinner.modulemap; sourceTree = "<group>"; };
+		4E5D2738FA9A6409940627008A549964 /* NYAlertViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NYAlertViewController-prefix.pch"; sourceTree = "<group>"; };
 		50830C1FB0400947A0F1213E084ED50D /* Pods-VNL App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VNL App-umbrella.h"; sourceTree = "<group>"; };
-		50BAEA4BFF143D3294106BEC95404E8F /* MKButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKButton.swift; path = Source/MKButton.swift; sourceTree = "<group>"; };
-		513F6416C3087526E19E0C869C1BF1CD /* JTAppleCalendar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTAppleCalendar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		517F48F0DD4B13E8D95004A5C57B4FF1 /* NSDateInterval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDateInterval.swift; path = Sources/SwiftDate/NSDateInterval.swift; sourceTree = "<group>"; };
-		538F8C63526DF0910BA58EBCA2D434C9 /* ResourceBundle-ImageSlideshow-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ImageSlideshow-Info.plist"; sourceTree = "<group>"; };
-		549BF75D03B61AEE960C3239AA7A3EF9 /* MKSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKSnackbar.swift; path = Source/MKSnackbar.swift; sourceTree = "<group>"; };
-		5B0B0C10677660DBF3B8A54DDB570EF6 /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInteractionFunctions.swift; path = Pod/Classes/UserInteractionFunctions.swift; sourceTree = "<group>"; };
-		5BC78FA518509FDD7C8FC73E78D97245 /* MaterialKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialKit-dummy.m"; sourceTree = "<group>"; };
-		5C83556AA849C9F28E234815DB2BC780 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
-		5E984E480854724EB35ADCB96685962C /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6373B5DCB7FBC2189FEB3C77CAA2AC8A /* DateInRegion+NSDatePort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+NSDatePort.swift"; path = "Sources/SwiftDate/DateInRegion+NSDatePort.swift"; sourceTree = "<group>"; };
-		65EC01AC1D57F00875C140D9FF53842C /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
-		6A902D289544D6D98056D3F9FAB06B8E /* NSDate+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDate+SwiftDate.swift"; path = "Sources/SwiftDate/NSDate+SwiftDate.swift"; sourceTree = "<group>"; };
-		6F7C56115A064582CAA3CEAA1E5E6054 /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
-		6FCC90EC4378D72348F1B766E2E58267 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
-		7193379E4488143FB545041E49734918 /* SwiftDate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftDate.modulemap; sourceTree = "<group>"; };
-		75FC427F63C2CACD8CB3F778A958AD0F /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
-		78285F9ADCBA9CCA6B312282346F4BC6 /* MKEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKEmbedMainControllerSegue.swift; path = Source/MKEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
-		7886AB9A6E0BB935930950DA92EFCE74 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
-		79D9ACB9B565923B75CA0DCF438BBB97 /* NSDateComponents+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDateComponents+SwiftDate.swift"; path = "Sources/SwiftDate/NSDateComponents+SwiftDate.swift"; sourceTree = "<group>"; };
-		7C4D73B8C2354BA1EE8663E63DC18F9D /* DateInRegion+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Components.swift"; path = "Sources/SwiftDate/DateInRegion+Components.swift"; sourceTree = "<group>"; };
-		7E160F8015BB6298C394DF26764F3C42 /* SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
-		7EC372E51EDF3B191836D7E4B95B7751 /* SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
-		80DF802293E7242A7BEB2FD12836BC97 /* MKActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKActivityIndicator.swift; path = Source/MKActivityIndicator.swift; sourceTree = "<group>"; };
-		83AC08F445F71220A157677EE0D7C298 /* ImageSlideshow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageSlideshow.xcconfig; sourceTree = "<group>"; };
-		861BA62CC2E1A631AE3963C9378BA3EB /* MaterialKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-umbrella.h"; sourceTree = "<group>"; };
-		86D8BE7F602D05532C28E2BBAA227E12 /* JTAppleDayCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleDayCell.swift; path = Pod/Classes/JTAppleDayCell.swift; sourceTree = "<group>"; };
+		53C679FE266E47CE47F747510A1AB66C /* NSTimeInterval+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimeInterval+SwiftDate.swift"; path = "Sources/SwiftDate/NSTimeInterval+SwiftDate.swift"; sourceTree = "<group>"; };
+		58438FCDD83BA719F0186CC5E93924A2 /* NYAlertViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYAlertViewController.h; path = NYAlertViewController/NYAlertViewController.h; sourceTree = "<group>"; };
+		5902C885D9D5E26B92F4D939C6D22E76 /* MKLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLayer.swift; path = Source/MKLayer.swift; sourceTree = "<group>"; };
+		59E2075512D597A871198275591821C4 /* NSTimeZone+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimeZone+SwiftDate.swift"; path = "Sources/SwiftDate/NSTimeZone+SwiftDate.swift"; sourceTree = "<group>"; };
+		59E7CDF7D1EDD9081DD8F38CECF83730 /* ImageSlideshow.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageSlideshow.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA38C132ECCA39A2FAAFE5332679477 /* JTAppleCalendarDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarDelegates.swift; path = Pod/Classes/JTAppleCalendarDelegates.swift; sourceTree = "<group>"; };
+		5FD4E0A2D73ADCF231CCDC419F298665 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		61062A7C8EE3FFFB66D8D01389491BCD /* MKNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKNavigationBar.swift; path = Source/MKNavigationBar.swift; sourceTree = "<group>"; };
+		61945EEBA05EAA9552B2A8CED8FD635B /* SwiftDate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftDate.modulemap; sourceTree = "<group>"; };
+		6236DEA6ED8E620C4E41FD405F1A6C45 /* SwiftDate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-prefix.pch"; sourceTree = "<group>"; };
+		66FE9C6522C01ED9BA43F842CF5A6193 /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		672F5AB220A533137B8F207419D61AAF /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		6770495CA0AFD7860DFA4FCA20F34214 /* MKCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKCollectionViewCell.swift; path = Source/MKCollectionViewCell.swift; sourceTree = "<group>"; };
+		681949ED0D66144E4F55778E5D31F17C /* JTAppleViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleViews.swift; path = Pod/Classes/JTAppleViews.swift; sourceTree = "<group>"; };
+		695767733B0BED5ED7CE7590EB92E46F /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		6D882AE76C9A0CD332D26E04F46AC698 /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpinner.swift; path = SwiftSpinner/SwiftSpinner.swift; sourceTree = "<group>"; };
+		6DBF04E93E2AD5C08A912B23519AB30B /* MKImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKImageView.swift; path = Source/MKImageView.swift; sourceTree = "<group>"; };
+		769D80D9827544878B9CF5A5E50C4B98 /* Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Additions.swift; path = Sources/SwiftDate/Additions.swift; sourceTree = "<group>"; };
+		7CCFF3D74304826FE67AD9A2F04F5C6A /* NYAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYAlertView.h; path = NYAlertViewController/NYAlertView.h; sourceTree = "<group>"; };
+		7F4968D4C76DE9CE3DEF093141A41CFB /* NYAlertViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NYAlertViewController.xcconfig; sourceTree = "<group>"; };
+		816FC59C71ED287D87140BB6E3169CAF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82303E8F1979981A710D3614D80DA5F3 /* Region.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Region.swift; path = Sources/SwiftDate/Region.swift; sourceTree = "<group>"; };
+		848A75A79A0FCCC0F46527E6D5FC52FC /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		86B1E39DF30FCA0F1FC629A8CE479920 /* FullScreenSlideshowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullScreenSlideshowViewController.swift; path = Pod/Classes/Core/FullScreenSlideshowViewController.swift; sourceTree = "<group>"; };
+		875F6A258ED33FAB8EAF44041A1B3085 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		8A023637567F147A25F5811F66EF5A81 /* SwiftDate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftDate-dummy.m"; sourceTree = "<group>"; };
 		8BC89DE663020AFCAD675B8E491F6BA7 /* Pods-VNL App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VNL App.release.xcconfig"; sourceTree = "<group>"; };
-		8CBBB8902A3122CEBBCA49045AFB087B /* DateInRegion+Operations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Operations.swift"; path = "Sources/SwiftDate/DateInRegion+Operations.swift"; sourceTree = "<group>"; };
 		8D706822B2104FC49894224A9FD1D29C /* Pods-VNL App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VNL App-frameworks.sh"; sourceTree = "<group>"; };
-		8DA8336A96FA877B120B3CA968E087CB /* MKImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKImageView.swift; path = Source/MKImageView.swift; sourceTree = "<group>"; };
-		8E4A66555613A8833EB7C42A69BAF47C /* ZoomAnimatedTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomAnimatedTransitioning.swift; path = Pod/Classes/Core/ZoomAnimatedTransitioning.swift; sourceTree = "<group>"; };
-		8EC6B14FE1CA73F73F63524C7514403E /* ImageSlideshow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSlideshow-umbrella.h"; sourceTree = "<group>"; };
-		8EEBB040AC33D88524C74AF4F7E04017 /* DateInRegion+Comparisons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Comparisons.swift"; path = "Sources/SwiftDate/DateInRegion+Comparisons.swift"; sourceTree = "<group>"; };
-		910E02C245BFDE32A5EA0FC48BAD321A /* Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Additions.swift; path = Sources/SwiftDate/Additions.swift; sourceTree = "<group>"; };
-		923D6ACCCA712364B5D6EC1814C07763 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
-		930A80B8392DF13339BDF482AD8A01DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ED4906503B3AC19AE1D10FD30E2020F /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		8F184D6AC197F5341E46968BAE350EDB /* ImageSlideshow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageSlideshow-dummy.m"; sourceTree = "<group>"; };
+		9039FE9EF47EC08932C26DC534D863A1 /* SwiftDate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftDate.xcconfig; sourceTree = "<group>"; };
+		90A6D21BFA759445EDB6A30D2676D09C /* MKEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKEmbedDrawerControllerSegue.swift; path = Source/MKEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94CF0793C57B53D998E8B25F2B1845AD /* NSCalendar+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSCalendar+SwiftDate.swift"; path = "Sources/SwiftDate/NSCalendar+SwiftDate.swift"; sourceTree = "<group>"; };
-		990B4D20D799A04580180D0BA9EE36B5 /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarView.swift; path = Pod/Classes/JTAppleCalendarView.swift; sourceTree = "<group>"; };
-		9A0A65DBB9557CA39A3C3104EC6C6982 /* SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
-		9C803639030F69A8977828AD1D572A09 /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpinner.swift; path = SwiftSpinner/SwiftSpinner.swift; sourceTree = "<group>"; };
-		A219A828470EF24509663B936D7CAEBA /* NSTimeZone+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimeZone+SwiftDate.swift"; path = "Sources/SwiftDate/NSTimeZone+SwiftDate.swift"; sourceTree = "<group>"; };
+		93BAD03BF7F3D7D192F2AFCA33E18FDB /* DateInRegion+StartEnd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+StartEnd.swift"; path = "Sources/SwiftDate/DateInRegion+StartEnd.swift"; sourceTree = "<group>"; };
+		96EE0E796D6D457C63CE0C2900E80BC6 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		987C4477CE9AB4FCF369F606EAAF0023 /* UIImage+AspectFit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AspectFit.swift"; path = "Pod/Classes/Core/UIImage+AspectFit.swift"; sourceTree = "<group>"; };
+		9A71F4483CD13EF95538D9E25A00A4CC /* ImageSlideshow.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ImageSlideshow.modulemap; sourceTree = "<group>"; };
+		9AFF20627D5A92139A7435C9C60A12E0 /* ResourceBundle-JTAppleCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-JTAppleCalendar-Info.plist"; sourceTree = "<group>"; };
+		9D5BEB5D963E48EE389B6B4136A9671A /* ImageSlideshow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSlideshow-prefix.pch"; sourceTree = "<group>"; };
+		9EAC5EF18E35A449A31E27D1548AC28C /* ImageSlideshowItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSlideshowItem.swift; path = Pod/Classes/Core/ImageSlideshowItem.swift; sourceTree = "<group>"; };
+		A0BB60291AE3D9EF0EA4D9366403D167 /* NYAlertViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NYAlertViewController.modulemap; sourceTree = "<group>"; };
+		A11ED7556EC9DB3B5B3C4B0B9103C75E /* SwiftSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSpinner.h; path = SwiftSpinner/SwiftSpinner.h; sourceTree = "<group>"; };
+		A1C8E632D6BFA5582605C77AB828141D /* MKTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKTableViewCell.swift; path = Source/MKTableViewCell.swift; sourceTree = "<group>"; };
+		A21499D5C71604B0BD11D82F7CD62EC7 /* Pods_VNL_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VNL_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A305366DE2F172090B56FD3BF21E0446 /* MKEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKEmbedDrawerControllerSegue.swift; path = Source/MKEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
-		A508FA0AEE3243CFB8E3057AAB203954 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A59DFE02600CBF8C8DD4D9CE1AD70DC7 /* ic_cross_white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_cross_white@2x.png"; path = "Pod/Assets/ic_cross_white@2x.png"; sourceTree = "<group>"; };
-		A84428AE89652961E5C443A8FB244881 /* NSDateFormatter+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDateFormatter+SwiftDate.swift"; path = "Sources/SwiftDate/NSDateFormatter+SwiftDate.swift"; sourceTree = "<group>"; };
-		A933737941537B3F460E6EB8ED95BBD5 /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
-		A9A6B526DEF5E198893A377F245B3DE9 /* ImageSlideshow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSlideshow-prefix.pch"; sourceTree = "<group>"; };
-		AA98FA3D1E68B3B691CA12FB532F4252 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
-		B1412B7C472A5BDD3E3978B1783A84EC /* FullScreenSlideshowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullScreenSlideshowViewController.swift; path = Pod/Classes/Core/FullScreenSlideshowViewController.swift; sourceTree = "<group>"; };
-		B8A485CE3D9220985F4C6BCE811AA7A4 /* ImageSlideshow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageSlideshow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8FF324F5603B4C8E8BE72319DDCB126 /* NSLocale+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLocale+SwiftDate.swift"; path = "Sources/SwiftDate/NSLocale+SwiftDate.swift"; sourceTree = "<group>"; };
-		BF0EF82E2B33A92BB4E6A835793060D5 /* ImageSlideshowItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSlideshowItem.swift; path = Pod/Classes/Core/ImageSlideshowItem.swift; sourceTree = "<group>"; };
-		BF4A87BDBBD21C1F1E2C6AEC422345E4 /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
-		C2BE87EBDEBCBDDD43EBDB16FE10DD0B /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
-		C410C06ED9EE50B1C9FDA6D007C2D795 /* MKCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKCardView.swift; path = Source/MKCardView.swift; sourceTree = "<group>"; };
-		C55800464928CDFEC9AF0E1344490EF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6ECBF821B2F8A198609E2DB4FA816FB /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
-		C8DEAFD21CA78C7FC19CD6E7D8F6F432 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
-		CA6CCFD8B6AE937F5F97355F9EB65E0D /* SwiftSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSpinner.h; path = SwiftSpinner/SwiftSpinner.h; sourceTree = "<group>"; };
-		CBC7491B3284C538282C71601FB6B2D3 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
-		CC0EE5A26BCF030DF61993CEEC3FA7FD /* MKLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLabel.swift; path = Source/MKLabel.swift; sourceTree = "<group>"; };
-		CD0384CA77AD96406E92200D1F1725F7 /* MKRefreshControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRefreshControl.swift; path = Source/MKRefreshControl.swift; sourceTree = "<group>"; };
-		CD1E6FD726A98586078C96BABD4E5D03 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		CE12FC48BE6CF97981E65D3732D6ACC0 /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0CA7C6B79A3BEE5294213A08D7AA2E7 /* MKColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKColor.swift; path = Source/MKColor.swift; sourceTree = "<group>"; };
-		D224433454235D384F15900A1E5CCC90 /* MaterialKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialKit.xcconfig; sourceTree = "<group>"; };
+		A39764BF498F359A8E3E3AB5262FB803 /* MaterialKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-umbrella.h"; sourceTree = "<group>"; };
+		A4E76FD28F4585CA4A44EB4204114498 /* NYAlertViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NYAlertViewController-umbrella.h"; sourceTree = "<group>"; };
+		A588ECF87C44285F09C20A304BF3AD29 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8D7DBD3C0418FD8B1CEA9AB74BC3D4D /* ic_cross_white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_cross_white@2x.png"; path = "Pod/Assets/ic_cross_white@2x.png"; sourceTree = "<group>"; };
+		A917BBF8BC5B0DC6D890A7E9B6596691 /* MKSideDrawerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKSideDrawerViewController.swift; path = Source/MKSideDrawerViewController.swift; sourceTree = "<group>"; };
+		A971160D260C53004B9F0909A8CE2281 /* ZoomAnimatedTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomAnimatedTransitioning.swift; path = Pod/Classes/Core/ZoomAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		AC22272058532E962723D37427F1A2F7 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		AC2B7A700A1E182BA5D4D9B54EDA142B /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC5B2C927B14E8CC17FC439546F3661 /* MaterialKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD08667AA716560DB20F011C663DDF6C /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		ADA8017E5FE0B2D41BF73EBF5C992289 /* UIImageView+Tools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Tools.swift"; path = "Pod/Classes/Core/UIImageView+Tools.swift"; sourceTree = "<group>"; };
+		AECE6374D17288CFFB14988730E218D3 /* NSDateComponents+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDateComponents+SwiftDate.swift"; path = "Sources/SwiftDate/NSDateComponents+SwiftDate.swift"; sourceTree = "<group>"; };
+		B1EBB47037FF1AABE13677592ADA118D /* MKColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKColor.swift; path = Source/MKColor.swift; sourceTree = "<group>"; };
+		B2E141BB2609C3537C7208F588D10980 /* JTAppleDayCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleDayCell.swift; path = Pod/Classes/JTAppleDayCell.swift; sourceTree = "<group>"; };
+		B3FD90CFE4B50BE4D7FC8310D18DD714 /* InputSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputSource.swift; path = Pod/Classes/Core/InputSource.swift; sourceTree = "<group>"; };
+		B42837526E82884F0079FD0077BB3941 /* NYAlertViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NYAlertViewController-dummy.m"; sourceTree = "<group>"; };
+		B50B1415AFF02DCEFD2AA6AA00A28AE0 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		B616C24503AF9D1C8A9A5C343C1F2E35 /* MKActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKActivityIndicator.swift; path = Source/MKActivityIndicator.swift; sourceTree = "<group>"; };
+		B74D6ED52FAD935323E6B61D732E4C3A /* ic_cross_white@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_cross_white@3x.png"; path = "Pod/Assets/ic_cross_white@3x.png"; sourceTree = "<group>"; };
+		B7FE981AD9F0D99C29216203FDEB5E03 /* MKSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKSnackbar.swift; path = Source/MKSnackbar.swift; sourceTree = "<group>"; };
+		B98477297ADA36F6E564BD1FED424E21 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C87EE1AAEB99087339180359174D9C /* ImageSlideshow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSlideshow.swift; path = Pod/Classes/Core/ImageSlideshow.swift; sourceTree = "<group>"; };
+		BB192BFF172E1A69A6C5C6DF87C9A792 /* ResourceBundle-ImageSlideshow-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ImageSlideshow-Info.plist"; sourceTree = "<group>"; };
+		BBEF6B72A4B4D462EBBFD8B702324C49 /* SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
+		BCF089700E796C8CEDAB5668C98FADD5 /* ImageSlideshow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSlideshow-umbrella.h"; sourceTree = "<group>"; };
+		BDE2F96E9FCAAE2897CB618AA5813DDB /* DateInRegion+Operations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Operations.swift"; path = "Sources/SwiftDate/DateInRegion+Operations.swift"; sourceTree = "<group>"; };
+		BF34FEA58424C4F06F877037F8EAEFA5 /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarView.swift; path = Pod/Classes/JTAppleCalendarView.swift; sourceTree = "<group>"; };
+		C26ECBD642201B8A08866E7E68268019 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D8C302877FDDA001C8B257041198DE /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		C43CF61A7450D9F766ECB0EB75B2D5E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C736BA2357C1DD0D4227420F9E8A3758 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		CBD5FA3B7B058A62971619B062B0139F /* MKLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLabel.swift; path = Source/MKLabel.swift; sourceTree = "<group>"; };
+		CE4F622E6868BD6FB819F91F5E5E9CC7 /* MKButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKButton.swift; path = Source/MKButton.swift; sourceTree = "<group>"; };
+		CF8518756FF73E51282447D30BEADE0D /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
+		D08B08F7A435AE2561DF6A6AA2CB9E09 /* GoogleParsingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleParsingUtilities.framework; path = Frameworks/GoogleParsingUtilities.framework; sourceTree = "<group>"; };
+		D0EAD2B0804CF2F209DF5C86E2A02BAA /* JTAppleCalendar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTAppleCalendar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D147C81ABC2056148D328F312B2AA36B /* DateInRegion+Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Formatter.swift"; path = "Sources/SwiftDate/DateInRegion+Formatter.swift"; sourceTree = "<group>"; };
 		D22C2001C496A3585A3ED017F2AB9A26 /* Pods-VNL App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VNL App-resources.sh"; sourceTree = "<group>"; };
-		D32B19FF381CD899973A3001528187CE /* SwiftDate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-umbrella.h"; sourceTree = "<group>"; };
-		D928BB60FA3FA86ADF811DADA2FC1F7B /* ResourceBundle-JTAppleCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-JTAppleCalendar-Info.plist"; sourceTree = "<group>"; };
-		D940C1F99C51AA943F82874F9A0FD3A6 /* DateInRegion+StartEnd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+StartEnd.swift"; path = "Sources/SwiftDate/DateInRegion+StartEnd.swift"; sourceTree = "<group>"; };
-		DD77442B630A6CAA72A78A545593669B /* ImageSlideshow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSlideshow.swift; path = Pod/Classes/Core/ImageSlideshow.swift; sourceTree = "<group>"; };
-		DE17E6FA9D7E62F5BC756785AC70D9B5 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		DE27A126D56F34EAD4FF3017A0A97127 /* UIImage+AspectFit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AspectFit.swift"; path = "Pod/Classes/Core/UIImage+AspectFit.swift"; sourceTree = "<group>"; };
-		E097A3BD6A1581F5C3B1BB692DFF5654 /* UIImageView+Tools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Tools.swift"; path = "Pod/Classes/Core/UIImageView+Tools.swift"; sourceTree = "<group>"; };
-		E2EB70ED6944BA3B0CC8F6ADA8AE96A8 /* MKCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKCollectionViewCell.swift; path = Source/MKCollectionViewCell.swift; sourceTree = "<group>"; };
+		D23A0B11E5214F74AB7D18D88584F9FF /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		D34BDCA58DBE395AB47FDCEA05CD2504 /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInteractionFunctions.swift; path = Pod/Classes/UserInteractionFunctions.swift; sourceTree = "<group>"; };
+		D37EDDD3AFD94C8F87E6FD9201C87BC7 /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
+		D6D2A6B32E85BBA43D3D0E2FC4F2141C /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		D6E167BF0A556369C97EA063B6FB4211 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		DB23E0E8F1866436646BAD377C717259 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
+		DD21484BC5CBC6BC315C214F41C52260 /* NSLocale+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLocale+SwiftDate.swift"; path = "Sources/SwiftDate/NSLocale+SwiftDate.swift"; sourceTree = "<group>"; };
+		DE5C5A88503DFD38CB306303EA1A1B99 /* SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
+		E172470221E8E1A1FFB279D6A920B471 /* MaterialKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-prefix.pch"; sourceTree = "<group>"; };
 		E30300DCD182D9BF89423F84170EE35A /* Pods-VNL App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VNL App.debug.xcconfig"; sourceTree = "<group>"; };
-		E351E31F806643F21517B11FB74CEB7D /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCollectionReusableView.swift; path = Pod/Classes/JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
-		E6BBCF86EAE3D2A691DA47E1B8626253 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		E85B3D693409B5A61CC6D0B29C491949 /* SwiftDate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-umbrella.h"; sourceTree = "<group>"; };
 		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		E8D7328EA72A73B1887021D08AB68D4B /* MKSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKSwitch.swift; path = Source/MKSwitch.swift; sourceTree = "<group>"; };
-		E8F1BF1F8D822C45ADC6D79A97822C03 /* ImageSlideshow.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageSlideshow.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8ACFF5FBD787E22B8612F061F66D3B5 /* DateInRegion+Equations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Equations.swift"; path = "Sources/SwiftDate/DateInRegion+Equations.swift"; sourceTree = "<group>"; };
 		EAB53751FD464BBB45E74439D61F4333 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1872F1C063C59D223504DA37C7E7A95 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
+		EAF4BB003DD33D1665ADD2D5DAEBA2F9 /* ImageSlideshow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageSlideshow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB039D6BA710B66FFA1AE1ACD84B22FF /* MKEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKEmbedMainControllerSegue.swift; path = Source/MKEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
+		EBF7FB6F326EC2615A9F73B2B1A82E5F /* MaterialKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MaterialKit.modulemap; sourceTree = "<group>"; };
+		EEEDB3152BAB83A944E9F989F4C5559E /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
+		F066F7B3448FCAFEBEF7945F20D2621A /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		F0CC2012A07E9A500CA5571854DDC794 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		F1EAC93052013ACC08FF967C9A8AF7D8 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		F3BEDA2353A30AD37A8B54874CC310D1 /* NYAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYAlertView.m; path = NYAlertViewController/NYAlertView.m; sourceTree = "<group>"; };
+		F406383DCAE54C81361039AD7121990C /* MaterialKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialKit.xcconfig; sourceTree = "<group>"; };
+		F426A48E04930C112656F8B0794D9264 /* DateInRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInRegion.swift; path = Sources/SwiftDate/DateInRegion.swift; sourceTree = "<group>"; };
+		F957F59F4655471C984C26DAE868F14F /* DateInRegion+Comparisons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Comparisons.swift"; path = "Sources/SwiftDate/DateInRegion+Comparisons.swift"; sourceTree = "<group>"; };
+		FA5211A0FEAE9907284F397BDE5A11A9 /* Dictionary+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+SwiftDate.swift"; path = "Sources/SwiftDate/Dictionary+SwiftDate.swift"; sourceTree = "<group>"; };
 		FA8AD9A94F8F5A4754A122E44FD503F9 /* Pods-VNL App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VNL App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FC1BD2E293F8C41E80D265D6A9C7E703 /* DateInRegion+NSDatePort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+NSDatePort.swift"; path = "Sources/SwiftDate/DateInRegion+NSDatePort.swift"; sourceTree = "<group>"; };
 		FD1CE959281B98F780A7C2DD6BFAE7EE /* Pods-VNL App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VNL App.modulemap"; sourceTree = "<group>"; };
-		FF526FFB8C08E11E2FA1E58EAB604F90 /* DateInRegion+Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Formatter.swift"; path = "Sources/SwiftDate/DateInRegion+Formatter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		14DB1459F0C88FC4162BAF9ED39BEB67 /* Frameworks */ = {
+		248E952771A0CB69159D24D91715C182 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4FF75E8590D89B30F962254692E4891 /* Foundation.framework in Frameworks */,
+				1372C905EAE4301E91E07D0D83FC9809 /* Foundation.framework in Frameworks */,
+				179C1B06EE0524799838864778F26832 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F7F5C73975BA1203FCB63A0D2AFB10F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0AE9EC8C73D49BDB28052FEE0BDB50 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,19 +352,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F33130D76B35202922E2FD4CD6B7200 /* Frameworks */ = {
+		6484E3850EBE829353026FFDACDB2C61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E373895D74FA91E119E76F65CBB43A64 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		66CDF5FB88F816C85AFE47E8A10EED32 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				39D3FA6A13B952F93932AC16D6076698 /* Foundation.framework in Frameworks */,
+				94FDC8ADEE9C83015E11C9192D74398C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,12 +376,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92C9C24A00457F6E6AEE1D9E7C578C1F /* Frameworks */ = {
+		9891397D412253D331604E03D45EC587 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B24EDA996C842952C56D45BB89F9BFC8 /* Foundation.framework in Frameworks */,
-				60FA6F02DA24D10A06A6C0198A9D7A17 /* UIKit.framework in Frameworks */,
+				72C0CD0EC1E173D9FBCF11D5A55D00BD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,53 +392,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AA5DA8EFA80B06EE362A1EDDB5A1CDA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BD8F695AD5A420F15367D5A238D5C60 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05C98740D79D04940DB23CEB579F7DCB /* Support Files */ = {
+		095D23B41F806307C0000D1671A9B49F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3BA006EA8DC21E5B5C3B3ABEA69C7624 /* Info.plist */,
-				7193379E4488143FB545041E49734918 /* SwiftDate.modulemap */,
-				25AA17FEC3DC5C5681CC1A6E013E98E3 /* SwiftDate.xcconfig */,
-				27AB017439E2D48A7D8A38A361D0CA30 /* SwiftDate-dummy.m */,
-				4D4D64C727AB5DC97A3610535BE0AD47 /* SwiftDate-prefix.pch */,
-				D32B19FF381CD899973A3001528187CE /* SwiftDate-umbrella.h */,
+				061C7F54303086AC8C5FF743F07D6E25 /* Info.plist */,
+				61945EEBA05EAA9552B2A8CED8FD635B /* SwiftDate.modulemap */,
+				9039FE9EF47EC08932C26DC534D863A1 /* SwiftDate.xcconfig */,
+				8A023637567F147A25F5811F66EF5A81 /* SwiftDate-dummy.m */,
+				6236DEA6ED8E620C4E41FD405F1A6C45 /* SwiftDate-prefix.pch */,
+				E85B3D693409B5A61CC6D0B29C491949 /* SwiftDate-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftDate";
 			sourceTree = "<group>";
 		};
-		0E7798ED08FF6F37EE9045ED6405AAFB /* GoogleParsingUtilities */ = {
+		0FED2AA41C987F531DC0B979DB04010F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F8506182906041B31A4149769C07EC33 /* Frameworks */,
+				816FC59C71ED287D87140BB6E3169CAF /* Info.plist */,
+				A0BB60291AE3D9EF0EA4D9366403D167 /* NYAlertViewController.modulemap */,
+				7F4968D4C76DE9CE3DEF093141A41CFB /* NYAlertViewController.xcconfig */,
+				B42837526E82884F0079FD0077BB3941 /* NYAlertViewController-dummy.m */,
+				4E5D2738FA9A6409940627008A549964 /* NYAlertViewController-prefix.pch */,
+				A4E76FD28F4585CA4A44EB4204114498 /* NYAlertViewController-umbrella.h */,
 			);
-			path = GoogleParsingUtilities;
+			name = "Support Files";
+			path = "../Target Support Files/NYAlertViewController";
 			sourceTree = "<group>";
 		};
-		17E5B985CD3757FE8279C8C263F496F0 /* Analytics */ = {
+		10B0AF5FC313BAB461434B8B8A32156B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C8DEAFD21CA78C7FC19CD6E7D8F6F432 /* Firebase.h */,
-			);
-			name = Analytics;
-			sourceTree = "<group>";
-		};
-		1B5D35699E97F0771873EA45CB521076 /* FirebaseDatabase */ = {
-			isa = PBXGroup;
-			children = (
-				CEC955096F77DD2A20E4A79B9CB7E8B9 /* Frameworks */,
-			);
-			path = FirebaseDatabase;
-			sourceTree = "<group>";
-		};
-		1DBC06B970310A6A753541571DD0E7A6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CBC7491B3284C538282C71601FB6B2D3 /* GoogleNetworkingUtilities.framework */,
+				695767733B0BED5ED7CE7590EB92E46F /* GoogleSymbolUtilities.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A300FC906DD682F91B6DBA3B2B606C6 /* FirebaseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				FEA9BFBB6D7C378C9EE1159D3469FAD7 /* Frameworks */,
+			);
+			path = FirebaseStorage;
+			sourceTree = "<group>";
+		};
+		22F500E5AE0E6A81AE236055ABE4A412 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				86B1E39DF30FCA0F1FC629A8CE479920 /* FullScreenSlideshowViewController.swift */,
+				B9C87EE1AAEB99087339180359174D9C /* ImageSlideshow.swift */,
+				9EAC5EF18E35A449A31E27D1548AC28C /* ImageSlideshowItem.swift */,
+				B3FD90CFE4B50BE4D7FC8310D18DD714 /* InputSource.swift */,
+				987C4477CE9AB4FCF369F606EAAF0023 /* UIImage+AspectFit.swift */,
+				ADA8017E5FE0B2D41BF73EBF5C992289 /* UIImageView+Tools.swift */,
+				A971160D260C53004B9F0909A8CE2281 /* ZoomAnimatedTransitioning.swift */,
+				F46F093000D055F3558BE50D6F31CAD8 /* Resources */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		258AF20C2FE6623A83A6A02D376432BA /* Pods-VNL App */ = {
@@ -434,41 +480,68 @@
 			path = "Target Support Files/Pods-VNL App";
 			sourceTree = "<group>";
 		};
-		2931D8804A5391F31257320A35FACD81 /* Frameworks */ = {
+		2646490139E9CEBCC7663E9C241979CD /* MaterialKit */ = {
 			isa = PBXGroup;
 			children = (
-				923D6ACCCA712364B5D6EC1814C07763 /* FirebaseAuth.framework */,
+				B616C24503AF9D1C8A9A5C343C1F2E35 /* MKActivityIndicator.swift */,
+				CE4F622E6868BD6FB819F91F5E5E9CC7 /* MKButton.swift */,
+				0A7B4D6021C8406E11C7013040F0F5CF /* MKCardView.swift */,
+				6770495CA0AFD7860DFA4FCA20F34214 /* MKCollectionViewCell.swift */,
+				B1EBB47037FF1AABE13677592ADA118D /* MKColor.swift */,
+				90A6D21BFA759445EDB6A30D2676D09C /* MKEmbedDrawerControllerSegue.swift */,
+				EB039D6BA710B66FFA1AE1ACD84B22FF /* MKEmbedMainControllerSegue.swift */,
+				6DBF04E93E2AD5C08A912B23519AB30B /* MKImageView.swift */,
+				CBD5FA3B7B058A62971619B062B0139F /* MKLabel.swift */,
+				5902C885D9D5E26B92F4D939C6D22E76 /* MKLayer.swift */,
+				61062A7C8EE3FFFB66D8D01389491BCD /* MKNavigationBar.swift */,
+				41A66A6F54B39AF08D1FD87526436D37 /* MKRefreshControl.swift */,
+				A917BBF8BC5B0DC6D890A7E9B6596691 /* MKSideDrawerViewController.swift */,
+				B7FE981AD9F0D99C29216203FDEB5E03 /* MKSnackbar.swift */,
+				475B4B2BECCF0C0C28A2DB5492F9816A /* MKSwitch.swift */,
+				A1C8E632D6BFA5582605C77AB828141D /* MKTableViewCell.swift */,
+				2943E52126F0D4CF0F90B9079C7C84E5 /* MKTextField.swift */,
+				F388F85BEF4A9057972F2E780D893775 /* Support Files */,
 			);
-			name = Frameworks;
+			path = MaterialKit;
 			sourceTree = "<group>";
 		};
-		2DE73B2D1D99F2B6EC0D4CF23A2AB1E2 /* JTAppleCalendar */ = {
+		26B3A4ABB4AA6A74B276A8067BA70DA9 /* SwiftSpinner */ = {
 			isa = PBXGroup;
 			children = (
-				23F439F152B29FE0197DFBDE8E2F5802 /* JTAppleCalendarDelegates.swift */,
-				4AFFFEC2370FA8C1997A58DF6A49A330 /* JTAppleCalendarFlowLayout.swift */,
-				990B4D20D799A04580180D0BA9EE36B5 /* JTAppleCalendarView.swift */,
-				E351E31F806643F21517B11FB74CEB7D /* JTAppleCollectionReusableView.swift */,
-				86D8BE7F602D05532C28E2BBAA227E12 /* JTAppleDayCell.swift */,
-				24313F37D7585CE6AFE25B6C5300762B /* JTAppleViews.swift */,
-				5B0B0C10677660DBF3B8A54DDB570EF6 /* UserInteractionFunctions.swift */,
-				D739FCFB1A0658F6E6E385079943471F /* Support Files */,
+				A11ED7556EC9DB3B5B3C4B0B9103C75E /* SwiftSpinner.h */,
+				6D882AE76C9A0CD332D26E04F46AC698 /* SwiftSpinner.swift */,
+				77245B2C395ADC7293120CE86912F51A /* Support Files */,
 			);
-			path = JTAppleCalendar;
+			path = SwiftSpinner;
 			sourceTree = "<group>";
 		};
-		38F526366F28B73124FC8D35E09B47E5 /* Support Files */ = {
+		26B5BDA30A06731299848E1F4E5F676E /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				1FCC83FC1B77E080CE249F56C9B8DB9D /* Info.plist */,
-				0300164BF37575425D84024969ED353A /* MaterialKit.modulemap */,
-				D224433454235D384F15900A1E5CCC90 /* MaterialKit.xcconfig */,
-				5BC78FA518509FDD7C8FC73E78D97245 /* MaterialKit-dummy.m */,
-				249D550EAC1B6EC2DD732B24D02C4E04 /* MaterialKit-prefix.pch */,
-				861BA62CC2E1A631AE3963C9378BA3EB /* MaterialKit-umbrella.h */,
+				71EAD8C7AD648AC8BB88A8BA4F48F7CA /* Analytics */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MaterialKit";
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		3EFF99B4A6636AFE3CD097CB51E2FB08 /* NYAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7CCFF3D74304826FE67AD9A2F04F5C6A /* NYAlertView.h */,
+				F3BEDA2353A30AD37A8B54874CC310D1 /* NYAlertView.m */,
+				58438FCDD83BA719F0186CC5E93924A2 /* NYAlertViewController.h */,
+				28409B078A587A4FDC141D3D680A1D23 /* NYAlertViewController.m */,
+				0FED2AA41C987F531DC0B979DB04010F /* Support Files */,
+			);
+			path = NYAlertViewController;
+			sourceTree = "<group>";
+		};
+		3F05D73C941BA654E8A8F7ACE15489DA /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				C736BA2357C1DD0D4227420F9E8A3758 /* FIRInstanceID.h */,
+				CB9E9BA0AD10EE49B680612B224E7526 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -479,118 +552,79 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		453B024D366909778450F631DB84A01B /* GoogleUtilities */ = {
+		47B43F850405A3EF5976F42A779E37C7 /* FirebaseAuth */ = {
 			isa = PBXGroup;
 			children = (
-				EE9C9F7A9CAB5F50DB88ED13B25E25EC /* Frameworks */,
+				B3A56F110D7183BA5F28D646947D025A /* Frameworks */,
+			);
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		47BF384C018FC2D4D48FE0B5AA4F646B /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				BE5935CBC8A67D3F9E0AE4FB57DB0A43 /* Frameworks */,
 			);
 			path = GoogleUtilities;
 			sourceTree = "<group>";
 		};
-		63D01525B71EDB42408DC0AA583F6459 /* Resources */ = {
+		4DA90048849C778356AEC963C901EB8E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A59DFE02600CBF8C8DD4D9CE1AD70DC7 /* ic_cross_white@2x.png */,
-				31177DF3FE55A5A160CB545B1EA84BEE /* ic_cross_white@3x.png */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		67A2BDBCB28A71C2AECA141048BFDF6A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4DBA3705E5B1DF388058D95AD729FD4B /* Info.plist */,
-				00410A05064C23343B2F898ABDE843DD /* SwiftSpinner.modulemap */,
-				406BC8606911B83EDE29120F42853F34 /* SwiftSpinner.xcconfig */,
-				9A0A65DBB9557CA39A3C3104EC6C6982 /* SwiftSpinner-dummy.m */,
-				7EC372E51EDF3B191836D7E4B95B7751 /* SwiftSpinner-prefix.pch */,
-				7E160F8015BB6298C394DF26764F3C42 /* SwiftSpinner-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftSpinner";
-			sourceTree = "<group>";
-		};
-		69E82C34C55F05EC8A037B52419A5F01 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				249D761FCDDF23B9A7CE34948C98613F /* FirebaseAnalytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		72EB24110761F0603A83B20E23314FB5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				930A80B8392DF13339BDF482AD8A01DE /* Info.plist */,
-				1903C286C5F228DE6BDFF831BE3656C1 /* TextFieldEffects.modulemap */,
-				17335E0F271B88C929095AA6962C5AAC /* TextFieldEffects.xcconfig */,
-				7886AB9A6E0BB935930950DA92EFCE74 /* TextFieldEffects-dummy.m */,
-				AA98FA3D1E68B3B691CA12FB532F4252 /* TextFieldEffects-prefix.pch */,
-				4EED3AD442D7E54C6E0C75A79A62729F /* TextFieldEffects-umbrella.h */,
+				A588ECF87C44285F09C20A304BF3AD29 /* Info.plist */,
+				848A75A79A0FCCC0F46527E6D5FC52FC /* TextFieldEffects.modulemap */,
+				20F236AFC7A5C459A35442BFD1F8783F /* TextFieldEffects.xcconfig */,
+				3F7E3F6A876BCCFE0861BF316B863105 /* TextFieldEffects-dummy.m */,
+				672F5AB220A533137B8F207419D61AAF /* TextFieldEffects-prefix.pch */,
+				0AADC5EF5B53119832FF6D4DC383C1BA /* TextFieldEffects-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TextFieldEffects";
 			sourceTree = "<group>";
 		};
-		7412317B3A6C0A68C27EEB4F548F5CE7 /* SwiftSpinner */ = {
+		4EF4F53131468B8635DBF49E3F3F976B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CA6CCFD8B6AE937F5F97355F9EB65E0D /* SwiftSpinner.h */,
-				9C803639030F69A8977828AD1D572A09 /* SwiftSpinner.swift */,
-				67A2BDBCB28A71C2AECA141048BFDF6A /* Support Files */,
-			);
-			path = SwiftSpinner;
-			sourceTree = "<group>";
-		};
-		75086CE3AC148A096AEBFD5E258C22F9 /* SwiftDate */ = {
-			isa = PBXGroup;
-			children = (
-				910E02C245BFDE32A5EA0FC48BAD321A /* Additions.swift */,
-				351382E979C91517360299D16DF25C93 /* DateInRegion.swift */,
-				8EEBB040AC33D88524C74AF4F7E04017 /* DateInRegion+Comparisons.swift */,
-				7C4D73B8C2354BA1EE8663E63DC18F9D /* DateInRegion+Components.swift */,
-				4BCF2B73E7833802A9B256BBFA1C2137 /* DateInRegion+Equations.swift */,
-				FF526FFB8C08E11E2FA1E58EAB604F90 /* DateInRegion+Formatter.swift */,
-				6373B5DCB7FBC2189FEB3C77CAA2AC8A /* DateInRegion+NSDatePort.swift */,
-				8CBBB8902A3122CEBBCA49045AFB087B /* DateInRegion+Operations.swift */,
-				D940C1F99C51AA943F82874F9A0FD3A6 /* DateInRegion+StartEnd.swift */,
-				08E23C707E9B7315DAA2C69663218F99 /* Dictionary+SwiftDate.swift */,
-				94CF0793C57B53D998E8B25F2B1845AD /* NSCalendar+SwiftDate.swift */,
-				6A902D289544D6D98056D3F9FAB06B8E /* NSDate+SwiftDate.swift */,
-				79D9ACB9B565923B75CA0DCF438BBB97 /* NSDateComponents+SwiftDate.swift */,
-				A84428AE89652961E5C443A8FB244881 /* NSDateFormatter+SwiftDate.swift */,
-				517F48F0DD4B13E8D95004A5C57B4FF1 /* NSDateInterval.swift */,
-				B8FF324F5603B4C8E8BE72319DDCB126 /* NSLocale+SwiftDate.swift */,
-				4A034DB312A1BD3EDF5F697C9D34D8D9 /* NSTimeInterval+SwiftDate.swift */,
-				A219A828470EF24509663B936D7CAEBA /* NSTimeZone+SwiftDate.swift */,
-				186F8686F4F0B943493DD758D1CC4375 /* Region.swift */,
-				05C98740D79D04940DB23CEB579F7DCB /* Support Files */,
-			);
-			path = SwiftDate;
-			sourceTree = "<group>";
-		};
-		759044C83F6BCD7F9BFE1D447A69D953 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				48303F9B5772464A7EF2C9DB517B54A2 /* ImageSlideshow.modulemap */,
-				83AC08F445F71220A157677EE0D7C298 /* ImageSlideshow.xcconfig */,
-				1B2C6D2CAB338CA48297D7F6B2980E7D /* ImageSlideshow-dummy.m */,
-				A9A6B526DEF5E198893A377F245B3DE9 /* ImageSlideshow-prefix.pch */,
-				8EC6B14FE1CA73F73F63524C7514403E /* ImageSlideshow-umbrella.h */,
-				C55800464928CDFEC9AF0E1344490EF6 /* Info.plist */,
-				538F8C63526DF0910BA58EBCA2D434C9 /* ResourceBundle-ImageSlideshow-Info.plist */,
+				1CA1111E83E656225A22D8DAC391BC1D /* Info.plist */,
+				245A33FE473FB89C8096BF839E3E6727 /* JTAppleCalendar.modulemap */,
+				11B278F58A4027A68569DAD6AF5613AF /* JTAppleCalendar.xcconfig */,
+				EEEDB3152BAB83A944E9F989F4C5559E /* JTAppleCalendar-dummy.m */,
+				D37EDDD3AFD94C8F87E6FD9201C87BC7 /* JTAppleCalendar-prefix.pch */,
+				17963A1EDA740AC1F49686F79826E3D6 /* JTAppleCalendar-umbrella.h */,
+				9AFF20627D5A92139A7435C9C60A12E0 /* ResourceBundle-JTAppleCalendar-Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ImageSlideshow";
+			path = "../Target Support Files/JTAppleCalendar";
 			sourceTree = "<group>";
 		};
-		7B4489725F50BDF502486A2FA4655AED /* ImageSlideshow */ = {
+		52523DF5C7B3F812E9E613AE7624C854 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DAC0AE4E5F1D8238BB25EED1D09B7D33 /* Core */,
-				759044C83F6BCD7F9BFE1D447A69D953 /* Support Files */,
+				D6D2A6B32E85BBA43D3D0E2FC4F2141C /* GoogleNetworkingUtilities.framework */,
 			);
-			path = ImageSlideshow;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71EAD8C7AD648AC8BB88A8BA4F48F7CA /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				CF8518756FF73E51282447D30BEADE0D /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		77245B2C395ADC7293120CE86912F51A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C26ECBD642201B8A08866E7E68268019 /* Info.plist */,
+				4D0AC9B67C667D18C00904754FA1C53A /* SwiftSpinner.modulemap */,
+				044B48B3099CCDE0FD03DDF18EDA4085 /* SwiftSpinner.xcconfig */,
+				29745352CD9C70C608E9DE0D8CBA4367 /* SwiftSpinner-dummy.m */,
+				BBEF6B72A4B4D462EBBFD8B702324C49 /* SwiftSpinner-prefix.pch */,
+				DE5C5A88503DFD38CB306303EA1A1B99 /* SwiftSpinner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSpinner";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -598,219 +632,199 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				EB14F79B7FE5CB4DECBC4D788C339028 /* Pods */,
-				D9097FC874A171A3B59C45F7BD908F9F /* Products */,
+				D2149B07D31ECA367013C8D8A7CB36CE /* Pods */,
+				F68068A38C244FF7D45E19F5FD6D9ABF /* Products */,
 				F16B44F7EF513F1A8E4D33127A6AD3D3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		879B62617888FF26E892181ED4FB54DD /* GoogleInterchangeUtilities */ = {
+		84A701596B0E777FEA241F5C737F1050 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				99713A012A38FFF651B1ED4458FAABD7 /* Frameworks */,
-			);
-			path = GoogleInterchangeUtilities;
-			sourceTree = "<group>";
-		};
-		8B78FCADE5F6D121F9F618F9B3F77E14 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C2BE87EBDEBCBDDD43EBDB16FE10DD0B /* FirebaseStorage.framework */,
+				AC22272058532E962723D37427F1A2F7 /* GoogleInterchangeUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		99713A012A38FFF651B1ED4458FAABD7 /* Frameworks */ = {
+		948B3C89193FE75D422D993063E20DD9 /* FirebaseAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				E6BBCF86EAE3D2A691DA47E1B8626253 /* GoogleInterchangeUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A89214A35D9D3B31D93077D32F983006 /* FirebaseAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				69E82C34C55F05EC8A037B52419A5F01 /* Frameworks */,
+				F6DAAFD4EF296377B9FFBDFB3710F1B9 /* Frameworks */,
 			);
 			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
-		ACD7543D88A440FC218DE9E278993EF4 /* FirebaseStorage */ = {
+		A0BC50A828412E86B5C1162933DE323B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8B78FCADE5F6D121F9F618F9B3F77E14 /* Frameworks */,
-			);
-			path = FirebaseStorage;
-			sourceTree = "<group>";
-		};
-		B98E2A17253E74B98B159E76130A4BE0 /* MaterialKit */ = {
-			isa = PBXGroup;
-			children = (
-				80DF802293E7242A7BEB2FD12836BC97 /* MKActivityIndicator.swift */,
-				50BAEA4BFF143D3294106BEC95404E8F /* MKButton.swift */,
-				C410C06ED9EE50B1C9FDA6D007C2D795 /* MKCardView.swift */,
-				E2EB70ED6944BA3B0CC8F6ADA8AE96A8 /* MKCollectionViewCell.swift */,
-				D0CA7C6B79A3BEE5294213A08D7AA2E7 /* MKColor.swift */,
-				A305366DE2F172090B56FD3BF21E0446 /* MKEmbedDrawerControllerSegue.swift */,
-				78285F9ADCBA9CCA6B312282346F4BC6 /* MKEmbedMainControllerSegue.swift */,
-				8DA8336A96FA877B120B3CA968E087CB /* MKImageView.swift */,
-				CC0EE5A26BCF030DF61993CEEC3FA7FD /* MKLabel.swift */,
-				1A3B4C0196EF990AD3E3467DDB776849 /* MKLayer.swift */,
-				285876EF56B867A15C3AEEFD5F76749B /* MKNavigationBar.swift */,
-				CD0384CA77AD96406E92200D1F1725F7 /* MKRefreshControl.swift */,
-				2DB7C09C0489E63FD0232B9CDC24FCD2 /* MKSideDrawerViewController.swift */,
-				549BF75D03B61AEE960C3239AA7A3EF9 /* MKSnackbar.swift */,
-				E8D7328EA72A73B1887021D08AB68D4B /* MKSwitch.swift */,
-				219679F7132BC37E512085664696ABA1 /* MKTableViewCell.swift */,
-				4726D667D36A08D9F35607145B695ED6 /* MKTextField.swift */,
-				38F526366F28B73124FC8D35E09B47E5 /* Support Files */,
-			);
-			path = MaterialKit;
-			sourceTree = "<group>";
-		};
-		C3B77D7659B7A6586C1181A0444D2319 /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				17E5B985CD3757FE8279C8C263F496F0 /* Analytics */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		C4653807617EE99EA8001F7169F34D19 /* GoogleNetworkingUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				1DBC06B970310A6A753541571DD0E7A6 /* Frameworks */,
-			);
-			path = GoogleNetworkingUtilities;
-			sourceTree = "<group>";
-		};
-		C566A6D9B7A1412510B917FBEA2FEEB6 /* FirebaseAuth */ = {
-			isa = PBXGroup;
-			children = (
-				2931D8804A5391F31257320A35FACD81 /* Frameworks */,
-			);
-			path = FirebaseAuth;
-			sourceTree = "<group>";
-		};
-		CEC955096F77DD2A20E4A79B9CB7E8B9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DE17E6FA9D7E62F5BC756785AC70D9B5 /* FirebaseDatabase.framework */,
+				F1EAC93052013ACC08FF967C9A8AF7D8 /* FirebaseDatabase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D18F83E0C58D980C825F55D3553BF211 /* Frameworks */ = {
+		ACB63C3D7235550646307AEF9E9A8ABA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CD1E6FD726A98586078C96BABD4E5D03 /* GoogleSymbolUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D739FCFB1A0658F6E6E385079943471F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				37429A226A58A8F37091D3709441C31F /* Info.plist */,
-				75FC427F63C2CACD8CB3F778A958AD0F /* JTAppleCalendar.modulemap */,
-				07A0FEB6771D05024A113C4EE6B46333 /* JTAppleCalendar.xcconfig */,
-				BF4A87BDBBD21C1F1E2C6AEC422345E4 /* JTAppleCalendar-dummy.m */,
-				6F7C56115A064582CAA3CEAA1E5E6054 /* JTAppleCalendar-prefix.pch */,
-				A933737941537B3F460E6EB8ED95BBD5 /* JTAppleCalendar-umbrella.h */,
-				D928BB60FA3FA86ADF811DADA2FC1F7B /* ResourceBundle-JTAppleCalendar-Info.plist */,
+				9A71F4483CD13EF95538D9E25A00A4CC /* ImageSlideshow.modulemap */,
+				0C5AA511C7B42BFEA406A9771CDAE8D5 /* ImageSlideshow.xcconfig */,
+				8F184D6AC197F5341E46968BAE350EDB /* ImageSlideshow-dummy.m */,
+				9D5BEB5D963E48EE389B6B4136A9671A /* ImageSlideshow-prefix.pch */,
+				BCF089700E796C8CEDAB5668C98FADD5 /* ImageSlideshow-umbrella.h */,
+				C43CF61A7450D9F766ECB0EB75B2D5E1 /* Info.plist */,
+				BB192BFF172E1A69A6C5C6DF87C9A792 /* ResourceBundle-ImageSlideshow-Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/JTAppleCalendar";
+			path = "../Target Support Files/ImageSlideshow";
 			sourceTree = "<group>";
 		};
-		D7B2A175818C72A050D7B0EA65A54038 /* Frameworks */ = {
+		B3A56F110D7183BA5F28D646947D025A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				42EDC6F8BD4B4BB0A8BACCB3B40D99DE /* FirebaseInstanceID.framework */,
+				D6E167BF0A556369C97EA063B6FB4211 /* FirebaseAuth.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D9097FC874A171A3B59C45F7BD908F9F /* Products */ = {
+		B921712850698165B2E20C79B951E36C /* SwiftDate */ = {
 			isa = PBXGroup;
 			children = (
-				E8F1BF1F8D822C45ADC6D79A97822C03 /* ImageSlideshow.bundle */,
-				B8A485CE3D9220985F4C6BCE811AA7A4 /* ImageSlideshow.framework */,
-				513F6416C3087526E19E0C869C1BF1CD /* JTAppleCalendar.bundle */,
-				1F29D4FAB2AEF32B3A9B645836600447 /* JTAppleCalendar.framework */,
-				1E9C7F6A1BD1DC8A8AC5B7C497D65E1D /* MaterialKit.framework */,
-				25EE0D1A5962730BCEBD3468F9AB88C7 /* Pods_VNL_App.framework */,
-				CE12FC48BE6CF97981E65D3732D6ACC0 /* SwiftDate.framework */,
-				5E984E480854724EB35ADCB96685962C /* SwiftSpinner.framework */,
-				A508FA0AEE3243CFB8E3057AAB203954 /* TextFieldEffects.framework */,
+				769D80D9827544878B9CF5A5E50C4B98 /* Additions.swift */,
+				F426A48E04930C112656F8B0794D9264 /* DateInRegion.swift */,
+				F957F59F4655471C984C26DAE868F14F /* DateInRegion+Comparisons.swift */,
+				298A506976F275829F5667ADD9B264EE /* DateInRegion+Components.swift */,
+				E8ACFF5FBD787E22B8612F061F66D3B5 /* DateInRegion+Equations.swift */,
+				D147C81ABC2056148D328F312B2AA36B /* DateInRegion+Formatter.swift */,
+				FC1BD2E293F8C41E80D265D6A9C7E703 /* DateInRegion+NSDatePort.swift */,
+				BDE2F96E9FCAAE2897CB618AA5813DDB /* DateInRegion+Operations.swift */,
+				93BAD03BF7F3D7D192F2AFCA33E18FDB /* DateInRegion+StartEnd.swift */,
+				FA5211A0FEAE9907284F397BDE5A11A9 /* Dictionary+SwiftDate.swift */,
+				2DAD8EA9347710C600894966ECE75FA2 /* NSCalendar+SwiftDate.swift */,
+				07786FC8458148CE49EEC0D95714518C /* NSDate+SwiftDate.swift */,
+				AECE6374D17288CFFB14988730E218D3 /* NSDateComponents+SwiftDate.swift */,
+				21BFCD7E936701691EC82A2D93820365 /* NSDateFormatter+SwiftDate.swift */,
+				0E80D464D17C5EE64369187FB6735AD2 /* NSDateInterval.swift */,
+				DD21484BC5CBC6BC315C214F41C52260 /* NSLocale+SwiftDate.swift */,
+				53C679FE266E47CE47F747510A1AB66C /* NSTimeInterval+SwiftDate.swift */,
+				59E2075512D597A871198275591821C4 /* NSTimeZone+SwiftDate.swift */,
+				82303E8F1979981A710D3614D80DA5F3 /* Region.swift */,
+				095D23B41F806307C0000D1671A9B49F /* Support Files */,
 			);
-			name = Products;
+			path = SwiftDate;
 			sourceTree = "<group>";
 		};
-		DAC0AE4E5F1D8238BB25EED1D09B7D33 /* Core */ = {
+		BE5935CBC8A67D3F9E0AE4FB57DB0A43 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B1412B7C472A5BDD3E3978B1783A84EC /* FullScreenSlideshowViewController.swift */,
-				DD77442B630A6CAA72A78A545593669B /* ImageSlideshow.swift */,
-				BF0EF82E2B33A92BB4E6A835793060D5 /* ImageSlideshowItem.swift */,
-				01DC67438D6CCD8FC586CB0179ED804B /* InputSource.swift */,
-				DE27A126D56F34EAD4FF3017A0A97127 /* UIImage+AspectFit.swift */,
-				E097A3BD6A1581F5C3B1BB692DFF5654 /* UIImageView+Tools.swift */,
-				8E4A66555613A8833EB7C42A69BAF47C /* ZoomAnimatedTransitioning.swift */,
-				63D01525B71EDB42408DC0AA583F6459 /* Resources */,
+				5FD4E0A2D73ADCF231CCDC419F298665 /* GoogleUtilities.framework */,
 			);
-			name = Core;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DC6E20FD994E60BBDD986164B987DB90 /* TextFieldEffects */ = {
+		CB9E9BA0AD10EE49B680612B224E7526 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6FCC90EC4378D72348F1B766E2E58267 /* AkiraTextField.swift */,
-				65EC01AC1D57F00875C140D9FF53842C /* HoshiTextField.swift */,
-				4B48A27A8B8155DDB79B985978ABA065 /* IsaoTextField.swift */,
-				C6ECBF821B2F8A198609E2DB4FA816FB /* JiroTextField.swift */,
-				5C83556AA849C9F28E234815DB2BC780 /* KaedeTextField.swift */,
-				1C2841050EFB09F7570F51B5663AB85F /* MadokaTextField.swift */,
-				2B6D88F617478A4D18B0E04351142CF6 /* MinoruTextField.swift */,
-				F1872F1C063C59D223504DA37C7E7A95 /* TextFieldsEffects.swift */,
-				44A9DCB17F5CD7B78F512741649480E4 /* YokoTextField.swift */,
-				2070BDF432062C0BEDADCCF3DC9607ED /* YoshikoTextField.swift */,
-				72EB24110761F0603A83B20E23314FB5 /* Support Files */,
+				96EE0E796D6D457C63CE0C2900E80BC6 /* FirebaseInstanceID.framework */,
 			);
-			path = TextFieldEffects;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EB14F79B7FE5CB4DECBC4D788C339028 /* Pods */ = {
+		CD7BE53EA7F5945C2E27F3A5FE50CDB9 /* JTAppleCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				C3B77D7659B7A6586C1181A0444D2319 /* Firebase */,
-				A89214A35D9D3B31D93077D32F983006 /* FirebaseAnalytics */,
-				C566A6D9B7A1412510B917FBEA2FEEB6 /* FirebaseAuth */,
-				1B5D35699E97F0771873EA45CB521076 /* FirebaseDatabase */,
-				FD4AE454F250E3EBA59A950346B7F4E2 /* FirebaseInstanceID */,
-				ACD7543D88A440FC218DE9E278993EF4 /* FirebaseStorage */,
-				879B62617888FF26E892181ED4FB54DD /* GoogleInterchangeUtilities */,
-				C4653807617EE99EA8001F7169F34D19 /* GoogleNetworkingUtilities */,
-				0E7798ED08FF6F37EE9045ED6405AAFB /* GoogleParsingUtilities */,
-				FE474092D3F9CD39E7D5A95D206D10DB /* GoogleSymbolUtilities */,
-				453B024D366909778450F631DB84A01B /* GoogleUtilities */,
-				7B4489725F50BDF502486A2FA4655AED /* ImageSlideshow */,
-				2DE73B2D1D99F2B6EC0D4CF23A2AB1E2 /* JTAppleCalendar */,
-				B98E2A17253E74B98B159E76130A4BE0 /* MaterialKit */,
-				75086CE3AC148A096AEBFD5E258C22F9 /* SwiftDate */,
-				7412317B3A6C0A68C27EEB4F548F5CE7 /* SwiftSpinner */,
-				DC6E20FD994E60BBDD986164B987DB90 /* TextFieldEffects */,
+				5FA38C132ECCA39A2FAAFE5332679477 /* JTAppleCalendarDelegates.swift */,
+				44B4D0EF57A4F024B4CACE3EBADA2833 /* JTAppleCalendarFlowLayout.swift */,
+				BF34FEA58424C4F06F877037F8EAEFA5 /* JTAppleCalendarView.swift */,
+				130B032CFABB6A1A1523268896272F33 /* JTAppleCollectionReusableView.swift */,
+				B2E141BB2609C3537C7208F588D10980 /* JTAppleDayCell.swift */,
+				681949ED0D66144E4F55778E5D31F17C /* JTAppleViews.swift */,
+				D34BDCA58DBE395AB47FDCEA05CD2504 /* UserInteractionFunctions.swift */,
+				4EF4F53131468B8635DBF49E3F3F976B /* Support Files */,
+			);
+			path = JTAppleCalendar;
+			sourceTree = "<group>";
+		};
+		D2149B07D31ECA367013C8D8A7CB36CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26B5BDA30A06731299848E1F4E5F676E /* Firebase */,
+				948B3C89193FE75D422D993063E20DD9 /* FirebaseAnalytics */,
+				47B43F850405A3EF5976F42A779E37C7 /* FirebaseAuth */,
+				E700CA4EE9C66F85FC7C61DC64D98D7D /* FirebaseDatabase */,
+				3F05D73C941BA654E8A8F7ACE15489DA /* FirebaseInstanceID */,
+				1A300FC906DD682F91B6DBA3B2B606C6 /* FirebaseStorage */,
+				DDF8411AF9C580CDD2DD382C66F4C986 /* GoogleInterchangeUtilities */,
+				F8080AA6891C40529DC0217367130F61 /* GoogleNetworkingUtilities */,
+				E7084ACD6FF07FF01186C0A65AD9EAF0 /* GoogleParsingUtilities */,
+				FA28FAE40F69F69DE3DAFAEEF2024A6F /* GoogleSymbolUtilities */,
+				47BF384C018FC2D4D48FE0B5AA4F646B /* GoogleUtilities */,
+				D642634721654270412D9F928FBEAA9C /* ImageSlideshow */,
+				CD7BE53EA7F5945C2E27F3A5FE50CDB9 /* JTAppleCalendar */,
+				2646490139E9CEBCC7663E9C241979CD /* MaterialKit */,
+				3EFF99B4A6636AFE3CD097CB51E2FB08 /* NYAlertViewController */,
+				B921712850698165B2E20C79B951E36C /* SwiftDate */,
+				26B3A4ABB4AA6A74B276A8067BA70DA9 /* SwiftSpinner */,
+				DBA91266CA09A5F57FF4E351F2A01137 /* TextFieldEffects */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		EE9C9F7A9CAB5F50DB88ED13B25E25EC /* Frameworks */ = {
+		D642634721654270412D9F928FBEAA9C /* ImageSlideshow */ = {
 			isa = PBXGroup;
 			children = (
-				06A8F5161E96548A3D61F349133364D5 /* GoogleUtilities.framework */,
+				22F500E5AE0E6A81AE236055ABE4A412 /* Core */,
+				ACB63C3D7235550646307AEF9E9A8ABA /* Support Files */,
+			);
+			path = ImageSlideshow;
+			sourceTree = "<group>";
+		};
+		DBA91266CA09A5F57FF4E351F2A01137 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8C302877FDDA001C8B257041198DE /* AkiraTextField.swift */,
+				F066F7B3448FCAFEBEF7945F20D2621A /* HoshiTextField.swift */,
+				D23A0B11E5214F74AB7D18D88584F9FF /* IsaoTextField.swift */,
+				875F6A258ED33FAB8EAF44041A1B3085 /* JiroTextField.swift */,
+				40457B79541619F74D1E86DBFC5E3E8D /* KaedeTextField.swift */,
+				AD08667AA716560DB20F011C663DDF6C /* MadokaTextField.swift */,
+				F0CC2012A07E9A500CA5571854DDC794 /* MinoruTextField.swift */,
+				381B734DFCE0B2FFC65707F79ADA53CF /* TextFieldsEffects.swift */,
+				8ED4906503B3AC19AE1D10FD30E2020F /* YokoTextField.swift */,
+				B50B1415AFF02DCEFD2AA6AA00A28AE0 /* YoshikoTextField.swift */,
+				4DA90048849C778356AEC963C901EB8E /* Support Files */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		DDF8411AF9C580CDD2DD382C66F4C986 /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				84A701596B0E777FEA241F5C737F1050 /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		E4AD68AAD0A38EC6C5F4806343928057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D08B08F7A435AE2561DF6A6AA2CB9E09 /* GoogleParsingUtilities.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E700CA4EE9C66F85FC7C61DC64D98D7D /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				A0BC50A828412E86B5C1162933DE323B /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		E7084ACD6FF07FF01186C0A65AD9EAF0 /* GoogleParsingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				E4AD68AAD0A38EC6C5F4806343928057 /* Frameworks */,
+			);
+			path = GoogleParsingUtilities;
 			sourceTree = "<group>";
 		};
 		F16B44F7EF513F1A8E4D33127A6AD3D3 /* Targets Support Files */ = {
@@ -830,64 +844,121 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F8506182906041B31A4149769C07EC33 /* Frameworks */ = {
+		F388F85BEF4A9057972F2E780D893775 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				036DA259C2FBD5A9D8986FFD8F8E7D86 /* GoogleParsingUtilities.framework */,
+				087A870AA951BB2EEBA66357541CA07C /* Info.plist */,
+				EBF7FB6F326EC2615A9F73B2B1A82E5F /* MaterialKit.modulemap */,
+				F406383DCAE54C81361039AD7121990C /* MaterialKit.xcconfig */,
+				3E6EE8070868DA0E97EEF5D766D19768 /* MaterialKit-dummy.m */,
+				E172470221E8E1A1FFB279D6A920B471 /* MaterialKit-prefix.pch */,
+				A39764BF498F359A8E3E3AB5262FB803 /* MaterialKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MaterialKit";
+			sourceTree = "<group>";
+		};
+		F46F093000D055F3558BE50D6F31CAD8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8D7DBD3C0418FD8B1CEA9AB74BC3D4D /* ic_cross_white@2x.png */,
+				B74D6ED52FAD935323E6B61D732E4C3A /* ic_cross_white@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F68068A38C244FF7D45E19F5FD6D9ABF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59E7CDF7D1EDD9081DD8F38CECF83730 /* ImageSlideshow.bundle */,
+				EAF4BB003DD33D1665ADD2D5DAEBA2F9 /* ImageSlideshow.framework */,
+				D0EAD2B0804CF2F209DF5C86E2A02BAA /* JTAppleCalendar.bundle */,
+				B98477297ADA36F6E564BD1FED424E21 /* JTAppleCalendar.framework */,
+				ACC5B2C927B14E8CC17FC439546F3661 /* MaterialKit.framework */,
+				3D8D647DB2B34FEDBBCA3130AEED775A /* NYAlertViewController.framework */,
+				A21499D5C71604B0BD11D82F7CD62EC7 /* Pods_VNL_App.framework */,
+				66FE9C6522C01ED9BA43F842CF5A6193 /* SwiftDate.framework */,
+				AC2B7A700A1E182BA5D4D9B54EDA142B /* SwiftSpinner.framework */,
+				199612F7499D6FC561197365A8B18C3D /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6DAAFD4EF296377B9FFBDFB3710F1B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CA82D291875F605162BED0655E79A3A /* FirebaseAnalytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FD4AE454F250E3EBA59A950346B7F4E2 /* FirebaseInstanceID */ = {
+		F8080AA6891C40529DC0217367130F61 /* GoogleNetworkingUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				3AA60B563D5B44E16B74CD8CD0F9DDBF /* FIRInstanceID.h */,
-				D7B2A175818C72A050D7B0EA65A54038 /* Frameworks */,
+				52523DF5C7B3F812E9E613AE7624C854 /* Frameworks */,
 			);
-			path = FirebaseInstanceID;
+			path = GoogleNetworkingUtilities;
 			sourceTree = "<group>";
 		};
-		FE474092D3F9CD39E7D5A95D206D10DB /* GoogleSymbolUtilities */ = {
+		FA28FAE40F69F69DE3DAFAEEF2024A6F /* GoogleSymbolUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				D18F83E0C58D980C825F55D3553BF211 /* Frameworks */,
+				10B0AF5FC313BAB461434B8B8A32156B /* Frameworks */,
 			);
 			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		FEA9BFBB6D7C378C9EE1159D3469FAD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB23E0E8F1866436646BAD377C717259 /* FirebaseStorage.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7BDEC3755E1EEBD16449DA740D04CC06 /* Headers */ = {
+		693B6882A75571C4A4B0140AC6012CA7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E84BCAFBC3877ED0B3495BF5D3AB69A3 /* SwiftDate-umbrella.h in Headers */,
+				5DF7C393DCF2B98F9C7D481558E340CB /* NYAlertView.h in Headers */,
+				8A1641F7E2635D5A1ABA1BA52E37159D /* NYAlertViewController-umbrella.h in Headers */,
+				1049278708B32A1CB6E0F22D1B11D3D0 /* NYAlertViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8DBD3C9451C00A56D9F0F3F5E4DB970 /* Headers */ = {
+		71F1E43E24DBE5D7931E43159D91C0E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2E731A616902B2F4381CC7E56B9223 /* SwiftSpinner-umbrella.h in Headers */,
-				2DF11812133CD4FD25B5765D6C3EF446 /* SwiftSpinner.h in Headers */,
+				73C898CFD1971933A161B96302E975DD /* TextFieldEffects-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFEA1F689A91421C9548E9B60597DFF1 /* Headers */ = {
+		86E0189F8872F8F1AAC9FC6D2369AE54 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3C92C5DD75850B213244E72B4516794 /* Pods-VNL App-umbrella.h in Headers */,
+				1F6F9DE4DD970965DA223820119824BB /* Pods-VNL App-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5CEF87213933A2A7F8046CA7E734F7F /* Headers */ = {
+		A7C56C38B3C2A2B7DAF8386A9225B4D0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D0093D959485925BBDFD59E4516BE68 /* TextFieldEffects-umbrella.h in Headers */,
+				3331B609280B09A2781889A5E51754F8 /* SwiftSpinner-umbrella.h in Headers */,
+				E6A24A22541009ED2BD1F2EB1490A6EB /* SwiftSpinner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D62ED2BBEEB374561A0913D12E21A09C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA83A1D7C604A96A2457B8CD119D4D28 /* SwiftDate-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -932,16 +1003,57 @@
 			);
 			name = "JTAppleCalendar-JTAppleCalendar";
 			productName = "JTAppleCalendar-JTAppleCalendar";
-			productReference = 513F6416C3087526E19E0C869C1BF1CD /* JTAppleCalendar.bundle */;
+			productReference = D0EAD2B0804CF2F209DF5C86E2A02BAA /* JTAppleCalendar.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		45E0CEBE00324A21212F5484AA2C4592 /* TextFieldEffects */ = {
+		1A5B60414C9F4CAFF30FFE4B212D72FA /* Pods-VNL App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86654DBA38EC06EF9AA6BFEFDE19C7C1 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildConfigurationList = CB2A9A242393F5F52C769EBDDF817C82 /* Build configuration list for PBXNativeTarget "Pods-VNL App" */;
 			buildPhases = (
-				A21FA481BCC33D5F5F2598DA488FB99A /* Sources */,
-				14DB1459F0C88FC4162BAF9ED39BEB67 /* Frameworks */,
-				D5CEF87213933A2A7F8046CA7E734F7F /* Headers */,
+				513FC5D00740C2EA8A52E2C22FD7D3CC /* Sources */,
+				3F7F5C73975BA1203FCB63A0D2AFB10F /* Frameworks */,
+				86E0189F8872F8F1AAC9FC6D2369AE54 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				154EEAB2D7165154A073A1CA65805DAD /* PBXTargetDependency */,
+				328D978320286BE2EAD2E2DAE5470278 /* PBXTargetDependency */,
+				1BFB3C09191E37BE3F2561E22683D6EA /* PBXTargetDependency */,
+				1BBCEA7FBF841A9F21FF6EA5C674AB89 /* PBXTargetDependency */,
+				EC140C88A5879370E5D08EAD03900ADD /* PBXTargetDependency */,
+				C937C628C565A6B9CD87E8C193F91B1F /* PBXTargetDependency */,
+				64379B73B0B556FF0BC33232853954E5 /* PBXTargetDependency */,
+			);
+			name = "Pods-VNL App";
+			productName = "Pods-VNL App";
+			productReference = A21499D5C71604B0BD11D82F7CD62EC7 /* Pods_VNL_App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		250506B5E9C482CC1CAC8D3DD5ED5945 /* SwiftDate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE374BE28955F2DD6878FC12A14D4C9 /* Build configuration list for PBXNativeTarget "SwiftDate" */;
+			buildPhases = (
+				D86C01476D5B4D5AEAF8C5C4AF1EDADF /* Sources */,
+				6484E3850EBE829353026FFDACDB2C61 /* Frameworks */,
+				D62ED2BBEEB374561A0913D12E21A09C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftDate;
+			productName = SwiftDate;
+			productReference = 66FE9C6522C01ED9BA43F842CF5A6193 /* SwiftDate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		540EB917BC154141F7AA5538867F3DCE /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66F948BFA7AD793C5B9537251F4855BD /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				AEFCC71760CC7FB29E3B3C6EEA7B2F72 /* Sources */,
+				AA5DA8EFA80B06EE362A1EDDB5A1CDA6 /* Frameworks */,
+				71F1E43E24DBE5D7931E43159D91C0E0 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -949,7 +1061,7 @@
 			);
 			name = TextFieldEffects;
 			productName = TextFieldEffects;
-			productReference = A508FA0AEE3243CFB8E3057AAB203954 /* TextFieldEffects.framework */;
+			productReference = 199612F7499D6FC561197365A8B18C3D /* TextFieldEffects.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		73850773DC05DB0F801C716B2A9E95F5 /* MaterialKit */ = {
@@ -966,16 +1078,16 @@
 			);
 			name = MaterialKit;
 			productName = MaterialKit;
-			productReference = 1E9C7F6A1BD1DC8A8AC5B7C497D65E1D /* MaterialKit.framework */;
+			productReference = ACC5B2C927B14E8CC17FC439546F3661 /* MaterialKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		78C7E143008F620165D92B415F38EDBC /* SwiftSpinner */ = {
+		A38EC16160E24BA0E39876B4FCA2D873 /* SwiftSpinner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E69C03DB89DDDB0735769C3C19BDC848 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */;
+			buildConfigurationList = DB7AE1D3BFC75F1C7B9131F531ED8116 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */;
 			buildPhases = (
-				CF6D80BFE3CEE0FB2E877575D4FC2171 /* Sources */,
-				92C9C24A00457F6E6AEE1D9E7C578C1F /* Frameworks */,
-				B8DBD3C9451C00A56D9F0F3F5E4DB970 /* Headers */,
+				3BA0C0C52E46D38A8B566F2E252EC6AA /* Sources */,
+				248E952771A0CB69159D24D91715C182 /* Frameworks */,
+				A7C56C38B3C2A2B7DAF8386A9225B4D0 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -983,24 +1095,7 @@
 			);
 			name = SwiftSpinner;
 			productName = SwiftSpinner;
-			productReference = 5E984E480854724EB35ADCB96685962C /* SwiftSpinner.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		8346A17E508F883B822275929CE23C9D /* SwiftDate */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A4CA7CEF6F9AFB04F9973EBFDC2E5AA5 /* Build configuration list for PBXNativeTarget "SwiftDate" */;
-			buildPhases = (
-				B9ECCBC0CA1E2F374F0E22D155859892 /* Sources */,
-				66CDF5FB88F816C85AFE47E8A10EED32 /* Frameworks */,
-				7BDEC3755E1EEBD16449DA740D04CC06 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftDate;
-			productName = SwiftDate;
-			productReference = CE12FC48BE6CF97981E65D3732D6ACC0 /* SwiftDate.framework */;
+			productReference = AC2B7A700A1E182BA5D4D9B54EDA142B /* SwiftSpinner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C15C986904B4FDA1D278FECFB1CFF1FE /* ImageSlideshow-ImageSlideshow */ = {
@@ -1017,31 +1112,8 @@
 			);
 			name = "ImageSlideshow-ImageSlideshow";
 			productName = "ImageSlideshow-ImageSlideshow";
-			productReference = E8F1BF1F8D822C45ADC6D79A97822C03 /* ImageSlideshow.bundle */;
+			productReference = 59E7CDF7D1EDD9081DD8F38CECF83730 /* ImageSlideshow.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		C472ABA77F5F9AD2BCB57A24C7354E98 /* Pods-VNL App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0DACCE412DD2DF91AFEBDBB0311153C9 /* Build configuration list for PBXNativeTarget "Pods-VNL App" */;
-			buildPhases = (
-				8128DA97AFA48695FF267922B168704D /* Sources */,
-				4F33130D76B35202922E2FD4CD6B7200 /* Frameworks */,
-				BFEA1F689A91421C9548E9B60597DFF1 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7CBA205981EEAED94F7015361EA331C2 /* PBXTargetDependency */,
-				E3B2295D430B75592ADC847A7F665F2C /* PBXTargetDependency */,
-				E8F422AD46798A64731C1B914A8736A4 /* PBXTargetDependency */,
-				8D0F53484FB94B007CE3D97F26564C3F /* PBXTargetDependency */,
-				B1F7A77FCF440E71D8C757A51E1F1A0B /* PBXTargetDependency */,
-				430DF4ACAFC8301387EAA2FCA99F4AC8 /* PBXTargetDependency */,
-			);
-			name = "Pods-VNL App";
-			productName = "Pods-VNL App";
-			productReference = 25EE0D1A5962730BCEBD3468F9AB88C7 /* Pods_VNL_App.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		E4131100F54D47CB18FBEF558DD5B1A6 /* JTAppleCalendar */ = {
 			isa = PBXNativeTarget;
@@ -1059,7 +1131,7 @@
 			);
 			name = JTAppleCalendar;
 			productName = JTAppleCalendar;
-			productReference = 1F29D4FAB2AEF32B3A9B645836600447 /* JTAppleCalendar.framework */;
+			productReference = B98477297ADA36F6E564BD1FED424E21 /* JTAppleCalendar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E7BEAF4DCE4B39E319ED8628F0399557 /* ImageSlideshow */ = {
@@ -1078,7 +1150,24 @@
 			);
 			name = ImageSlideshow;
 			productName = ImageSlideshow;
-			productReference = B8A485CE3D9220985F4C6BCE811AA7A4 /* ImageSlideshow.framework */;
+			productReference = EAF4BB003DD33D1665ADD2D5DAEBA2F9 /* ImageSlideshow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FDB96DA35F76AE7E6D5C409613DB6D4B /* NYAlertViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F117BA17F8BA24DAF0B39B0C3479355F /* Build configuration list for PBXNativeTarget "NYAlertViewController" */;
+			buildPhases = (
+				EE429F32F8F262CF6A4FB2CBB49C8F19 /* Sources */,
+				9891397D412253D331604E03D45EC587 /* Frameworks */,
+				693B6882A75571C4A4B0140AC6012CA7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NYAlertViewController;
+			productName = NYAlertViewController;
+			productReference = 3D8D647DB2B34FEDBBCA3130AEED775A /* NYAlertViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1098,7 +1187,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D9097FC874A171A3B59C45F7BD908F9F /* Products */;
+			productRefGroup = F68068A38C244FF7D45E19F5FD6D9ABF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1107,10 +1196,11 @@
 				E4131100F54D47CB18FBEF558DD5B1A6 /* JTAppleCalendar */,
 				12ADE056CC77A09E47BA339684B30BB1 /* JTAppleCalendar-JTAppleCalendar */,
 				73850773DC05DB0F801C716B2A9E95F5 /* MaterialKit */,
-				C472ABA77F5F9AD2BCB57A24C7354E98 /* Pods-VNL App */,
-				8346A17E508F883B822275929CE23C9D /* SwiftDate */,
-				78C7E143008F620165D92B415F38EDBC /* SwiftSpinner */,
-				45E0CEBE00324A21212F5484AA2C4592 /* TextFieldEffects */,
+				FDB96DA35F76AE7E6D5C409613DB6D4B /* NYAlertViewController */,
+				1A5B60414C9F4CAFF30FFE4B212D72FA /* Pods-VNL App */,
+				250506B5E9C482CC1CAC8D3DD5ED5945 /* SwiftDate */,
+				A38EC16160E24BA0E39876B4FCA2D873 /* SwiftSpinner */,
+				540EB917BC154141F7AA5538867F3DCE /* TextFieldEffects */,
 			);
 		};
 /* End PBXProject section */
@@ -1151,6 +1241,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3BA0C0C52E46D38A8B566F2E252EC6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA9DFFAE1CF89BCD8698869403861BB /* SwiftSpinner-dummy.m in Sources */,
+				B06CA3348AA23A13E375958B45903909 /* SwiftSpinner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4637C816D0A00106E823A808BE4920F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1158,18 +1257,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		513FC5D00740C2EA8A52E2C22FD7D3CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79548FAE0E2229CBED8F96FD56041CF4 /* Pods-VNL App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BBB86EA4EFECA73DE38F01B13D00522 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8128DA97AFA48695FF267922B168704D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22D08DDE1C9DD30E70E0FD6C1D8F4383 /* Pods-VNL App-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1188,21 +1287,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A21FA481BCC33D5F5F2598DA488FB99A /* Sources */ = {
+		AEFCC71760CC7FB29E3B3C6EEA7B2F72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4989E2413AEB0E725CB15DD47A3EF83F /* AkiraTextField.swift in Sources */,
-				CCA17640175BE4C4C494D6A4F61805F2 /* HoshiTextField.swift in Sources */,
-				B4B58D48938868D78771D589DCEFF45B /* IsaoTextField.swift in Sources */,
-				F2778EC71673625428B507C22E0C53DD /* JiroTextField.swift in Sources */,
-				60E1D49AB7B8FD646D2488765DFF7938 /* KaedeTextField.swift in Sources */,
-				AF24CD20B018C60CBB3BE7023694BBDF /* MadokaTextField.swift in Sources */,
-				36FE8C360600F89A92E86A63C5295706 /* MinoruTextField.swift in Sources */,
-				0CB36510F308488D25DF682B994C2FF6 /* TextFieldEffects-dummy.m in Sources */,
-				087ED0FC93B41FCB390181EB74E2B40A /* TextFieldsEffects.swift in Sources */,
-				B14CDD17C2564A7603F1DAA298B49E9C /* YokoTextField.swift in Sources */,
-				98ED544C0ECD1C3C17BBB48434C82B5F /* YoshikoTextField.swift in Sources */,
+				23E5032EFFE5DCE069D04D3221013EDC /* AkiraTextField.swift in Sources */,
+				DE27ED300DA5C174971DAD843F1F0EB6 /* HoshiTextField.swift in Sources */,
+				4EC0155BD968E0C7634702FD8FD02A15 /* IsaoTextField.swift in Sources */,
+				07594103FFD35D550AA137BF0823D850 /* JiroTextField.swift in Sources */,
+				56BFB6CD2EF97BE121C148D62B933CAC /* KaedeTextField.swift in Sources */,
+				ADFA64D9631BF1712343EB8DFE8E00ED /* MadokaTextField.swift in Sources */,
+				27FBC08F270ADB23986F8250BA048EFB /* MinoruTextField.swift in Sources */,
+				46255B110C98C9570D7E2D80F909A82C /* TextFieldEffects-dummy.m in Sources */,
+				494E8D911B0287F7A2BC36F099EA466D /* TextFieldsEffects.swift in Sources */,
+				AC401C0017084342B66C0695952E8B49 /* YokoTextField.swift in Sources */,
+				45DA73A7DA39D066F06A1CC46EA458F3 /* YoshikoTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1221,39 +1320,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9ECCBC0CA1E2F374F0E22D155859892 /* Sources */ = {
+		D86C01476D5B4D5AEAF8C5C4AF1EDADF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DCDB7539055404613699ADE804F307D /* Additions.swift in Sources */,
-				4E4FA25F7957ED2D1329E9ED6794926B /* DateInRegion+Comparisons.swift in Sources */,
-				3653BB75D3915093FC51942E28ED06C6 /* DateInRegion+Components.swift in Sources */,
-				7AEBF93FA6F70E80F55817B2C9B7EBA5 /* DateInRegion+Equations.swift in Sources */,
-				160BFEB49E79AC32123A150BF83EC350 /* DateInRegion+Formatter.swift in Sources */,
-				7C83D4B22AAA05A251DCB4587E07C6B3 /* DateInRegion+NSDatePort.swift in Sources */,
-				C699A101F025AC2DD9DA0332A79659BA /* DateInRegion+Operations.swift in Sources */,
-				275080F0BE6343CC59600A340DA7759D /* DateInRegion+StartEnd.swift in Sources */,
-				7472B179FB11FDAE76D29877A2A5F1DE /* DateInRegion.swift in Sources */,
-				600AAB8FA0F719BA301F8A9430D315BD /* Dictionary+SwiftDate.swift in Sources */,
-				12E68E6623E0E2AE859039D118895160 /* NSCalendar+SwiftDate.swift in Sources */,
-				63AE3E78890ADAA83A750DC7780951C7 /* NSDate+SwiftDate.swift in Sources */,
-				728021CA5802D430F1524A532B1A31DC /* NSDateComponents+SwiftDate.swift in Sources */,
-				61040EE7F6DA3740F95718FA082CED03 /* NSDateFormatter+SwiftDate.swift in Sources */,
-				4A98CA649E7E310556D46E03C09215EF /* NSDateInterval.swift in Sources */,
-				FC44DBE365F605C21525131646FD53D3 /* NSLocale+SwiftDate.swift in Sources */,
-				DE7ECBBC95526D70C67ED4D89399C43B /* NSTimeInterval+SwiftDate.swift in Sources */,
-				7D1FB8987AD78A7FFAA63D16C88E9A94 /* NSTimeZone+SwiftDate.swift in Sources */,
-				AFFDE684AC401D9A28AE5103AC563AB5 /* Region.swift in Sources */,
-				A1477398F2804D1B9C88A23FF7351743 /* SwiftDate-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF6D80BFE3CEE0FB2E877575D4FC2171 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B151557333AA230DFE8FC60AA336BAB /* SwiftSpinner-dummy.m in Sources */,
-				2E3D0198322265F2BA265530A005CFDC /* SwiftSpinner.swift in Sources */,
+				16B517F72584E83C9CB4C1CC8077B743 /* Additions.swift in Sources */,
+				E29CBC99BDE1B0112591F941426B8C23 /* DateInRegion+Comparisons.swift in Sources */,
+				ACB51FA7C1796752933AB8834AF8705E /* DateInRegion+Components.swift in Sources */,
+				B497F3FE7B3EAD7727328B7E22ADC06E /* DateInRegion+Equations.swift in Sources */,
+				8DF3CEB7B8EA23E1A32B12671230E5FD /* DateInRegion+Formatter.swift in Sources */,
+				EE9C8C1CCDCCF632DCA4C4E1D4C84E48 /* DateInRegion+NSDatePort.swift in Sources */,
+				B71846ED06C570A04484C20E421C1296 /* DateInRegion+Operations.swift in Sources */,
+				A73974C09E28F172BFAB53847B9F854A /* DateInRegion+StartEnd.swift in Sources */,
+				9D63FD5F8730BA2F338F19D36FAA51A7 /* DateInRegion.swift in Sources */,
+				B265A4B0C2F9765C11C581CBF2F4A273 /* Dictionary+SwiftDate.swift in Sources */,
+				46D6CAFD3F9B8875DC3B64B20B2AE445 /* NSCalendar+SwiftDate.swift in Sources */,
+				989BE0480A78D7817E4567EBDF267DB3 /* NSDate+SwiftDate.swift in Sources */,
+				4887A68F0BB4F663493BE780FEC70DF7 /* NSDateComponents+SwiftDate.swift in Sources */,
+				126B0F151202DCBFF01BD21A7708AE61 /* NSDateFormatter+SwiftDate.swift in Sources */,
+				D1FFD29D4A73A76BA044F4F726BFFBF1 /* NSDateInterval.swift in Sources */,
+				14AC9E5332C734BB323C8B2D0F443CD9 /* NSLocale+SwiftDate.swift in Sources */,
+				7265E08744EFC82E757F9ADC5E98DE54 /* NSTimeInterval+SwiftDate.swift in Sources */,
+				92FF7E91BC54BD1434B4F09AD1C775A6 /* NSTimeZone+SwiftDate.swift in Sources */,
+				0A734097AEBB5253A314D3A476C7DAED /* Region.swift in Sources */,
+				72216FADE8F4B2B31A4028A7106A869E /* SwiftDate-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1282,14 +1372,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE429F32F8F262CF6A4FB2CBB49C8F19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2194A44D056FF741201A5CEFA32FF4 /* NYAlertView.m in Sources */,
+				09E90699F4256A8988CDA448CBA328A7 /* NYAlertViewController-dummy.m in Sources */,
+				3332097526DA5F23B01D82344B252735 /* NYAlertViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		430DF4ACAFC8301387EAA2FCA99F4AC8 /* PBXTargetDependency */ = {
+		154EEAB2D7165154A073A1CA65805DAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TextFieldEffects;
-			target = 45E0CEBE00324A21212F5484AA2C4592 /* TextFieldEffects */;
-			targetProxy = 2451E2D2746507D301EC3A9BB6BD98C7 /* PBXContainerItemProxy */;
+			name = ImageSlideshow;
+			target = E7BEAF4DCE4B39E319ED8628F0399557 /* ImageSlideshow */;
+			targetProxy = C0D00C609C41A3EF084F8AE7EE8D4D7B /* PBXContainerItemProxy */;
+		};
+		1BBCEA7FBF841A9F21FF6EA5C674AB89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NYAlertViewController;
+			target = FDB96DA35F76AE7E6D5C409613DB6D4B /* NYAlertViewController */;
+			targetProxy = 8B3216C33957509AAEE9CD956FC1D078 /* PBXContainerItemProxy */;
+		};
+		1BFB3C09191E37BE3F2561E22683D6EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MaterialKit;
+			target = 73850773DC05DB0F801C716B2A9E95F5 /* MaterialKit */;
+			targetProxy = 95A99F2CDEB2E4386D1CD4AC7E893B11 /* PBXContainerItemProxy */;
+		};
+		328D978320286BE2EAD2E2DAE5470278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JTAppleCalendar;
+			target = E4131100F54D47CB18FBEF558DD5B1A6 /* JTAppleCalendar */;
+			targetProxy = 80335F054CA361B0598EDF24B0D2EF5C /* PBXContainerItemProxy */;
 		};
 		588A6FFF004AC6F32A3F3582B6AD42FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1297,23 +1415,17 @@
 			target = 12ADE056CC77A09E47BA339684B30BB1 /* JTAppleCalendar-JTAppleCalendar */;
 			targetProxy = 64CA83936B868312EE03C182D680B278 /* PBXContainerItemProxy */;
 		};
-		7CBA205981EEAED94F7015361EA331C2 /* PBXTargetDependency */ = {
+		64379B73B0B556FF0BC33232853954E5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ImageSlideshow;
-			target = E7BEAF4DCE4B39E319ED8628F0399557 /* ImageSlideshow */;
-			targetProxy = D15CE34F1FB38E21D4F3CC626ACBAC2A /* PBXContainerItemProxy */;
+			name = TextFieldEffects;
+			target = 540EB917BC154141F7AA5538867F3DCE /* TextFieldEffects */;
+			targetProxy = E31F31993AA541FDD825D4F48C53B2A2 /* PBXContainerItemProxy */;
 		};
-		8D0F53484FB94B007CE3D97F26564C3F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftDate;
-			target = 8346A17E508F883B822275929CE23C9D /* SwiftDate */;
-			targetProxy = 56F080F600D0D6D70B8BFCE74C170904 /* PBXContainerItemProxy */;
-		};
-		B1F7A77FCF440E71D8C757A51E1F1A0B /* PBXTargetDependency */ = {
+		C937C628C565A6B9CD87E8C193F91B1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftSpinner;
-			target = 78C7E143008F620165D92B415F38EDBC /* SwiftSpinner */;
-			targetProxy = 2957A80A80A05409528F204D741EF642 /* PBXContainerItemProxy */;
+			target = A38EC16160E24BA0E39876B4FCA2D873 /* SwiftSpinner */;
+			targetProxy = 1A1821C49FA932F3600125FB30BD20D4 /* PBXContainerItemProxy */;
 		};
 		D80BAC027A7FA8911AE43CB76854F8AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1321,24 +1433,18 @@
 			target = C15C986904B4FDA1D278FECFB1CFF1FE /* ImageSlideshow-ImageSlideshow */;
 			targetProxy = 12E6D1D83037EE21A0317EE747930446 /* PBXContainerItemProxy */;
 		};
-		E3B2295D430B75592ADC847A7F665F2C /* PBXTargetDependency */ = {
+		EC140C88A5879370E5D08EAD03900ADD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = JTAppleCalendar;
-			target = E4131100F54D47CB18FBEF558DD5B1A6 /* JTAppleCalendar */;
-			targetProxy = AEE00E627B8FDD3B5B3829186EB1188C /* PBXContainerItemProxy */;
-		};
-		E8F422AD46798A64731C1B914A8736A4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MaterialKit;
-			target = 73850773DC05DB0F801C716B2A9E95F5 /* MaterialKit */;
-			targetProxy = 611C4B223A810FAAA8B79B3EA2C6C7EC /* PBXContainerItemProxy */;
+			name = SwiftDate;
+			target = 250506B5E9C482CC1CAC8D3DD5ED5945 /* SwiftDate */;
+			targetProxy = A7A95C7210842639FFC1F200BA905B53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		096BCBC5D64A0432D9A2B01FA2CC2652 /* Debug */ = {
+		123A3B2127081E23309526BDDC30D363 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17335E0F271B88C929095AA6962C5AAC /* TextFieldEffects.xcconfig */;
+			baseConfigurationReference = 20F236AFC7A5C459A35442BFD1F8783F /* TextFieldEffects.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1368,7 +1474,7 @@
 		};
 		1414FAD6D2BF8E61F9BD55BCA1EDEC10 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83AC08F445F71220A157677EE0D7C298 /* ImageSlideshow.xcconfig */;
+			baseConfigurationReference = 0C5AA511C7B42BFEA406A9771CDAE8D5 /* ImageSlideshow.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ImageSlideshow";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1383,9 +1489,39 @@
 			};
 			name = Release;
 		};
+		1CAFC92766FF38A197D5ABE73407DB55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9039FE9EF47EC08932C26DC534D863A1 /* SwiftDate.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftDate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1D1868C8AF0497313AF4F8AD553EDE65 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83AC08F445F71220A157677EE0D7C298 /* ImageSlideshow.xcconfig */;
+			baseConfigurationReference = 0C5AA511C7B42BFEA406A9771CDAE8D5 /* ImageSlideshow.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1414,7 +1550,7 @@
 		};
 		1FB0D1A8C7DEE0C0BFBBAE75B5C49419 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07A0FEB6771D05024A113C4EE6B46333 /* JTAppleCalendar.xcconfig */;
+			baseConfigurationReference = 11B278F58A4027A68569DAD6AF5613AF /* JTAppleCalendar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1443,7 +1579,7 @@
 		};
 		20B64FB60418AE7C501D072E231D3949 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07A0FEB6771D05024A113C4EE6B46333 /* JTAppleCalendar.xcconfig */;
+			baseConfigurationReference = 11B278F58A4027A68569DAD6AF5613AF /* JTAppleCalendar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1473,7 +1609,7 @@
 		};
 		38964C0B0A1004D8AE0B597066A5950B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83AC08F445F71220A157677EE0D7C298 /* ImageSlideshow.xcconfig */;
+			baseConfigurationReference = 0C5AA511C7B42BFEA406A9771CDAE8D5 /* ImageSlideshow.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ImageSlideshow";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1528,7 +1664,7 @@
 		};
 		4EB67690164CCA80CD3B9ECCF1F8A3F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D224433454235D384F15900A1E5CCC90 /* MaterialKit.xcconfig */;
+			baseConfigurationReference = F406383DCAE54C81361039AD7121990C /* MaterialKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1556,13 +1692,13 @@
 			};
 			name = Debug;
 		};
-		5D90BEE3D13040D6505208BEAE624F59 /* Debug */ = {
+		5BB8F86762CFD000C8A478846B112D23 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25AA17FEC3DC5C5681CC1A6E013E98E3 /* SwiftDate.xcconfig */;
+			baseConfigurationReference = 9039FE9EF47EC08932C26DC534D863A1 /* SwiftDate.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1575,16 +1711,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SwiftDate;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1628,9 +1763,38 @@
 			};
 			name = Debug;
 		};
-		713AA34A68B17CBA1024FC121B584D21 /* Release */ = {
+		610CB5307FDD6EAC80EC1EE0CF026FA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25AA17FEC3DC5C5681CC1A6E013E98E3 /* SwiftDate.xcconfig */;
+			baseConfigurationReference = 7F4968D4C76DE9CE3DEF093141A41CFB /* NYAlertViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NYAlertViewController/NYAlertViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NYAlertViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NYAlertViewController/NYAlertViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NYAlertViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		729FAC9D3031F06B1ECA9BD32BC02346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20F236AFC7A5C459A35442BFD1F8783F /* TextFieldEffects.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1641,14 +1805,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftDate;
+				PRODUCT_NAME = TextFieldEffects;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1657,7 +1821,53 @@
 			};
 			name = Release;
 		};
-		757D1134DECD4E1A6BC06334B148B3CE /* Debug */ = {
+		86AD543B40352CBD4CB6503DB240B8C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F4968D4C76DE9CE3DEF093141A41CFB /* NYAlertViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NYAlertViewController/NYAlertViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NYAlertViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NYAlertViewController/NYAlertViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NYAlertViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F4D603B3269B54EEB7298A5F9022815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B278F58A4027A68569DAD6AF5613AF /* JTAppleCalendar.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/JTAppleCalendar";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/ResourceBundle-JTAppleCalendar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = JTAppleCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9FDE18AB2397CA95268CBDA12F9744B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E30300DCD182D9BF89423F84170EE35A /* Pods-VNL App.debug.xcconfig */;
 			buildSettings = {
@@ -1691,9 +1901,9 @@
 			};
 			name = Debug;
 		};
-		83FC226F375BB9771461B6284C9F55D1 /* Release */ = {
+		ACE7CAAC5DD4C2C47BB1147240457D90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17335E0F271B88C929095AA6962C5AAC /* TextFieldEffects.xcconfig */;
+			baseConfigurationReference = F406383DCAE54C81361039AD7121990C /* MaterialKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1704,14 +1914,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MaterialKit/MaterialKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MaterialKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MODULEMAP_FILE = "Target Support Files/MaterialKit/MaterialKit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TextFieldEffects;
+				PRODUCT_NAME = MaterialKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1720,24 +1930,36 @@
 			};
 			name = Release;
 		};
-		9F4D603B3269B54EEB7298A5F9022815 /* Debug */ = {
+		C3ECDF181F5088892EEDF14108240A0F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07A0FEB6771D05024A113C4EE6B46333 /* JTAppleCalendar.xcconfig */;
+			baseConfigurationReference = 044B48B3099CCDE0FD03DDF18EDA4085 /* SwiftSpinner.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/JTAppleCalendar";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/ResourceBundle-JTAppleCalendar-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = JTAppleCalendar;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftSpinner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		A7EF439B0E2B621C86FB099A1A1739C8 /* Release */ = {
+		DA71EAD2F785667A662C628A53F9983B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8BC89DE663020AFCAD675B8E491F6BA7 /* Pods-VNL App.release.xcconfig */;
 			buildSettings = {
@@ -1770,68 +1992,9 @@
 			};
 			name = Release;
 		};
-		ACE7CAAC5DD4C2C47BB1147240457D90 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D224433454235D384F15900A1E5CCC90 /* MaterialKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MaterialKit/MaterialKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MaterialKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MaterialKit/MaterialKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MaterialKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B2E1F5992D8F83C14BE765C8D1E0BBCB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 406BC8606911B83EDE29120F42853F34 /* SwiftSpinner.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftSpinner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		E00C012154871C95C8E67C111D20DCC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83AC08F445F71220A157677EE0D7C298 /* ImageSlideshow.xcconfig */;
+			baseConfigurationReference = 0C5AA511C7B42BFEA406A9771CDAE8D5 /* ImageSlideshow.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1859,9 +2022,39 @@
 			};
 			name = Debug;
 		};
+		E78C4414808606C808CB0F03ED79EF8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 044B48B3099CCDE0FD03DDF18EDA4085 /* SwiftSpinner.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		EA8417A88679033DE73EE5E56B110C46 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07A0FEB6771D05024A113C4EE6B46333 /* JTAppleCalendar.xcconfig */;
+			baseConfigurationReference = 11B278F58A4027A68569DAD6AF5613AF /* JTAppleCalendar.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/JTAppleCalendar";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1876,47 +2069,9 @@
 			};
 			name = Release;
 		};
-		FC3C182D8A8AA47E65669DCC923661DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 406BC8606911B83EDE29120F42853F34 /* SwiftSpinner.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftSpinner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0DACCE412DD2DF91AFEBDBB0311153C9 /* Build configuration list for PBXNativeTarget "Pods-VNL App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				757D1134DECD4E1A6BC06334B148B3CE /* Debug */,
-				A7EF439B0E2B621C86FB099A1A1739C8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1953,20 +2108,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86654DBA38EC06EF9AA6BFEFDE19C7C1 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+		66F948BFA7AD793C5B9537251F4855BD /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				096BCBC5D64A0432D9A2B01FA2CC2652 /* Debug */,
-				83FC226F375BB9771461B6284C9F55D1 /* Release */,
+				123A3B2127081E23309526BDDC30D363 /* Debug */,
+				729FAC9D3031F06B1ECA9BD32BC02346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4CA7CEF6F9AFB04F9973EBFDC2E5AA5 /* Build configuration list for PBXNativeTarget "SwiftDate" */ = {
+		CB2A9A242393F5F52C769EBDDF817C82 /* Build configuration list for PBXNativeTarget "Pods-VNL App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D90BEE3D13040D6505208BEAE624F59 /* Debug */,
-				713AA34A68B17CBA1024FC121B584D21 /* Release */,
+				9FDE18AB2397CA95268CBDA12F9744B4 /* Debug */,
+				DA71EAD2F785667A662C628A53F9983B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1980,6 +2135,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		DB7AE1D3BFC75F1C7B9131F531ED8116 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E78C4414808606C808CB0F03ED79EF8E /* Debug */,
+				C3ECDF181F5088892EEDF14108240A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DC6A56AC5E5174FFBE76C3104886D58A /* Build configuration list for PBXNativeTarget "ImageSlideshow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1989,11 +2153,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E69C03DB89DDDB0735769C3C19BDC848 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */ = {
+		DEE374BE28955F2DD6878FC12A14D4C9 /* Build configuration list for PBXNativeTarget "SwiftDate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2E1F5992D8F83C14BE765C8D1E0BBCB /* Debug */,
-				FC3C182D8A8AA47E65669DCC923661DE /* Release */,
+				1CAFC92766FF38A197D5ABE73407DB55 /* Debug */,
+				5BB8F86762CFD000C8A478846B112D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F117BA17F8BA24DAF0B39B0C3479355F /* Build configuration list for PBXNativeTarget "NYAlertViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610CB5307FDD6EAC80EC1EE0CF026FA9 /* Debug */,
+				86AD543B40352CBD4CB6503DB240B8C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

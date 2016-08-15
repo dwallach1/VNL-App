@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NYAlertViewController
 
 class CampsBayBookingViewController: UIViewController {
     
@@ -92,15 +93,43 @@ extension CampsBayBookingViewController: UITableViewDelegate, UITableViewDataSou
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-//        if indexPath.row == 0 {
+        if indexPath.row == 0 {
             let bayHotelVC = BayHotelViewController(nibName: "BayHotelViewController", bundle: nil)
             let navVC = UINavigationController(rootViewController: bayHotelVC)
             presentViewController(navVC, animated: true, completion: nil)
-//        } else {
-//            let caldendarViewController = CalendarViewController(nibName: "CalendarViewController", bundle: nil)
-//            self.showViewController(caldendarViewController, sender: self)
-//
-//        }
+        } else {
+            let alertViewController = NYAlertViewController()
+            
+            // Set a title and message
+            alertViewController.title = "Functionality Coming Soon"
+            alertViewController.message = "We're just adding some finishing touches."
+            
+            // Customize appearance as desired
+            alertViewController.buttonCornerRadius = 20.0
+            alertViewController.view.tintColor = self.view.tintColor
+            
+            alertViewController.titleFont = UIFont(name: "AvenirNext-Bold", size: 19.0)
+            alertViewController.messageFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+            alertViewController.cancelButtonTitleFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+            alertViewController.cancelButtonTitleFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+            alertViewController.buttonColor = UIColor.VNLBlue()
+            
+            alertViewController.swipeDismissalGestureEnabled = true
+            alertViewController.backgroundTapDismissalGestureEnabled = true
+            
+            // Add alert actions
+            let cancelAction = NYAlertAction(
+                title: "Dismiss",
+                style: .Cancel,
+                handler: { (action: NYAlertAction!) -> Void in
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                }
+            )
+            alertViewController.addAction(cancelAction)
+            
+            // Present the alert view controller
+            self.presentViewController(alertViewController, animated: true, completion: nil)
+        }
         
         if indexPath.row == 0 {
             AppState.sharedInstance.property = "The Bay Hotel"

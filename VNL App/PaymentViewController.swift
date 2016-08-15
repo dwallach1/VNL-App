@@ -84,18 +84,23 @@ extension PaymentViewController {
     
     func setAttributes() {
         
-        let firstDate: String = "\(AppState.sharedInstance.bookingDates.first!)"
-        let lastDate: String = "\(AppState.sharedInstance.bookingDates.last!)"
-        let firstDateCharCount: Int = firstDate.characters.count
-        let lastDateCharCount: Int = lastDate.characters.count
-        let lastDateStartCount: Int = 35 + firstDateCharCount + 7
         var myMutableString = NSMutableAttributedString()
-        let bookedLabelString: String = "You're booked to stay with us from \(AppState.sharedInstance.bookingDates.first!) until \(AppState.sharedInstance.bookingDates.last!)"
+        
+        let nightsCount: Int
+        if AppState.sharedInstance.bookingDates.isEmpty {
+            nightsCount = 0
+        } else {
+            nightsCount = AppState.sharedInstance.bookingDates.count
+        }
+        let bookedLabelString: String
+        if nightsCount > 1 {
+            bookedLabelString = "You're booked to stay with us for \(nightsCount) nights from \(AppState.sharedInstance.bookingDates.first!) until \(AppState.sharedInstance.bookingDates.last!)"
+        } else {
+            bookedLabelString = "You're booked to stay with us one night on \(AppState.sharedInstance.bookingDates.first!)"
+        }
 
         
         myMutableString = NSMutableAttributedString(string: bookedLabelString, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 22.0)!])
-        myMutableString.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(18.0), range: NSRange(location:35,length: firstDateCharCount))
-        myMutableString.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(18.0), range: NSRange(location:lastDateStartCount,length: lastDateCharCount))
 
         bookedDateLabel.attributedText = myMutableString
 

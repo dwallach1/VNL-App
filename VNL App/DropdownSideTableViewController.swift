@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import NYAlertViewController
 
 class DropdownSideTableViewController: UITableViewController {
     
@@ -167,10 +167,11 @@ extension DropdownSideTableViewController {
             presentViewController(navVC, animated: true, completion: nil)
         } else {
             if viewModel.label != "RATES" && viewModel.label != "EXCLUSIVE PACKAGES" && viewModel.label != "BOOKING" {
-                let alert = UIAlertController(title: "Functionality Coming Soon", message: "We're just adding some finishing touches", preferredStyle: .Alert)
-                let dismiss = UIAlertAction(title: "Dismiss", style: .Cancel, handler: nil)
-                alert.addAction(dismiss)
-                self.presentViewController(alert, animated: true, completion: nil)
+//                let alert = UIAlertController(title: "Functionality Coming Soon", message: "We're just adding some finishing touches", preferredStyle: .Alert)
+//                let dismiss = UIAlertAction(title: "Dismiss", style: .Cancel, handler: nil)
+//                alert.addAction(dismiss)
+//                self.presentViewController(alert, animated: true, completion: nil)
+                callAlert()
             }
         }
         
@@ -190,4 +191,41 @@ extension DropdownSideTableViewController {
         }
     }
     
+}
+
+
+extension DropdownSideTableViewController {
+    func callAlert() {
+        let alertViewController = NYAlertViewController()
+        
+        // Set a title and message
+        alertViewController.title = "Functionality Coming Soon"
+        alertViewController.message = "We're just adding some finishing touches."
+        
+        // Customize appearance as desired
+        alertViewController.buttonCornerRadius = 20.0
+        alertViewController.view.tintColor = self.view.tintColor
+        
+        alertViewController.titleFont = UIFont(name: "AvenirNext-Bold", size: 19.0)
+        alertViewController.messageFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+        alertViewController.cancelButtonTitleFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+        alertViewController.cancelButtonTitleFont = UIFont(name: "AvenirNext-Medium", size: 16.0)
+        alertViewController.buttonColor = UIColor.VNLBlue()
+        
+        alertViewController.swipeDismissalGestureEnabled = true
+        alertViewController.backgroundTapDismissalGestureEnabled = true
+        
+        // Add alert actions
+        let cancelAction = NYAlertAction(
+            title: "Dismiss",
+            style: .Cancel,
+            handler: { (action: NYAlertAction!) -> Void in
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+        )
+        alertViewController.addAction(cancelAction)
+        
+        // Present the alert view controller
+        self.presentViewController(alertViewController, animated: true, completion: nil)
+    }
 }

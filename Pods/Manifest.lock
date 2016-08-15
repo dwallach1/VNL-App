@@ -45,6 +45,7 @@ PODS:
   - ImageSlideshow/Core (0.5.0)
   - JTAppleCalendar (3.0.1)
   - MaterialKit (0.4)
+  - NYAlertViewController (1.3.0)
   - SwiftDate (3.0.8)
   - SwiftSpinner (0.9.5)
   - TextFieldEffects (1.2.0)
@@ -57,6 +58,7 @@ DEPENDENCIES:
   - ImageSlideshow (~> 0.4)
   - JTAppleCalendar (~> 3.0)
   - MaterialKit (~> 0.4)
+  - NYAlertViewController
   - SwiftDate (~> 3.0)
   - SwiftSpinner
   - TextFieldEffects
@@ -76,10 +78,11 @@ SPEC CHECKSUMS:
   ImageSlideshow: b2662127d093a42d9595a6b40af2817d064df251
   JTAppleCalendar: 13d2c667bb7f2050fb266267b352904e4a808c82
   MaterialKit: 2e5267bcf410b82793f2b92d2111f8ae4ed2c3f2
+  NYAlertViewController: b93f82e2c1fc6d5e9485512ddbe7b481f463a074
   SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   SwiftSpinner: c6585a0ae5c67eb33e737695cce88f0262008cce
   TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
 
-PODFILE CHECKSUM: 77ceeabcc133d6e67eca0f59816ff77ee884f87c
+PODFILE CHECKSUM: 17f72841aeee26106e4969c8abd594d6682d9d6d
 
 COCOAPODS: 1.0.1

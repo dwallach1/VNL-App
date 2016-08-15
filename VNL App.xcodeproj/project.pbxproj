@@ -53,8 +53,8 @@
 		639A41431D5B0D3C00E992AC /* CampsBayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639A41411D5B0D3C00E992AC /* CampsBayTableViewCell.xib */; };
 		639A414A1D5B11DF00E992AC /* BayHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A41481D5B11DF00E992AC /* BayHotelViewController.swift */; };
 		639A414B1D5B11DF00E992AC /* BayHotelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639A41491D5B11DF00E992AC /* BayHotelViewController.xib */; };
-		639A414E1D5B151900E992AC /* BayHotelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A414C1D5B151900E992AC /* BayHotelCollectionViewCell.swift */; };
-		639A414F1D5B151900E992AC /* BayHotelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639A414D1D5B151900E992AC /* BayHotelCollectionViewCell.xib */; };
+		639A414E1D5B151900E992AC /* RoomListingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A414C1D5B151900E992AC /* RoomListingCollectionViewCell.swift */; };
+		639A414F1D5B151900E992AC /* RoomListingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639A414D1D5B151900E992AC /* RoomListingCollectionViewCell.xib */; };
 		639A41511D5B3B5F00E992AC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A41501D5B3B5F00E992AC /* UserModel.swift */; };
 		639A41551D5C6B7200E992AC /* DatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A41541D5C6B7200E992AC /* DatePickerTextField.swift */; };
 		639B0F801D4B6A8100EA49AA /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */; };
@@ -122,8 +122,8 @@
 		639A41411D5B0D3C00E992AC /* CampsBayTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampsBayTableViewCell.xib; sourceTree = "<group>"; };
 		639A41481D5B11DF00E992AC /* BayHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BayHotelViewController.swift; sourceTree = "<group>"; };
 		639A41491D5B11DF00E992AC /* BayHotelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BayHotelViewController.xib; sourceTree = "<group>"; };
-		639A414C1D5B151900E992AC /* BayHotelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BayHotelCollectionViewCell.swift; sourceTree = "<group>"; };
-		639A414D1D5B151900E992AC /* BayHotelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BayHotelCollectionViewCell.xib; sourceTree = "<group>"; };
+		639A414C1D5B151900E992AC /* RoomListingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListingCollectionViewCell.swift; sourceTree = "<group>"; };
+		639A414D1D5B151900E992AC /* RoomListingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomListingCollectionViewCell.xib; sourceTree = "<group>"; };
 		639A41501D5B3B5F00E992AC /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		639A41541D5C6B7200E992AC /* DatePickerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerTextField.swift; sourceTree = "<group>"; };
 		639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
@@ -236,9 +236,9 @@
 				639A41411D5B0D3C00E992AC /* CampsBayTableViewCell.xib */,
 				639A41481D5B11DF00E992AC /* BayHotelViewController.swift */,
 				639A41491D5B11DF00E992AC /* BayHotelViewController.xib */,
-				639A414C1D5B151900E992AC /* BayHotelCollectionViewCell.swift */,
-				639A414D1D5B151900E992AC /* BayHotelCollectionViewCell.xib */,
-				638D46651D5087440073201E /* Calendar */,
+				639A414C1D5B151900E992AC /* RoomListingCollectionViewCell.swift */,
+				639A414D1D5B151900E992AC /* RoomListingCollectionViewCell.xib */,
+				638D46651D5087440073201E /* Inquire Process */,
 			);
 			name = Booking;
 			sourceTree = "<group>";
@@ -254,7 +254,7 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
-		638D46651D5087440073201E /* Calendar */ = {
+		638D46651D5087440073201E /* Inquire Process */ = {
 			isa = PBXGroup;
 			children = (
 				638D466A1D5088B40073201E /* CalendarViewController.swift */,
@@ -264,7 +264,7 @@
 				63991A121D60A70D006BE345 /* PaymentViewController.swift */,
 				63991A131D60A70D006BE345 /* PaymentViewController.xib */,
 			);
-			name = Calendar;
+			name = "Inquire Process";
 			sourceTree = "<group>";
 		};
 		638D46761D5320120073201E /* Old unused files - to be deleted */ = {
@@ -418,7 +418,7 @@
 				6362E9BD1D537E3C009DD3A2 /* CuriousViewController.xib in Resources */,
 				638100B21D4F86920095634C /* SettingsTableViewCell.xib in Resources */,
 				638100BA1D4F927D0095634C /* CampsBayBookingViewController.xib in Resources */,
-				639A414F1D5B151900E992AC /* BayHotelCollectionViewCell.xib in Resources */,
+				639A414F1D5B151900E992AC /* RoomListingCollectionViewCell.xib in Resources */,
 				638D467E1D533B1A0073201E /* BenefitsViewController.xib in Resources */,
 				6362E9CA1D54D8CF009DD3A2 /* EditProfileViewController.xib in Resources */,
 				631C216B1D4A10A000F5EC19 /* GoogleService-Info.plist in Resources */,
@@ -497,7 +497,7 @@
 				63DCCCF11D4F49290045FB7F /* NavigationViewController.swift in Sources */,
 				63991A141D60A70D006BE345 /* PaymentViewController.swift in Sources */,
 				638D46681D50878B0073201E /* CalendarViewCell.swift in Sources */,
-				639A414E1D5B151900E992AC /* BayHotelCollectionViewCell.swift in Sources */,
+				639A414E1D5B151900E992AC /* RoomListingCollectionViewCell.swift in Sources */,
 				639B0F861D4B91DC00EA49AA /* HomeViewController.swift in Sources */,
 				638100B11D4F86920095634C /* SettingsTableViewCell.swift in Sources */,
 				6362E9BF1D5468CE009DD3A2 /* CollapsableViewModel.swift in Sources */,

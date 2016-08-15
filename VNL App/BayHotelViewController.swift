@@ -27,7 +27,7 @@ class BayHotelViewController: UICollectionViewController {
         collectionView?.alwaysBounceVertical = true
 
         // Register cell classes
-        self.collectionView?.registerNib(UINib(nibName: "BayHotelCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView?.registerNib(UINib(nibName: "RoomListingCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
 
     }
 
@@ -52,7 +52,7 @@ class BayHotelViewController: UICollectionViewController {
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as? BayHotelCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as? RoomListingCollectionViewCell
         
         switch indexPath.row {
         case 0:
@@ -136,7 +136,6 @@ class BayHotelViewController: UICollectionViewController {
             break
         }
 
-        
         cell?.bookButton.addTarget(self, action: #selector(bookNowButtonTapped), forControlEvents: .TouchUpInside)
         
         return cell!

@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NYAlertViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-VNL App.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,7 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>45E0CEBE00324A21212F5484AA2C4592</key>
+		<key>1A5B60414C9F4CAFF30FFE4B212D72FA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>250506B5E9C482CC1CAC8D3DD5ED5945</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>540EB917BC154141F7AA5538867F3DCE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,22 +82,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>78C7E143008F620165D92B415F38EDBC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8346A17E508F883B822275929CE23C9D</key>
+		<key>A38EC16160E24BA0E39876B4FCA2D873</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C15C986904B4FDA1D278FECFB1CFF1FE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C472ABA77F5F9AD2BCB57A24C7354E98</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -93,6 +98,11 @@
 			<true/>
 		</dict>
 		<key>E7BEAF4DCE4B39E319ED8628F0399557</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FDB96DA35F76AE7E6D5C409613DB6D4B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
