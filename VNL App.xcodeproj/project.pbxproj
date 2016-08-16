@@ -37,8 +37,8 @@
 		638C174B1D630F4F001244E1 /* HostPartnersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638C17491D630F4F001244E1 /* HostPartnersViewController.xib */; };
 		638C174E1D631086001244E1 /* HostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C174C1D631086001244E1 /* HostCell.swift */; };
 		638C174F1D631086001244E1 /* HostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638C174D1D631086001244E1 /* HostCell.xib */; };
-		638C17541D631952001244E1 /* HermanusPackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C17521D631952001244E1 /* HermanusPackageViewController.swift */; };
-		638C17551D631952001244E1 /* HermanusPackageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638C17531D631952001244E1 /* HermanusPackageViewController.xib */; };
+		638C17541D631952001244E1 /* PackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C17521D631952001244E1 /* PackageViewController.swift */; };
+		638C17551D631952001244E1 /* PackageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638C17531D631952001244E1 /* PackageViewController.xib */; };
 		638C17581D631F6F001244E1 /* PackageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C17561D631F6F001244E1 /* PackageCell.swift */; };
 		638C17591D631F6F001244E1 /* PackageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638C17571D631F6F001244E1 /* PackageCell.xib */; };
 		638C175C1D6339CD001244E1 /* PackageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C175B1D6339CD001244E1 /* PackageModel.swift */; };
@@ -108,8 +108,8 @@
 		638C17491D630F4F001244E1 /* HostPartnersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HostPartnersViewController.xib; sourceTree = "<group>"; };
 		638C174C1D631086001244E1 /* HostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostCell.swift; sourceTree = "<group>"; };
 		638C174D1D631086001244E1 /* HostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HostCell.xib; sourceTree = "<group>"; };
-		638C17521D631952001244E1 /* HermanusPackageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HermanusPackageViewController.swift; sourceTree = "<group>"; };
-		638C17531D631952001244E1 /* HermanusPackageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HermanusPackageViewController.xib; sourceTree = "<group>"; };
+		638C17521D631952001244E1 /* PackageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageViewController.swift; sourceTree = "<group>"; };
+		638C17531D631952001244E1 /* PackageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PackageViewController.xib; sourceTree = "<group>"; };
 		638C17561D631F6F001244E1 /* PackageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageCell.swift; sourceTree = "<group>"; };
 		638C17571D631F6F001244E1 /* PackageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PackageCell.xib; sourceTree = "<group>"; };
 		638C175B1D6339CD001244E1 /* PackageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageModel.swift; sourceTree = "<group>"; };
@@ -273,8 +273,8 @@
 		638C17511D63192C001244E1 /* Exclusive Packages */ = {
 			isa = PBXGroup;
 			children = (
-				638C17521D631952001244E1 /* HermanusPackageViewController.swift */,
-				638C17531D631952001244E1 /* HermanusPackageViewController.xib */,
+				638C17521D631952001244E1 /* PackageViewController.swift */,
+				638C17531D631952001244E1 /* PackageViewController.xib */,
 				638C17561D631F6F001244E1 /* PackageCell.swift */,
 				638C17571D631F6F001244E1 /* PackageCell.xib */,
 			);
@@ -453,7 +453,7 @@
 				6362E9CA1D54D8CF009DD3A2 /* EditProfileViewController.xib in Resources */,
 				631C216B1D4A10A000F5EC19 /* GoogleService-Info.plist in Resources */,
 				638100A91D4F76960095634C /* SettingsViewController.xib in Resources */,
-				638C17551D631952001244E1 /* HermanusPackageViewController.xib in Resources */,
+				638C17551D631952001244E1 /* PackageViewController.xib in Resources */,
 				639B0F871D4B91DC00EA49AA /* HomeViewController.xib in Resources */,
 				63991A151D60A70D006BE345 /* InquireViewController.xib in Resources */,
 				6362E9C31D546CFC009DD3A2 /* DropdownSideTableViewController.xib in Resources */,
@@ -534,7 +534,7 @@
 				638D467D1D533B1A0073201E /* BenefitsViewController.swift in Sources */,
 				63F05EB41D4B610300854B14 /* LoginViewController.swift in Sources */,
 				633BC4611D5365E900B9DD6A /* ContactViewController.swift in Sources */,
-				638C17541D631952001244E1 /* HermanusPackageViewController.swift in Sources */,
+				638C17541D631952001244E1 /* PackageViewController.swift in Sources */,
 				638C17461D62F24F001244E1 /* ProfileCell.swift in Sources */,
 				639B0F801D4B6A8100EA49AA /* LandingViewController.swift in Sources */,
 				638C174A1D630F4F001244E1 /* HostPartnersViewController.swift in Sources */,

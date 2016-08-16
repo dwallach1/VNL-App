@@ -75,6 +75,28 @@
         "rates": "Studios from R440 per person sharing \\n Rooms from R700 per person sharing (sleeps 2 + 1) \\n Apartments from R 600 per person sharing (sleeps 4)",
         "image": "nil"
       }
-    }
+    },
+    "langebaan" : {
+        "packageOne": {
+          "title": "COME FLY A KITE WITH US",
+          "description" : "– Accommodation \\n – Kite lessons and equipment rental",
+          "rates": "Taster course – from R2000 per person (1 night stay) \\n Full Course – From R3800 per person (3 night stay) \\n Advanced course – From R5500 per person (3 night stay)",
+          "image": "nil"
+        }
+    },
+    "capeTown": {
+      "packageOne": {
+        "title": "CELEBRATE FIRST THURSDAY",
+        "description" : "– Breakfast for two \\n – Complimentary use of bicycles",
+        "rates": "Studios from R400 pp sharing \\n Rooms from R700 pp sharing (sleeps 2 + 1) \\n Apartments from R 600 pp sharing (sleeps 4)",
+        "image": "nil"
+      },
+      "packageTwo": {
+        "title": "BLISSFUL R&R",
+        "description" : "– Breakfast for 2 \\n – Welcome drinks \\n – R400 VNL money to use at the Mint Wellness Spa or at Von Kamptz restaurant \\n – 2 course dinner for two",
+        "rates": "Rooms from R1200 per person sharing \\n Suites from R1600 per person sharing",
+        "image": "nil"
+      }
   }
+}
 }

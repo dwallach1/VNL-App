@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="collectionView" destination="SKW-kP-Lv7" id="onP-TG-GZY"/>
                 <outlet property="slideshow" destination="LQK-1k-19i" id="q2V-qB-5pc"/>
+                <outlet property="titleLabel" destination="AqR-A6-kfQ" id="hOz-s2-5dm"/>
                 <outlet property="titleView" destination="A6y-K6-Hh0" id="PP1-Z7-3km"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

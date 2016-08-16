@@ -12,12 +12,13 @@ import MessageUI
 import FirebaseDatabase
 import SwiftSpinner
 
-class HermanusPackageViewController: UIViewController {
+class PackageViewController: UIViewController {
     
     @IBOutlet weak var slideshow: ImageSlideshow!
     @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var titleLabel: UILabel!
     var ref: FIRDatabaseReference!
     var packages: [PackageModel] = []
     var currPackage: Int = 0
@@ -37,7 +38,14 @@ class HermanusPackageViewController: UIViewController {
         slideshow.slideshowInterval = 5.0
         slideshow.pageControlPosition = PageControlPosition.UnderScrollView
         slideshow.contentScaleMode = .ScaleAspectFill
-        slideshow.setImageInputs([ImageSource(imageString: "hermanusp1")!, ImageSource(imageString: "hermanusp2")!, ImageSource(imageString: "hermanusp3")!])
+        
+        if AppState.sharedInstance.packageLocation == "hermanus" {
+            slideshow.setImageInputs([ImageSource(imageString: "hermanusp1")!, ImageSource(imageString: "hermanusp2")!, ImageSource(imageString: "hermanusp3")!])
+        } else if AppState.sharedInstance.packageLocation == "langebaan" {
+            slideshow.setImageInputs([ImageSource(imageString: "langebaanp1")!, ImageSource(imageString: "langebaanp1")!, ImageSource(imageString: "langebaanp1")!])
+        } else if AppState.sharedInstance.packageLocation == "capeTown" {
+            slideshow.setImageInputs([ImageSource(imageString: "capetown1")!, ImageSource(imageString: "capetown1")!, ImageSource(imageString: "capetown1")!])
+        }
         
         currPackage = 0
 
@@ -74,7 +82,7 @@ class HermanusPackageViewController: UIViewController {
 }
 
 
-extension HermanusPackageViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension PackageViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     // MARK: UICollectionViewDataSource
     
@@ -110,7 +118,7 @@ extension HermanusPackageViewController: UICollectionViewDelegate, UICollectionV
     }
 }
 
-extension HermanusPackageViewController {
+extension PackageViewController {
     func setAttributes() {
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         let sideMenu = UIBarButtonItem(image: UIImage(named: "sideMenuIcon"), style: .Plain, target: self, action: #selector(loggedInSideMenuTapped))
@@ -122,6 +130,7 @@ extension HermanusPackageViewController {
         self.navigationItem.rightBarButtonItem = profileMenu
         
         titleView.backgroundColor = UIColor.VNLBlue()
+        titleLabel.text = AppState.sharedInstance.packageLocationTitle
     }
     
     func bookNowButtonTapped() {
@@ -134,7 +143,7 @@ extension HermanusPackageViewController {
     }
 }
 
-extension HermanusPackageViewController: MFMailComposeViewControllerDelegate {
+extension PackageViewController: MFMailComposeViewControllerDelegate {
     func configureMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self

@@ -176,12 +176,30 @@ extension DropdownSideTableViewController {
             AppState.sharedInstance.screen = "partners"
         }
         else if viewModel.label == "HERMANUS PACKAGES" && indexPath.row == 2 || viewModel.label == "HERMANUS PACKAGES" && indexPath.row == 8 {
-            let hermanusPackagesVC = HermanusPackageViewController(nibName: "HermanusPackageViewController", bundle: nil)
-            let navVC = UINavigationController(rootViewController: hermanusPackagesVC)
+            let packagesVC = PackageViewController(nibName: "PackageViewController", bundle: nil)
+            let navVC = UINavigationController(rootViewController: packagesVC)
             presentViewController(navVC, animated: true, completion: nil)
             AppState.sharedInstance.screen = "exclusive"
             AppState.sharedInstance.packageLocation = "hermanus"
-        } else {
+            AppState.sharedInstance.packageLocationTitle = "HERMANUS"
+        }
+        else if viewModel.label == "LANGEBAAN PACKAGES" && indexPath.row == 3 || viewModel.label == "LANGEBAAN PACKAGES" && indexPath.row == 9 {
+            let packagesVC = PackageViewController(nibName: "PackageViewController", bundle: nil)
+            let navVC = UINavigationController(rootViewController: packagesVC)
+            presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "exclusive"
+            AppState.sharedInstance.packageLocation = "langebaan"
+            AppState.sharedInstance.packageLocationTitle = "LANGEBAAN"
+        }
+        else if viewModel.label == "CAPE TOWN PACKAGES" && indexPath.row == 4 || viewModel.label == "CAPE TOWN PACKAGES" && indexPath.row == 10 {
+            let packagesVC = PackageViewController(nibName: "PackageViewController", bundle: nil)
+            let navVC = UINavigationController(rootViewController: packagesVC)
+            presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "exclusive"
+            AppState.sharedInstance.packageLocation = "capeTown"
+            AppState.sharedInstance.packageLocationTitle = "CAPE TOWN"
+        }
+        else {
             if viewModel.label != "RATES" && viewModel.label != "EXCLUSIVE PACKAGES" && viewModel.label != "BOOKING" {
                 callAlert()
             }

@@ -22,9 +22,14 @@ class AppState: NSObject {
     var updatedDBDates: [String] = [] //used for transfering data from booking page to thank you page
     var price: Int = 0 //used to transfer current booking price to email and thank you page
     var roomTitle: String = "nil" //used to gather correct prices of rooms
+    
+    /***** These are for dealing with Exlusive Packages *****/
     var property: String = "nil" //used for subject of inquire email
     var packageLocation: String = "nil" //used for getting package details from backend
     var adventure: String = "nil" //used for booking package email details 
-    var selectedCell: String = "home"
+    var packageLocationTitle: String = "nil" //used to set title of package page
+    
+    
+    var selectedCell: String = "home" //unused -- tried to fix dropdown sidebar issues, didnt work
 }
 
