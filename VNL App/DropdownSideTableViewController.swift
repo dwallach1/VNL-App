@@ -156,7 +156,7 @@ extension DropdownSideTableViewController {
         let viewModel = displayedRows[indexPath.row]
 
         if viewModel.label == "CAMPS BAY" && indexPath.row == 3 || viewModel.label == "CAMPS BAY" && indexPath.row == 6 || viewModel.label == "CAMPS BAY" && indexPath.row == 12 || viewModel.label == "CAMPS BAY" && indexPath.row == 9{
-            let campsBayVC = CampsBayBookingViewController(nibName: "CampsBayBookingViewController", bundle: nil)
+            let campsBayVC = CampsBayBookingViewController()
             let navVC = UINavigationController(rootViewController: campsBayVC)
             presentViewController(navVC, animated: true, completion: nil)
         }
@@ -167,10 +167,6 @@ extension DropdownSideTableViewController {
             presentViewController(navVC, animated: true, completion: nil)
         } else {
             if viewModel.label != "RATES" && viewModel.label != "EXCLUSIVE PACKAGES" && viewModel.label != "BOOKING" {
-//                let alert = UIAlertController(title: "Functionality Coming Soon", message: "We're just adding some finishing touches", preferredStyle: .Alert)
-//                let dismiss = UIAlertAction(title: "Dismiss", style: .Cancel, handler: nil)
-//                alert.addAction(dismiss)
-//                self.presentViewController(alert, animated: true, completion: nil)
                 callAlert()
             }
         }

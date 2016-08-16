@@ -11,10 +11,14 @@ import NYAlertViewController
 
 class CampsBayBookingViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+//     @IBOutlet weak var tableView: UITableView!
+    var tableView = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.frame = self.view.frame
+        self.view.addSubview(tableView)
+        self.view.bringSubviewToFront(tableView)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 176

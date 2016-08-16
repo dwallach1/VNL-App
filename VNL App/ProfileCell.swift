@@ -1,19 +1,17 @@
 //
-//  ProfileTableViewCell.swift
+//  ProfileCell.swift
 //  VNL App
 //
-//  Created by David Wallach on 8/4/16.
+//  Created by David Wallach on 8/16/16.
 //  Copyright © 2016 TCA. All rights reserved.
 //
 
 import UIKit
 
-class ProfileTableViewCell: UITableViewCell {
+class ProfileCell: UITableViewCell {
 
-   
-    @IBOutlet weak var imageIcon: UIImageView!
     @IBOutlet weak var cellLabel: UILabel!
-    
+    @IBOutlet weak var imageIcon: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -12,6 +12,7 @@ private let reuseIdentifier = "hotelRoomCell"
 
 class BayHotelViewController: UICollectionViewController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,7 +33,7 @@ class BayHotelViewController: UICollectionViewController {
     }
 
     func backButtonTapped() {
-        let campsBayVC = CampsBayBookingViewController(nibName: "CampsBayBookingViewController", bundle: nil)
+        let campsBayVC = CampsBayBookingViewController()
         let navVC = UINavigationController(rootViewController: campsBayVC)
         presentViewController(navVC, animated: true, completion: nil)
 

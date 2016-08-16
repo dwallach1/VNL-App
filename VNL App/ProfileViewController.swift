@@ -22,7 +22,9 @@ class ProfileViewController: UIViewController {
         sideTableView.delegate = self
         sideTableView.dataSource = self
         sideTableView.rowHeight = 60
-        sideTableView.registerNib(UINib(nibName: "ProfileTableViewCell", bundle: nil), forCellReuseIdentifier: "profileCell")
+        sideTableView.frame.size.width = self.view.frame.width
+        sideTableView.center.x = self.view.center.x
+        sideTableView.registerNib(UINib(nibName: "ProfileCell", bundle: nil), forCellReuseIdentifier: "ProfileCell")
         
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         
@@ -60,7 +62,7 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = sideTableView.dequeueReusableCellWithIdentifier("profileCell", forIndexPath: indexPath) as? ProfileTableViewCell
+        let cell = sideTableView.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as? ProfileCell
         
         cell?.cellLabel.textColor = UIColor.blackColor()
         let bgColorView = UIView()
