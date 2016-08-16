@@ -23,7 +23,8 @@ class AppState: NSObject {
     var price: Int = 0 //used to transfer current booking price to email and thank you page
     var roomTitle: String = "nil" //used to gather correct prices of rooms
     var property: String = "nil" //used for subject of inquire email
-
+    var packageLocation: String = "nil" //used for getting package details from backend
+    var adventure: String = "nil" //used for booking package email details 
     var selectedCell: String = "home"
 }
 

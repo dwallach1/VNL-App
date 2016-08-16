@@ -32,6 +32,7 @@ class DropdownSideTableViewController: UITableViewController {
         ]
     
     var displayedRows: [CollapsibleViewModel] = []
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,7 +103,6 @@ extension DropdownSideTableViewController {
         if cell.tag < 0 {
             cell.textLabel?.textColor = UIColor.whiteColor()
             cell.textLabel?.textAlignment = .Left
-            cell.textLabel?.font = UIFont(name: "Helvetica", size: 12.0)
             tableView.rowHeight = 44
             
             let bgColorView = UIView()
@@ -127,12 +127,12 @@ extension DropdownSideTableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let viewModel = displayedRows[indexPath.row]
-        
+        print(indexPath.row)
         if viewModel.children.count > 0 {
             let range = indexPath.row+1...indexPath.row+viewModel.children.count
             let indexPaths = range.map{return NSIndexPath(forRow: $0, inSection: indexPath.section)}
             tableView.beginUpdates()
-            
+        
             if viewModel.isCollapsed {
 
                 displayedRows.insertContentsOf(viewModel.children, at: indexPath.row+1)
@@ -142,12 +142,13 @@ extension DropdownSideTableViewController {
                 tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
                 tableView.rowHeight = 88
                 tableView.deselectRowAtIndexPath(indexPath, animated: false)
+
             }
             tableView.endUpdates()
+
         }
         
         viewModel.isCollapsed = !viewModel.isCollapsed
-        setAppState(indexPath)
         setSegue(indexPath)
         
     }
@@ -159,12 +160,27 @@ extension DropdownSideTableViewController {
             let campsBayVC = CampsBayBookingViewController()
             let navVC = UINavigationController(rootViewController: campsBayVC)
             presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "booking"
         }
         
         else if viewModel.label == "CONTACT" && indexPath.row == 4 {
             let contactVC = ContactViewController(nibName: "ContactViewController", bundle: nil)
             let navVC = UINavigationController(rootViewController: contactVC)
             presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "contact"
+        }
+        else if viewModel.label == "HOST PARTNERS" && indexPath.row == 3 || viewModel.label == "HOST PARTNERS" && indexPath.row == 9 || viewModel.label == "HOST PARTNERS" && indexPath.row == 12 || viewModel.label == "HOST PARTNERS" && indexPath.row == 13 {
+            let hostVC = HostPartnersViewController(nibName: "HostPartnersViewController", bundle: nil)
+            let navVC = UINavigationController(rootViewController: hostVC)
+            presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "partners"
+        }
+        else if viewModel.label == "HERMANUS PACKAGES" && indexPath.row == 2 || viewModel.label == "HERMANUS PACKAGES" && indexPath.row == 8 {
+            let hermanusPackagesVC = HermanusPackageViewController(nibName: "HermanusPackageViewController", bundle: nil)
+            let navVC = UINavigationController(rootViewController: hermanusPackagesVC)
+            presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "exclusive"
+            AppState.sharedInstance.packageLocation = "hermanus"
         } else {
             if viewModel.label != "RATES" && viewModel.label != "EXCLUSIVE PACKAGES" && viewModel.label != "BOOKING" {
                 callAlert()
@@ -173,19 +189,6 @@ extension DropdownSideTableViewController {
         
     }
     
-    func setAppState(indexPath: NSIndexPath) {
-        if indexPath.row == 0 {
-            AppState.sharedInstance.screen = "rates"
-        } else if indexPath.row == 1 {
-            AppState.sharedInstance.screen = "exclusive"
-        } else if indexPath.row == 2 {
-            AppState.sharedInstance.screen = "booking"
-        } else if indexPath.row == 3 {
-            AppState.sharedInstance.screen = "partners"
-        } else if indexPath.row == 4 {
-            AppState.sharedInstance.screen = "contact"
-        }
-    }
     
 }
 

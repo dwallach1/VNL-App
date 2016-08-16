@@ -15,10 +15,6 @@
 		633BC45C1D53621200B9DD6A /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 633BC45A1D53621200B9DD6A /* InformationViewController.xib */; };
 		633BC4611D5365E900B9DD6A /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633BC45F1D5365E900B9DD6A /* ContactViewController.swift */; };
 		633BC4621D5365E900B9DD6A /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 633BC4601D5365E900B9DD6A /* ContactViewController.xib */; };
-		6362E9AB1D536D5E009DD3A2 /* MemberSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E9A91D536D5E009DD3A2 /* MemberSideViewController.swift */; };
-		6362E9AC1D536D5E009DD3A2 /* MemberSideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362E9AA1D536D5E009DD3A2 /* MemberSideViewController.xib */; };
-		6362E9AF1D536D76009DD3A2 /* MemberSideViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E9AD1D536D76009DD3A2 /* MemberSideViewCell.swift */; };
-		6362E9B01D536D76009DD3A2 /* MemberSideViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362E9AE1D536D76009DD3A2 /* MemberSideViewCell.xib */; };
 		6362E9B41D5371F7009DD3A2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E9B21D5371F7009DD3A2 /* ProfileViewController.swift */; };
 		6362E9B51D5371F7009DD3A2 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362E9B31D5371F7009DD3A2 /* ProfileViewController.xib */; };
 		6362E9BC1D537E3C009DD3A2 /* CuriousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E9BA1D537E3C009DD3A2 /* CuriousViewController.swift */; };
@@ -37,6 +33,15 @@
 		638C17431D62EF06001244E1 /* BayHotelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638C17421D62EF06001244E1 /* BayHotelViewController.xib */; };
 		638C17461D62F24F001244E1 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C17441D62F24F001244E1 /* ProfileCell.swift */; };
 		638C17471D62F24F001244E1 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638C17451D62F24F001244E1 /* ProfileCell.xib */; };
+		638C174A1D630F4F001244E1 /* HostPartnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C17481D630F4F001244E1 /* HostPartnersViewController.swift */; };
+		638C174B1D630F4F001244E1 /* HostPartnersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638C17491D630F4F001244E1 /* HostPartnersViewController.xib */; };
+		638C174E1D631086001244E1 /* HostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C174C1D631086001244E1 /* HostCell.swift */; };
+		638C174F1D631086001244E1 /* HostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638C174D1D631086001244E1 /* HostCell.xib */; };
+		638C17541D631952001244E1 /* HermanusPackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C17521D631952001244E1 /* HermanusPackageViewController.swift */; };
+		638C17551D631952001244E1 /* HermanusPackageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638C17531D631952001244E1 /* HermanusPackageViewController.xib */; };
+		638C17581D631F6F001244E1 /* PackageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C17561D631F6F001244E1 /* PackageCell.swift */; };
+		638C17591D631F6F001244E1 /* PackageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638C17571D631F6F001244E1 /* PackageCell.xib */; };
+		638C175C1D6339CD001244E1 /* PackageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C175B1D6339CD001244E1 /* PackageModel.swift */; };
 		638D46681D50878B0073201E /* CalendarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D46661D50878B0073201E /* CalendarViewCell.swift */; };
 		638D46691D50878B0073201E /* CalendarViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638D46671D50878B0073201E /* CalendarViewCell.xib */; };
 		638D466C1D5088B40073201E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D466A1D5088B40073201E /* CalendarViewController.swift */; };
@@ -54,7 +59,6 @@
 		639A414A1D5B11DF00E992AC /* BayHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A41481D5B11DF00E992AC /* BayHotelViewController.swift */; };
 		639A414E1D5B151900E992AC /* RoomListingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A414C1D5B151900E992AC /* RoomListingCollectionViewCell.swift */; };
 		639A414F1D5B151900E992AC /* RoomListingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639A414D1D5B151900E992AC /* RoomListingCollectionViewCell.xib */; };
-		639A41511D5B3B5F00E992AC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A41501D5B3B5F00E992AC /* UserModel.swift */; };
 		639A41551D5C6B7200E992AC /* DatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A41541D5C6B7200E992AC /* DatePickerTextField.swift */; };
 		639B0F801D4B6A8100EA49AA /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */; };
 		639B0F811D4B6A8100EA49AA /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639B0F7F1D4B6A8100EA49AA /* LandingViewController.xib */; };
@@ -65,7 +69,6 @@
 		639B0F8B1D4B937A00EA49AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639B0F8A1D4B937A00EA49AA /* Constants.swift */; };
 		639B0F8E1D4B95EC00EA49AA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639B0F8C1D4B95EC00EA49AA /* RegisterViewController.swift */; };
 		639B0F8F1D4B95EC00EA49AA /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639B0F8D1D4B95EC00EA49AA /* RegisterViewController.xib */; };
-		63DCCCF11D4F49290045FB7F /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DCCCF01D4F49290045FB7F /* NavigationViewController.swift */; };
 		63F05EB41D4B610300854B14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F05EB21D4B610300854B14 /* LoginViewController.swift */; };
 		63F05EB51D4B610300854B14 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F05EB31D4B610300854B14 /* LoginViewController.xib */; };
 		CC26F598E08F5CE6267E13C2 /* Pods_VNL_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C82D0500C0985FF5F1090F2 /* Pods_VNL_App.framework */; };
@@ -83,10 +86,6 @@
 		633BC45A1D53621200B9DD6A /* InformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationViewController.xib; sourceTree = "<group>"; };
 		633BC45F1D5365E900B9DD6A /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		633BC4601D5365E900B9DD6A /* ContactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
-		6362E9A91D536D5E009DD3A2 /* MemberSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberSideViewController.swift; sourceTree = "<group>"; };
-		6362E9AA1D536D5E009DD3A2 /* MemberSideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberSideViewController.xib; sourceTree = "<group>"; };
-		6362E9AD1D536D76009DD3A2 /* MemberSideViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberSideViewCell.swift; sourceTree = "<group>"; };
-		6362E9AE1D536D76009DD3A2 /* MemberSideViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberSideViewCell.xib; sourceTree = "<group>"; };
 		6362E9B21D5371F7009DD3A2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6362E9B31D5371F7009DD3A2 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		6362E9BA1D537E3C009DD3A2 /* CuriousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuriousViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +104,15 @@
 		638C17421D62EF06001244E1 /* BayHotelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BayHotelViewController.xib; sourceTree = "<group>"; };
 		638C17441D62F24F001244E1 /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		638C17451D62F24F001244E1 /* ProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		638C17481D630F4F001244E1 /* HostPartnersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostPartnersViewController.swift; sourceTree = "<group>"; };
+		638C17491D630F4F001244E1 /* HostPartnersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HostPartnersViewController.xib; sourceTree = "<group>"; };
+		638C174C1D631086001244E1 /* HostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostCell.swift; sourceTree = "<group>"; };
+		638C174D1D631086001244E1 /* HostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HostCell.xib; sourceTree = "<group>"; };
+		638C17521D631952001244E1 /* HermanusPackageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HermanusPackageViewController.swift; sourceTree = "<group>"; };
+		638C17531D631952001244E1 /* HermanusPackageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HermanusPackageViewController.xib; sourceTree = "<group>"; };
+		638C17561D631F6F001244E1 /* PackageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageCell.swift; sourceTree = "<group>"; };
+		638C17571D631F6F001244E1 /* PackageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PackageCell.xib; sourceTree = "<group>"; };
+		638C175B1D6339CD001244E1 /* PackageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageModel.swift; sourceTree = "<group>"; };
 		638D46661D50878B0073201E /* CalendarViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewCell.swift; sourceTree = "<group>"; };
 		638D46671D50878B0073201E /* CalendarViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewCell.xib; sourceTree = "<group>"; };
 		638D466A1D5088B40073201E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +130,6 @@
 		639A41481D5B11DF00E992AC /* BayHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BayHotelViewController.swift; sourceTree = "<group>"; };
 		639A414C1D5B151900E992AC /* RoomListingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListingCollectionViewCell.swift; sourceTree = "<group>"; };
 		639A414D1D5B151900E992AC /* RoomListingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomListingCollectionViewCell.xib; sourceTree = "<group>"; };
-		639A41501D5B3B5F00E992AC /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		639A41541D5C6B7200E992AC /* DatePickerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerTextField.swift; sourceTree = "<group>"; };
 		639B0F7E1D4B6A8100EA49AA /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		639B0F7F1D4B6A8100EA49AA /* LandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
@@ -133,7 +140,6 @@
 		639B0F8A1D4B937A00EA49AA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		639B0F8C1D4B95EC00EA49AA /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		639B0F8D1D4B95EC00EA49AA /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
-		63DCCCF01D4F49290045FB7F /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		63F05EB21D4B610300854B14 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		63F05EB31D4B610300854B14 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		8F5818EB5AE2B319892AE944 /* Pods-VNL App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VNL App.release.xcconfig"; path = "Pods/Target Support Files/Pods-VNL App/Pods-VNL App.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +205,8 @@
 			children = (
 				6362E9C01D546CFC009DD3A2 /* DropdownSideTableViewController.swift */,
 				6362E9C11D546CFC009DD3A2 /* DropdownSideTableViewController.xib */,
+				638C17511D63192C001244E1 /* Exclusive Packages */,
+				638C17501D631825001244E1 /* Host Partners */,
 			);
 			name = "Member Side Menu";
 			sourceTree = "<group>";
@@ -210,9 +218,8 @@
 				6362E9B31D5371F7009DD3A2 /* ProfileViewController.xib */,
 				638C17441D62F24F001244E1 /* ProfileCell.swift */,
 				638C17451D62F24F001244E1 /* ProfileCell.xib */,
+				638C175A1D6335CD001244E1 /* Edit Uer Profile */,
 				638100BB1D4FDA000095634C /* Settings */,
-				6362E9C71D54D8CF009DD3A2 /* EditProfileViewController.swift */,
-				6362E9C81D54D8CF009DD3A2 /* EditProfileViewController.xib */,
 			);
 			name = "Profile Menu";
 			sourceTree = "<group>";
@@ -221,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				6362E9BE1D5468CE009DD3A2 /* CollapsableViewModel.swift */,
+				638C175B1D6339CD001244E1 /* PackageModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -251,6 +259,37 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		638C17501D631825001244E1 /* Host Partners */ = {
+			isa = PBXGroup;
+			children = (
+				638C17481D630F4F001244E1 /* HostPartnersViewController.swift */,
+				638C17491D630F4F001244E1 /* HostPartnersViewController.xib */,
+				638C174C1D631086001244E1 /* HostCell.swift */,
+				638C174D1D631086001244E1 /* HostCell.xib */,
+			);
+			name = "Host Partners";
+			sourceTree = "<group>";
+		};
+		638C17511D63192C001244E1 /* Exclusive Packages */ = {
+			isa = PBXGroup;
+			children = (
+				638C17521D631952001244E1 /* HermanusPackageViewController.swift */,
+				638C17531D631952001244E1 /* HermanusPackageViewController.xib */,
+				638C17561D631F6F001244E1 /* PackageCell.swift */,
+				638C17571D631F6F001244E1 /* PackageCell.xib */,
+			);
+			name = "Exclusive Packages";
+			sourceTree = "<group>";
+		};
+		638C175A1D6335CD001244E1 /* Edit Uer Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6362E9C71D54D8CF009DD3A2 /* EditProfileViewController.swift */,
+				6362E9C81D54D8CF009DD3A2 /* EditProfileViewController.xib */,
+			);
+			name = "Edit Uer Profile";
+			sourceTree = "<group>";
+		};
 		638D46651D5087440073201E /* Inquire Process */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,12 +306,6 @@
 		638D46761D5320120073201E /* Old unused files - to be deleted */ = {
 			isa = PBXGroup;
 			children = (
-				639A41501D5B3B5F00E992AC /* UserModel.swift */,
-				6362E9A91D536D5E009DD3A2 /* MemberSideViewController.swift */,
-				6362E9AA1D536D5E009DD3A2 /* MemberSideViewController.xib */,
-				6362E9AD1D536D76009DD3A2 /* MemberSideViewCell.swift */,
-				6362E9AE1D536D76009DD3A2 /* MemberSideViewCell.xib */,
-				63DCCCF01D4F49290045FB7F /* NavigationViewController.swift */,
 				639B0F8C1D4B95EC00EA49AA /* RegisterViewController.swift */,
 				639B0F8D1D4B95EC00EA49AA /* RegisterViewController.xib */,
 			);
@@ -404,7 +437,6 @@
 				633BC4621D5365E900B9DD6A /* ContactViewController.xib in Resources */,
 				638D46691D50878B0073201E /* CalendarViewCell.xib in Resources */,
 				639A41431D5B0D3C00E992AC /* CampsBayTableViewCell.xib in Resources */,
-				6362E9AC1D536D5E009DD3A2 /* MemberSideViewController.xib in Resources */,
 				63F05EB51D4B610300854B14 /* LoginViewController.xib in Resources */,
 				638D467A1D53229F0073201E /* SideMenuViewController.xib in Resources */,
 				638C17431D62EF06001244E1 /* BayHotelViewController.xib in Resources */,
@@ -414,18 +446,21 @@
 				638D46751D5320040073201E /* SideMenuTableViewCell.xib in Resources */,
 				6362E9BD1D537E3C009DD3A2 /* CuriousViewController.xib in Resources */,
 				638100B21D4F86920095634C /* SettingsTableViewCell.xib in Resources */,
+				638C17591D631F6F001244E1 /* PackageCell.xib in Resources */,
 				639A414F1D5B151900E992AC /* RoomListingCollectionViewCell.xib in Resources */,
 				638C17471D62F24F001244E1 /* ProfileCell.xib in Resources */,
 				638D467E1D533B1A0073201E /* BenefitsViewController.xib in Resources */,
 				6362E9CA1D54D8CF009DD3A2 /* EditProfileViewController.xib in Resources */,
 				631C216B1D4A10A000F5EC19 /* GoogleService-Info.plist in Resources */,
-				6362E9B01D536D76009DD3A2 /* MemberSideViewCell.xib in Resources */,
 				638100A91D4F76960095634C /* SettingsViewController.xib in Resources */,
+				638C17551D631952001244E1 /* HermanusPackageViewController.xib in Resources */,
 				639B0F871D4B91DC00EA49AA /* HomeViewController.xib in Resources */,
 				63991A151D60A70D006BE345 /* InquireViewController.xib in Resources */,
 				6362E9C31D546CFC009DD3A2 /* DropdownSideTableViewController.xib in Resources */,
 				631C21601D4A107900F5EC19 /* Assets.xcassets in Resources */,
+				638C174F1D631086001244E1 /* HostCell.xib in Resources */,
 				639B0F8F1D4B95EC00EA49AA /* RegisterViewController.xib in Resources */,
+				638C174B1D630F4F001244E1 /* HostPartnersViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,11 +523,10 @@
 				638D466C1D5088B40073201E /* CalendarViewController.swift in Sources */,
 				639A41551D5C6B7200E992AC /* DatePickerTextField.swift in Sources */,
 				6362E9C21D546CFC009DD3A2 /* DropdownSideTableViewController.swift in Sources */,
-				6362E9AB1D536D5E009DD3A2 /* MemberSideViewController.swift in Sources */,
 				633BC45B1D53621200B9DD6A /* InformationViewController.swift in Sources */,
-				63DCCCF11D4F49290045FB7F /* NavigationViewController.swift in Sources */,
 				63991A141D60A70D006BE345 /* InquireViewController.swift in Sources */,
 				638D46681D50878B0073201E /* CalendarViewCell.swift in Sources */,
+				638C17581D631F6F001244E1 /* PackageCell.swift in Sources */,
 				639A414E1D5B151900E992AC /* RoomListingCollectionViewCell.swift in Sources */,
 				639B0F861D4B91DC00EA49AA /* HomeViewController.swift in Sources */,
 				638100B11D4F86920095634C /* SettingsTableViewCell.swift in Sources */,
@@ -500,18 +534,20 @@
 				638D467D1D533B1A0073201E /* BenefitsViewController.swift in Sources */,
 				63F05EB41D4B610300854B14 /* LoginViewController.swift in Sources */,
 				633BC4611D5365E900B9DD6A /* ContactViewController.swift in Sources */,
+				638C17541D631952001244E1 /* HermanusPackageViewController.swift in Sources */,
 				638C17461D62F24F001244E1 /* ProfileCell.swift in Sources */,
 				639B0F801D4B6A8100EA49AA /* LandingViewController.swift in Sources */,
+				638C174A1D630F4F001244E1 /* HostPartnersViewController.swift in Sources */,
 				639A414A1D5B11DF00E992AC /* BayHotelViewController.swift in Sources */,
 				639B0F8E1D4B95EC00EA49AA /* RegisterViewController.swift in Sources */,
 				639B0F891D4B924700EA49AA /* AppState.swift in Sources */,
 				639B0F8B1D4B937A00EA49AA /* Constants.swift in Sources */,
 				6362E9B41D5371F7009DD3A2 /* ProfileViewController.swift in Sources */,
 				6362E9C91D54D8CF009DD3A2 /* EditProfileViewController.swift in Sources */,
-				6362E9AF1D536D76009DD3A2 /* MemberSideViewCell.swift in Sources */,
 				638100A81D4F76960095634C /* SettingsViewController.swift in Sources */,
+				638C174E1D631086001244E1 /* HostCell.swift in Sources */,
 				631C21591D4A107900F5EC19 /* AppDelegate.swift in Sources */,
-				639A41511D5B3B5F00E992AC /* UserModel.swift in Sources */,
+				638C175C1D6339CD001244E1 /* PackageModel.swift in Sources */,
 				638D46741D5320040073201E /* SideMenuTableViewCell.swift in Sources */,
 				638100B91D4F927D0095634C /* CampsBayBookingViewController.swift in Sources */,
 				638D46791D53229F0073201E /* SideMenuViewController.swift in Sources */,

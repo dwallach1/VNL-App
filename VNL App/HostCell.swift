@@ -1,19 +1,20 @@
 //
-//  MemberSideViewCell.swift
+//  HostCell.swift
 //  VNL App
 //
-//  Created by David Wallach on 8/4/16.
+//  Created by David Wallach on 8/16/16.
 //  Copyright © 2016 TCA. All rights reserved.
 //
 
 import UIKit
 
-class MemberSideViewCell: UITableViewCell {
+class HostCell: UITableViewCell {
 
-    @IBOutlet weak var cellLabel: UILabel!
-    
+    @IBOutlet weak var backgroundImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = UIColor(colorLiteralRed: 251/255, green: 251/255, blue: 251/255, alpha: 1.0)
+
         // Initialization code
     }
 
@@ -21,7 +22,6 @@ class MemberSideViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-
     }
     
 }

@@ -133,3 +133,9 @@ extension UIView {
 
 }
 
+extension String {
+    var withEscapedNewlines: String {
+        return self.stringByReplacingOccurrencesOfString("\n", withString: "\\n")
+    }
+}
+

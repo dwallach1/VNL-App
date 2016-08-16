@@ -5,9 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MemberSideViewController" customModule="VNL_App" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HostPartnersViewController" customModule="VNL_App" customModuleProvider="target">
             <connections>
-                <outlet property="sideTableView" destination="6fu-M8-JRo" id="6z5-Sa-bAu"/>
+                <outlet property="tableView" destination="60a-cO-RQx" id="ga1-Lz-TDG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,19 +16,17 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6fu-M8-JRo">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="396"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="60a-cO-RQx">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="396" id="gM6-0w-zks"/>
-                    </constraints>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="6fu-M8-JRo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9sy-nM-wMf"/>
-                <constraint firstItem="6fu-M8-JRo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RJO-B4-I6t"/>
-                <constraint firstAttribute="trailing" secondItem="6fu-M8-JRo" secondAttribute="trailing" id="paP-db-aSV"/>
+                <constraint firstItem="60a-cO-RQx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="L0B-TL-5Az"/>
+                <constraint firstAttribute="bottom" secondItem="60a-cO-RQx" secondAttribute="bottom" id="Ts8-cQ-PJ0"/>
+                <constraint firstItem="60a-cO-RQx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VMQ-jc-PW2"/>
+                <constraint firstAttribute="trailing" secondItem="60a-cO-RQx" secondAttribute="trailing" id="slv-L0-f4X"/>
             </constraints>
         </view>
     </objects>

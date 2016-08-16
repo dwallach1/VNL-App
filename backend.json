@@ -59,5 +59,22 @@
 				}
       }
     }
+  },
+
+  "packages" : {
+    "hermanus": {
+      "packageOne": {
+        "title": "WHALE OF A TIME",
+        "description" : "– Breakfast for two",
+        "rates": "Studios from R400 pp sharing \\n Rooms from R700 pp sharing (sleeps 2 + 1) \\n Apartments from R 600 pp sharing (sleeps 4)",
+        "image": "nil"
+      },
+      "packageTwo": {
+        "title": "UN – WINE – D IN HERMANUS",
+        "description" : "– Breakfast for two \\n – Complimentary use of bicycles \\n – Glass of local wine per person",
+        "rates": "Studios from R440 per person sharing \\n Rooms from R700 per person sharing (sleeps 2 + 1) \\n Apartments from R 600 per person sharing (sleeps 4)",
+        "image": "nil"
+      }
+    }
   }
 }
