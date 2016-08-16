@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CampsBayTableViewCell: UITableViewCell {
+class LocationCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!

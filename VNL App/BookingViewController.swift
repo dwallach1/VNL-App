@@ -9,9 +9,8 @@
 import UIKit
 import NYAlertViewController
 
-class CampsBayBookingViewController: UIViewController {
+class BookingViewController: UIViewController {
     
-//     @IBOutlet weak var tableView: UITableView!
     var tableView = UITableView()
     
     override func viewDidLoad() {
@@ -25,15 +24,15 @@ class CampsBayBookingViewController: UIViewController {
         
         self.view.backgroundColor = UIColor.VNLDarkBlue()
         
-        self.navigationItem.title = "Camps Bay"
+        self.navigationItem.title = AppState.sharedInstance.bookingLocationTitle
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blackColor()]
         self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
         let leftBarButton = UIBarButtonItem(image: UIImage(named: "backIcon"), style: .Plain, target: self, action: #selector(backButtonTapped))
         leftBarButton.tintColor = UIColor.blackColor()
         self.navigationItem.leftBarButtonItem = leftBarButton
         
-        let campsBayCell = UINib(nibName: "CampsBayTableViewCell", bundle: nil)
-        tableView.registerNib(campsBayCell, forCellReuseIdentifier: "campsBayCell")
+        let campsBayCell = UINib(nibName: "LocationCell", bundle: nil)
+        tableView.registerNib(campsBayCell, forCellReuseIdentifier: "locationCell")
     }
     
     func backButtonTapped() {
@@ -43,7 +42,7 @@ class CampsBayBookingViewController: UIViewController {
     }
 }
 
-extension CampsBayBookingViewController: UITableViewDelegate, UITableViewDataSource {
+extension BookingViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -54,7 +53,7 @@ extension CampsBayBookingViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("campsBayCell", forIndexPath: indexPath) as? CampsBayTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("locationCell", forIndexPath: indexPath) as? LocationCell
         
         switch (indexPath.row){
         case 0:

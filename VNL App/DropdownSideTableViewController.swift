@@ -127,6 +127,7 @@ extension DropdownSideTableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let viewModel = displayedRows[indexPath.row]
+
         print(indexPath.row)
         if viewModel.children.count > 0 {
             let range = indexPath.row+1...indexPath.row+viewModel.children.count
@@ -157,10 +158,11 @@ extension DropdownSideTableViewController {
         let viewModel = displayedRows[indexPath.row]
 
         if viewModel.label == "CAMPS BAY" && indexPath.row == 3 || viewModel.label == "CAMPS BAY" && indexPath.row == 6 || viewModel.label == "CAMPS BAY" && indexPath.row == 12 || viewModel.label == "CAMPS BAY" && indexPath.row == 9{
-            let campsBayVC = CampsBayBookingViewController()
-            let navVC = UINavigationController(rootViewController: campsBayVC)
+            let bookingVC = BookingViewController()
+            let navVC = UINavigationController(rootViewController: bookingVC)
             presentViewController(navVC, animated: true, completion: nil)
             AppState.sharedInstance.screen = "booking"
+            AppState.sharedInstance.bookingLocationTitle = "Camps Bay"
         }
         
         else if viewModel.label == "CONTACT" && indexPath.row == 4 {
@@ -169,7 +171,7 @@ extension DropdownSideTableViewController {
             presentViewController(navVC, animated: true, completion: nil)
             AppState.sharedInstance.screen = "contact"
         }
-        else if viewModel.label == "HOST PARTNERS" && indexPath.row == 3 || viewModel.label == "HOST PARTNERS" && indexPath.row == 9 || viewModel.label == "HOST PARTNERS" && indexPath.row == 12 || viewModel.label == "HOST PARTNERS" && indexPath.row == 13 {
+        else if viewModel.label == "HOST PARTNERS" && indexPath.row == 3 || viewModel.label == "HOST PARTNERS" && indexPath.row == 9 || viewModel.label == "HOST PARTNERS" && indexPath.row == 10 || viewModel.label == "HOST PARTNERS" && indexPath.row == 13 || viewModel.label == "HOST PARTNERS" && indexPath.row == 4 || viewModel.label == "HOST PARTNERS" && indexPath.row == 7 {
             let hostVC = HostPartnersViewController(nibName: "HostPartnersViewController", bundle: nil)
             let navVC = UINavigationController(rootViewController: hostVC)
             presentViewController(navVC, animated: true, completion: nil)
@@ -204,10 +206,7 @@ extension DropdownSideTableViewController {
                 callAlert()
             }
         }
-        
     }
-    
-    
 }
 
 

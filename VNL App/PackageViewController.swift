@@ -101,7 +101,6 @@ extension PackageViewController: UICollectionViewDelegate, UICollectionViewDataS
      func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("packageCell", forIndexPath: indexPath) as? PackageCell
         
-        print("this is  \(currPackage) package")
         if currPackage <= packages.count-1 {
             cell?.titleLabel.text = packages[currPackage].title
             cell?.descriptionTextView.text = packages[currPackage].description
@@ -149,7 +148,7 @@ extension PackageViewController: MFMailComposeViewControllerDelegate {
         mailComposerVC.mailComposeDelegate = self
         
         mailComposerVC.setToRecipients(["members@vlife.co.za"])
-        mailComposerVC.setSubject("Adventure Booking at \(AppState.sharedInstance.screen)")
+        mailComposerVC.setSubject("Adventure Booking at \(AppState.sharedInstance.packageLocationTitle)")
         mailComposerVC.setMessageBody("Hello, \n I would like to book \(AppState.sharedInstance.adventure) on sunday july 4th for 5 people \n", isHTML: false)
         return mailComposerVC
     }
@@ -159,7 +158,7 @@ extension PackageViewController: MFMailComposeViewControllerDelegate {
         sendMailErrorAlert.show()
     }
     
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         
         
         controller.dismissViewControllerAnimated(true, completion: nil)

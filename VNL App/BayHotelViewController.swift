@@ -33,8 +33,8 @@ class BayHotelViewController: UICollectionViewController {
     }
 
     func backButtonTapped() {
-        let campsBayVC = CampsBayBookingViewController()
-        let navVC = UINavigationController(rootViewController: campsBayVC)
+        let bookingVC = BookingViewController()
+        let navVC = UINavigationController(rootViewController: bookingVC)
         presentViewController(navVC, animated: true, completion: nil)
 
     }

@@ -17,6 +17,8 @@ class AppState: NSObject {
     var photoUrl: NSURL?
     var screen: String = "home"  //["home", "benefits", "information", "rates", "exclusive", "booking", "partners", "contact]
     
+    /***** These are for dealing with Inquiries ******/
+    var bookingLocationTitle: String = "nil"
     var currRoomType: String = "nil" //used for transfering data from booking page to thank you page
     var bookingDates: [String] = [] //used for transfering data from booking page to thank you page
     var updatedDBDates: [String] = [] //used for transfering data from booking page to thank you page

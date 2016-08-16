@@ -66,7 +66,7 @@ extension InquireViewController: MFMailComposeViewControllerDelegate {
         sendMailErrorAlert.show()
     }
     
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         
         ref = FIRDatabase.database().reference().child("campsBay").child("bayHotel").child("rooms").child("\(AppState.sharedInstance.currRoomType)")
         
