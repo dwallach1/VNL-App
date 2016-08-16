@@ -13,7 +13,7 @@ import FirebaseDatabase
 import MessageUI
 
 
-class PaymentViewController: UIViewController {
+class InquireViewController: UIViewController {
 
     @IBOutlet weak var cvvTextField: HoshiTextField!
     @IBOutlet weak var expirationDateTextField: UIDatePickerTextField!
@@ -50,7 +50,7 @@ class PaymentViewController: UIViewController {
 }
 
 
-extension PaymentViewController: MFMailComposeViewControllerDelegate {
+extension InquireViewController: MFMailComposeViewControllerDelegate {
     func configureMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self
@@ -70,17 +70,21 @@ extension PaymentViewController: MFMailComposeViewControllerDelegate {
         
         ref = FIRDatabase.database().reference().child("campsBay").child("bayHotel").child("rooms").child("\(AppState.sharedInstance.currRoomType)")
         
+
+        controller.dismissViewControllerAnimated(true, completion: nil)
         if result == MFMailComposeResultSent {
             
             ref.child("datesBooked").setValue(AppState.sharedInstance.updatedDBDates)
+            let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+            let navVC = UINavigationController(rootViewController: homeVC)
+            self.presentViewController(navVC, animated: true, completion: nil)
             
         }
-        controller.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 
 
-extension PaymentViewController {
+extension InquireViewController {
     
     func setAttributes() {
         

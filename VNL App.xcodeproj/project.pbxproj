@@ -47,8 +47,8 @@
 		638D467A1D53229F0073201E /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638D46781D53229F0073201E /* SideMenuViewController.xib */; };
 		638D467D1D533B1A0073201E /* BenefitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D467B1D533B1A0073201E /* BenefitsViewController.swift */; };
 		638D467E1D533B1A0073201E /* BenefitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638D467C1D533B1A0073201E /* BenefitsViewController.xib */; };
-		63991A141D60A70D006BE345 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63991A121D60A70D006BE345 /* PaymentViewController.swift */; };
-		63991A151D60A70D006BE345 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63991A131D60A70D006BE345 /* PaymentViewController.xib */; };
+		63991A141D60A70D006BE345 /* InquireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63991A121D60A70D006BE345 /* InquireViewController.swift */; };
+		63991A151D60A70D006BE345 /* InquireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63991A131D60A70D006BE345 /* InquireViewController.xib */; };
 		639A41421D5B0D3C00E992AC /* CampsBayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A41401D5B0D3C00E992AC /* CampsBayTableViewCell.swift */; };
 		639A41431D5B0D3C00E992AC /* CampsBayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639A41411D5B0D3C00E992AC /* CampsBayTableViewCell.xib */; };
 		639A414A1D5B11DF00E992AC /* BayHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A41481D5B11DF00E992AC /* BayHotelViewController.swift */; };
@@ -115,8 +115,8 @@
 		638D46781D53229F0073201E /* SideMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
 		638D467B1D533B1A0073201E /* BenefitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitsViewController.swift; sourceTree = "<group>"; };
 		638D467C1D533B1A0073201E /* BenefitsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitsViewController.xib; sourceTree = "<group>"; };
-		63991A121D60A70D006BE345 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
-		63991A131D60A70D006BE345 /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
+		63991A121D60A70D006BE345 /* InquireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InquireViewController.swift; sourceTree = "<group>"; };
+		63991A131D60A70D006BE345 /* InquireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InquireViewController.xib; sourceTree = "<group>"; };
 		639A41401D5B0D3C00E992AC /* CampsBayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampsBayTableViewCell.swift; sourceTree = "<group>"; };
 		639A41411D5B0D3C00E992AC /* CampsBayTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampsBayTableViewCell.xib; sourceTree = "<group>"; };
 		639A41481D5B11DF00E992AC /* BayHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BayHotelViewController.swift; sourceTree = "<group>"; };
@@ -258,8 +258,8 @@
 				638D466B1D5088B40073201E /* CalendarViewController.xib */,
 				638D46661D50878B0073201E /* CalendarViewCell.swift */,
 				638D46671D50878B0073201E /* CalendarViewCell.xib */,
-				63991A121D60A70D006BE345 /* PaymentViewController.swift */,
-				63991A131D60A70D006BE345 /* PaymentViewController.xib */,
+				63991A121D60A70D006BE345 /* InquireViewController.swift */,
+				63991A131D60A70D006BE345 /* InquireViewController.xib */,
 			);
 			name = "Inquire Process";
 			sourceTree = "<group>";
@@ -422,7 +422,7 @@
 				6362E9B01D536D76009DD3A2 /* MemberSideViewCell.xib in Resources */,
 				638100A91D4F76960095634C /* SettingsViewController.xib in Resources */,
 				639B0F871D4B91DC00EA49AA /* HomeViewController.xib in Resources */,
-				63991A151D60A70D006BE345 /* PaymentViewController.xib in Resources */,
+				63991A151D60A70D006BE345 /* InquireViewController.xib in Resources */,
 				6362E9C31D546CFC009DD3A2 /* DropdownSideTableViewController.xib in Resources */,
 				631C21601D4A107900F5EC19 /* Assets.xcassets in Resources */,
 				639B0F8F1D4B95EC00EA49AA /* RegisterViewController.xib in Resources */,
@@ -491,7 +491,7 @@
 				6362E9AB1D536D5E009DD3A2 /* MemberSideViewController.swift in Sources */,
 				633BC45B1D53621200B9DD6A /* InformationViewController.swift in Sources */,
 				63DCCCF11D4F49290045FB7F /* NavigationViewController.swift in Sources */,
-				63991A141D60A70D006BE345 /* PaymentViewController.swift in Sources */,
+				63991A141D60A70D006BE345 /* InquireViewController.swift in Sources */,
 				638D46681D50878B0073201E /* CalendarViewCell.swift in Sources */,
 				639A414E1D5B151900E992AC /* RoomListingCollectionViewCell.swift in Sources */,
 				639B0F861D4B91DC00EA49AA /* HomeViewController.swift in Sources */,

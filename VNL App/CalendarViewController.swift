@@ -114,16 +114,22 @@ class CalendarViewController: UIViewController {
                 for date in updatedArray {
                     if formatter.dateFromString(date)?.compare(today) == .OrderedAscending {
                         updatedArray.removeAtIndex(index)
+                        index -= 1
                     }
                     index += 1
+                    if updatedArray.count == 0 {
+                        updatedArray.append("nil")
+                        break
+                    }
                 }
             }
 
+            print(updatedArray)
             
             AppState.sharedInstance.updatedDBDates = updatedArray
             
-            let paymentVC = PaymentViewController(nibName: "PaymentViewController", bundle: nil)
-            self.presentViewController(paymentVC, animated: true, completion: nil)
+            let inquireVC = InquireViewController(nibName: "InquireViewController", bundle: nil)
+            self.presentViewController(inquireVC, animated: true, completion: nil)
         
         } else {
             let alertViewController = NYAlertViewController()
@@ -290,8 +296,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
             
             cell.selected = false
             cell.userInteractionEnabled = false
-        }
-        else {
+        } else {
             cell.cellSelectionChanged(cellState)
             
             let formatter = NSDateFormatter()
