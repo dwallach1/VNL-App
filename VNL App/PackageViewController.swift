@@ -53,7 +53,7 @@ class PackageViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         connectToDB()
-        SwiftSpinner.show("Loading Deals..")
+        SwiftSpinner.show("Loading Deals...")
         currPackage = 0
     }
     

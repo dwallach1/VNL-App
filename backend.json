@@ -1,62 +1,126 @@
 {
-  "campsBay": {
-    "bayHotel" : {
-      "rooms": {
-        "mountain" : {
-          "price" : 1100,
-          "numberOfRooms": 15,
-          "datesBooked" : ["nil"]
-        },
-				"classic" : {
-					"price" : 1100,
-          "numberOfRooms": 8,
-					"datesBooked" : ["nil"]
-				},
-				"clubClassic" : {
-					"price" : 1100,
-          "numberOfRooms": 6,
-					"datesBooked": ["nil"]
-				},
-				"premierMountain" : {
-					"price" : 1200,
-          "numberOfRooms": 3,
-					"datesBooked" : ["nil"]
-				},
-				"premierPool" : {
-					"price" : 1200,
-          "numberOfRooms": 8,
-					"datesBooked" : ["nil"]
-				},
-				"premierSea" :  {
-					"price" : 13250,
-          "numberOfRooms": 20,
-					"datesBooked" : ["nil"]
-				},
-				"cabana" : {
-					"price" : 1350,
-          "numberOfRooms": 12,
-					"datesBooked" : ["nil"]
-				},
-				"luxury" : {
-					"price" : 1200,
-          "numberOfRooms": 2,
-					"datesBooked" : ["nil"]
-				},
-				"suite" : {
-					"price" : 1200,
-          "numberOfRooms": 3,
-					"datesBooked" : ["nil"]
-				},
-				"penthouse" : {
-					"price" : 1350,
-          "numberOfRooms": 1,
-					"datesBooked" : ["nil"]
-				},
-				"adventurePad" : {
-					"price" : 1350,
-          "numberOfRooms": 1,
-					"datesBooked" : ["nil"]
-				}
+  "booking": {
+    "campsBay": {
+
+      "bayHotel" : {
+
+        "title": "The Bay Hotel",
+        "image": "nil",
+
+        "rooms": {
+          "mountain" : {
+            "title": "Mountain Room",
+            "description": "Expansive views of Table Mountain and the Twelve Apostles mountain range.",
+            "image": "nil",
+            "price" : 1100,
+            "numberOfRooms": 15,
+            "datesBooked" : ["nil"]
+          },
+  				"classic" : {
+            "title": "Classic Room",
+            "description": "Located around the main pool deck, these rooms offer direct access to the pool from a private patio.",
+            "image": "nil",
+  					"price" : 1100,
+            "numberOfRooms": 8,
+  					"datesBooked" : ["nil"]
+  				},
+  				"clubClassic" : {
+            "title": "Club Classic Room",
+            "description": "North-facing with views of Lion’s Head and partial sea views. Features two accessibility rooms with wheelchair access.",
+            "image": "nil",
+  					"price" : 1100,
+            "numberOfRooms": 6,
+  					"datesBooked": ["nil"]
+  				},
+  				"premierMountain" : {
+            "title": "Premier Mountain Room",
+            "description": "These double-sized rooms feature private spa baths and magni cent views of the Twelve Apostles mountain range.",
+            "image": "nil",
+  					"price" : 1200,
+            "numberOfRooms": 3,
+  					"datesBooked" : ["nil"]
+  				},
+  				"premierPool" : {
+            "title": "Premier Pool Room",
+            "description": "North-facing rooms with spacious balconies, views of Lion’s Head and partial sea views overlooking the pool area.",
+            "image": "nil",
+  					"price" : 1200,
+            "numberOfRooms": 8,
+  					"datesBooked" : ["nil"]
+  				},
+  				"premierSea" :  {
+            "title": "Premier Sea Room",
+            "description": "Direct sea views overlooking the Atlantic Ocean which can be enjoyed from a private balcony.",
+            "image": "nil",
+  					"price" : 13250,
+            "numberOfRooms": 20,
+  					"datesBooked" : ["nil"]
+  				},
+  				"cabana" : {
+            "title": "Cabana Room",
+            "description": "Located on the ground  oor with a spacious patio, sea views and direct access to two cabana pools.",
+            "image": "nil",
+  					"price" : 1350,
+            "numberOfRooms": 12,
+  					"datesBooked" : ["nil"]
+  				},
+  				"luxury" : {
+            "title": "Luxury Room",
+            "description": "Spacious sea-facing rooms with a comfortable private balcony and outdoor spa bath.",
+            "image": "nil",
+  					"price" : 1200,
+            "numberOfRooms": 2,
+  					"datesBooked" : ["nil"]
+  				},
+  				"suite" : {
+            "title": "Suite",
+            "description": "Each individually styled Suite offers spacious interiors, an outdoor spa bath and two balconies with delightful sea views.",
+            "image": "nil",
+  					"price" : 1200,
+            "numberOfRooms": 3,
+  					"datesBooked" : ["nil"]
+  				},
+  				"penthouse" : {
+            "title": "Penthouse",
+            "description": "With expansive and luxurious interiors, the Penthouse is 160 m2 of sheer sea-facing splendour.",
+            "image": "nil",
+  					"price" : 1350,
+            "numberOfRooms": 1,
+  					"datesBooked" : ["nil"]
+  				},
+  				"adventurePad" : {
+            "title": "Adventure Pad",
+            "description": "Located around the main pool deck, these rooms offer direct access to the pool from a private patio.",
+            "image": "nil",
+  					"price" : 1350,
+            "numberOfRooms": 1,
+  					"datesBooked" : ["nil"]
+  				}
+        }
+      },
+      "campsBayRetreat" : {
+        "title": "Camps Bay Retreat",
+        "image": "nil"
+      },
+      "glenApartments" : {
+        "title": "The Glen Apartments",
+        "image": "nil"
+      },
+      "crystalApartments" : {
+        "title": "The Crystal Apartments",
+        "image": "nil"
+      },
+      "parkStudios" : {
+        "title": "Park Studios",
+        "image": "nil"
+      },
+      "totness" : {
+        "title": "Totness",
+        "image": "nill"
+      },
+      "wesCamp" : {
+        "title": "WesCamp",
+        "image": "nill"
       }
     }
   },
@@ -66,13 +130,13 @@
       "packageOne": {
         "title": "WHALE OF A TIME",
         "description" : "– Breakfast for two",
-        "rates": "Studios from R400 pp sharing \n\nRooms from R700 pp sharing (sleeps 2 + 1) \n\nApartments from R 600 pp sharing (sleeps 4)",
+        "rates": "Studios from R400 pp sharing \nRooms from R700 pp sharing (sleeps 2 + 1) \nApartments from R 600 pp sharing (sleeps 4)",
         "image": "nil"
       },
       "packageTwo": {
         "title": "UN – WINE – D IN HERMANUS",
         "description" : "– Breakfast for two \n– Complimentary use of bicycles \n– Glass of local wine per person",
-        "rates": "Studios from R440 per person sharing \n\nRooms from R700 per person sharing (sleeps 2 + 1) \n\nApartments from R 600 per person sharing (sleeps 4)",
+        "rates": "Studios from R440 per person sharing \nRooms from R700 per person sharing (sleeps 2 + 1) \nApartments from R 600 per person sharing (sleeps 4)",
         "image": "nil"
       }
     },
@@ -80,7 +144,7 @@
         "packageOne": {
           "title": "COME FLY A KITE WITH US",
           "description" : "– Accommodation \n– Kite lessons and equipment rental",
-          "rates": "Taster course – from R2000 per person (1 night stay) \n\nFull Course – From R3800 per person (3 night stay) \n\nAdvanced course – From R5500 per person (3 night stay)",
+          "rates": "Taster course – from R2000 per person (1 night stay) \nFull Course – From R3800 per person (3 night stay) \nAdvanced course – From R5500 per person (3 night stay)",
           "image": "nil"
         }
     },
@@ -88,13 +152,13 @@
       "packageOne": {
         "title": "CELEBRATE FIRST THURSDAY",
         "description" : "– Breakfast for two \n– Complimentary use of bicycles",
-        "rates": "Studios from R400 pp sharing \n\nRooms from R700 pp sharing (sleeps 2 + 1) \n\nApartments from R 600 pp sharing (sleeps 4)",
+        "rates": "Studios from R400 pp sharing \nRooms from R700 pp sharing (sleeps 2 + 1) \nApartments from R 600 pp sharing (sleeps 4)",
         "image": "nil"
       },
       "packageTwo": {
         "title": "BLISSFUL R&R",
-        "description" : "– Breakfast for 2 \n– Welcome drinks \n– R400 VNL money to use at the Mint Wellness Spa or at Von Kamptz restaurant\n – 2 course dinner for two",
-        "rates": "Rooms from R1200 per person sharing \n\nSuites from R1600 per person sharing",
+        "description" : "– Breakfast for 2 \n– Welcome drinks \n– R400 VNL money to use at the Mint Wellness Spa or at Von Kamptz restaurant \n– 2 course dinner for two",
+        "rates": "Rooms from R1200 per person sharing \nSuites from R1600 per person sharing",
         "image": "nil"
       }
   }

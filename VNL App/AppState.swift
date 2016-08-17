@@ -24,6 +24,8 @@ class AppState: NSObject {
     var updatedDBDates: [String] = [] //used for transfering data from booking page to thank you page
     var price: Int = 0 //used to transfer current booking price to email and thank you page
     var roomTitle: String = "nil" //used to gather correct prices of rooms
+    var bookingLocationJSON: String = "nil"
+    var propertyTitleJSON: String = "nil"
     
     /***** These are for dealing with Exlusive Packages *****/
     var property: String = "nil" //used for subject of inquire email

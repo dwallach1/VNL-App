@@ -8,10 +8,15 @@
 
 import UIKit
 import NYAlertViewController
+import SwiftSpinner
+import FirebaseDatabase
 
 class BookingViewController: UIViewController {
     
     var tableView = UITableView()
+    var locations: [LocationModel] = []
+    var currLocation: Int = 0
+    var ref: FIRDatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +28,7 @@ class BookingViewController: UIViewController {
         tableView.rowHeight = 176
         
         self.view.backgroundColor = UIColor.VNLDarkBlue()
+        self.title = ("\(AppState.sharedInstance.bookingLocationTitle)")
         
         self.navigationItem.title = AppState.sharedInstance.bookingLocationTitle
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blackColor()]
@@ -31,14 +37,42 @@ class BookingViewController: UIViewController {
         leftBarButton.tintColor = UIColor.blackColor()
         self.navigationItem.leftBarButtonItem = leftBarButton
         
-        let campsBayCell = UINib(nibName: "LocationCell", bundle: nil)
-        tableView.registerNib(campsBayCell, forCellReuseIdentifier: "locationCell")
+        let locationCell = UINib(nibName: "LocationCell", bundle: nil)
+        tableView.registerNib(locationCell, forCellReuseIdentifier: "locationCell")
+        currLocation = 0
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        SwiftSpinner.show("Loading Requested Locations...")
+        connectToDB()
     }
     
     func backButtonTapped() {
         let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
         let navVC = UINavigationController(rootViewController: homeVC)
         presentViewController(navVC, animated: true, completion: nil)
+    }
+    
+    func connectToDB() {
+        ref = FIRDatabase.database().reference().child("booking").child("\(AppState.sharedInstance.bookingLocationJSON)")
+        self.ref.observeEventType(.Value, withBlock: { (snapshot) in
+            
+            for child in snapshot.children.allObjects as! [FIRDataSnapshot] {
+                let childSnapshot = snapshot.childSnapshotForPath(child.key)
+                let title = childSnapshot.value!["title"] as! String
+                let locationJSON = childSnapshot.key
+                let newLocation = LocationModel(title: title, locationJSON: locationJSON)
+                self.locations.append(newLocation)
+            }
+            
+            self.tableView.reloadData()
+            SwiftSpinner.hide()
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+
+
     }
 }
 
@@ -49,40 +83,38 @@ extension BookingViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return locations.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("locationCell", forIndexPath: indexPath) as? LocationCell
         
+        
+        cell?.titleLabel.text = locations[indexPath.row].title
+
+        
+        //this is hard coded now but should be deleted when we learn to encode images, we will then be able
+        //to download the corresponding image 
         switch (indexPath.row){
         case 0:
-            cell?.titleLabel.text = "The Bay Hotel"
             cell?.backgroundImage?.image = UIImage(named: "campsbay1")
             break
         case 1:
-            cell?.titleLabel.text = "Camps Bay Retreat"
             cell?.backgroundImage?.image = UIImage(named: "campsbay2")
             break
-            
         case 2:
-            cell?.titleLabel.text = "The Glen Apartments"
             cell?.backgroundImage?.image = UIImage(named: "campsbay3")
             break
         case 3:
-            cell?.titleLabel.text = "The Crystal Apartments"
             cell?.backgroundImage?.image = UIImage(named: "campsbay1")
             break
         case 4:
-            cell?.titleLabel.text = "Park Studios"
             cell?.backgroundImage?.image = UIImage(named: "campsbay3")
             break
         case 5:
-            cell?.titleLabel.text = "Totness"
             cell?.backgroundImage?.image = UIImage(named: "campsbay2")
             break
         case 6:
-            cell?.titleLabel.text = "Wescamp"
             cell?.backgroundImage?.image = UIImage(named: "campsbay1")
             break
         default:
@@ -97,8 +129,8 @@ extension BookingViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         if indexPath.row == 0 {
-            let bayHotelVC = BayHotelViewController(nibName: "BayHotelViewController", bundle: nil)
-            let navVC = UINavigationController(rootViewController: bayHotelVC)
+            let propertyVC = PropertyViewController(nibName: "PropertyViewController", bundle: nil)
+            let navVC = UINavigationController(rootViewController: propertyVC)
             presentViewController(navVC, animated: true, completion: nil)
         } else {
             let alertViewController = NYAlertViewController()
@@ -134,13 +166,9 @@ extension BookingViewController: UITableViewDelegate, UITableViewDataSource {
             self.presentViewController(alertViewController, animated: true, completion: nil)
         }
         
-        if indexPath.row == 0 {
-            AppState.sharedInstance.property = "The Bay Hotel"
-        }
-        if indexPath.row == 1 {
-            AppState.sharedInstance.property = "Camps Bay Retreat"
-        }
-        
+        AppState.sharedInstance.property = locations[indexPath.row].title
+        AppState.sharedInstance.propertyTitleJSON = locations[indexPath.row].locationJSON
+        print("\(AppState.sharedInstance.property) &&&&&&&&&&&&& \(AppState.sharedInstance.propertyTitleJSON)")
     }
     
 }

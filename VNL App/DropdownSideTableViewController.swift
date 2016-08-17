@@ -128,7 +128,8 @@ extension DropdownSideTableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let viewModel = displayedRows[indexPath.row]
 
-        print(indexPath.row)
+//        print(indexPath.row)
+        
         if viewModel.children.count > 0 {
             let range = indexPath.row+1...indexPath.row+viewModel.children.count
             let indexPaths = range.map{return NSIndexPath(forRow: $0, inSection: indexPath.section)}
@@ -163,6 +164,7 @@ extension DropdownSideTableViewController {
             presentViewController(navVC, animated: true, completion: nil)
             AppState.sharedInstance.screen = "booking"
             AppState.sharedInstance.bookingLocationTitle = "Camps Bay"
+            AppState.sharedInstance.bookingLocationJSON = "campsBay"
         }
         
         else if viewModel.label == "CONTACT" && indexPath.row == 4 {

@@ -9,7 +9,7 @@
 import UIKit
 import MaterialKit
 
-class RoomListingCollectionViewCell: UICollectionViewCell {
+class PropertyCell: UICollectionViewCell {
 
     @IBOutlet weak var bookButton: MKButton!
     @IBOutlet weak var descriptionTextView: UITextView!

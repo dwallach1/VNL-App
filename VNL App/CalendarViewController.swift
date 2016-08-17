@@ -62,9 +62,9 @@ class CalendarViewController: UIViewController {
     }
     
     func connectToDB() {
-        SwiftSpinner.show("Connecting to Database...")
+        SwiftSpinner.show("Loading Dates and Prices...")
         
-        ref = FIRDatabase.database().reference().child("campsBay").child("bayHotel").child("rooms").child("\(AppState.sharedInstance.currRoomType)")
+        ref = FIRDatabase.database().reference().child("booking").child("\(AppState.sharedInstance.bookingLocationJSON)").child("\(AppState.sharedInstance.propertyTitleJSON)").child("rooms").child("\(AppState.sharedInstance.currRoomType)")
         
         
         self.ref.observeEventType(.Value, withBlock: { (snapshot) in
