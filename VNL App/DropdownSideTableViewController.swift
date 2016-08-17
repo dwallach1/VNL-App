@@ -26,7 +26,12 @@ class DropdownSideTableViewController: UITableViewController {
             CollapsibleViewModel(label: "LANGEBAAN PACKAGES", childTag: -1),
             CollapsibleViewModel(label: "CAPE TOWN PACKAGES", childTag: -1)], childTag: 3),
         CollapsibleViewModel(label: "BOOKING", image: nil, children: [
-            CollapsibleViewModel(label: "CAMPS BAY", childTag: -1)], childTag: 1),
+            CollapsibleViewModel(label: "HERMANUS", childTag: -1),
+            CollapsibleViewModel(label: "LANGEBAAN", childTag: -1),
+            CollapsibleViewModel(label: "CAMPS BAY", childTag: -1),
+            CollapsibleViewModel(label: "DE WATERKANT", childTag: -1),
+            CollapsibleViewModel(label: "MOUILLE POINT", childTag: -1),
+            CollapsibleViewModel(label: "V&A WATERFRONT", childTag: -1)], childTag: 1),
         CollapsibleViewModel(label: "HOST PARTNERS", childTag: 0),
         CollapsibleViewModel(label: "CONTACT", childTag: 0),
         ]
@@ -127,8 +132,6 @@ extension DropdownSideTableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let viewModel = displayedRows[indexPath.row]
-
-//        print(indexPath.row)
         
         if viewModel.children.count > 0 {
             let range = indexPath.row+1...indexPath.row+viewModel.children.count
@@ -157,29 +160,12 @@ extension DropdownSideTableViewController {
 
     func setSegue(indexPath: NSIndexPath) {
         let viewModel = displayedRows[indexPath.row]
-
-        if viewModel.label == "CAMPS BAY" && indexPath.row == 3 || viewModel.label == "CAMPS BAY" && indexPath.row == 6 || viewModel.label == "CAMPS BAY" && indexPath.row == 12 || viewModel.label == "CAMPS BAY" && indexPath.row == 9{
-            let bookingVC = BookingViewController()
-            let navVC = UINavigationController(rootViewController: bookingVC)
-            presentViewController(navVC, animated: true, completion: nil)
-            AppState.sharedInstance.screen = "booking"
-            AppState.sharedInstance.bookingLocationTitle = "Camps Bay"
-            AppState.sharedInstance.bookingLocationJSON = "campsBay"
-        }
         
-        else if viewModel.label == "CONTACT" && indexPath.row == 4 {
-            let contactVC = ContactViewController(nibName: "ContactViewController", bundle: nil)
-            let navVC = UINavigationController(rootViewController: contactVC)
-            presentViewController(navVC, animated: true, completion: nil)
-            AppState.sharedInstance.screen = "contact"
-        }
-        else if viewModel.label == "HOST PARTNERS" && indexPath.row == 3 || viewModel.label == "HOST PARTNERS" && indexPath.row == 9 || viewModel.label == "HOST PARTNERS" && indexPath.row == 10 || viewModel.label == "HOST PARTNERS" && indexPath.row == 13 || viewModel.label == "HOST PARTNERS" && indexPath.row == 4 || viewModel.label == "HOST PARTNERS" && indexPath.row == 7 {
-            let hostVC = HostPartnersViewController(nibName: "HostPartnersViewController", bundle: nil)
-            let navVC = UINavigationController(rootViewController: hostVC)
-            presentViewController(navVC, animated: true, completion: nil)
-            AppState.sharedInstance.screen = "partners"
-        }
-        else if viewModel.label == "HERMANUS PACKAGES" && indexPath.row == 2 || viewModel.label == "HERMANUS PACKAGES" && indexPath.row == 8 {
+        
+        
+        //Packages
+        
+        if viewModel.label == "HERMANUS PACKAGES" && indexPath.row == 2 || viewModel.label == "HERMANUS PACKAGES" && indexPath.row == 8 {
             let packagesVC = PackageViewController(nibName: "PackageViewController", bundle: nil)
             let navVC = UINavigationController(rootViewController: packagesVC)
             presentViewController(navVC, animated: true, completion: nil)
@@ -203,6 +189,79 @@ extension DropdownSideTableViewController {
             AppState.sharedInstance.packageLocation = "capeTown"
             AppState.sharedInstance.packageLocationTitle = "CAPE TOWN"
         }
+        
+        //Bookings 
+            
+        else if viewModel.label == "HERMANUS" && indexPath.row == 3 || viewModel.label == "HERMANUS" && indexPath.row == 6 || viewModel.label == "HERMANUS" && indexPath.row == 9 || viewModel.label == "HERMANUS" && indexPath.row == 12 {
+            let bookingVC = BookingViewController()
+            let navVC = UINavigationController(rootViewController: bookingVC)
+            presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "booking"
+            AppState.sharedInstance.bookingLocationTitle = "Hermanus"
+            AppState.sharedInstance.bookingLocationJSON = "hermanus"
+        }
+    
+        else if viewModel.label == "LANGEBAAN" && indexPath.row == 4 || viewModel.label == "LANGEBAAN" && indexPath.row == 7 || viewModel.label == "LANGEBAAN" && indexPath.row == 10 || viewModel.label == "LANGEBAAN" && indexPath.row == 13 {
+            let bookingVC = BookingViewController()
+            let navVC = UINavigationController(rootViewController: bookingVC)
+            presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "booking"
+            AppState.sharedInstance.bookingLocationTitle = "Langebaan"
+            AppState.sharedInstance.bookingLocationJSON = "langebaan"
+        }
+
+        else if viewModel.label == "CAMPS BAY" && indexPath.row == 5 || viewModel.label == "CAMPS BAY" && indexPath.row == 8 || viewModel.label == "CAMPS BAY" && indexPath.row == 11 || viewModel.label == "CAMPS BAY" && indexPath.row == 14 {
+            let bookingVC = BookingViewController()
+            let navVC = UINavigationController(rootViewController: bookingVC)
+            presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "booking"
+            AppState.sharedInstance.bookingLocationTitle = "Camps Bay"
+            AppState.sharedInstance.bookingLocationJSON = "campsBay"
+        }
+            
+        else if viewModel.label == "DE WATERKANT" && indexPath.row == 6 || viewModel.label == "DE WATERKANT" && indexPath.row == 9 || viewModel.label == "DE WATERKANT" && indexPath.row == 12 || viewModel.label == "DE WATERKANT" && indexPath.row == 15 {
+            let bookingVC = BookingViewController()
+            let navVC = UINavigationController(rootViewController: bookingVC)
+            presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "booking"
+            AppState.sharedInstance.bookingLocationTitle = "De Waterkant"
+            AppState.sharedInstance.bookingLocationJSON = "deWaterkant"
+        }
+            
+        else if viewModel.label == "MOUILLE POINT" && indexPath.row == 7 || viewModel.label == "MOUILLE POINT" && indexPath.row == 10 || viewModel.label == "MOUILLE POINT" && indexPath.row == 13 || viewModel.label == "MOUILLE POINT" && indexPath.row == 16 {
+            let bookingVC = BookingViewController()
+            let navVC = UINavigationController(rootViewController: bookingVC)
+            presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "booking"
+            AppState.sharedInstance.bookingLocationTitle = "Mouille Point"
+            AppState.sharedInstance.bookingLocationJSON = "mouillePoint"
+        }
+            
+        else if viewModel.label == "V&A WATERFRONT" && indexPath.row == 8 || viewModel.label == "V&A WATERFRONT" && indexPath.row == 11 || viewModel.label == "V&A WATERFRONT" && indexPath.row == 14 || viewModel.label == "V&A WATERFRONT" && indexPath.row == 17 {
+            let bookingVC = BookingViewController()
+            let navVC = UINavigationController(rootViewController: bookingVC)
+            presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "booking"
+            AppState.sharedInstance.bookingLocationTitle = "V&A Waterfront"
+            AppState.sharedInstance.bookingLocationJSON = "v&aWaterfront"
+        }
+
+        //Static Pages 
+            
+        else if viewModel.label == "HOST PARTNERS" && indexPath.row == 3 || viewModel.label == "HOST PARTNERS" && indexPath.row == 9 || viewModel.label == "HOST PARTNERS" && indexPath.row == 12 || viewModel.label == "HOST PARTNERS" && indexPath.row == 18 || viewModel.label == "HOST PARTNERS" && indexPath.row == 6 {
+            let hostVC = HostPartnersViewController(nibName: "HostPartnersViewController", bundle: nil)
+            let navVC = UINavigationController(rootViewController: hostVC)
+            presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "partners"
+        }
+            
+        else if viewModel.label == "CONTACT" && indexPath.row == 4 || viewModel.label == "CONTACT" && indexPath.row == 10 || viewModel.label == "CONTACT" && indexPath.row == 13 || viewModel.label == "CONTACT" && indexPath.row == 19 {
+            let contactVC = ContactViewController(nibName: "ContactViewController", bundle: nil)
+            let navVC = UINavigationController(rootViewController: contactVC)
+            presentViewController(navVC, animated: true, completion: nil)
+            AppState.sharedInstance.screen = "contact"
+        }
+            
         else {
             if viewModel.label != "RATES" && viewModel.label != "EXCLUSIVE PACKAGES" && viewModel.label != "BOOKING" {
                 callAlert()

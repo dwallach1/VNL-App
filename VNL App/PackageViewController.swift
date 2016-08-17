@@ -10,6 +10,7 @@ import UIKit
 import ImageSlideshow
 import MessageUI
 import FirebaseDatabase
+import FirebaseStorage
 import SwiftSpinner
 
 class PackageViewController: UIViewController {
@@ -17,11 +18,12 @@ class PackageViewController: UIViewController {
     @IBOutlet weak var slideshow: ImageSlideshow!
     @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
-    
     @IBOutlet weak var titleLabel: UILabel!
+    
+    
     var ref: FIRDatabaseReference!
+    var storage: FIRStorage!
     var packages: [PackageModel] = []
-    var currPackage: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,18 +48,16 @@ class PackageViewController: UIViewController {
         } else if AppState.sharedInstance.packageLocation == "capeTown" {
             slideshow.setImageInputs([ImageSource(imageString: "capetown1")!, ImageSource(imageString: "capetown1")!, ImageSource(imageString: "capetown1")!])
         }
-        
-        currPackage = 0
-
     }
     
     override func viewDidAppear(animated: Bool) {
         connectToDB()
         SwiftSpinner.show("Loading Deals...")
-        currPackage = 0
     }
     
     func connectToDB() {
+        storage = FIRStorage.storage()
+        let storageRef = storage.referenceForURL("gs://vnl-mobile-application.appspot.com")
         ref = FIRDatabase.database().reference().child("packages").child("\(AppState.sharedInstance.packageLocation)")
 
         self.ref.observeEventType(.Value, withBlock: { (snapshot) in
@@ -67,11 +67,28 @@ class PackageViewController: UIViewController {
                 let title = childSnapshot.value!["title"] as! String
                 let description = childSnapshot.value!["description"] as! String
                 let rates = childSnapshot.value!["rates"] as! String
-                let currPackage = PackageModel(title: title, description: description, rates: rates)
-                self.packages.append(currPackage)
+                let imageJSON = childSnapshot.value!["image"] as! String
+                
+                
+                let imagesRef = storageRef.child("\(imageJSON).jpg")
+
+                imagesRef.dataWithMaxSize(1 * 1024 * 1024) { (data, error) -> Void in
+                    if (error != nil) {
+                        // Uh-oh, an error occurred!
+                        let currPackage = PackageModel(title: title,  description: description, rates: rates)
+                        self.packages.append(currPackage)
+                    } else {
+                        // Data for "images/island.jpg" is returned
+                        let packageImage: UIImage! = UIImage(data: data!)
+                        let currPackage = PackageModel(title: title,  description: description, rates: rates, image: packageImage)
+                        self.packages.append(currPackage)
+                        self.collectionView.reloadData()
+                        SwiftSpinner.hide()
+                    }
+                }
+
             }
             
-            SwiftSpinner.hide()
             self.viewDidLoad()
 
         }) { (error) in
@@ -94,20 +111,17 @@ extension PackageViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        print(packages.count)
         return packages.count
     }
     
      func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("packageCell", forIndexPath: indexPath) as? PackageCell
         
-        if currPackage <= packages.count-1 {
-            cell?.titleLabel.text = packages[currPackage].title
-            cell?.descriptionTextView.text = packages[currPackage].description
-            cell?.ratesTextView.text = packages[currPackage].rates
-            cell?.bookButton.addTarget(self, action: #selector(bookNowButtonTapped), forControlEvents: .TouchUpInside)
-            currPackage += 1
-        }
+        cell?.titleLabel.text = packages[indexPath.row].title
+        cell?.descriptionTextView.text = packages[indexPath.row].description
+        cell?.ratesTextView.text = packages[indexPath.row].rates
+        cell?.imageView.image = packages[indexPath.row].image
+        cell?.bookButton.addTarget(self, action: #selector(bookNowButtonTapped), forControlEvents: .TouchUpInside)
 
         return cell!
     }

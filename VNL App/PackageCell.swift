@@ -24,7 +24,7 @@ class PackageCell: UICollectionViewCell {
         self.backgroundColor = UIColor.whiteColor()
         titleLabel.textColor = UIColor.blackColor()
         titleLabel.adjustsFontSizeToFitWidth = true
-        imageView.image = UIImage(named: "whale-watching")
+//        imageView.image = UIImage(named: "whale-watching")
         
         bookButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         bookButton.setTitle("Book Now", forState: .Normal)

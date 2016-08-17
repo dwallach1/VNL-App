@@ -33,11 +33,11 @@ class PropertyViewController: UICollectionViewController {
 
         // Register cell classes
         self.collectionView?.registerNib(UINib(nibName: "PropertyCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
-
     }
     
     override func viewDidAppear(animated: Bool) {
         SwiftSpinner.show("Loading Properties")
+        properties = []
         connectToDB()
     }
 
@@ -49,8 +49,7 @@ class PropertyViewController: UICollectionViewController {
     }
     
     func connectToDB() {
-        print("booking loaction is: \(AppState.sharedInstance.bookingLocationJSON)\n")
-        print("property location is: \(AppState.sharedInstance.propertyTitleJSON)\n")
+
         ref = FIRDatabase.database().reference().child("booking").child("\(AppState.sharedInstance.bookingLocationJSON)").child("\(AppState.sharedInstance.propertyTitleJSON)").child("rooms")
         self.ref.observeEventType(.Value, withBlock: { (snapshot) in
             

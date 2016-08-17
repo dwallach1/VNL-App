@@ -57,7 +57,7 @@ extension InquireViewController: MFMailComposeViewControllerDelegate {
         
         mailComposerVC.setToRecipients(["members@vlife.co.za"])
         mailComposerVC.setSubject("Mobile Booking at \(AppState.sharedInstance.property)")
-        mailComposerVC.setMessageBody("Hello, \n I would like to book the \(AppState.sharedInstance.roomTitle) from \(AppState.sharedInstance.bookingDates.first!) until \(AppState.sharedInstance.bookingDates.last!). \nBest, \n\(AppState.sharedInstance.displayName!) \n", isHTML: false)
+        mailComposerVC.setMessageBody("Hello, \n I would like to book a \(AppState.sharedInstance.roomTitle) at \(AppState.sharedInstance.property) from \(AppState.sharedInstance.bookingDates.first!) until \(AppState.sharedInstance.bookingDates.last!). \nBest, \n\(AppState.sharedInstance.displayName!) \n", isHTML: false)
         return mailComposerVC
     }
     

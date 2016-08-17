@@ -10,6 +10,7 @@ import UIKit
 import NYAlertViewController
 import SwiftSpinner
 import FirebaseDatabase
+import FirebaseStorage
 
 class BookingViewController: UIViewController {
     
@@ -26,6 +27,7 @@ class BookingViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 176
+        tableView.backgroundColor = UIColor.VNLDarkBlue()
         
         self.view.backgroundColor = UIColor.VNLDarkBlue()
         self.title = ("\(AppState.sharedInstance.bookingLocationTitle)")
@@ -40,6 +42,7 @@ class BookingViewController: UIViewController {
         let locationCell = UINib(nibName: "LocationCell", bundle: nil)
         tableView.registerNib(locationCell, forCellReuseIdentifier: "locationCell")
         currLocation = 0
+    
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -55,18 +58,20 @@ class BookingViewController: UIViewController {
     
     func connectToDB() {
         ref = FIRDatabase.database().reference().child("booking").child("\(AppState.sharedInstance.bookingLocationJSON)")
+
         self.ref.observeEventType(.Value, withBlock: { (snapshot) in
             
             for child in snapshot.children.allObjects as! [FIRDataSnapshot] {
                 let childSnapshot = snapshot.childSnapshotForPath(child.key)
                 let title = childSnapshot.value!["title"] as! String
                 let locationJSON = childSnapshot.key
+                
                 let newLocation = LocationModel(title: title, locationJSON: locationJSON)
                 self.locations.append(newLocation)
+                self.tableView.reloadData()
+                SwiftSpinner.hide()
+
             }
-            
-            self.tableView.reloadData()
-            SwiftSpinner.hide()
             
         }) { (error) in
             print(error.localizedDescription)
@@ -91,10 +96,21 @@ extension BookingViewController: UITableViewDelegate, UITableViewDataSource {
         
         
         cell?.titleLabel.text = locations[indexPath.row].title
+        
+        /****************
+        once you have the image set, you will want to do something like this:
+        
+        if locations[indexPath.row].image != nil {
+            print("image is not null")
+            print(locations[indexPath.row].image!)
+            cell?.backgroundImage?.image = locations[indexPath.row].image!
+        }
+         *****************/
 
         
         //this is hard coded now but should be deleted when we learn to encode images, we will then be able
         //to download the corresponding image 
+        //this is more optional tho, For the exclusive packages and deals, the pictures should not be hard coded
         switch (indexPath.row){
         case 0:
             cell?.backgroundImage?.image = UIImage(named: "campsbay1")

@@ -5,7 +5,7 @@
       "bayHotel" : {
 
         "title": "The Bay Hotel",
-        "image": "nil",
+        "image": "campsbay1",
 
         "rooms": {
           "mountain" : {
@@ -100,26 +100,91 @@
       },
       "campsBayRetreat" : {
         "title": "Camps Bay Retreat",
-        "image": "nil"
+        "image": "campsbay2"
       },
       "glenApartments" : {
         "title": "The Glen Apartments",
-        "image": "nil"
+        "image": "campsbay3"
       },
       "crystalApartments" : {
         "title": "The Crystal Apartments",
-        "image": "nil"
+        "image": "campsbay1"
       },
       "parkStudios" : {
         "title": "Park Studios",
-        "image": "nil"
+        "image": "campsbay2"
       },
       "totness" : {
         "title": "Totness",
-        "image": "nill"
+        "image": "campsbay3"
       },
       "wesCamp" : {
         "title": "WesCamp",
+        "image": "campsbay1"
+      }
+    },
+    "langebaan" : {
+      "farmhouseHotel" : {
+        "title": "The Farmhouse Hotel",
+        "image": "nill"
+      },
+      "kiteQuarters" : {
+        "title": "Kite Quarters",
+        "image": "nill"
+      }
+    },
+    "hermanus" : {
+      "harbourHouseHotel" : {
+        "title": "The Harbour House Hotel",
+        "image": "nill"
+      },
+      "villageSquare" : {
+        "title": "Village Square",
+        "image": "nill"
+      },
+      "galleryStudios" : {
+        "title": "The Gallery Studios",
+        "image": "nill"
+      },
+      "leParadis" : {
+        "title": "Le Paradis",
+        "image": "nill"
+      }
+    },
+    "deWaterkant" : {
+      "deWaterkantVillage" : {
+        "title": "De Waterkant Village",
+        "image": "nill"
+      },
+      "deWaterkantHouse" : {
+        "title": "De Waterkant House",
+        "image": "nill"
+      },
+      "charles" : {
+        "title": "The Charles",
+        "image": "nill"
+      }
+    },
+    "mouillePoint" : {
+      "mouillePointVillage" : {
+        "title": "Mouille Point Village",
+        "image": "nill",
+
+        "rooms" : {
+          "studio" : {
+            "title": "Studio",
+            "description": "A studio in Mouille Point.",
+            "image": "nil",
+            "price" : 1100,
+            "numberOfRooms": 1,
+            "datesBooked" : ["nil"]
+          }
+        }
+      }
+    },
+    "v&aWaterfront" : {
+      "waterfrontVillage" : {
+        "title": "Waterfront Village",
         "image": "nill"
       }
     }
@@ -131,13 +196,13 @@
         "title": "WHALE OF A TIME",
         "description" : "– Breakfast for two",
         "rates": "Studios from R400 pp sharing \nRooms from R700 pp sharing (sleeps 2 + 1) \nApartments from R 600 pp sharing (sleeps 4)",
-        "image": "nil"
+        "image": "wine-tasting"
       },
       "packageTwo": {
         "title": "UN – WINE – D IN HERMANUS",
         "description" : "– Breakfast for two \n– Complimentary use of bicycles \n– Glass of local wine per person",
         "rates": "Studios from R440 per person sharing \nRooms from R700 per person sharing (sleeps 2 + 1) \nApartments from R 600 per person sharing (sleeps 4)",
-        "image": "nil"
+        "image": "whale-watching"
       }
     },
     "langebaan" : {
@@ -145,7 +210,7 @@
           "title": "COME FLY A KITE WITH US",
           "description" : "– Accommodation \n– Kite lessons and equipment rental",
           "rates": "Taster course – from R2000 per person (1 night stay) \nFull Course – From R3800 per person (3 night stay) \nAdvanced course – From R5500 per person (3 night stay)",
-          "image": "nil"
+          "image": "wine-tasting"
         }
     },
     "capeTown": {
@@ -153,13 +218,13 @@
         "title": "CELEBRATE FIRST THURSDAY",
         "description" : "– Breakfast for two \n– Complimentary use of bicycles",
         "rates": "Studios from R400 pp sharing \nRooms from R700 pp sharing (sleeps 2 + 1) \nApartments from R 600 pp sharing (sleeps 4)",
-        "image": "nil"
+        "image": "whale-watching"
       },
       "packageTwo": {
         "title": "BLISSFUL R&R",
         "description" : "– Breakfast for 2 \n– Welcome drinks \n– R400 VNL money to use at the Mint Wellness Spa or at Von Kamptz restaurant \n– 2 course dinner for two",
         "rates": "Rooms from R1200 per person sharing \nSuites from R1600 per person sharing",
-        "image": "nil"
+        "image": "wine-tasting"
       }
   }
 }
