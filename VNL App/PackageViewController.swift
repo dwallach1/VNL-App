@@ -46,13 +46,14 @@ class PackageViewController: UIViewController {
         } else if AppState.sharedInstance.packageLocation == "langebaan" {
             slideshow.setImageInputs([ImageSource(imageString: "langebaanp1")!, ImageSource(imageString: "langebaanp1")!, ImageSource(imageString: "langebaanp1")!])
         } else if AppState.sharedInstance.packageLocation == "capeTown" {
-            slideshow.setImageInputs([ImageSource(imageString: "capetown1")!, ImageSource(imageString: "capetown1")!, ImageSource(imageString: "capetown1")!])
+            slideshow.setImageInputs([ImageSource(imageString: "capetown1")!, ImageSource(imageString: "capetown2")!, ImageSource(imageString: "capetown3")!])
         }
     }
     
     override func viewDidAppear(animated: Bool) {
         connectToDB()
         SwiftSpinner.show("Loading Deals...")
+        packages = []
     }
     
     func connectToDB() {
